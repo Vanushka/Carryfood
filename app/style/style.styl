@@ -1,0 +1,561 @@
+// ---> COLOR
+$green           = #1CCC8F
+$lightgreen      = #50CEAA
+$grey            = #BCBCBC
+$bordergrey      = #DEDEDE
+$darkgrey        = #4A4A4A
+$linegrey        = #555555
+$addressgrey     = #797979
+$linkgrey        = #9d9d9d
+$backgroundgrey  = #F6F6F5
+$customergray    = #EFEFED
+$hashtaggrey     = #A5A5A5
+$lightgrey       = #AFAFAF
+$filtergrey      = #F0ECE8
+$black           = #000000
+$white           = #ffffff
+
+// --MAIN-STYLE--
+html, body
+  margin 0
+  min-width 1295px
+  a, button, input, select, option
+    outline none
+    text-decoration none
+
+// -- HEADER --
+header
+  width 100%
+  height 130px
+  background $green
+  #header
+    display flex
+    justify-content center
+    .container
+      padding-top 20px
+      display flex
+      justify-content center
+      max-width 1280px
+      .logo
+        color $white
+        font-size 12px
+      span
+        color $white
+        margin 18px 15px
+        font-family 'PT-Sans-Italic'
+      .choose-shop
+        cursor pointer
+        margin-right 10px
+        select
+          height 58px
+          width 130px
+          color $white
+          font-size 25px
+          padding-left 10px
+          background none
+          border 1px solid $white
+          appearance none
+          -moz-appearance none
+          -webkit-appearance none
+      .search-line
+        display inline-block
+        input
+          border 0
+          color $black
+          width 505px
+          height 56px
+          font-size 15px
+          font-family 'Open-Sans-Semibold'
+          border-radius 30px
+        input[type="text"]
+          padding-left 25px
+          margin-bottom 15px
+        .search-menu
+          a
+            color $white
+            margin-right 33px
+            font-size 13px
+            font-family 'Roboto-Regular'
+      .radius-link
+        width 30px
+        height 30px
+        margin-top 13px
+        cursor pointer
+        margin-left 10px
+        border-radius 30px
+        background-color $white
+      .time-of-delivery
+        cursor pointer
+        margin-left 10px
+        select
+          height 58px
+          width 180px
+          color $white
+          font-size 25px
+          padding-left 10px
+          font-size 16px
+          background none
+          white-space normal
+          border 1px solid $white
+          appearance none
+          -moz-appearance none
+          -webkit-appearance none
+      .basket
+        display inline-block
+        margin-left 10px
+        margin-top 18px
+        a
+          padding 17px 55px
+          border-radius 5px
+          color $white
+          font-size 16px
+          padding-left 10px
+          font-family 'Roboto-Regular'
+          border 1px solid $white
+        .phone
+          display block
+          margin-top 29px
+          margin-left -5px
+          a
+            border 0
+            padding 0
+            color $white
+            font-size 17px
+            font-family 'Roboto-Bold'
+
+// -- BODY--
+// -- SLIDER-PRESENT--
+
+#slider-present
+  width 100%
+  height 240px
+  background $black
+  .slider-content
+    h1
+      color $white
+
+// --GOODS-SLIDER--
+.container
+  margin 0 auto
+  max-width 1280px
+.goods
+  margin-top 30px
+  margin-bottom 40px
+  padding-left 60px
+  h1
+    color $darkgrey
+    font-size 20px
+    font-family 'Roboto-Bold'
+    text-transform uppercase
+    margin-bottom 18px
+    span
+      color $grey
+      margin-left 15px
+      font-size 16px
+      font-family 'Roboto-Medium'
+  #goods-slider
+    width 100%
+    display flex
+    overflow overlay
+    .good
+      display block
+      width 158.12px
+      height 190.8px
+      margin-right 6px
+      border-radius 10px
+      border 1px solid $bordergrey
+      a
+        .good-img
+          width 62.33px
+          height 60.18px
+          margin 17px auto
+          img
+            width 100%
+        .good-text
+          width 125.12px
+          height 61px
+          color $darkgrey
+          margin 0 auto
+          font-size 13px
+          font-family 'PT-Sans-Regular'
+          p
+            margin 0
+            word-wrap break-word
+        .good-price-and-unit
+          display flex
+          justify-content space-between
+          .good-price
+            width 36px
+            height 19px
+            margin 2px 17px
+            p
+              margin 0
+              color $black
+              font-size 14px
+              font-family 'OpenSans-Bold'
+          .good-unit
+            width 52px
+            height 23px
+            margin 2px 17px
+            p
+              margin 0
+              color $lightgrey
+              text-align right
+              font-size 13px
+              font-family 'PT-Sans-Regular'
+.new-goods-background
+  width 100%
+  background $backgroundgrey
+  .container
+    margin 0 auto
+    max-width 1280px
+  .new-goods
+    margin-top 30px
+    margin-bottom 40px
+    padding-top 30px
+    padding-left 60px
+    padding-bottom 40px
+    background $backgroundgrey
+    h1
+      margin 0
+      color $darkgrey
+      font-size 20px
+      font-family 'Roboto-Bold'
+      text-transform uppercase
+      margin-bottom 18px
+      span
+        color $grey
+        margin-left 15px
+        font-size 16px
+        font-family 'Roboto-Medium'
+    .all-list
+      float right
+      margin-top -38px
+      margin-right 20px
+      margin-right 9%
+      a
+        color $darkgrey
+        font-size 13px
+        font-family 'Roboto-Bold'
+        span
+          color $darkgrey
+          margin-left 10px
+    #newgoods
+      width 100%
+      display flex
+      .good
+        background $white
+        display block
+        width 190px
+        height 280px
+        margin-right 5px
+        border-radius 10px
+        box-shadow 0px 2px 3px $grey
+        a
+          .good-img
+            width 142px
+            height 136.5px
+            margin 17px auto
+            img
+              width 100%
+          .good-text
+            width 125.12px
+            height 61px
+            color $darkgrey
+            margin 0 auto
+            font-size 13px
+            font-family 'PT-Sans-Regular'
+            p
+              margin 0
+              word-wrap break-word
+          .good-price-and-unit
+            display flex
+            justify-content space-between
+            .good-price
+              width 36px
+              height 19px
+              margin 2px 17px
+              p
+                margin 0
+                color $black
+                font-size 14px
+                font-family 'OpenSans-Bold'
+            .good-unit
+              width 52px
+              height 23px
+              margin 2px 17px
+              p
+                margin 0
+                color $lightgrey
+                text-align right
+                font-size 13px
+                font-family 'PT-Sans-Regular'
+
+.goods-viewed
+  max-width 1280px
+  margin-top 30px
+  margin-bottom 40px
+  padding-left 60px
+  h1
+    color $darkgrey
+    font-size 20px
+    font-family 'Roboto-Bold'
+    text-transform uppercase
+    margin-bottom 18px
+    span
+      color $grey
+      margin-left 15px
+      font-size 16px
+      font-family 'Roboto-Medium'
+  .all-list
+    float right
+    margin-top -38px
+    margin-right 20px
+    margin-right 9%
+    a
+      color $darkgrey
+      font-size 13px
+      font-family 'Roboto-Bold'
+      span
+        color $darkgrey
+        margin-left 10px
+  #viewedProducts
+    width 100%
+    display flex
+    flex-wrap wrap
+    .good
+      display block
+      width 189.37px
+      height 280px
+      margin-right 6px
+      margin-bottom 10px
+      border-radius 10px
+      border 1px solid $bordergrey
+      a
+        .good-img
+          width 142px
+          height 136.5px
+          margin 17px auto
+          img
+            width 100%
+        .good-text
+          width 125.12px
+          height 61px
+          color $darkgrey
+          margin 0 auto
+          font-size 13px
+          font-family 'PT-Sans-Regular'
+          p
+            margin 0
+            margin-top 30px
+            word-wrap break-word
+        .good-price-and-unit
+          display flex
+          justify-content space-between
+          .good-price
+            width 36px
+            height 19px
+            margin 2px 17px
+            p
+              margin 0
+              color $black
+              font-size 14px
+              font-family 'OpenSans-Bold'
+          .good-unit
+            width 52px
+            height 23px
+            margin 2px 17px
+            p
+              margin 0
+              color $lightgrey
+              text-align right
+              font-size 13px
+              font-family 'PT-Sans-Regular'
+
+// --CUSTOMERS-REVIEWS--
+.customer-reviews-background
+  width 100%
+  background $customergray
+  .customer-reviews
+    height auto
+    margin-top 30px
+    padding-top 30px
+    padding-left 60px
+    padding-bottom 70px
+    h1
+      margin 0
+      color $darkgrey
+      font-size 20px
+      font-family 'Roboto-Bold'
+      text-transform uppercase
+      margin-bottom 24px
+    #reviews
+      display flex
+      overflow overlay
+      position relative
+      .review
+        width 440px
+        height 210px
+        background $white
+        border-radius 5px
+        margin-right 10px
+        box-shadow: 0px 2px 10px $grey
+        .review-text
+          width 387px
+          margin 25px 25px 20px 25px
+          p
+            word-wrap break-word
+            color $darkgrey
+            font-size 15px
+            font-family 'PT-Sans-Regular'
+        .review-data
+          bottom 24px
+          display flex
+          position absolute
+          .review-img
+            width 47px
+            height 47px
+            display inline-flex
+            margin-left 25px
+            img
+              width 100%
+              border-radius 50px
+          .name-and-url
+            padding-top 5px
+            margin-left 10px
+            .name
+              p
+                margin 0
+                color $black
+                font-size 14px
+                white-space nowrap
+                font-family 'OpenSans-Bold'
+            .url
+              a
+                color $lightgreen
+                font-size 12px
+                text-decoration underline
+                font-family 'Open-Sans-Semibold'
+
+//--BLOCK MOBILE APPS--
+.block-mobile-apps
+  width 100%
+  height 220px
+  background $green
+  .headline
+    padding-top 15px
+    text-align center
+    h1
+      color $white
+      font-size 25px
+      font-family 'OpenSans-Bold'
+      text-transform uppercase
+    p
+      margin-top -8px
+      color $white
+      font-size 18px
+      font-family 'Roboto-Light'
+  .google-and-apple
+    display flex
+    justify-content center
+    margin 30px
+    margin-bottom 42px
+    a
+      margin-right 2px
+      .google-badge
+        width 164.21px
+        height 43.3px
+        img
+          width 100%
+    a
+      .apple-badge
+        width 146.21px
+        height 43.3px
+        img
+          width 100%
+
+
+//--FOOTER--
+footer
+  width 100%
+  height 327px
+  padding-bottom 25px
+  background $darkgrey
+  .block-footer
+    padding-top 42px
+    margin-left 58px
+  .footer-left
+    width 488px
+    float left
+    a.tel
+      color $white
+      line-height 2
+      font-size 31px
+      font-family 'Futura-Bold'
+    a.mail
+      color $white
+      font-size 14px
+      font-family 'Roboto-Regular'
+      text-decoration underline
+    .footer-left-line
+      width 100%
+      height 2px
+      margin-top 115px
+      background $linegrey
+    .footer-logo-and-address
+      display flex
+      .footer-logo
+        display block
+        h1
+          color $green
+      .address
+        margin-left 10px
+        p
+          color $addressgrey
+          font-size 13px
+          font-family 'Roboto-Regular'
+  .footer-right
+    float right
+    display flex
+    margin-right 122px
+    .group-links-questions
+      margin-right 50px
+      p
+        margin 0
+        margin-bottom 15px
+        color $white
+        font-size 14px
+        font-family 'Futura-Bold'
+        text-transform uppercase
+      a
+        line-height 1.8
+        cursor pointer
+        color $linkgrey
+        font-size 14px
+        font-family 'Roboto-Regular'
+    .group-links-partners
+      p
+        margin 0
+        color $white
+        font-size 14px
+        font-family 'Futura-Bold'
+        text-transform uppercase
+      a
+        line-height 1.8
+        cursor pointer
+        color $linkgrey
+        font-size 14px
+        font-family 'Roboto-Regular'
+    .payment-systems
+      white-space nowrap
+      position absolute
+      margin-top 230px
+      a
+        margin-right 10px
+        img
+          width 50px
+          height 30px
+
+@import '/food.styl'
+@import '/mobile.styl'
+@import '/fonts.styl'

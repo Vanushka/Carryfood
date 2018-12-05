@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Open-Sans-Semibold';
+  src: url("../fonts/Open-Sans-Semibold.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PT-Sans-Italic';
+  src: url("../fonts/PT-Sans-Italic.ttf");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'PT-Sans-Regular';
+  src: url("../fonts/PT-Sans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url("../fonts/Roboto-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url("../fonts/Roboto-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../fonts/OpenSans-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura-Bold';
+  src: url("../fonts/Futura-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
