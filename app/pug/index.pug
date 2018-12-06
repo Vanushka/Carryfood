@@ -5,23 +5,23 @@ html
   body 
     #slider-present
       .slide-present
-        img(src="/dist/img/slider-background.png")
+        img(src="./dist/img/slider-background.png")
         .slider-content
           h1 БЕСПЛАТНО ПРИВЕЗЕМ 
           p Привезем ваш заказ бесплатно при первом заказе на сайте или в приложении.
       .slide-present
-        img(src="/dist/img/slider-background.png")
+        img(src="./dist/img/slider-background.png")
         .slider-content
           h1 Some text
-          p Some text
+          p Some text 
       .slide-present
-        img(src="/dist/img/slider-background.png")
-        .slider-content
+        img(src="./dist/img/slider-background.png")
+        .slider-content 
           h1 Some text 2
           p Some text 2 
     .goods.container
-      h1 Товары со скидкой
-      #goods-slider   
+      h1 Товары со скидкой 
+      #goods-slider    
         each val in food
           .good
             a(href="javascript:openProductDetail()")
@@ -39,9 +39,9 @@ html
         h1 Новые товары
           span 135 
         .all-list
-          a(href="/catalog.html") Весь список
+          a(href="catalog.html") Весь список
             span 
-              img(src="/dist/img/strelka.svg")
+              img(src="./dist/img/strelka.svg")
         #newgoods
             each val in newfoods
               .good
@@ -58,10 +58,10 @@ html
     .goods-viewed.container
       h1 Вы смотрели
         span 75
-      .all-list
-        a(href="/catalog.html") Весь список
+      .all-list  
+        a(href="catalog.html") Весь список
           span
-            img(src="/dist/img/strelka.svg")
+            img(src="./dist/img/strelka.svg")
       #viewedProducts
         each val in viewedfoods
           .good  
@@ -88,7 +88,7 @@ html
                   img(src=val.photo)
                 .name-and-url  
                   .name
-                    p= val.name
+                    p= val.name  
                   .url
                     a(target="_blank" href="https://vk.com")= val.url
         .reviews-gradient
@@ -98,9 +98,9 @@ html
         p И узнавайте о скидках первыми!
       .google-and-apple
         a(href="")
-          img(src="dist/img/google-play-badge.svg")
+          img(src="./dist/img/google-play-badge.svg")
         a(href="")
-          img(src="dist/img/app-store-badge.svg")
+          img(src="./dist/img/app-store-badge.svg")
 
   
 

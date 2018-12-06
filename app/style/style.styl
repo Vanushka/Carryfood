@@ -22,6 +22,9 @@ $linehorizontal  = #707070
 hsla(0, 0%, 100%, 0.31)
 
 // --MAIN-STYLE--
+html
+  margin 0
+
 html, body
   margin 0
   min-width 1295px
@@ -65,7 +68,7 @@ header
           appearance none
           -moz-appearance none
           -webkit-appearance none
-          background url("/dist/img/strelka-down.svg") 92%/7% no-repeat
+          background url("./dist/img/strelka-down.svg") 92%/7% no-repeat
       .search-line
         display inline-block
         input
@@ -75,10 +78,10 @@ header
           height 56px
           font-size 15px
           font-family 'Open-Sans-Semibold'
-          // background url(/dist/img/loop.svg) no-repeat center right
+          // background url(./dist/img/loop.svg) no-repeat center right
           border-radius 30px
         input[type="text"]
-          background url(/dist/img/loop.svg) $white no-repeat 97%
+          background url(./dist/img/loop.svg) $white no-repeat 97%
           padding-left 25px
           margin-bottom 15px
 
@@ -115,7 +118,7 @@ header
           appearance none
           -moz-appearance none
           -webkit-appearance none
-          background url("/dist/img/strelka-down.svg") 92%/7% no-repeat
+          background url("./dist/img/strelka-down.svg") 92%/7% no-repeat
       .basket
         height 37px
         cursor pointer
@@ -685,8 +688,13 @@ footer
         &:hover
           color $white
     .payment-systems
-      background url(/dist/img/payment-systems.svg)
+      // background url(./dist/img/payment-systems.svg)
       white-space nowrap
+      position absolute
+      margin-top 230px
+      width 151px
+      height 25px
+    img
       position absolute
       margin-top 230px
       width 151px

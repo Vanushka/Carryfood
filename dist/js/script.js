@@ -7,8 +7,8 @@ $('#slider-present').slick({
   autoplay: true,
   autoplaySpeed: 5000,
   cssEase: 'linear',
-  prevArrow: '<div class="prev-head-slider"><img src="/dist/img/prev-head-slider.svg"></div>',
-  nextArrow: '<div class="next-head-slider"><img src="/dist/img/next-head-slider.svg"></div>',
+  prevArrow: '<div class="prev-head-slider"><img src="./dist/img/prev-head-slider.svg"></div>',
+  nextArrow: '<div class="next-head-slider"><img src="./dist/img/next-head-slider.svg"></div>',
   customPaging : function(slider, i) {
         return '<a class="pager"></a>';
     }
@@ -24,8 +24,8 @@ $('#goods-slider').slick({
   autoplaySpeed: 5000,
   slidesToShow: 9,
   slidesToScroll: 1,
-  prevArrow: '<div class="prev-review-slider"><img src="/dist/img/prev-review-slider.svg"></div>',
-  nextArrow: '<div class="next-review-slider"><img src="/dist/img/next-review-slider.svg"></div>',
+  prevArrow: '<div class="prev-review-slider"><img src="./dist/img/prev-review-slider.svg"></div>',
+  nextArrow: '<div class="next-review-slider"><img src="./dist/img/next-review-slider.svg"></div>',
 });
 
 // --REVIEWS-SLIDER--
@@ -37,8 +37,8 @@ $('#reviews').slick({
   autoplaySpeed: 5000,
   slidesToShow: 3,
   slidesToScroll: 1,
-  prevArrow: '<div class="prev-review-slider"><img src="/dist/img/prev-review-slider.svg"></div>',
-  nextArrow: '<div class="next-review-slider"><img src="/dist/img/next-review-slider.svg"></div>',
+  prevArrow: '<div class="prev-review-slider"><img src="./dist/img/prev-review-slider.svg"></div>',
+  nextArrow: '<div class="next-review-slider"><img src="./dist/img/next-review-slider.svg"></div>',
 });
 
 // --FOOD-SLIDER--
@@ -50,8 +50,8 @@ $('#foodSlider').slick({
   autoplaySpeed: 5000,
   slidesToShow: 9,
   slidesToScroll: 1,
-  prevArrow: '<div class="prev-review-slider"><img src="/dist/img/prev-review-slider.svg"></div>',
-  nextArrow: '<div class="next-review-slider"><img src="/dist/img/next-review-slider.svg"></div>',
+  prevArrow: '<div class="prev-review-slider"><img src="./dist/img/prev-review-slider.svg"></div>',
+  nextArrow: '<div class="next-review-slider"><img src="./dist/img/next-review-slider.svg"></div>',
 });
 
 // --SMART-SLIDER--
@@ -125,11 +125,3 @@ $('.background').click(function() {
   $('.background').css('display', 'none');
   $('.product-details').css('display', 'none');
 })
-
-$(document).ready(function(e) {
-try {
-$("select").msDropDown();
-} catch(e) {
-alert(e.message);
-}
-});
