@@ -1,5 +1,5 @@
 footer
-  .block-footer
+  .block-footer.container
     .footer-left
       a.tel(href="tel:+7 495 500-50-00") +7 495 500-50-00
       br
@@ -7,7 +7,8 @@ footer
       .footer-left-line
       .footer-logo-and-address
         .footer-logo
-          h1 LOGO
+          a(href="/")
+            img(src="/dist/img/bottom-logo.svg")
         .address
           p ООО «Несуеду». Адрес: 119017, г. Москва, ул. Пятницкая, д. 37, этаж 2, пом. I, ком.1, офис 56 Режим работы: 7:00 - 24:00 © 2018
     .footer-right 
@@ -34,13 +35,7 @@ footer
         a Вкус Вилл
         br
         a Ашан
-      .payment-systems
-        a(href="#")
-          img(src="dist/img/visa-logo.png")
-        a(href="#")
-          img(src="dist/img/MasterCard_Logo.svg")
-        a(href="#")
-          img(src="dist/img/mir-logo.svg")
+      .payment-systems 
 script(src="dist/js/jquery.js")
-script(src="dist/js/swiper.min.js")
+script(src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
 script(src="dist/js/script.js")

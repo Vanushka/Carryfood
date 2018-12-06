@@ -14,6 +14,12 @@ $lightgrey       = #AFAFAF
 $filtergrey      = #F0ECE8
 $black           = #000000
 $white           = #ffffff
+$red             = #ff174c
+$backgroundcolor = #e5e3e0
+$linehorizontal  = #707070
+
+
+hsla(0, 0%, 100%, 0.31)
 
 // --MAIN-STYLE--
 html, body
@@ -22,6 +28,7 @@ html, body
   a, button, input, select, option
     outline none
     text-decoration none
+    cursor pointer
 
 // -- HEADER --
 header
@@ -51,12 +58,14 @@ header
           width 130px
           color $white
           font-size 25px
+          border-radius 8px
           padding-left 10px
           background none
-          border 1px solid $white
+          border 1px solid hsla(0, 0%, 100%, 0.31)
           appearance none
           -moz-appearance none
           -webkit-appearance none
+          background url("/dist/img/strelka-down.svg") 92%/7% no-repeat
       .search-line
         display inline-block
         input
@@ -66,16 +75,21 @@ header
           height 56px
           font-size 15px
           font-family 'Open-Sans-Semibold'
+          // background url(/dist/img/loop.svg) no-repeat center right
           border-radius 30px
         input[type="text"]
+          background url(/dist/img/loop.svg) $white no-repeat 97%
           padding-left 25px
           margin-bottom 15px
+
         .search-menu
           a
             color $white
             margin-right 33px
             font-size 13px
             font-family 'Roboto-Regular'
+            &:hover
+              text-decoration underline
       .radius-link
         width 30px
         height 30px
@@ -92,26 +106,45 @@ header
           width 180px
           color $white
           font-size 25px
+          border-radius 8px
           padding-left 10px
           font-size 16px
           background none
           white-space normal
-          border 1px solid $white
+          border 1px solid hsla(0, 0%, 100%, 0.31)
           appearance none
           -moz-appearance none
           -webkit-appearance none
+          background url("/dist/img/strelka-down.svg") 92%/7% no-repeat
       .basket
+        height 37px
+        cursor pointer
         display inline-block
+        padding-top 18px
         margin-left 10px
-        margin-top 18px
+        margin-top 0
+        border-radius 5px
+        border 1px solid hsla(0, 0%, 100%, 0.31)
+        img
+          margin-top -3px
+          margin-left 10px
+          position absolute
+        span
+          color $white
+          width 18px
+          position absolute
+          padding-left 3px
+          margin-top -3px
+          margin-left 21px
+          font-size 12px
+          font-family 'PT-Sans-Regular'
+          background $red
+          border-radius 10px
         a
-          padding 17px 55px
-          border-radius 5px
+          padding-left 55px
           color $white
           font-size 16px
-          padding-left 10px
           font-family 'Roboto-Regular'
-          border 1px solid $white
         .phone
           display block
           margin-top 29px
@@ -127,17 +160,89 @@ header
 // -- SLIDER-PRESENT--
 
 #slider-present
-  width 100%
-  height 240px
-  background $black
-  .slider-content
-    h1
-      color $white
+  .slide-present
+    height 240px
+    margin 0 auto
+    background: #3a4650
+    display flex
+    justify-content center
+    img
+      width 100%
+      opacity 0.08
+      max-height 240px
+    .slider-content
+      margin-top 30px
+      position absolute
+      text-align center
+      h1
+        color $white
+        font-family 'Open-Sans-Semibold'
+        font-size 35px
+        font-weight 700
+        text-transform uppercase
+        letter-spacing 3.5px
+      p
+        width 278px
+        height 65px
+        opacity 0.8
+        color $white
+        font-family Roboto
+        font-size 18px
+        font-weight 300
+        margin 0 auto
+// --FOR-SLIDER--
+.prev-head-slider
+  cursor pointer
+  img
+    top 50%
+    z-index 2
+    width 22px
+    height 29px
+    margin-left 60px
+    display block
+    position absolute
+
+.next-head-slider
+  cursor pointer
+  img
+    top 50%
+    z-index 2
+    right 0
+    width 22px
+    height 29px
+    margin-right 60px
+    display block
+    position absolute
+
+.slick-dots
+  display flex
+  margin-top -35px
+  justify-content center
+
+.pager
+  width 10px
+  height 10px
+  opacity 0.19
+  position absolute
+  border-radius 15px
+  background-color $white
+
+.slick-active
+  .pager
+    opacity 1
+    border-radius 15px
+    background-color $white
+
+ul,li
+  list-style-type none
+  display inline
+  margin-right 20px
 
 // --GOODS-SLIDER--
 .container
   margin 0 auto
   max-width 1280px
+  padding-top 25px
 .goods
   margin-top 30px
   margin-bottom 40px
@@ -147,6 +252,7 @@ header
     font-size 20px
     font-family 'Roboto-Bold'
     text-transform uppercase
+    margin-top 20px
     margin-bottom 18px
     span
       color $grey
@@ -154,9 +260,8 @@ header
       font-size 16px
       font-family 'Roboto-Medium'
   #goods-slider
-    width 100%
+    width 104%
     display flex
-    overflow overlay
     .good
       display block
       width 158.12px
@@ -203,6 +308,8 @@ header
               text-align right
               font-size 13px
               font-family 'PT-Sans-Regular'
+      &:hover
+        border 1px solid $red
 .new-goods-background
   width 100%
   background $backgroundgrey
@@ -239,7 +346,7 @@ header
         font-family 'Roboto-Bold'
         span
           color $darkgrey
-          margin-left 10px
+          margin-left 7px
     #newgoods
       width 100%
       display flex
@@ -250,6 +357,7 @@ header
         height 280px
         margin-right 5px
         border-radius 10px
+        border 1px solid $white
         box-shadow 0px 2px 3px $grey
         a
           .good-img
@@ -290,6 +398,8 @@ header
                 text-align right
                 font-size 13px
                 font-family 'PT-Sans-Regular'
+        &:hover
+          border 1px solid $red
 
 .goods-viewed
   max-width 1280px
@@ -318,7 +428,7 @@ header
       font-family 'Roboto-Bold'
       span
         color $darkgrey
-        margin-left 10px
+        margin-left 7px
   #viewedProducts
     width 100%
     display flex
@@ -371,7 +481,8 @@ header
               text-align right
               font-size 13px
               font-family 'PT-Sans-Regular'
-
+      &:hover
+        border 1px solid $red
 // --CUSTOMERS-REVIEWS--
 .customer-reviews-background
   width 100%
@@ -390,18 +501,18 @@ header
       text-transform uppercase
       margin-bottom 24px
     #reviews
+      width 100%
       display flex
-      overflow overlay
       position relative
       .review
-        width 440px
+        max-width 440px !important
         height 210px
         background $white
         border-radius 5px
         margin-right 10px
         box-shadow: 0px 2px 10px $grey
         .review-text
-          width 387px
+          max-width 387px
           margin 25px 25px 20px 25px
           p
             word-wrap break-word
@@ -436,7 +547,35 @@ header
                 font-size 12px
                 text-decoration underline
                 font-family 'Open-Sans-Semibold'
+.reviews-gradient
+  width 343px
+  height 346px
+  position relative
+  float right
+  right -2px
+  margin-top -277px
+  background-image linear-gradient(to right, rgba(246,246,245,0) 0%, rgba(246,246,245,0.4) 29%, #efefed 100%)
 
+
+//--REVIEWS-SLIDER--
+.prev-review-slider
+  cursor pointer
+  width 6px
+  height 12px
+  margin-top -28px
+  z-index 2
+  img
+    position absolute
+    right 90px
+.next-review-slider
+  cursor pointer
+  width 6px
+  height 12px
+  z-index 2
+  position absolute
+  right 0
+  margin-top -29px
+  padding-right 60px
 //--BLOCK MOBILE APPS--
 .block-mobile-apps
   width 100%
@@ -462,17 +601,10 @@ header
     margin-bottom 42px
     a
       margin-right 2px
-      .google-badge
-        width 164.21px
-        height 43.3px
-        img
-          width 100%
-    a
-      .apple-badge
-        width 146.21px
-        height 43.3px
-        img
-          width 100%
+      width 164.21px
+      height 43.3px
+      img
+        width 100%
 
 
 //--FOOTER--
@@ -484,6 +616,9 @@ footer
   .block-footer
     padding-top 42px
     margin-left 58px
+  .container
+    margin 0 auto
+    max-width 1280px
   .footer-left
     width 488px
     float left
@@ -506,10 +641,10 @@ footer
       display flex
       .footer-logo
         display block
-        h1
-          color $green
+        img
+          margin-top 15px
       .address
-        margin-left 10px
+        margin-left 35px
         p
           color $addressgrey
           font-size 13px
@@ -517,7 +652,6 @@ footer
   .footer-right
     float right
     display flex
-    margin-right 122px
     .group-links-questions
       margin-right 50px
       p
@@ -533,6 +667,8 @@ footer
         color $linkgrey
         font-size 14px
         font-family 'Roboto-Regular'
+        &:hover
+          color $white
     .group-links-partners
       p
         margin 0
@@ -546,16 +682,172 @@ footer
         color $linkgrey
         font-size 14px
         font-family 'Roboto-Regular'
+        &:hover
+          color $white
     .payment-systems
+      background url(/dist/img/payment-systems.svg)
       white-space nowrap
       position absolute
       margin-top 230px
-      a
-        margin-right 10px
-        img
-          width 50px
-          height 30px
+      width 151px
+      height 25px
 
-@import '/food.styl'
+  @media screen and (max-device-width:1300px)
+    .footer-right
+      margin-right 30px
+    .footer-left
+      margin-left 30px
+
+//--INDEX2--
+
+#smart-list
+  background $backgroundgrey
+  .smart.container
+    margin 0 auto
+    max-width 1280px
+    padding-bottom 10px
+    .hashtags
+      display flex
+      margin-bottom 15px
+      justify-content space-between
+      .group-hashtags
+        display flex
+        .hashtag
+          cursor pointer
+          padding 7px 20px
+          border-radius 13px
+          margin-right 10px
+          font-size 15px
+          font-family 'Roboto-Regular'
+          border 1px solid $hashtaggrey
+          a
+            padding-right 15px
+            color $hashtaggrey
+            .close
+              position relative
+              float right
+              right 10px
+              top 3px
+              width 2px
+              height 2px
+              opacity 0.3
+              &:hover
+                opacity 1
+              &:before
+                position absolute
+                left 15px
+                content ' '
+                height 15px
+                width 2px
+                background-color #333
+                transform rotate(45deg)
+              &:after
+                transform rotate(-45deg)
+                position absolute
+                left 15px
+                content ' '
+                height 15px
+                width 2px
+                background-color #333
+          &:hover
+            background $red
+            .close
+              &:after, &:before
+                background $white
+            a
+              color $white
+        .active
+          background $red
+          a
+            color $white
+            .close
+              &:after, &:before
+                background $white
+      .smart-search
+        color $white
+        padding 10px
+        border-radius 8px
+        background-color $red
+        font-size 15px
+        text-transform uppercase
+        font-family 'PT-Sans-Regular'
+        letter-spacing 1.1px
+
+    #smartSlider
+      width 104%
+      display flex
+      position relative
+      .good
+        display block
+        width 158.12px
+        height 190.8px
+        margin-right 6px
+        border-radius 10px
+        background $white
+        border 1px solid $white
+        a
+          .good-img
+            width 62.33px
+            height 60.18px
+            margin 17px auto
+            img
+              width 100%
+          .good-text
+            width 125.12px
+            height 61px
+            color $darkgrey
+            margin 0 auto
+            font-size 13px
+            font-family 'PT-Sans-Regular'
+            p
+              margin 0
+              word-wrap break-word
+          .good-price-and-unit
+            display flex
+            justify-content space-between
+            .good-price
+              width 36px
+              height 19px
+              margin 2px 17px
+              p
+                margin 0
+                color $black
+                font-size 14px
+                font-family 'OpenSans-Bold'
+            .good-unit
+              width 52px
+              height 23px
+              margin 2px 17px
+              p
+                margin 0
+                color $lightgrey
+                text-align right
+                font-size 13px
+                font-family 'PT-Sans-Regular'
+        &:hover
+          border 1px solid $red
+
+    .button-hide
+      z-index 2
+      display flex
+      margin-top 10px
+      position relative
+      a
+        margin 0 auto
+        color $darkgrey
+        font-size 13px
+        font-family 'Roboto-Bold'
+  .line-gradient
+    width 100%
+    height 176px
+    margin-top -176px
+    position absolute
+    background linear-gradient(180deg, rgba(246, 246, 245, 0) 0%, rgba(246, 246, 245, 0.4) 29%, #efefed 100%)
+
+.slick-list
+  padding-bottom 0 !important
+
+@import '/modal.styl'
+@import '/catalog.styl'
 @import '/mobile.styl'
 @import '/fonts.styl'

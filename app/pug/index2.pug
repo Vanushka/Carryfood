@@ -3,13 +3,58 @@ html
   include include/variables.pug
   include include/header.pug
   body 
+    #smart-list
+      .smart.container
+        .hashtags
+          .group-hashtags
+            .hashtag
+              a(href="#") Кефир
+                .close
+            .hashtag
+              a(href="#") Молоко
+                .close
+            .hashtag
+              a(href="#") Вода
+                .close
+          a.smart-search(href="#") <span><img src="/dist/img/3-lines.svg"></span> Умный список
+        #smartSlider
+          each val in smartfood
+            .good
+              a(href="javascript:openProductDetail()")
+                .good-img 
+                  img(src=val.img)
+                .good-text
+                  p= val.text
+                .good-price-and-unit
+                  .good-price
+                    p= val.price
+                  .good-unit
+                    p= val.unit
+        .button-hide
+          a(href="#") <span><img src="/dist/img/hidden.svg"></span>
+      .line-gradient
     #slider-present
+      .slide-present
+        img(src="/dist/img/slider-background.png")
+        .slider-content
+          h1 БЕСПЛАТНО ПРИВЕЗЕМ 
+          p Привезем ваш заказ бесплатно при первом заказе на сайте или в приложении.
+      .slide-present
+        img(src="/dist/img/slider-background.png")
+        .slider-content
+          h1 Some text
+          p Some text
+      .slide-present
+        img(src="/dist/img/slider-background.png")
+        .slider-content
+          h1 Some text 2
+          p Some text 2 
     .goods.container
       h1 Товары со скидкой
       #goods-slider
-        each val in good
+        each val in food
           .good
-            a(href="#")
+            a(href="javascript:openProductDetail()")
               .good-img 
                 img(src=val.img)
               .good-text
@@ -24,12 +69,13 @@ html
         h1 Новые товары
           span 135
         .all-list
-          a(href="#") Весь список
-            span >
+          a(href="/catalog.html") Весь список
+            span
+              img(src="/dist/img/strelka.svg")
         #newgoods
-            each val in newgoods
+            each val in newfoods
               .good
-                a(href="#")
+                a(href="javascript:openProductDetail()")
                   .good-img 
                     img(src=val.img)
                   .good-text
@@ -43,12 +89,13 @@ html
       h1 Вы смотрели
         span 75
       .all-list
-        a(href="#") Весь список
-          span >
+        a(href="/catalog.html") Весь список 
+          span
+            img(src="/dist/img/strelka.svg")
       #viewedProducts
-        each val in viewedgoods
+        each val in viewedfoods
           .good  
-            a(href="#")
+            a(href="javascript:openProductDetail()")
               .good-img 
                 img(src=val.img)
               .good-text
@@ -73,7 +120,8 @@ html
                   .name
                     p= val.name
                   .url
-                    a(href="#")= val.url
+                    a(target="_blank" href="https://vk.com")= val.url
+        .reviews-gradient
     .block-mobile-apps
       .headline
         h1 СКАЧАЙТЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ
@@ -85,5 +133,7 @@ html
         a(href="")
           .apple-badge 
             img(src="dist/img/app-store-badge.svg")
+  
+  include include/modal.pug
 
   include include/footer.pug 

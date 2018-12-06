@@ -4,13 +4,15 @@ head
   meta(name="keywords" content="")
   meta(name="description" content="")
   //- link(rel="icon" href="static/app/img/favicon.ico" type="image/x-icon")
+  link(rel="stylesheet", href="dist/css/slick.css")
   link(rel="stylesheet", href="dist/css/style.css")
 body
   header
     #header
       .container
         .logo
-          h1 LOGO
+          a(href="/")
+            img(src="/dist/img/logo.svg")
         span из
         .choose-shop
           select
@@ -18,17 +20,19 @@ body
         .search-line
           input(type="text" placeholder="Поиск...")
           .search-menu
-            a(href="#") Каталог
+            a(href="/catalog.html") Каталог
             a(href="#") Помощь
             a(href="#") Доставка
             a(href="#") Скидки 
             a(href="#") Войти
-        .radius-link
-          a(href="#")
+        //- .radius-link
+        //-   a(href="#")
         .time-of-delivery
           select
             option Доставим завтра 12:00-14:00
         .basket
+          img(src="/dist/img/basket.svg")
+          span 15
           a(href="#") Корзина
           .phone
             a(href="tel:+7 495 500-50-00") +7 495 500-50-00

@@ -5,31 +5,29 @@
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
+    <link rel="stylesheet" href="dist/css/slick.css">
     <link rel="stylesheet" href="dist/css/style.css">
   </head>
   <body>
     <header>
       <div id="header">
         <div class="container">
-          <div class="logo">
-            <h1>LOGO</h1>
-          </div><span>из</span>
+          <div class="logo"><a href="/"><img src="/dist/img/logo.svg"></a></div><span>из</span>
           <div class="choose-shop">
             <select>
-              <option>METRO</option>
+              <option><img src="/dist/img/metro.svg"></option>
             </select>
           </div>
           <div class="search-line">
             <input type="text" placeholder="Поиск...">
-            <div class="search-menu"><a href="#">Каталог</a><a href="#">Помощь</a><a href="#">Доставка</a><a href="#">Скидки </a><a href="#">Войти</a></div>
+            <div class="search-menu"><a href="/catalog.html">Каталог</a><a href="#">Помощь</a><a href="#">Доставка</a><a href="#">Скидки </a><a href="#">Войти</a></div>
           </div>
-          <div class="radius-link"><a href="#"></a></div>
           <div class="time-of-delivery">
             <select>
               <option>Доставим завтра 12:00-14:00</option>
             </select>
           </div>
-          <div class="basket"><a href="#">Корзина</a>
+          <div class="basket"><img src="/dist/img/basket.svg"><span>15</span><a href="#">Корзина</a>
             <div class="phone"><a href="tel:+7 495 500-50-00">+7 495 500-50-00</a></div>
           </div>
         </div>
@@ -37,12 +35,283 @@
     </header>
   </body>
   <body> 
-    <div id="slider-present"></div>
+    <div id="smart-list">
+      <div class="smart container">
+        <div class="hashtags">
+          <div class="group-hashtags">
+            <div class="hashtag"><a href="#">Кефир
+                <div class="close"></div></a></div>
+            <div class="hashtag"><a href="#">Молоко
+                <div class="close"></div></a></div>
+            <div class="hashtag"><a href="#">Вода
+                <div class="close"></div></a></div>
+          </div><a class="smart-search" href="#"><span><img src="/dist/img/3-lines.svg"></span> Умный список</a>
+        </div>
+        <div id="smartSlider">
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/food-1.png"></div>
+              <div class="good-text">
+                <p>Молоко Parmalat ультрапастеризованное 3,5% 1 л</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>59,99</p>
+                </div>
+                <div class="good-unit">
+                  <p>1л</p>
+                </div>
+              </div></a></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/food-2.png"></div>
+              <div class="good-text">
+                <p>Творог Простоквашино 2%</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>45,99</p>
+                </div>
+                <div class="good-unit">
+                  <p>1шт</p>
+                </div>
+              </div></a></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/food-3.png"></div>
+              <div class="good-text">
+                <p>Йогурт Landliebe с персиком и маракуйей 3,3% 150 г</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>135,99</p>
+                </div>
+                <div class="good-unit">
+                  <p>500гр</p>
+                </div>
+              </div></a></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/food-4.png"></div>
+              <div class="good-text">
+                <p>Яйцо куриное Село Зеленое С0 10 шт</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>214,00</p>
+                </div>
+                <div class="good-unit">
+                  <p>1шт</p>
+                </div>
+              </div></a></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/food-5.png"></div>
+              <div class="good-text">
+                <p>Сметана Домик в Деревне 15 % 330 г</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>320,00</p>
+                </div>
+                <div class="good-unit">
+                  <p>1л</p>
+                </div>
+              </div></a></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/food-6.png"></div>
+              <div class="good-text">
+                <p>Кефир Домик в Деревне 3,2% 1 л</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>56,00</p>
+                </div>
+                <div class="good-unit">
+                  <p>1кг</p>
+                </div>
+              </div></a></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/food-7.png"></div>
+              <div class="good-text">
+                <p>Морковь Дмитровские овощи мытая</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>120,99</p>
+                </div>
+                <div class="good-unit">
+                  <p>1кг</p>
+                </div>
+              </div></a></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/food-8.png"></div>
+              <div class="good-text">
+                <p>Макароны Pasteroni Фузилли</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>97,00</p>
+                </div>
+                <div class="good-unit">
+                  <p>1кг</p>
+                </div>
+              </div></a></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/food-9.png"></div>
+              <div class="good-text">
+                <p>Макароны Pasteroni Фузилли</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>97,00</p>
+                </div>
+                <div class="good-unit">
+                  <p>1кг</p>
+                </div>
+              </div></a></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/food-1.png"></div>
+              <div class="good-text">
+                <p>Молоко Parmalat ультрапастеризованное 3,5% 1 л</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>59,99</p>
+                </div>
+                <div class="good-unit">
+                  <p>1л</p>
+                </div>
+              </div></a></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/food-2.png"></div>
+              <div class="good-text">
+                <p>Творог Простоквашино 2%</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>45,99</p>
+                </div>
+                <div class="good-unit">
+                  <p>1шт</p>
+                </div>
+              </div></a></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/food-3.png"></div>
+              <div class="good-text">
+                <p>Йогурт Landliebe с персиком и маракуйей 3,3% 150 г</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>135,99</p>
+                </div>
+                <div class="good-unit">
+                  <p>500гр</p>
+                </div>
+              </div></a></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/food-4.png"></div>
+              <div class="good-text">
+                <p>Яйцо куриное Село Зеленое С0 10 шт</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>214,00</p>
+                </div>
+                <div class="good-unit">
+                  <p>1шт</p>
+                </div>
+              </div></a></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/food-5.png"></div>
+              <div class="good-text">
+                <p>Сметана Домик в Деревне 15 % 330 г</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>320,00</p>
+                </div>
+                <div class="good-unit">
+                  <p>1л</p>
+                </div>
+              </div></a></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/food-6.png"></div>
+              <div class="good-text">
+                <p>Кефир Домик в Деревне 3,2% 1 л</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>56,00</p>
+                </div>
+                <div class="good-unit">
+                  <p>1кг</p>
+                </div>
+              </div></a></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/food-7.png"></div>
+              <div class="good-text">
+                <p>Морковь Дмитровские овощи мытая</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>120,99</p>
+                </div>
+                <div class="good-unit">
+                  <p>1кг</p>
+                </div>
+              </div></a></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/food-8.png"></div>
+              <div class="good-text">
+                <p>Макароны Pasteroni Фузилли</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>97,00</p>
+                </div>
+                <div class="good-unit">
+                  <p>1кг</p>
+                </div>
+              </div></a></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/food-9.png"></div>
+              <div class="good-text">
+                <p>Макароны Pasteroni Фузилли</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>97,00</p>
+                </div>
+                <div class="good-unit">
+                  <p>1кг</p>
+                </div>
+              </div></a></div>
+        </div>
+        <div class="button-hide"><a href="#"><span><img src="/dist/img/hidden.svg"></span></a></div>
+      </div>
+      <div class="line-gradient"></div>
+    </div>
+    <div id="slider-present">
+      <div class="slide-present"><img src="/dist/img/slider-background.png">
+        <div class="slider-content">
+          <h1>БЕСПЛАТНО ПРИВЕЗЕМ </h1>
+          <p>Привезем ваш заказ бесплатно при первом заказе на сайте или в приложении.</p>
+        </div>
+      </div>
+      <div class="slide-present"><img src="/dist/img/slider-background.png">
+        <div class="slider-content">
+          <h1>Some text</h1>
+          <p>Some text</p>
+        </div>
+      </div>
+      <div class="slide-present"><img src="/dist/img/slider-background.png">
+        <div class="slider-content">
+          <h1>Some text 2</h1>
+          <p>Some text 2 </p>
+        </div>
+      </div>
+    </div>
     <div class="goods container">
       <h1>Товары со скидкой</h1>
       <div id="goods-slider">
-        <div class="good"><a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"><a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-1.png"></div>
             <div class="good-text">
               <p>Молоко Parmalat ультрапастеризованное 3,5% 1 л</p>
             </div>
@@ -54,8 +323,8 @@
                 <p>1л</p>
               </div>
             </div></a></div>
-        <div class="good"><a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"><a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-2.png"></div>
             <div class="good-text">
               <p>Творог Простоквашино 2%</p>
             </div>
@@ -67,8 +336,8 @@
                 <p>1шт</p>
               </div>
             </div></a></div>
-        <div class="good"><a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"><a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-3.png"></div>
             <div class="good-text">
               <p>Йогурт Landliebe с персиком и маракуйей 3,3% 150 г</p>
             </div>
@@ -80,8 +349,8 @@
                 <p>500гр</p>
               </div>
             </div></a></div>
-        <div class="good"><a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"><a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-4.png"></div>
             <div class="good-text">
               <p>Яйцо куриное Село Зеленое С0 10 шт</p>
             </div>
@@ -93,8 +362,8 @@
                 <p>1шт</p>
               </div>
             </div></a></div>
-        <div class="good"><a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"><a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-5.png"></div>
             <div class="good-text">
               <p>Сметана Домик в Деревне 15 % 330 г</p>
             </div>
@@ -106,8 +375,8 @@
                 <p>1л</p>
               </div>
             </div></a></div>
-        <div class="good"><a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"><a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-6.png"></div>
             <div class="good-text">
               <p>Кефир Домик в Деревне 3,2% 1 л</p>
             </div>
@@ -119,8 +388,8 @@
                 <p>1кг</p>
               </div>
             </div></a></div>
-        <div class="good"><a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"><a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-7.png"></div>
             <div class="good-text">
               <p>Морковь Дмитровские овощи мытая</p>
             </div>
@@ -132,8 +401,8 @@
                 <p>1кг</p>
               </div>
             </div></a></div>
-        <div class="good"><a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"><a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-8.png"></div>
             <div class="good-text">
               <p>Макароны Pasteroni Фузилли</p>
             </div>
@@ -145,8 +414,125 @@
                 <p>1кг</p>
               </div>
             </div></a></div>
-        <div class="good"><a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"><a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-9.png"></div>
+            <div class="good-text">
+              <p>Макароны Pasteroni Фузилли</p>
+            </div>
+            <div class="good-price-and-unit">
+              <div class="good-price">
+                <p>97,00</p>
+              </div>
+              <div class="good-unit">
+                <p>1кг</p>
+              </div>
+            </div></a></div>
+        <div class="good"><a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-1.png"></div>
+            <div class="good-text">
+              <p>Молоко Parmalat ультрапастеризованное 3,5% 1 л</p>
+            </div>
+            <div class="good-price-and-unit">
+              <div class="good-price">
+                <p>59,99</p>
+              </div>
+              <div class="good-unit">
+                <p>1л</p>
+              </div>
+            </div></a></div>
+        <div class="good"><a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-2.png"></div>
+            <div class="good-text">
+              <p>Творог Простоквашино 2%</p>
+            </div>
+            <div class="good-price-and-unit">
+              <div class="good-price">
+                <p>45,99</p>
+              </div>
+              <div class="good-unit">
+                <p>1шт</p>
+              </div>
+            </div></a></div>
+        <div class="good"><a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-3.png"></div>
+            <div class="good-text">
+              <p>Йогурт Landliebe с персиком и маракуйей 3,3% 150 г</p>
+            </div>
+            <div class="good-price-and-unit">
+              <div class="good-price">
+                <p>135,99</p>
+              </div>
+              <div class="good-unit">
+                <p>500гр</p>
+              </div>
+            </div></a></div>
+        <div class="good"><a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-4.png"></div>
+            <div class="good-text">
+              <p>Яйцо куриное Село Зеленое С0 10 шт</p>
+            </div>
+            <div class="good-price-and-unit">
+              <div class="good-price">
+                <p>214,00</p>
+              </div>
+              <div class="good-unit">
+                <p>1шт</p>
+              </div>
+            </div></a></div>
+        <div class="good"><a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-5.png"></div>
+            <div class="good-text">
+              <p>Сметана Домик в Деревне 15 % 330 г</p>
+            </div>
+            <div class="good-price-and-unit">
+              <div class="good-price">
+                <p>320,00</p>
+              </div>
+              <div class="good-unit">
+                <p>1л</p>
+              </div>
+            </div></a></div>
+        <div class="good"><a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-6.png"></div>
+            <div class="good-text">
+              <p>Кефир Домик в Деревне 3,2% 1 л</p>
+            </div>
+            <div class="good-price-and-unit">
+              <div class="good-price">
+                <p>56,00</p>
+              </div>
+              <div class="good-unit">
+                <p>1кг</p>
+              </div>
+            </div></a></div>
+        <div class="good"><a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-7.png"></div>
+            <div class="good-text">
+              <p>Морковь Дмитровские овощи мытая</p>
+            </div>
+            <div class="good-price-and-unit">
+              <div class="good-price">
+                <p>120,99</p>
+              </div>
+              <div class="good-unit">
+                <p>1кг</p>
+              </div>
+            </div></a></div>
+        <div class="good"><a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-8.png"></div>
+            <div class="good-text">
+              <p>Макароны Pasteroni Фузилли</p>
+            </div>
+            <div class="good-price-and-unit">
+              <div class="good-price">
+                <p>97,00</p>
+              </div>
+              <div class="good-unit">
+                <p>1кг</p>
+              </div>
+            </div></a></div>
+        <div class="good"><a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-9.png"></div>
             <div class="good-text">
               <p>Макароны Pasteroni Фузилли</p>
             </div>
@@ -163,10 +549,10 @@
     <div class="new-goods-background">
       <div class="new-goods container">
         <h1>Новые товары<span>135</span></h1>
-        <div class="all-list"><a href="#">Весь список<span>></span></a></div>
+        <div class="all-list"><a href="/catalog.html">Весь список<span><img src="/dist/img/strelka.svg"></span></a></div>
         <div id="newgoods">
-          <div class="good"><a href="#">
-              <div class="good-img"> <img src="dist/img/good.jpg"></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/new-food-1.png"></div>
               <div class="good-text">
                 <p>Молоко Parmalat ультрапастеризованное 3,5% 1 л</p>
               </div>
@@ -178,8 +564,8 @@
                   <p>1л</p>
                 </div>
               </div></a></div>
-          <div class="good"><a href="#">
-              <div class="good-img"> <img src="dist/img/good.jpg"></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/new-food-2.png"></div>
               <div class="good-text">
                 <p>Творог Простоквашино 2%</p>
               </div>
@@ -191,8 +577,8 @@
                   <p>1шт</p>
                 </div>
               </div></a></div>
-          <div class="good"><a href="#">
-              <div class="good-img"> <img src="dist/img/good.jpg"></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/new-food-3.png"></div>
               <div class="good-text">
                 <p>Йогурт Landliebe с персиком и маракуйей 3,3% 150 г</p>
               </div>
@@ -204,8 +590,8 @@
                   <p>500гр</p>
                 </div>
               </div></a></div>
-          <div class="good"><a href="#">
-              <div class="good-img"> <img src="dist/img/good.jpg"></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/new-food-4.png"></div>
               <div class="good-text">
                 <p>Яйцо куриное Село Зеленое С0 10 шт</p>
               </div>
@@ -217,8 +603,8 @@
                   <p>1шт</p>
                 </div>
               </div></a></div>
-          <div class="good"><a href="#">
-              <div class="good-img"> <img src="dist/img/good.jpg"></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/new-food-5.png"></div>
               <div class="good-text">
                 <p>Сметана Домик в Деревне 15 % 330 г</p>
               </div>
@@ -230,8 +616,8 @@
                   <p>1л</p>
                 </div>
               </div></a></div>
-          <div class="good"><a href="#">
-              <div class="good-img"> <img src="dist/img/good.jpg"></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/new-food-6.png"></div>
               <div class="good-text">
                 <p>Кефир Домик в Деревне 3,2% 1 л</p>
               </div>
@@ -248,10 +634,10 @@
     </div>
     <div class="goods-viewed container">
       <h1>Вы смотрели<span>75</span></h1>
-      <div class="all-list"><a href="#">Весь список<span>></span></a></div>
+      <div class="all-list"><a href="/catalog.html">Весь список <span><img src="/dist/img/strelka.svg"></span></a></div>
       <div id="viewedProducts">
-        <div class="good"> <a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"> <a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-view-1.png"></div>
             <div class="good-text">
               <p>Молоко Parmalat ультрапастеризованное 3,5% 1 л</p>
             </div>
@@ -263,8 +649,8 @@
                 <p>1л</p>
               </div>
             </div></a></div>
-        <div class="good"> <a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"> <a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-view-2.png"></div>
             <div class="good-text">
               <p>Творог Простоквашино 2%</p>
             </div>
@@ -276,8 +662,8 @@
                 <p>1шт</p>
               </div>
             </div></a></div>
-        <div class="good"> <a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"> <a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-view-3.png"></div>
             <div class="good-text">
               <p>Йогурт Landliebe с персиком и маракуйей 3,3% 150 г</p>
             </div>
@@ -289,8 +675,8 @@
                 <p>500гр</p>
               </div>
             </div></a></div>
-        <div class="good"> <a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"> <a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-view-4.png"></div>
             <div class="good-text">
               <p>Яйцо куриное Село Зеленое С0 10 шт</p>
             </div>
@@ -302,8 +688,8 @@
                 <p>1шт</p>
               </div>
             </div></a></div>
-        <div class="good"> <a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"> <a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-view-5.png"></div>
             <div class="good-text">
               <p>Сметана Домик в Деревне 15 % 330 г</p>
             </div>
@@ -315,8 +701,8 @@
                 <p>1л</p>
               </div>
             </div></a></div>
-        <div class="good"> <a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"> <a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-view-6.png"></div>
             <div class="good-text">
               <p>Кефир Домик в Деревне 3,2% 1 л</p>
             </div>
@@ -328,8 +714,8 @@
                 <p>1кг</p>
               </div>
             </div></a></div>
-        <div class="good"> <a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"> <a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-view-7.png"></div>
             <div class="good-text">
               <p>Морковь Дмитровские овощи мытая</p>
             </div>
@@ -341,8 +727,8 @@
                 <p>1кг</p>
               </div>
             </div></a></div>
-        <div class="good"> <a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"> <a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-view-8.png"></div>
             <div class="good-text">
               <p>Макароны Pasteroni Фузилли</p>
             </div>
@@ -354,8 +740,8 @@
                 <p>1кг</p>
               </div>
             </div></a></div>
-        <div class="good"> <a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"> <a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-view-9.png"></div>
             <div class="good-text">
               <p>Макароны Pasteroni Фузилли</p>
             </div>
@@ -367,8 +753,8 @@
                 <p>1кг</p>
               </div>
             </div></a></div>
-        <div class="good"> <a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"> <a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-view-10.png"></div>
             <div class="good-text">
               <p>Молоко Parmalat ультрапастеризованное 3,5% 1 л</p>
             </div>
@@ -380,8 +766,8 @@
                 <p>1л</p>
               </div>
             </div></a></div>
-        <div class="good"> <a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"> <a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-view-11.png"></div>
             <div class="good-text">
               <p>Творог Простоквашино 2%</p>
             </div>
@@ -393,8 +779,8 @@
                 <p>1шт</p>
               </div>
             </div></a></div>
-        <div class="good"> <a href="#">
-            <div class="good-img"> <img src="dist/img/good.jpg"></div>
+        <div class="good"> <a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-view-12.png"></div>
             <div class="good-text">
               <p>Йогурт Landliebe с персиком и маракуйей 3,3% 150 г</p>
             </div>
@@ -417,12 +803,12 @@
               <p>Всем привет и хорошего дня! Сегодня буду готовить на завтрак вкуснейшую запеканку из нежного кремового творога Свитлогорье. Из него получается самая нежная запеканка! Расскажу немного о главном ингредиенте, ведь отзыв посвящён ему</p>
             </div>
             <div class="review-data"> 
-              <div class="review-img"><img src="dist/img/face.jpg"></div>
+              <div class="review-img"><img src="dist/img/face-1.svg"></div>
               <div class="name-and-url">
                 <div class="name">
                   <p>Валерий Иванов</p>
                 </div>
-                <div class="url"><a href="#">vk.com/valeriy1241</a></div>
+                <div class="url"><a target="_blank" href="https://vk.com">vk.com/valeriy1241</a></div>
               </div>
             </div>
           </div>
@@ -431,12 +817,12 @@
               <p>Мне очень нравится запеканка из этого творога, её с удовольствием уплетают муж и двухгодовалый сын. Причём запеканку из сухого творога он не ест. Делюсь простым рецептом вкусной запеканки. Её модно приготовить как в мультиварке, так и в духовке.</p>
             </div>
             <div class="review-data"> 
-              <div class="review-img"><img src="dist/img/face.jpg"></div>
+              <div class="review-img"><img src="dist/img/face-2.svg"></div>
               <div class="name-and-url">
                 <div class="name">
                   <p>Елена Несуедова</p>
                 </div>
-                <div class="url"><a href="#">vk.com/elena5676</a></div>
+                <div class="url"><a target="_blank" href="https://vk.com">vk.com/elena5676</a></div>
               </div>
             </div>
           </div>
@@ -445,16 +831,101 @@
               <p>Сегодня буду готовить на завтрак вкуснейшую запеканку из нежного кремового творога Свитлогорье. Из него получается самая нежная запеканка! Расскажу немного о главном ингредиенте, ведь отзыв посвящён ему</p>
             </div>
             <div class="review-data"> 
-              <div class="review-img"><img src="dist/img/face.jpg"></div>
+              <div class="review-img"><img src="dist/img/face-3.svg"></div>
               <div class="name-and-url">
                 <div class="name">
                   <p>Зинаида Макаровна</p>
                 </div>
-                <div class="url"><a href="#">vk.com/zinaida4352</a></div>
+                <div class="url"><a target="_blank" href="https://vk.com">vk.com/zinaida4352</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="review"> 
+            <div class="review-text">
+              <p>Всем привет и хорошего дня! Сегодня буду готовить на завтрак вкуснейшую запеканку из нежного кремового творога Свитлогорье. Из него получается самая нежная запеканка! Расскажу немного о главном ингредиенте, ведь отзыв посвящён ему</p>
+            </div>
+            <div class="review-data"> 
+              <div class="review-img"><img src="dist/img/face-1.svg"></div>
+              <div class="name-and-url">
+                <div class="name">
+                  <p>Валерий Иванов</p>
+                </div>
+                <div class="url"><a target="_blank" href="https://vk.com">vk.com/valeriy1241</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="review"> 
+            <div class="review-text">
+              <p>Мне очень нравится запеканка из этого творога, её с удовольствием уплетают муж и двухгодовалый сын. Причём запеканку из сухого творога он не ест. Делюсь простым рецептом вкусной запеканки. Её модно приготовить как в мультиварке, так и в духовке.</p>
+            </div>
+            <div class="review-data"> 
+              <div class="review-img"><img src="dist/img/face-2.svg"></div>
+              <div class="name-and-url">
+                <div class="name">
+                  <p>Елена Несуедова</p>
+                </div>
+                <div class="url"><a target="_blank" href="https://vk.com">vk.com/elena5676</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="review"> 
+            <div class="review-text">
+              <p>Сегодня буду готовить на завтрак вкуснейшую запеканку из нежного кремового творога Свитлогорье. Из него получается самая нежная запеканка! Расскажу немного о главном ингредиенте, ведь отзыв посвящён ему</p>
+            </div>
+            <div class="review-data"> 
+              <div class="review-img"><img src="dist/img/face-3.svg"></div>
+              <div class="name-and-url">
+                <div class="name">
+                  <p>Зинаида Макаровна</p>
+                </div>
+                <div class="url"><a target="_blank" href="https://vk.com">vk.com/zinaida4352</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="review"> 
+            <div class="review-text">
+              <p>Всем привет и хорошего дня! Сегодня буду готовить на завтрак вкуснейшую запеканку из нежного кремового творога Свитлогорье. Из него получается самая нежная запеканка! Расскажу немного о главном ингредиенте, ведь отзыв посвящён ему</p>
+            </div>
+            <div class="review-data"> 
+              <div class="review-img"><img src="dist/img/face-1.svg"></div>
+              <div class="name-and-url">
+                <div class="name">
+                  <p>Валерий Иванов</p>
+                </div>
+                <div class="url"><a target="_blank" href="https://vk.com">vk.com/valeriy1241</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="review"> 
+            <div class="review-text">
+              <p>Мне очень нравится запеканка из этого творога, её с удовольствием уплетают муж и двухгодовалый сын. Причём запеканку из сухого творога он не ест. Делюсь простым рецептом вкусной запеканки. Её модно приготовить как в мультиварке, так и в духовке.</p>
+            </div>
+            <div class="review-data"> 
+              <div class="review-img"><img src="dist/img/face-2.svg"></div>
+              <div class="name-and-url">
+                <div class="name">
+                  <p>Елена Несуедова</p>
+                </div>
+                <div class="url"><a target="_blank" href="https://vk.com">vk.com/elena5676</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="review"> 
+            <div class="review-text">
+              <p>Сегодня буду готовить на завтрак вкуснейшую запеканку из нежного кремового творога Свитлогорье. Из него получается самая нежная запеканка! Расскажу немного о главном ингредиенте, ведь отзыв посвящён ему</p>
+            </div>
+            <div class="review-data"> 
+              <div class="review-img"><img src="dist/img/face-3.svg"></div>
+              <div class="name-and-url">
+                <div class="name">
+                  <p>Зинаида Макаровна</p>
+                </div>
+                <div class="url"><a target="_blank" href="https://vk.com">vk.com/zinaida4352</a></div>
               </div>
             </div>
           </div>
         </div>
+        <div class="reviews-gradient"></div>
       </div>
     </div>
     <div class="block-mobile-apps">
@@ -467,14 +938,61 @@
           <div class="apple-badge"> <img src="dist/img/app-store-badge.svg"></div></a></div>
     </div>
   </body>
+  <div id="modal">
+    <div class="background"></div>
+    <div class="product-details"><a class="close" href="javascript:closeProductDetail()"></a>
+      <div class="name">
+        <p>Йогурт Landliebe с персиком и маракуйей 3,3% 150 г</p>
+      </div>
+      <div class="unit">
+        <p>200г</p>
+      </div>
+      <div class="img"><img src="/dist/img/modal-food.svg"></div>
+      <div class="price">
+        <p>56,00</p>
+      </div><a class="in-basket" href="#"><span><img src="/dist/img/plus.svg"></span> В корзину</a>
+      <div class="blocks">
+        <div class="block-info"><a class="active" href="#">Описание</a><a href="#">Состав</a><a href="#">Инфо</a>
+          <div class="text">
+            <p>
+              Каждый стаканчик Landliebe наполнен невероятно вкусным йогуртом с аппетитными кусочками спелых фруктов и ягод.В продукции Landliebe нет консервантов и искусственных 
+              красителей, что делает ее такой натурально вкусной.И, конечно же, он сделан с любовью. 
+              Йогурт Landliebe с персиком и маракуйей купить с доставкой в Москве. Вы найдете множество 
+              товаров бренда Landliebe в категории йогурты. Скидки до 50%! Доставка от 2-х часов.
+            </p>
+          </div>
+        </div>
+        <div class="block-info-right">
+          <div class="nutritional-value">
+            <p>Пищевая ценность <span>(100гр)</span></p>
+          </div>
+          <div class="table-haracter">
+            <div class="block-table">
+              <p>Белки </p><span>10гр</span>
+              <div class="line-horizontal"></div>
+            </div>
+            <div class="block-table">
+              <p>Жиры</p><span>20гр</span>
+              <div class="line-horizontal"></div>
+            </div>
+            <div class="block-table">
+              <p>Углеводы</p><span>3гр</span>
+              <div class="line-horizontal"></div>
+            </div>
+            <div class="block-table">
+              <p>Калорийность </p><span>940 ккал</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <footer>
-    <div class="block-footer">
+    <div class="block-footer container">
       <div class="footer-left"><a class="tel" href="tel:+7 495 500-50-00">+7 495 500-50-00</a><br><a class="mail" href="mailto:zakaz@nesuedu.ru">zakaz@nesuedu.ru</a>
         <div class="footer-left-line"></div>
         <div class="footer-logo-and-address">
-          <div class="footer-logo">
-            <h1>LOGO</h1>
-          </div>
+          <div class="footer-logo"><a href="/"><img src="/dist/img/bottom-logo.svg"></a></div>
           <div class="address">
             <p>ООО «Несуеду». Адрес: 119017, г. Москва, ул. Пятницкая, д. 37, этаж 2, пом. I, ком.1, офис 56 Режим работы: 7:00 - 24:00 © 2018</p>
           </div>
@@ -487,11 +1005,11 @@
         <div class="group-links-partners">
           <p>Партнеры</p><br><a>Метро</a><br><a>Лента</a><br><a>Вкус Вилл</a><br><a>Ашан</a>
         </div>
-        <div class="payment-systems"><a href="#"><img src="dist/img/visa-logo.png"></a><a href="#"><img src="dist/img/MasterCard_Logo.svg"></a><a href="#"><img src="dist/img/mir-logo.svg"></a></div>
+        <div class="payment-systems"> </div>
       </div>
     </div>
   </footer>
   <script src="dist/js/jquery.js"></script>
-  <script src="dist/js/swiper.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="dist/js/script.js"></script>
 </html>
