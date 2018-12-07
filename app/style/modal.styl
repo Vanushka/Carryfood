@@ -9,7 +9,7 @@
     display none
     background-color $backgroundcolor
   .product-details
-    top 10%
+    top 5%
     right 0
     left 0
     bottom 10%
@@ -23,6 +23,22 @@
     box-shadow 0 3px 6px rgba(0, 0, 0, 0.16)
     border-radius 20px
     background-color $white
+    ::-webkit-scrollbar
+      width 0px
+      opacity 0
+      background rgba(255, 255, 255, 0.0)
+    ::-moz-scrollbar
+      opacity 0
+      width 0px
+      background rgba(255, 255, 255, 0.0)
+    ::-ms-scrollbar
+      opacity 0
+      width 0px
+      background rgba(255, 255, 255, 0.0)
+    ::-o-scrollbar
+      opacity 0
+      width 0px
+      background rgba(255, 255, 255, 0.0)
     .close
       position relative
       float right
@@ -53,8 +69,8 @@
     .name
       width 304px
       height 61px
-      margin-top 40px
-      margin-left 40px
+      margin-top 60px
+      margin-left 55px
       margin-bottom -15px
       p
         color $darkgrey
@@ -62,7 +78,7 @@
         font-size 20px
         font-weight 700
     .unit
-      margin-left 40px
+      margin-left 55px
       p
         color $lightgrey
         font-size 20px
@@ -77,8 +93,8 @@
       img
         width 100%
     .price
-      margin-left 40px
-      margin-top 125px
+      margin-left 55px
+      margin-top 186px
       p
         font-family 'OpenSans-Bold'
         font-size 23px
@@ -88,19 +104,21 @@
       padding 10px
       font-size 13px
       font-weight 700
-      margin-left 40px
+      margin-left 55px
       padding-left 35px
       font-family 'Roboto-Regular'
       border-radius 8px
       background-color $red
       span
+        margin-top -2px
         margin-left -26px
         position absolute
     .blocks
       display flex
       justify-content space-between
-      margin-left 40px
+      margin-left 55px
       margin-top 50px
+      margin-bottom 50px
       .block-info
         .active
           opacity 1
@@ -135,29 +153,38 @@
             span
               font-size 15px
               font-weight 100
-              font-family Roboto
+              font-family 'Roboto-Regular'
               text-transform capitalize
         .table-haracter
           .block-table
+            display flex
+            justify-content space-between
             p
               margin 5px 8px
               display inline-block
               color $darkgrey
-              font-size 15px
+              font-size 14px
               font-weight 400
               font-family 'Roboto-Bold'
               font-weight 700
               text-transform uppercase
               letter-spacing 1.5px
-            span
-              float right
-              font-size 14px
-              font-weight 100
-              color $lightgrey
-              margin-right 10px
-              font-family Roboto
-              text-transform capitalize
-            .line-horizontal
-              width 100%
-              height 1px
-              background $lightgrey
+            .span
+              min-width 75px
+              display flex
+              text-align left
+              span
+                float right
+                font-size 14px
+                font-weight 400
+                opacity 0.5
+                margin-top 8px
+                color $darkgrey
+                font-family Roboto
+                text-transform capitalize
+          .line-horizontal
+            width 100%
+            height 1px
+            opacity 0.25
+            cursor pointer
+            background $lightgrey

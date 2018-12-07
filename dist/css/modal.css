@@ -9,7 +9,7 @@
   background-color: $backgroundcolor;
 }
 #modal .product-details {
-  top: 10%;
+  top: 5%;
   right: 0;
   left: 0;
   bottom: 10%;
@@ -23,6 +23,26 @@
   box-shadow: 0 3px 6px rgba(0,0,0,0.16);
   border-radius: 20px;
   background-color: $white;
+}
+#modal .product-details ::-webkit-scrollbar {
+  width: 0px;
+  opacity: 0;
+  background: rgba(255,255,255,0);
+}
+#modal .product-details ::-moz-scrollbar {
+  opacity: 0;
+  width: 0px;
+  background: rgba(255,255,255,0);
+}
+#modal .product-details ::-ms-scrollbar {
+  opacity: 0;
+  width: 0px;
+  background: rgba(255,255,255,0);
+}
+#modal .product-details ::-o-scrollbar {
+  opacity: 0;
+  width: 0px;
+  background: rgba(255,255,255,0);
 }
 #modal .product-details .close {
   position: relative;
@@ -60,8 +80,8 @@
 #modal .product-details .name {
   width: 304px;
   height: 61px;
-  margin-top: 40px;
-  margin-left: 40px;
+  margin-top: 60px;
+  margin-left: 55px;
   margin-bottom: -15px;
 }
 #modal .product-details .name p {
@@ -71,7 +91,7 @@
   font-weight: 700;
 }
 #modal .product-details .unit {
-  margin-left: 40px;
+  margin-left: 55px;
 }
 #modal .product-details .unit p {
   color: $lightgrey;
@@ -90,8 +110,8 @@
   width: 100%;
 }
 #modal .product-details .price {
-  margin-left: 40px;
-  margin-top: 125px;
+  margin-left: 55px;
+  margin-top: 186px;
 }
 #modal .product-details .price p {
   font-family: 'OpenSans-Bold';
@@ -103,13 +123,14 @@
   padding: 10px;
   font-size: 13px;
   font-weight: 700;
-  margin-left: 40px;
+  margin-left: 55px;
   padding-left: 35px;
   font-family: 'Roboto-Regular';
   border-radius: 8px;
   background-color: $red;
 }
 #modal .product-details a.in-basket span {
+  margin-top: -2px;
   margin-left: -26px;
   position: absolute;
 }
@@ -118,8 +139,9 @@
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  margin-left: 40px;
+  margin-left: 55px;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 #modal .product-details .blocks .block-info .active {
   opacity: 1;
@@ -158,31 +180,46 @@
 #modal .product-details .blocks .block-info-right .nutritional-value p span {
   font-size: 15px;
   font-weight: 100;
-  font-family: Roboto;
+  font-family: 'Roboto-Regular';
   text-transform: capitalize;
+}
+#modal .product-details .blocks .block-info-right .table-haracter .block-table {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 #modal .product-details .blocks .block-info-right .table-haracter .block-table p {
   margin: 5px 8px;
   display: inline-block;
   color: $darkgrey;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   font-family: 'Roboto-Bold';
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
-#modal .product-details .blocks .block-info-right .table-haracter .block-table span {
+#modal .product-details .blocks .block-info-right .table-haracter .block-table .span {
+  min-width: 75px;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+#modal .product-details .blocks .block-info-right .table-haracter .block-table .span span {
   float: right;
   font-size: 14px;
-  font-weight: 100;
-  color: $lightgrey;
-  margin-right: 10px;
+  font-weight: 400;
+  opacity: 0.5;
+  margin-top: 8px;
+  color: $darkgrey;
   font-family: Roboto;
   text-transform: capitalize;
 }
-#modal .product-details .blocks .block-info-right .table-haracter .block-table .line-horizontal {
+#modal .product-details .blocks .block-info-right .table-haracter .line-horizontal {
   width: 100%;
   height: 1px;
+  opacity: 0.25;
+  cursor: pointer;
   background: $lightgrey;
 }

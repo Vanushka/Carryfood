@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
+    <link rel="icon" href="./dist/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./dist/css/slick.css">
     <link rel="stylesheet" href="./dist/css/style.css">
   </head>
@@ -12,10 +13,10 @@
     <header>
       <div id="header">
         <div class="container">
-          <div class="logo"><a href="/"><img src="./dist/img/logo.svg"></a></div><span>из</span>
+          <div class="logo"><a href="index.html"><img src="./dist/img/logo.svg"></a></div><span>из</span>
           <div class="choose-shop">
-            <select>
-              <option>METRO</option>
+            <select id="shop"> 
+              <option><span value="metro">METRO</span></option>
             </select>
           </div>
           <div class="search-line">
@@ -24,7 +25,49 @@
           </div>
           <div class="time-of-delivery">
             <select>
+              <option>Доставим сегодня 08:00-15:00</option>
+              <option>Доставим завтра 08:00-13:00</option>
+              <option>Доставим сегодня 08:00-10:00</option>
+              <option>Доставим сегодня 09:00-11:00</option>
+              <option>Доставим сегодня 10:00-12:00</option>
+              <option>Доставим сегодня 11:00-13:00</option>
+              <option>Доставим сегодня 12:00-14:00</option>
+              <option>Доставим сегодня 13:00-15:00</option>
+              <option>Доставим сегодня 14:00-19:00</option>
+              <option>Доставим сегодня 14:00-16:00</option>
+              <option>Доставим сегодня 15:00-17:00</option>
+              <option>Доставим сегодня 16:00-01:00</option>
+              <option>Доставим сегодня 16:00-18:00</option>
+              <option>Доставим сегодня 16:00-18:00</option>
+              <option>Доставим сегодня 17:00-19:00</option>
+              <option>Доставим сегодня 18:00-20:00</option>
+              <option>Доставим сегодня 19:00-21:00</option>
+              <option>Доставим сегодня 20:00-01:00</option>
+              <option>Доставим сегодня 20:00-22:00</option>
+              <option>Доставим сегодня 21:00-23:00</option>
+              <option>Доставим сегодня 22:00-00:00</option>
+              <option>Доставим сегодня 23:00-01:00</option>
+              <option>Доставим завтра 08:00-15:00</option>
+              <option>Доставим завтра 08:00-13:00</option>
+              <option>Доставим завтра 08:00-10:00</option>
+              <option>Доставим завтра 09:00-11:00</option>
+              <option>Доставим завтра 10:00-12:00</option>
+              <option>Доставим завтра 11:00-13:00</option>
               <option>Доставим завтра 12:00-14:00</option>
+              <option>Доставим завтра 13:00-15:00</option>
+              <option>Доставим завтра 14:00-19:00</option>
+              <option>Доставим завтра 14:00-16:00</option>
+              <option>Доставим завтра 15:00-17:00</option>
+              <option>Доставим завтра 16:00-01:00</option>
+              <option>Доставим завтра 16:00-18:00</option>
+              <option>Доставим завтра 17:00-19:00</option>
+              <option>Доставим завтра 18:00-20:00</option>
+              <option>Доставим завтра 19:00-21:00</option>
+              <option>Доставим завтра 20:00-01:00</option>
+              <option>Доставим завтра 20:00-22:00</option>
+              <option>Доставим завтра 21:00-23:00</option>
+              <option>Доставим завтра 22:00-00:00</option>
+              <option>Доставим завтра 23:00-01:00</option>
             </select>
           </div>
           <div class="basket"><img src="./dist/img/basket.svg"><span>15</span><a href="#">Корзина</a>
@@ -54,7 +97,7 @@
               <div class="close"></div></a></div>
         </div>
       </div>
-      <div class="filter-line">        <a class="filter-button" href="#"><span><img src="./dist/img/filter.svg"></span> Фильтер</a>
+      <div class="filter-line">        <a class="filter-button" href="#"><span><img src="./dist/img/filter.svg"></span> Фильтр</a>
         <div class="sorts-block">
           <p>Сортировать:</p><a href="#">Дешевле</a><a href="#">Дороже</a><a class="active" href="#">Популярное</a>
         </div>
@@ -727,19 +770,23 @@
           </div>
           <div class="table-haracter">
             <div class="block-table">
-              <p>Белки </p><span>10гр</span>
-              <div class="line-horizontal"></div>
+              <p>Белки </p>
+              <div class="span"><span>10гр</span></div>
             </div>
+            <div class="line-horizontal"></div>
             <div class="block-table">
-              <p>Жиры</p><span>20гр</span>
-              <div class="line-horizontal"></div>
+              <p>Жиры</p>
+              <div class="span"><span>20гр</span></div>
             </div>
+            <div class="line-horizontal"></div>
             <div class="block-table">
-              <p>Углеводы</p><span>3гр</span>
-              <div class="line-horizontal"></div>
+              <p>Углеводы</p>
+              <div class="span"><span>3гр</span></div>
             </div>
+            <div class="line-horizontal"></div>
             <div class="block-table">
-              <p>Калорийность </p><span>940 ккал</span>
+              <p>Калорийность </p>
+              <div class="span"><span>940 ккал</span></div>
             </div>
           </div>
         </div>
@@ -751,7 +798,7 @@
       <div class="footer-left"><a class="tel" href="tel:+7 495 500-50-00">+7 495 500-50-00</a><br><a class="mail" href="mailto:zakaz@nesuedu.ru">zakaz@nesuedu.ru</a>
         <div class="footer-left-line"></div>
         <div class="footer-logo-and-address">
-          <div class="footer-logo"><a href="/"><img src="./dist/img/bottom-logo.svg"></a></div>
+          <div class="footer-logo"><a href="index.html"><img src="./dist/img/bottom-logo.svg"></a></div>
           <div class="address">
             <p>ООО «Несуеду». Адрес: 119017, г. Москва, ул. Пятницкая, д. 37, этаж 2, пом. I, ком.1, офис 56 Режим работы: 7:00 - 24:00 © 2018</p>
           </div>

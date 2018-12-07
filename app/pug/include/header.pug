@@ -3,7 +3,7 @@ head
   meta(charset="utf-8")
   meta(name="keywords" content="")
   meta(name="description" content="")
-  //- link(rel="icon" href="static/app/img/favicon.ico" type="image/x-icon")
+  link(rel="icon" href="./dist/img/favicon.ico" type="image/x-icon")
   link(rel="stylesheet", href="./dist/css/slick.css")
   link(rel="stylesheet", href="./dist/css/style.css")
 body
@@ -11,12 +11,12 @@ body
     #header
       .container
         .logo
-          a(href="/")
+          a(href="index.html")
             img(src="./dist/img/logo.svg")
         span из
         .choose-shop
-          select
-            option METRO
+          select#shop 
+            option <span value="metro">METRO</span>
         .search-line
           input(type="text" placeholder="Поиск...")
           .search-menu
@@ -28,8 +28,9 @@ body
         //- .radius-link
         //-   a(href="#")
         .time-of-delivery
-          select
-            option Доставим завтра 12:00-14:00
+            select
+              each dates in deliverydates
+                option= dates.date
         .basket
           img(src="./dist/img/basket.svg")
           span 15

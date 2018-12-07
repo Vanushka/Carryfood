@@ -16,7 +16,7 @@ html
             .hashtag
               a(href="#") Вода
                 .close
-          a.smart-search(href="#") <span><img src="/dist/img/3-lines.svg"></span> Умный список
+          a.smart-search(href="#") <span><img src="./dist/img/3-lines.svg"></span> Умный список
         #smartSlider
           each val in smartfood
             .good
@@ -31,24 +31,15 @@ html
                   .good-unit
                     p= val.unit
         .button-hide
-          a(href="#") <span><img src="/dist/img/hidden.svg"></span>
+          a(href="#") <span><img src="./dist/img/hidden.svg"></span>
       .line-gradient
     #slider-present
-      .slide-present
-        img(src="/dist/img/slider-background.png")
-        .slider-content
-          h1 БЕСПЛАТНО ПРИВЕЗЕМ 
-          p Привезем ваш заказ бесплатно при первом заказе на сайте или в приложении.
-      .slide-present
-        img(src="/dist/img/slider-background.png")
-        .slider-content
-          h1 Some text
-          p Some text
-      .slide-present
-        img(src="/dist/img/slider-background.png")
-        .slider-content
-          h1 Some text 2
-          p Some text 2 
+      each slide in slidercontent
+        .slide-present
+          img(src="src=slide.img")
+          .slider-content
+            h1= slide.h1
+            p= slide.p 
     .goods.container
       h1 Товары со скидкой
       #goods-slider

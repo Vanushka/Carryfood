@@ -114,14 +114,17 @@ $(function () {
 function openProductDetail() {
   $('.product-details').css('display', 'block');
   $('.background').css('display', 'block');
+  $('body').css('overflow', 'hidden');
 }
 
 function closeProductDetail() {
   $('.product-details').css('display', 'none');
   $('.background').css('display', 'none');
+  $('body').css('overflow', 'scroll');
 }
 
 $('.background').click(function() {
   $('.background').css('display', 'none');
   $('.product-details').css('display', 'none');
+  $('body').css('overflow', 'scroll');
 })

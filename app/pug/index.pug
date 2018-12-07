@@ -4,24 +4,15 @@ html
   include include/header.pug
   body 
     #slider-present
-      .slide-present
-        img(src="./dist/img/slider-background.png")
-        .slider-content
-          h1 БЕСПЛАТНО ПРИВЕЗЕМ 
-          p Привезем ваш заказ бесплатно при первом заказе на сайте или в приложении.
-      .slide-present
-        img(src="./dist/img/slider-background.png")
-        .slider-content
-          h1 Some text
-          p Some text 
-      .slide-present
-        img(src="./dist/img/slider-background.png")
-        .slider-content 
-          h1 Some text 2
-          p Some text 2 
+      each slide in slidercontent
+        .slide-present
+          img(src="src=slide.img")
+          .slider-content
+            h1= slide.h1
+            p= slide.p
     .goods.container
-      h1 Товары со скидкой 
-      #goods-slider    
+      h1 Товары со скидкой
+      #goods-slider
         each val in food
           .good
             a(href="javascript:openProductDetail()")
@@ -32,7 +23,7 @@ html
               .good-price-and-unit
                 .good-price
                   p= val.price 
-                .good-unit 
+                .good-unit   
                   p= val.unit
     .new-goods-background
       .new-goods.container
@@ -97,9 +88,9 @@ html
         h1 СКАЧАЙТЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ
         p И узнавайте о скидках первыми!
       .google-and-apple
-        a(href="")
+        a(href="https://play.google.com/store" target="_blank")
           img(src="./dist/img/google-play-badge.svg")
-        a(href="")
+        a(href="https://www.apple.com/ru/ios/app-store/" target="_blank")
           img(src="./dist/img/app-store-badge.svg")
 
   

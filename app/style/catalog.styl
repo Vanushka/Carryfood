@@ -23,13 +23,15 @@
       color $darkgrey
       font-size 35px
       font-family 'OpenSans-Bold'
+      letter-spacing 2px
     .hashtags
       display flex
       margin-bottom 70px
       justify-content center
       .hashtag
+        height 22px
         cursor pointer
-        padding 7px 20px
+        padding 5px 20px
         border-radius 13px
         margin-right 10px
         font-size 15px
@@ -86,17 +88,17 @@
       font-size 13px
       font-family 'Roboto-Bold'
       color $darkgrey
-      width 100px
-      height 30px
-      padding-left 10px
-      padding-top 15px
+      width 85px
+      height 28px
+      padding-left 17px
+      padding-top 11px
       text-align center
       border-radius 10px
       background $filtergrey
       border 1px solid $filtergrey
       span
         position absolute
-        margin-left -20px
+        margin-left -25px
       &:hover
         background $white
         border 1px solid $filtergrey
@@ -129,6 +131,7 @@
   margin-top 30px
   margin-bottom 40px
   padding-left 60px
+  padding-top 0 !important
   h1
   #filterProducts
     width 100%
@@ -150,11 +153,11 @@
           img
             width 100%
         .food-text
-          width 125.12px
+          width 160px
           height 61px
           color $darkgrey
           margin 0 auto
-          font-size 13px
+          font-size 15px
           font-family 'PT-Sans-Regular'
           p
             margin 0
@@ -181,6 +184,7 @@
               color $lightgrey
               text-align right
               font-size 13px
+              margin-top 2px
               font-family 'PT-Sans-Regular'
       &:hover
         border 1px solid $red
@@ -188,11 +192,9 @@
   background $backgroundgrey
 .container
   margin 0 auto
-  max-width 1280px
-  padding-bottom 40px
+  max-width 1278px
 .foods
   padding-top 20px
-  padding-bottom 40px
   padding-left 60px
   h1
     color $darkgrey
@@ -213,9 +215,9 @@
       width 158.12px
       height 190.8px
       margin-right 6px
-      background $white
       border-radius 10px
-      border 1px solid $white
+      margin-bottom 50px
+      border 1px solid transparent
       box-shadow 2px 2px 7px $grey
       a
         .food-img
@@ -232,7 +234,7 @@
           font-size 13px
           font-family 'PT-Sans-Regular'
           p
-            margin 0
+            margin 0 8px
             word-wrap break-word
         .food-price-and-unit
           display flex
@@ -240,7 +242,7 @@
           .food-price
             width 36px
             height 19px
-            margin 2px 17px
+            margin 5px 17px
             p
               margin 0
               color $black
@@ -249,7 +251,7 @@
           .food-unit
             width 52px
             height 23px
-            margin 2px 17px
+            margin 8px 17px
             p
               margin 0
               color $lightgrey
