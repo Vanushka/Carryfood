@@ -20,8 +20,17 @@ body
         span.is из
         .group-select
           .choose-shop
-            select#shop 
-              option <span value="metro">METRO</span>
+            //- select#shop 
+            //-   option <span value="metro">METRO</span>
+            ul.choose-shop-menu
+              li
+                span.choose-shop-down
+                  img(src="./dist/img/metro.svg") 
+                span.arrow
+                .choose-shop-menu-sub
+                  span.title
+                  a(href='#posts-new') 
+                    img(src="./dist/img/metro.svg")
           .search-line
             input(type="text" placeholder="Поиск...")
             .search-menu

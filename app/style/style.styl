@@ -63,10 +63,12 @@ header
           cursor pointer
           margin-right 10px
           // background url("../img/metro.svg") no-repeat left
-          select
-            height 58px
+          .choose-shop-menu
+            height 45px
             width 130px
             color $white
+            display block
+            padding-top 11px
             font-size 25px
             border-radius 8px
             background none
@@ -74,8 +76,69 @@ header
             appearance none
             -moz-appearance none
             -webkit-appearance none
+            .choose-shop-down
+              float right
+              margin-top -7px
+              img
+                margin-right 30px
+          span
             background url("../img/strelka-down.svg") 92%/7% no-repeat
-          select#shop option[value="metro"] { background-image:url(../img/metro.svg);}
+          .permalink
+            display: block
+            color: #4F6B72
+            text-decoration: none
+            margin: 10px 0
+            &:hover
+              text-decoration: underline
+          ul, li
+            margin: 0
+            padding: 0
+          .choose-shop-menu a, .choose-shop-down, .choose-shop-menu-sub .title
+            text-decoration: none
+            color: #555555
+            padding: 10px
+          .drop-menu-main
+            padding: 4px
+            height: 20px
+            position: relative
+            li
+              float: left
+              margin-right: 40px
+          .choose-shop-menu-sub
+            display: none
+            position: absolute
+            background: $green
+            border-radius: 6px
+            border: 1px solid rgba(255,255,255,0.31)
+            z-index: 100
+            width: 130px
+            padding: 5px 0 5px
+            margin: 50px 0 0 0px
+            a
+              color: #555555
+              display: block
+              font-size: 11px
+              padding: 6px 15px
+              margin-top 10px
+              cursor: pointer
+              text-decoration: none
+              &:hover
+                background: #155FB0
+                color: #FFFFFF
+                text-decoration: none
+            .title
+              display: block
+              padding: 6px 15px
+              cursor: pointer
+              border-bottom: 1px solid rgba(255,255,255,0.31)
+          li
+            list-style: none
+            display: block
+          .drop-down
+            cursor: pointer
+          span.arrow
+            font-size: 8px
+
         .search-line
           display inline-block
           input
@@ -88,7 +151,7 @@ header
             border-radius 30px
           input[type="text"]
             background url(../img/loop.svg) $white no-repeat 97%
-            padding-left 15px
+            padding-left 25px
             margin-bottom 15px
           input
             &:focus::-webkit-input-placeholder

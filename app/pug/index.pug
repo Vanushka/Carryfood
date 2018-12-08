@@ -16,22 +16,22 @@ html
         each val in food
           .good
             a(href="javascript:openProductDetail()")
-              .good-img 
+              .good-img
                 img(src=val.img)
-              .good-text 
+              .good-text
                 p= val.text
               .good-price-and-unit
                 .good-price
-                  p= val.price 
+                  p= val.price
                 .good-unit
                   p= val.unit
     .new-goods-background
       .new-goods.container
         h1 Новые товары
-          span 135 
+          span 135
         .all-list
           a(href="catalog.html") Весь список
-            span 
+            span
               img(src="./dist/img/strelka.svg")
         #newgoods
             each val in newfoods
@@ -58,7 +58,7 @@ html
             each val in newfoodsmobile
               .good
                 a(href="javascript:openProductDetail()")
-                  .good-img 
+                  .good-img
                     img(src=val.img)
                   .good-text
                     p= val.text

@@ -192,22 +192,40 @@ $(document).ready(function(){
     $('body').css('overflow', 'scroll');
   })
 
-  // переключатель состояния бургера
-  $('.burger').on('click', function(e) {
-    e.preventDefault()
-    $('.burger').toggleClass('is-active')
-  });
-  $('.popUp-nav-desktop .burger').on('click', function(e) {
-    e.preventDefault()
-  });
-
-
-
-
+  // переключатель состояния мобильного меню
 
   $("#navToggle").click(function() {
       $(this).toggleClass("active");
       $(".overlay").toggleClass("open");
       // this line ▼ prevents content scroll-behind
       $("body").toggleClass("locked");
+  });
+
+
+  $(document).ready(function () {
+    function hideallDropdowns() {
+      $(".dropped .choose-shop-menu-sub").hide();
+      $(".dropped").removeClass('dropped');
+      $(".dropped .choose-shop-menu-sub .title").unbind("click");
+    }
+
+    function showDropdown(el) {
+      var el_li = $(el).parent().addClass('dropped');
+      el_li
+        .find('.title')
+        .click(function () {
+            hideallDropdowns();
+        })
+        .html($(el).html());
+
+      el_li.find('.choose-shop-menu-sub').show();
+    }
+
+    $(".choose-shop-down").click(function(){
+      showDropdown(this);
+    });
+
+    $(document).mouseup(function () {
+      hideallDropdowns();
+    });
   });
