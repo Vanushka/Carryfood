@@ -1629,6 +1629,7 @@ footer .footer-right img {
   display: flex;
 }
 .foods #foodSlider .food {
+  background: #fff;
   display: block;
   width: 158.12px;
   height: 190.8px;
