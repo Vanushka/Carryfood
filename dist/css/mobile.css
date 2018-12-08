@@ -10,19 +10,28 @@
     height: 135px;
   }
   header #header {
+    width: 100%;
     display: inline-block;
+  }
+  header #header .container {
+    display: block;
   }
   header #header .container span.is {
     display: none;
   }
   header #header .container .logo {
-    margin-left: 10px;
+    display: none;
+  }
+  header #header .container .logo-mobile {
+    display: block;
+    float: left;
+    margin-left: 15px;
   }
   header #header .container .group-select {
+    margin: 0 auto;
     width: 195px;
-    margin-left: 10px;
     margin-top: -10px;
-    display: inline-block;
+    display: block;
     margin-bottom: 20px;
   }
   header #header .container .group-select .search-line {
@@ -77,82 +86,6 @@
   }
   header #header .container .group-select .basket .phone a {
     margin-top: -23px;
-  }
-  header #header .container .burger {
-    margin-left: 20px;
-    margin-top: -10px;
-    cursor: pointer;
-    width: 45px;
-    height: 45px;
-    border-radius: 7px;
-    border: 1px solid #d8d8d8;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    position: relative;
-  }
-  header #header .container .burger span {
-    display: block;
-    top: 44px;
-    left: 18px;
-    right: 18px;
-    height: 2px;
-    width: 20px;
-    background: #fff;
-    transition: all 0.3s ease;
-    background-color: #d8d8d8;
-  }
-  header #header .container .burger span:nth-of-type(2) {
-    margin: 5px 0;
-  }
-  header #header .container .burger span:before,
-  header #header .container .burger span:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 20px;
-    height: 2px;
-    background-color: #d8d8d8;
-    transition-duration: 0.3s, 0.3s;
-    transition-delay: 0.3s, 0s;
-  }
-  header #header .container .burger span:before {
-    top: 13px;
-    transition-property: top, transform;
-  }
-  header #header .container .burger span:after {
-    transition-property: bottom, transform;
-    bottom: 12px;
-  }
-  header #header .container .burger.is-active span {
-    background-color: transparent;
-  }
-  header #header .container .burger.is-active span:before,
-  header #header .container .burger.is-active span:after {
-    transition-delay: 0s, 0.3s;
-  }
-  header #header .container .burger.is-active span:before {
-    top: 22px;
-    left: 12px;
-    -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-  }
-  header #header .container .burger.is-active span:after {
-    bottom: 21px;
-    left: 12px;
-    -ms-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-  }
-  header #header .container.fixed {
-    width: 100%;
-    top: 0;
-    z-index: 12;
-    transition: all 0.5s linear;
   }
   .search-menu {
     display: none;
@@ -763,4 +696,162 @@
   #modal .product-details .blocks .block-info-right .table-haracter .block-table .span {
     min-width: 95px;
   }
+}
+@media screen and (max-device-width: 768px) {
+  .navBurger {
+    display: block !important;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    background: #111;
+    box-sizing: border-box;
+    background-clip: content-box;
+    width: 30px;
+    height: 24px;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    transition: all 0.25s ease-in-out;
+  }
+  .navBurger:before,
+  .navBurger:after {
+    content: "";
+    position: absolute;
+    background: #111;
+    height: 2px;
+    width: 100%;
+    right: 0;
+    will-change: rotate;
+    -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    transition: all 0.5s ease;
+  }
+  .navBurger:before {
+    top: -10px;
+  }
+  .navBurger:after {
+    bottom: -10px;
+    width: 90%;
+  }
+  .navBurger.active {
+    background: transparent;
+    background-clip: content-box;
+    z-index: 1000;
+  }
+  .navBurger.active:before {
+    -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
+    top: 0;
+    background: #eee;
+    width: 110%;
+  }
+  .navBurger.active:after {
+    bottom: 0;
+    -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+    background: #eee;
+    width: 110%;
+  }
+  .overlay {
+    display: block !important;
+    position: fixed;
+    background: #2a3140;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -ms-transform-origin: right top;
+        transform-origin: right top;
+    -ms-transform: scale(0);
+        transform: scale(0);
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    z-index: 100;
+  }
+  .overlay.open {
+    opacity: 0.99;
+    visibility: visible;
+    -ms-transform: scale(1);
+        transform: scale(1);
+  }
+  .overlay.open li {
+    display: block;
+    animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards;
+    animation-delay: 0.4s;
+    -ms-transform: rotate(-7deg);
+        transform: rotate(-7deg);
+    -ms-transform-origin: right bottom;
+        transform-origin: right bottom;
+  }
+  .overlay.open li:nth-of-type(2) {
+    animation-delay: 0.5s;
+  }
+  .overlay.open li:nth-of-type(3) {
+    animation-delay: 0.6s;
+  }
+  .overlay.open li:nth-of-type(4) {
+    animation-delay: 0.7s;
+  }
+  .overlay.open li:nth-of-type(5) {
+    animation-delay: 0.8s;
+  }
+  .overlayMenu {
+    position: relative;
+    text-align: right;
+    top: 10%;
+    right: 10vw;
+    bottom: 10vw;
+  }
+  .overlayMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    height: 100%;
+  }
+  .overlayMenu ul li {
+    display: block;
+    position: relative;
+    opacity: 0;
+    width: 100%;
+  }
+  .overlayMenu ul li a {
+    font-size: 13px;
+    font-family: 'Roboto-Regular';
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 40px 10px 40px;
+    margin: 5px 0;
+    transition: 0.2s;
+  }
+  .overlayMenu ul li a:hover,
+  .overlayMenu ul li a:active,
+  .overlayMenu ul li a:focus {
+    -ms-transform: translateX(-2px);
+        transform: translateX(-2px);
+    padding-left: 80px;
+    outline: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.03);
+  }
+  .locked {
+    overflow: hidden;
+  }
+@keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 50px;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+    }
+}
 }

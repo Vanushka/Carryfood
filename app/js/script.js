@@ -200,3 +200,14 @@ $(document).ready(function(){
   $('.popUp-nav-desktop .burger').on('click', function(e) {
     e.preventDefault()
   });
+
+
+
+
+
+  $("#navToggle").click(function() {
+      $(this).toggleClass("active");
+      $(".overlay").toggleClass("open");
+      // this line ▼ prevents content scroll-behind
+      $("body").toggleClass("locked");
+  });

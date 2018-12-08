@@ -1,14 +1,3 @@
-
-// .burger
-//   position fixed
-//   z-index 2
-//   right 0
-//   margin -38px 30px 0 0
-// &.fixed
-//   // position fixed
-//   width 100%
-//   left 0
-
 @media screen and (max-device-width: 768px)
   html,body, header #header .container
     width 100%
@@ -17,17 +6,23 @@
   header
     height 135px
     #header
+      width 100%
       display inline-block
       .container
+        display block
         span.is
           display none
         .logo
-          margin-left 10px
+          display none
+        .logo-mobile
+          display block
+          float left
+          margin-left 15px
         .group-select
+          margin 0 auto
           width 195px
-          margin-left 10px
           margin-top -10px
-          display inline-block
+          display block
           margin-bottom 20px
           .search-line
             display none
@@ -71,67 +66,6 @@
               margin-left 0
               a
                 margin-top -23px
-        .burger
-          margin-left 20px
-          margin-top -10px
-          cursor pointer
-          width 45px
-          height 45px
-          border-radius 7px
-          border 1px solid #D8D8D8
-          display flex
-          justify-content center
-          align-items center
-          flex-direction column
-          position relative
-          span
-            display block
-            top 44px
-            left 18px
-            right 18px
-            height 2px
-            width 20px
-            background #fff
-            transition all 0.3s ease
-            background-color #D8D8D8
-            &:nth-of-type(2)
-              margin 5px 0
-            &:before, &:after
-              content ''
-              position absolute
-              display block
-              width 20px
-              height 2px
-              background-color #D8D8D8
-              transition-duration: 0.3s, 0.3s;
-              transition-delay: 0.3s, 0s;
-            &:before
-              top 13px
-              transition-property: top, transform;
-            &:after
-              transition-property bottom, transform
-              bottom 12px
-          &.is-active
-            span
-              background-color transparent
-              &:before, &:after
-                transition-delay 0s, 0.3s
-              &:before
-                top 22px
-                left 12px
-                transform rotate(45deg)
-              &:after
-                bottom 21px
-                left 12px
-                transform rotate(-45deg)
-        &.fixed
-          // position fixed
-          // width 96.657%
-          // background-color transparent
-          width 100%
-          top 0
-          z-index 12
-          transition all .5s linear
   .search-menu
     display none
 @media screen and (max-device-width: 768px)
@@ -641,3 +575,163 @@
             .block-table
               .span
                 min-width 95px
+
+
+
+//--MOBILE-MENU--
+@media screen and (max-device-width: 768px)
+  .navBurger
+    display block !important
+    position: fixed
+    right: 20px
+    top: 20px
+    cursor: pointer
+    background: #111
+    box-sizing: border-box
+    background-clip: content-box
+    width: 30px
+    height: 24px
+    border-top: 11px solid transparent
+    border-bottom: 11px solid transparent
+    -webkit-transform: rotate(0deg)
+    transform: rotate(0deg)
+    transition: all 0.25s ease-in-out
+    &:before, &:after
+      content: ""
+      position: absolute
+      background: #111
+      height: 2px
+      width: 100%
+      right: 0
+      will-change: rotate
+      -webkit-transform: rotate(0deg)
+      transform: rotate(0deg)
+      transition: all 0.5s ease
+    &:before
+      top: -10px
+    &:after
+      bottom: -10px
+      width: 90%
+    &.active
+      background: transparent
+      background-clip: content-box
+      z-index 1000
+      &:before
+        -webkit-transform: rotate(135deg)
+        transform: rotate(135deg)
+        top: 0
+        background: #eee
+        width: 110%
+      &:after
+        bottom: 0
+        -webkit-transform: rotate(-135deg)
+        transform: rotate(-135deg)
+        background: #eee
+        width: 110%
+
+  .overlay
+    display block !important
+    position: fixed
+    background: #2a3140
+    top: 0
+    right: 0
+    width: 100%
+    height: 100%
+    opacity: 0
+    -webkit-transform-origin: right top
+    transform-origin: right top
+    -webkit-transform: scale(0)
+    transform: scale(0)
+    visibility: hidden
+    transition: all 0.4s ease-in-out
+    overflow: hidden
+    z-index 100
+    &.open
+      opacity: 0.99
+      visibility: visible
+      -webkit-transform: scale(1)
+      transform: scale(1)
+      li
+        display: block
+        -webkit-animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards
+        animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards
+        -webkit-animation-delay: 0.4s
+        animation-delay: 0.4s
+        -webkit-transform: rotate(-7deg)
+        transform: rotate(-7deg)
+        -webkit-transform-origin: right bottom
+        transform-origin: right bottom
+        &:nth-of-type(2)
+          -webkit-animation-delay: 0.5s
+          animation-delay: 0.5s
+        &:nth-of-type(3)
+          -webkit-animation-delay: 0.6s
+          animation-delay: 0.6s
+        &:nth-of-type(4)
+          -webkit-animation-delay: 0.7s
+          animation-delay: 0.7s
+        &:nth-of-type(5)
+          -webkit-animation-delay: 0.8s
+          animation-delay: 0.8s
+
+  .overlayMenu
+    position: relative
+    text-align: right
+    top 10%
+    right: 10vw
+    bottom: 10vw
+    ul
+      list-style: none
+      padding: 0
+      margin: 0 auto
+      display: block
+      position: relative
+      height: 100%
+      li
+        display: block
+        position: relative
+        opacity: 0
+        width: 100%
+        a
+          font-size: 13px
+          font-family: 'Roboto-Regular'
+          display: inline-block
+          // border: 1px solid rgba(255, 255, 255, 0.09)
+          color: #fff
+          text-decoration: none
+          font-size: 30px
+          padding: 10px 40px 10px 40px
+          margin: 5px 0
+          transition: 0.2s
+          &:hover, &:active, &:focus
+            -webkit-transform: translateX(-2px)
+            transform: translateX(-2px)
+            padding-left: 80px
+            outline: 1px solid rgba(255, 255, 255, 0.3)
+            background: rgba(255, 255, 255, 0.03)
+
+  .locked
+    overflow: hidden
+
+  @-webkit-keyframes fadeInRight
+    0%
+      opacity: 0
+      left: 50px
+
+    100%
+      opacity: 1
+      left: 0
+      -webkit-transform: rotate(0deg)
+      transform: rotate(0deg)
+
+
+  @keyframes fadeInRight
+    0%
+      opacity: 0
+      left: 50px
+
+    100%
+      opacity: 1
+      left: 0
+      -webkit-transform: rotate(0deg)
+      transform: rotate(0deg)

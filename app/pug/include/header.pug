@@ -14,6 +14,9 @@ body
         .logo
           a(href="index.html")
             img(src="./dist/img/logo.svg")
+        .logo-mobile
+          a(href="index.html")
+            img(src="./dist/img/logo-mobile.svg")
         span.is из
         .group-select
           .choose-shop
@@ -39,5 +42,18 @@ body
             a(href="#") Корзина
             .phone
               a(href="tel:+7 495 500-50-00") +7 495 500-50-00
-        .burger
-          span
+          #navToggle.navBurger(role='navigation')
+          .overlay
+            nav.overlayMenu
+              ul(role='menu')
+                li
+                  a(href='catalog.html', role='menuitem') Каталог
+                li
+                  a(href='#', role='menuitem') Помощь
+                li
+                  a(href='#', role='menuitem') Доставка
+                li
+                  a(href='#', role='menuitem') Скидки
+                li
+                  a(href='#', role='menuitem') Войти
+        
