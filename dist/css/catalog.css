@@ -251,6 +251,9 @@
 .filter-food #filterProducts .food:hover {
   border: 1px solid $red;
 }
+.filter-food-mobile {
+  display: none;
+}
 .foods-background {
   background: $backgroundgrey;
 }

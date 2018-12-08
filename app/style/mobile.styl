@@ -1,0 +1,643 @@
+
+// .burger
+//   position fixed
+//   z-index 2
+//   right 0
+//   margin -38px 30px 0 0
+// &.fixed
+//   // position fixed
+//   width 100%
+//   left 0
+
+@media screen and (max-device-width: 768px)
+  html,body, header #header .container
+    width 100%
+    min-width 100%
+    max-width 100%
+  header
+    height 135px
+    #header
+      display inline-block
+      .container
+        span.is
+          display none
+        .logo
+          margin-left 10px
+        .group-select
+          width 195px
+          margin-left 10px
+          margin-top -10px
+          display inline-block
+          margin-bottom 20px
+          .search-line
+            display none
+          .choose-shop
+            select
+              border-radius 5px
+              width 100%
+              height 30px
+              margin-left 10px
+              background url(../img/strelka-down.svg) 92%/5% no-repeat
+          .time-of-delivery
+            select
+              border-radius 5px
+              margin-top 5px
+              font-size 9px
+              width 100%
+              height 30px
+          .basket
+            text-align center
+            margin-top 4px
+            height 25px
+            width 95%
+            padding-top 2px
+            a
+              padding-left 0
+            img
+              display flex
+              width 22px
+              margin-top 2px
+            span
+              width 11px
+              font-size 8px
+              padding-left 2px
+              margin-top 2px
+              margin-left 16px
+              display flex
+              position absolute
+            .phone
+              display flex
+              justify-content center
+              margin-left 0
+              a
+                margin-top -23px
+        .burger
+          margin-left 20px
+          margin-top -10px
+          cursor pointer
+          width 45px
+          height 45px
+          border-radius 7px
+          border 1px solid #D8D8D8
+          display flex
+          justify-content center
+          align-items center
+          flex-direction column
+          position relative
+          span
+            display block
+            top 44px
+            left 18px
+            right 18px
+            height 2px
+            width 20px
+            background #fff
+            transition all 0.3s ease
+            background-color #D8D8D8
+            &:nth-of-type(2)
+              margin 5px 0
+            &:before, &:after
+              content ''
+              position absolute
+              display block
+              width 20px
+              height 2px
+              background-color #D8D8D8
+              transition-duration: 0.3s, 0.3s;
+              transition-delay: 0.3s, 0s;
+            &:before
+              top 13px
+              transition-property: top, transform;
+            &:after
+              transition-property bottom, transform
+              bottom 12px
+          &.is-active
+            span
+              background-color transparent
+              &:before, &:after
+                transition-delay 0s, 0.3s
+              &:before
+                top 22px
+                left 12px
+                transform rotate(45deg)
+              &:after
+                bottom 21px
+                left 12px
+                transform rotate(-45deg)
+        &.fixed
+          // position fixed
+          // width 96.657%
+          // background-color transparent
+          width 100%
+          top 0
+          z-index 12
+          transition all .5s linear
+  .search-menu
+    display none
+@media screen and (max-device-width: 768px)
+  .next-review-slider, .prev-review-slider
+    display none !important
+  .goods
+    margin-top 30px
+    margin-bottom 40px
+    padding-left 0
+    padding 5px
+    h1
+      margin-left 10px
+      color $darkgrey
+      font-size 20px
+      font-family 'Roboto-Bold'
+      text-transform uppercase
+      margin-top 20px
+      margin-bottom 18px
+      letter-spacing 2px
+      span
+        color $grey
+        margin-left 15px
+        font-size 16px
+        font-family 'Roboto-Medium'
+        letter-spacing 0
+    #goods-slider
+      width 100%
+      display flex
+      .good
+        display block
+        width 158.12px
+        height 190.8px
+        margin-right 6px
+        border-radius 10px
+        border 1px solid $bordergrey
+        a
+          .good-img
+            width 62.33px
+            height 60.18px
+            margin 17px auto
+            img
+              width 100%
+          .good-text
+            width 125.12px
+            height 61px
+            color $darkgrey
+            margin 0 auto
+            font-size 13px
+            font-family 'PT-Sans-Regular'
+            p
+              margin 0 8px
+              word-wrap break-word
+          .good-price-and-unit
+            display flex
+            justify-content space-between
+            .good-price
+              width 36px
+              height 19px
+              margin 5px 17px
+              p
+                margin 0
+                color $black
+                font-size 14px
+                font-family 'OpenSans-Bold'
+            .good-unit
+              width 52px
+              height 23px
+              margin 8px 17px
+              p
+                margin 0
+                color $lightgrey
+                text-align right
+                font-size 13px
+                font-family 'PT-Sans-Regular'
+        &:hover
+          border 1px solid $red
+  #slider-present
+    display none
+  .container
+    max-width none
+  .new-goods-background
+    display none
+  .new-goods-background-mobile
+    display block
+    width 100%
+    background $backgroundgrey
+    .container
+      margin 0 auto
+      max-width 1280px
+    .new-goods
+      margin-top 30px
+      margin-bottom 40px
+      padding-top 30px
+      padding-left 0
+      padding 5px
+      padding-bottom 40px
+      background $backgroundgrey
+      h1
+        margin-top 20px
+        margin-left 10px
+        color $darkgrey
+        font-size 20px
+        font-family 'Roboto-Bold'
+        text-transform uppercase
+        margin-bottom 18px
+        letter-spacing 2px
+        span
+          display none
+          color $grey
+          margin-left 15px
+          font-size 16px
+          font-family 'Roboto-Medium'
+          letter-spacing 0
+      .all-list
+        float right
+        margin-top -38px
+        margin-right 20px
+        margin-right 0
+        a
+          color $darkgrey
+          font-size 13px
+          font-family 'Roboto-Bold'
+          span
+            color $darkgrey
+            margin-left 7px
+      #newgoods-mobile
+        width 100%
+        display inline-block
+        .good
+          background $white
+          display block
+          width 100%
+          height auto
+          margin-right 5px
+          border-radius 10px
+          margin-bottom 15px
+          border 1px solid $white
+          a
+            .good-img
+              width 142px
+              height 136.5px
+              margin 17px auto
+              margin-bottom 30px
+              img
+                width 100%
+            .good-text
+              width 160px
+              height 61px
+              color $darkgrey
+              margin 0 auto
+              font-size 15px
+              font-family 'PT-Sans-Regular'
+              p
+                margin 0
+                word-wrap break-word
+            .good-price-and-unit
+              display flex
+              justify-content space-between
+              .good-price
+                width 36px
+                height 19px
+                margin 2px 17px
+                p
+                  margin 0
+                  color $black
+                  font-size 17px
+                  font-family 'OpenSans-Bold'
+              .good-unit
+                width 52px
+                height 23px
+                margin 2px 17px
+                p
+                  margin 0
+                  color $lightgrey
+                  text-align right
+                  font-size 15px
+                  margin-top 2px
+                  font-family 'PT-Sans-Regular'
+          &:hover
+            border 1px solid $red
+
+@media screen and (max-device-width: 768px)
+    .goods-viewed
+      max-width none
+      display none !important
+    .goods-viewed-mobile
+      display block
+      margin-top -50px !important
+      max-width 1280px
+      margin-top 30px
+      padding-bottom 0 !important
+      padding-left 0
+      padding 5px
+      h1
+        margin-top 30px
+        margin-left 10px
+        color $darkgrey
+        font-size 20px
+        font-family 'Roboto-Bold'
+        text-transform uppercase
+        margin-bottom 18px
+        letter-spacing 2px
+        span
+          display none
+          color $grey
+          margin-left 15px
+          font-size 16px
+          font-family 'Roboto-Medium'
+          letter-spacing 0
+      .all-list
+        float right
+        margin-top -38px
+        margin-right 20px
+        margin-right 0
+        a
+          color $darkgrey
+          font-size 13px
+          font-family 'Roboto-Bold'
+          span
+            color $darkgrey
+            margin-left 7px
+      #viewedProductsMobile
+        width 100%
+        display inline-block
+        flex-wrap wrap
+        .good
+          display block
+          width 100%
+          height auto
+          margin-right 6px
+          margin-bottom 10px
+          border-radius 10px
+          border 1px solid $bordergrey
+          a
+            .good-img
+              width 142px
+              height 136.5px
+              margin 17px auto
+              img
+                width 100%
+            .good-text
+              width 160px
+              height 61px
+              color $darkgrey
+              margin 0 auto
+              font-size 15px
+              font-family 'PT-Sans-Regular'
+              p
+                margin 0
+                margin-top 30px
+                word-wrap break-word
+            .good-price-and-unit
+              display flex
+              justify-content space-between
+              .good-price
+                width 36px
+                height 19px
+                margin 2px 17px
+                p
+                  margin 0
+                  color $black
+                  font-size 17px
+                  font-family 'OpenSans-Bold'
+              .good-unit
+                width 52px
+                height 23px
+                margin-top 2px
+                margin 2px 17px
+                p
+                  margin 0
+                  color $lightgrey
+                  text-align right
+                  font-size 15px
+                  font-family 'PT-Sans-Regular'
+          &:hover
+            border 1px solid $red
+
+    .customer-reviews-background .customer-reviews #reviews .review .review-data
+      position relative
+
+    .customer-reviews-background .customer-reviews h1
+      margin-top 20px
+
+    .customer-reviews-background .customer-reviews
+      margin-bottom -40px
+      padding-left 0
+      padding 15px
+
+    .customer-reviews-background .customer-reviews #reviews .review
+      max-width 100%
+      height max-content
+      padding-bottom 10px
+      width 100%
+
+    .reviews-gradient
+      display none
+
+    .block-mobile-apps
+      height auto
+    .block-mobile-apps .google-and-apple
+      padding-bottom 40px
+      margin 0
+
+    footer
+      height auto
+      padding-bottom 90px
+
+    footer, .container
+      max-width none !important
+
+    footer
+      .footer-left
+        width 100%
+        margin-left 0
+        float none
+        a.tel, a.mail
+          margin-left 15px
+
+    footer
+      .footer-left
+        .footer-logo-and-address
+          display block
+
+    footer
+      .footer-left
+        .footer-logo-and-address
+          .footer-logo
+            display flex
+            margin 0 auto
+            justify-content center
+    footer
+      .footer-left .footer-left-line
+        width 90%
+        margin 25px auto
+
+    footer
+      .footer-left
+        .footer-logo-and-address
+          .address
+            margin 0 auto
+            width 80%
+    footer
+      .footer-right
+        float none
+        display flex
+        justify-content space-evenly
+        margin-right 0
+
+    footer
+      .footer-right
+        img
+          margin-top 210px
+
+
+// --PAGE-CATALOG--
+@media screen and (max-device-width: 768px)
+  .filter-block
+    .bread-crumbs
+      margin-left 20px
+  .filter-block
+    .filter
+      .hashtags
+        white-space nowrap
+        display block
+        width max-content
+        margin-top 10px
+        margin 0 auto
+        .hashtag
+          margin-top 10px
+  .filter-block
+    .filter-line
+      .sorts-block
+        display grid
+        margin-right 5px
+  .filter-block
+    .filter-line
+      a.filter-button
+        margin-left 10px
+        margin-top 65px
+  .foods
+    padding-left 0
+    padding 5px
+    h1
+      margin-top 20px
+  .foods
+    #foodSlider
+      .food
+        background #fff
+        margin-bottom 30px
+  .filter-food
+    display none
+  .filter-food-mobile
+    display block
+    margin-top 30px
+    margin-bottom 40px
+    padding-left 0
+    padding 5px
+    padding-top 0 !important
+    h1
+    #filterProductsMobile
+      width 100%
+      display flex
+      flex-wrap wrap
+      .food
+        display block
+        width 100%
+        height 280px
+        margin-right 6px
+        margin-bottom 10px
+        border-radius 10px
+        border 1px solid $bordergrey
+        a
+          .food-img
+            width 142px
+            height 136.5px
+            margin 17px auto
+            img
+              width 100%
+          .food-text
+            width 160px
+            height 61px
+            color $darkgrey
+            margin 0 auto
+            font-size 15px
+            font-family 'PT-Sans-Regular'
+            p
+              margin 0
+              margin-top 30px
+              word-wrap break-word
+          .food-price-and-unit
+            display flex
+            justify-content space-between
+            .food-price
+              width 36px
+              height 19px
+              margin 2px 17px
+              p
+                margin 0
+                color $black
+                font-size 14px
+                font-family 'OpenSans-Bold'
+            .food-unit
+              width 52px
+              height 23px
+              margin 2px 17px
+              p
+                margin 0
+                color $lightgrey
+                text-align right
+                font-size 13px
+                margin-top 2px
+                font-family 'PT-Sans-Regular'
+        &:hover
+          border 1px solid $red
+
+// --INDEX2--
+@media screen and (max-device-width: 768px)
+  #smart-list
+    .smart.container
+      .hashtags
+        .group-hashtags
+          display block
+          margin-left 10px
+          .hashtag
+            margin-top 10px
+        .smart-search
+          height 25px
+  .goods
+    margin-top 0
+
+
+//--MODAL--
+@media screen and (max-device-width: 768px)
+  #modal
+    .product-details
+      top 0
+      bottom 0
+      width 100%
+      max-width none
+      .close
+        top 27px
+        right 30px
+        &:after
+          height 30px
+        &:before
+          height 30px
+      .name
+        margin-left 35px
+      .img
+        float none
+        margin-left 35px
+        margin 20px auto
+      .price
+        margin-left 35px
+        margin-top 30px
+      a.in-basket
+        margin-left 35px
+      .blocks
+        margin-left 35px
+        display block
+        .block-info-right
+          width 100%
+          margin-top 25px
+          .table-haracter
+            .line-horizontal
+              width 90%
+            .block-table
+              .span
+                min-width 95px

@@ -36,7 +36,7 @@ html
     #slider-present
       each slide in slidercontent
         .slide-present
-          img(src="src=slide.img")
+          img(src=slide.img)
           .slider-content
             h1= slide.h1
             p= slide.p 
@@ -76,6 +76,27 @@ html
                       p= val.price
                     .good-unit
                       p= val.unit
+    .new-goods-background-mobile
+      .new-goods.container
+        h1 Новые товары
+          span 135
+        .all-list
+          a(href="catalog.html") Весь список
+            span
+              img(src="/dist/img/strelka.svg")
+        #newgoods-mobile
+            each val in newfoodsmobile
+              .good
+                a(href="javascript:openProductDetail()")
+                  .good-img 
+                    img(src=val.img)
+                  .good-text
+                    p= val.text
+                  .good-price-and-unit
+                    .good-price
+                      p= val.price
+                    .good-unit
+                      p= val.unit
     .goods-viewed.container
       h1 Вы смотрели
         span 75
@@ -85,6 +106,26 @@ html
             img(src="/dist/img/strelka.svg")
       #viewedProducts
         each val in viewedfoods
+          .good  
+            a(href="javascript:openProductDetail()")
+              .good-img 
+                img(src=val.img)
+              .good-text
+                p= val.text
+              .good-price-and-unit
+                .good-price
+                  p= val.price
+                .good-unit
+                  p= val.unit
+    .goods-viewed-mobile
+      h1 Вы смотрели
+        span 75
+      .all-list
+        a(href="catalog.html") Весь список 
+          span
+            img(src="/dist/img/strelka.svg")
+      #viewedProductsMobile
+        each val in viewedfoodsmobile
           .good  
             a(href="javascript:openProductDetail()")
               .good-img 

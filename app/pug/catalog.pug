@@ -54,6 +54,20 @@ html
                   p= val.price
                 .food-unit
                   p= val.unit
+    .filter-food-mobile
+      #filterProductsMobile
+        each val in catalogfoodsmobile
+          .food  
+            a(href="javascript:openProductDetail()")
+              .food-img 
+                img(src=val.img)
+              .food-text
+                p= val.text
+              .food-price-and-unit
+                .food-price
+                  p= val.price
+                .food-unit
+                  p= val.unit
     .foods-background
       .foods.container
         h1 Вы смотрели

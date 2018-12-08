@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./dist/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./dist/css/slick.css">
     <link rel="stylesheet" href="./dist/css/style.css">
@@ -13,85 +14,88 @@
     <header>
       <div id="header">
         <div class="container">
-          <div class="logo"><a href="index.html"><img src="./dist/img/logo.svg"></a></div><span>из</span>
-          <div class="choose-shop">
-            <select id="shop"> 
-              <option><span value="metro">METRO</span></option>
-            </select>
+          <div class="logo"><a href="index.html"><img src="./dist/img/logo.svg"></a></div><span class="is">из</span>
+          <div class="group-select">
+            <div class="choose-shop">
+              <select id="shop"> 
+                <option><span value="metro">METRO</span></option>
+              </select>
+            </div>
+            <div class="search-line">
+              <input type="text" placeholder="Поиск...">
+              <div class="search-menu"><a href="catalog.html">Каталог</a><a href="#">Помощь</a><a href="#">Доставка</a><a href="#">Скидки </a><a href="#">Войти</a></div>
+            </div>
+            <div class="time-of-delivery">
+              <select>
+                <option>Доставим сегодня 08:00-15:00</option>
+                <option>Доставим завтра 08:00-13:00</option>
+                <option>Доставим сегодня 08:00-10:00</option>
+                <option>Доставим сегодня 09:00-11:00</option>
+                <option>Доставим сегодня 10:00-12:00</option>
+                <option>Доставим сегодня 11:00-13:00</option>
+                <option>Доставим сегодня 12:00-14:00</option>
+                <option>Доставим сегодня 13:00-15:00</option>
+                <option>Доставим сегодня 14:00-19:00</option>
+                <option>Доставим сегодня 14:00-16:00</option>
+                <option>Доставим сегодня 15:00-17:00</option>
+                <option>Доставим сегодня 16:00-01:00</option>
+                <option>Доставим сегодня 16:00-18:00</option>
+                <option>Доставим сегодня 16:00-18:00</option>
+                <option>Доставим сегодня 17:00-19:00</option>
+                <option>Доставим сегодня 18:00-20:00</option>
+                <option>Доставим сегодня 19:00-21:00</option>
+                <option>Доставим сегодня 20:00-01:00</option>
+                <option>Доставим сегодня 20:00-22:00</option>
+                <option>Доставим сегодня 21:00-23:00</option>
+                <option>Доставим сегодня 22:00-00:00</option>
+                <option>Доставим сегодня 23:00-01:00</option>
+                <option>Доставим завтра 08:00-15:00</option>
+                <option>Доставим завтра 08:00-13:00</option>
+                <option>Доставим завтра 08:00-10:00</option>
+                <option>Доставим завтра 09:00-11:00</option>
+                <option>Доставим завтра 10:00-12:00</option>
+                <option>Доставим завтра 11:00-13:00</option>
+                <option>Доставим завтра 12:00-14:00</option>
+                <option>Доставим завтра 13:00-15:00</option>
+                <option>Доставим завтра 14:00-19:00</option>
+                <option>Доставим завтра 14:00-16:00</option>
+                <option>Доставим завтра 15:00-17:00</option>
+                <option>Доставим завтра 16:00-01:00</option>
+                <option>Доставим завтра 16:00-18:00</option>
+                <option>Доставим завтра 17:00-19:00</option>
+                <option>Доставим завтра 18:00-20:00</option>
+                <option>Доставим завтра 19:00-21:00</option>
+                <option>Доставим завтра 20:00-01:00</option>
+                <option>Доставим завтра 20:00-22:00</option>
+                <option>Доставим завтра 21:00-23:00</option>
+                <option>Доставим завтра 22:00-00:00</option>
+                <option>Доставим завтра 23:00-01:00</option>
+              </select>
+            </div>
+            <div class="basket"><img src="./dist/img/basket.svg"><span>15</span><a href="#">Корзина</a>
+              <div class="phone"><a href="tel:+7 495 500-50-00">+7 495 500-50-00</a></div>
+            </div>
           </div>
-          <div class="search-line">
-            <input type="text" placeholder="Поиск...">
-            <div class="search-menu"><a href="catalog.html">Каталог</a><a href="#">Помощь</a><a href="#">Доставка</a><a href="#">Скидки </a><a href="#">Войти</a></div>
-          </div>
-          <div class="time-of-delivery">
-            <select>
-              <option>Доставим сегодня 08:00-15:00</option>
-              <option>Доставим завтра 08:00-13:00</option>
-              <option>Доставим сегодня 08:00-10:00</option>
-              <option>Доставим сегодня 09:00-11:00</option>
-              <option>Доставим сегодня 10:00-12:00</option>
-              <option>Доставим сегодня 11:00-13:00</option>
-              <option>Доставим сегодня 12:00-14:00</option>
-              <option>Доставим сегодня 13:00-15:00</option>
-              <option>Доставим сегодня 14:00-19:00</option>
-              <option>Доставим сегодня 14:00-16:00</option>
-              <option>Доставим сегодня 15:00-17:00</option>
-              <option>Доставим сегодня 16:00-01:00</option>
-              <option>Доставим сегодня 16:00-18:00</option>
-              <option>Доставим сегодня 16:00-18:00</option>
-              <option>Доставим сегодня 17:00-19:00</option>
-              <option>Доставим сегодня 18:00-20:00</option>
-              <option>Доставим сегодня 19:00-21:00</option>
-              <option>Доставим сегодня 20:00-01:00</option>
-              <option>Доставим сегодня 20:00-22:00</option>
-              <option>Доставим сегодня 21:00-23:00</option>
-              <option>Доставим сегодня 22:00-00:00</option>
-              <option>Доставим сегодня 23:00-01:00</option>
-              <option>Доставим завтра 08:00-15:00</option>
-              <option>Доставим завтра 08:00-13:00</option>
-              <option>Доставим завтра 08:00-10:00</option>
-              <option>Доставим завтра 09:00-11:00</option>
-              <option>Доставим завтра 10:00-12:00</option>
-              <option>Доставим завтра 11:00-13:00</option>
-              <option>Доставим завтра 12:00-14:00</option>
-              <option>Доставим завтра 13:00-15:00</option>
-              <option>Доставим завтра 14:00-19:00</option>
-              <option>Доставим завтра 14:00-16:00</option>
-              <option>Доставим завтра 15:00-17:00</option>
-              <option>Доставим завтра 16:00-01:00</option>
-              <option>Доставим завтра 16:00-18:00</option>
-              <option>Доставим завтра 17:00-19:00</option>
-              <option>Доставим завтра 18:00-20:00</option>
-              <option>Доставим завтра 19:00-21:00</option>
-              <option>Доставим завтра 20:00-01:00</option>
-              <option>Доставим завтра 20:00-22:00</option>
-              <option>Доставим завтра 21:00-23:00</option>
-              <option>Доставим завтра 22:00-00:00</option>
-              <option>Доставим завтра 23:00-01:00</option>
-            </select>
-          </div>
-          <div class="basket"><img src="./dist/img/basket.svg"><span>15</span><a href="#">Корзина</a>
-            <div class="phone"><a href="tel:+7 495 500-50-00">+7 495 500-50-00</a></div>
-          </div>
+          <div class="burger"><span></span></div>
         </div>
       </div>
     </header>
   </body>
-  <body> 
+  <body>
     <div id="slider-present">
-      <div class="slide-present"><img src="src=slide.img">
+      <div class="slide-present"><img src="dist/img/slider-background.png">
         <div class="slider-content">
           <h1>БЕСПЛАТНО ПРИВЕЗЕМ</h1>
           <p>Привезем ваш заказ бесплатно при первом заказе на сайте или в приложении.</p>
         </div>
       </div>
-      <div class="slide-present"><img src="src=slide.img">
+      <div class="slide-present"><img src="dist/img/slider-background.png">
         <div class="slider-content">
           <h1>БЕСПЛАТНО ПРИВЕЗЕМ</h1>
           <p>Привезем ваш заказ бесплатно при первом заказе на сайте или в приложении.</p>
         </div>
       </div>
-      <div class="slide-present"><img src="src=slide.img">
+      <div class="slide-present"><img src="dist/img/slider-background.png">
         <div class="slider-content">
           <h1>БЕСПЛАТНО ПРИВЕЗЕМ</h1>
           <p>Привезем ваш заказ бесплатно при первом заказе на сайте или в приложении.</p>
@@ -110,7 +114,7 @@
               <div class="good-price">
                 <p>59,99</p>
               </div>
-              <div class="good-unit">  
+              <div class="good-unit">
                 <p>1л</p>
               </div>
             </div></a></div>
@@ -123,7 +127,7 @@
               <div class="good-price">
                 <p>45,99</p>
               </div>
-              <div class="good-unit">  
+              <div class="good-unit">
                 <p>1шт</p>
               </div>
             </div></a></div>
@@ -136,7 +140,7 @@
               <div class="good-price">
                 <p>135,99</p>
               </div>
-              <div class="good-unit">  
+              <div class="good-unit">
                 <p>500гр</p>
               </div>
             </div></a></div>
@@ -149,7 +153,7 @@
               <div class="good-price">
                 <p>214,00</p>
               </div>
-              <div class="good-unit">  
+              <div class="good-unit">
                 <p>1шт</p>
               </div>
             </div></a></div>
@@ -162,7 +166,7 @@
               <div class="good-price">
                 <p>320,00</p>
               </div>
-              <div class="good-unit">  
+              <div class="good-unit">
                 <p>1л</p>
               </div>
             </div></a></div>
@@ -175,7 +179,7 @@
               <div class="good-price">
                 <p>56,00</p>
               </div>
-              <div class="good-unit">  
+              <div class="good-unit">
                 <p>1кг</p>
               </div>
             </div></a></div>
@@ -188,7 +192,7 @@
               <div class="good-price">
                 <p>120,99</p>
               </div>
-              <div class="good-unit">  
+              <div class="good-unit">
                 <p>1кг</p>
               </div>
             </div></a></div>
@@ -201,7 +205,7 @@
               <div class="good-price">
                 <p>97,00</p>
               </div>
-              <div class="good-unit">  
+              <div class="good-unit">
                 <p>1кг</p>
               </div>
             </div></a></div>
@@ -214,7 +218,7 @@
               <div class="good-price">
                 <p>97,00</p>
               </div>
-              <div class="good-unit">  
+              <div class="good-unit">
                 <p>1кг</p>
               </div>
             </div></a></div>
@@ -227,7 +231,7 @@
               <div class="good-price">
                 <p>59,99</p>
               </div>
-              <div class="good-unit">  
+              <div class="good-unit">
                 <p>1л</p>
               </div>
             </div></a></div>
@@ -240,7 +244,7 @@
               <div class="good-price">
                 <p>45,99</p>
               </div>
-              <div class="good-unit">  
+              <div class="good-unit">
                 <p>1шт</p>
               </div>
             </div></a></div>
@@ -253,7 +257,7 @@
               <div class="good-price">
                 <p>135,99</p>
               </div>
-              <div class="good-unit">  
+              <div class="good-unit">
                 <p>500гр</p>
               </div>
             </div></a></div>
@@ -266,7 +270,7 @@
               <div class="good-price">
                 <p>214,00</p>
               </div>
-              <div class="good-unit">  
+              <div class="good-unit">
                 <p>1шт</p>
               </div>
             </div></a></div>
@@ -279,7 +283,7 @@
               <div class="good-price">
                 <p>320,00</p>
               </div>
-              <div class="good-unit">  
+              <div class="good-unit">
                 <p>1л</p>
               </div>
             </div></a></div>
@@ -292,7 +296,7 @@
               <div class="good-price">
                 <p>56,00</p>
               </div>
-              <div class="good-unit">  
+              <div class="good-unit">
                 <p>1кг</p>
               </div>
             </div></a></div>
@@ -305,7 +309,7 @@
               <div class="good-price">
                 <p>120,99</p>
               </div>
-              <div class="good-unit">  
+              <div class="good-unit">
                 <p>1кг</p>
               </div>
             </div></a></div>
@@ -318,7 +322,7 @@
               <div class="good-price">
                 <p>97,00</p>
               </div>
-              <div class="good-unit">  
+              <div class="good-unit">
                 <p>1кг</p>
               </div>
             </div></a></div>
@@ -331,7 +335,7 @@
               <div class="good-price">
                 <p>97,00</p>
               </div>
-              <div class="good-unit">  
+              <div class="good-unit">
                 <p>1кг</p>
               </div>
             </div></a></div>
@@ -418,6 +422,53 @@
                 </div>
                 <div class="good-unit"> 
                   <p>1кг</p>
+                </div>
+              </div></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="new-goods-background-mobile">
+      <div class="new-goods container">
+        <h1>Новые товары<span>135 </span></h1>
+        <div class="all-list"><a href="catalog.html">Весь список<span> <img src="./dist/img/strelka.svg"></span></a></div>
+        <div id="newgoods-mobile">
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/new-food-1.png"></div>
+              <div class="good-text">
+                <p>Молоко Parmalat ультрапастеризованное 3,5% 1 л</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>59,99</p>
+                </div>
+                <div class="good-unit"> 
+                  <p>1л</p>
+                </div>
+              </div></a></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/new-food-2.png"></div>
+              <div class="good-text">
+                <p>Творог Простоквашино 2%</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>45,99</p>
+                </div>
+                <div class="good-unit"> 
+                  <p>1шт</p>
+                </div>
+              </div></a></div>
+          <div class="good"><a href="javascript:openProductDetail()">
+              <div class="good-img"> <img src="dist/img/new-food-3.png"></div>
+              <div class="good-text">
+                <p>Йогурт Landliebe с персиком и маракуйей 3,3% 150 г</p>
+              </div>
+              <div class="good-price-and-unit">
+                <div class="good-price">
+                  <p>135,99</p>
+                </div>
+                <div class="good-unit"> 
+                  <p>500гр</p>
                 </div>
               </div></a></div>
         </div>
@@ -572,6 +623,51 @@
             </div></a></div>
         <div class="good"> <a href="javascript:openProductDetail()">
             <div class="good-img"> <img src="dist/img/food-view-12.png"></div>
+            <div class="good-text">
+              <p>Йогурт Landliebe с персиком и маракуйей 3,3% 150 г</p>
+            </div>
+            <div class="good-price-and-unit">
+              <div class="good-price">
+                <p>135,99</p>
+              </div>
+              <div class="good-unit">
+                <p>500гр</p>
+              </div>
+            </div></a></div>
+      </div>
+    </div>
+    <div class="goods-viewed-mobile">
+      <h1>Вы смотрели <span>75</span></h1>
+      <div class="all-list"> <a href="catalog.html">Весь список<span><img src="./dist/img/strelka.svg"></span></a></div>
+      <div id="viewedProductsMobile">
+        <div class="good"> <a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-view-1.png"></div>
+            <div class="good-text">
+              <p>Молоко Parmalat ультрапастеризованное 3,5% 1 л</p>
+            </div>
+            <div class="good-price-and-unit">
+              <div class="good-price">
+                <p>59,99</p>
+              </div>
+              <div class="good-unit">
+                <p>1л</p>
+              </div>
+            </div></a></div>
+        <div class="good"> <a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-view-2.png"></div>
+            <div class="good-text">
+              <p>Творог Простоквашино 2%</p>
+            </div>
+            <div class="good-price-and-unit">
+              <div class="good-price">
+                <p>45,99</p>
+              </div>
+              <div class="good-unit">
+                <p>1шт</p>
+              </div>
+            </div></a></div>
+        <div class="good"> <a href="javascript:openProductDetail()">
+            <div class="good-img"> <img src="dist/img/food-view-3.png"></div>
             <div class="good-text">
               <p>Йогурт Landliebe с персиком и маракуйей 3,3% 150 г</p>
             </div>
