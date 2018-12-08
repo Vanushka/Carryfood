@@ -109,7 +109,7 @@
             img
               width 100%
           .good-text
-            width 125.12px
+            width 95%
             height 61px
             color $darkgrey
             margin 0 auto
@@ -183,7 +183,7 @@
         float right
         margin-top -38px
         margin-right 20px
-        margin-right 0
+        margin-right 10px
         a
           color $darkgrey
           font-size 13px
@@ -197,9 +197,9 @@
         .good
           background $white
           display block
-          width 100%
+          width 80%
           height auto
-          margin-right 5px
+          margin 0 auto
           border-radius 10px
           margin-bottom 15px
           border 1px solid $white
@@ -212,7 +212,7 @@
               img
                 width 100%
             .good-text
-              width 160px
+              width 86%
               height 61px
               color $darkgrey
               margin 0 auto
@@ -223,6 +223,7 @@
                 word-wrap break-word
             .good-price-and-unit
               display flex
+              margin-bottom 10px
               justify-content space-between
               .good-price
                 width 36px
@@ -279,7 +280,7 @@
         float right
         margin-top -38px
         margin-right 20px
-        margin-right 0
+        margin-right 10px
         a
           color $darkgrey
           font-size 13px
@@ -293,9 +294,9 @@
         flex-wrap wrap
         .good
           display block
-          width 100%
+          width 80%
+          margin 0 auto
           height auto
-          margin-right 6px
           margin-bottom 10px
           border-radius 10px
           border 1px solid $bordergrey
@@ -307,7 +308,7 @@
               img
                 width 100%
             .good-text
-              width 160px
+              width 87%
               height 61px
               color $darkgrey
               margin 0 auto
@@ -319,6 +320,7 @@
                 word-wrap break-word
             .good-price-and-unit
               display flex
+              margin-bottom 10px
               justify-content space-between
               .good-price
                 width 36px
@@ -427,6 +429,8 @@
       margin-left 20px
   .filter-block
     .filter
+      h1
+        font-size 25px
       .hashtags
         white-space nowrap
         display block
@@ -471,9 +475,9 @@
       flex-wrap wrap
       .food
         display block
-        width 100%
+        width 80%
         height 280px
-        margin-right 6px
+        margin 0 auto
         margin-bottom 10px
         border-radius 10px
         border 1px solid $bordergrey
@@ -485,7 +489,7 @@
             img
               width 100%
           .food-text
-            width 160px
+            width 86%
             height 61px
             color $darkgrey
             margin 0 auto
@@ -532,7 +536,8 @@
           .hashtag
             margin-top 10px
         .smart-search
-          height 25px
+          height 20px
+          margin-right 8px
   .goods
     margin-top 0
 
@@ -543,8 +548,10 @@
     .product-details
       top 0
       bottom 0
+      z-index 30
       width 100%
       max-width none
+      border-radius 0
       .close
         top 27px
         right 30px
@@ -553,6 +560,8 @@
         &:before
           height 30px
       .name
+        margin-left 35px
+      .unit
         margin-left 35px
       .img
         float none
@@ -566,6 +575,9 @@
       .blocks
         margin-left 35px
         display block
+        .block-info
+          .text
+            width 90%
         .block-info-right
           width 100%
           margin-top 25px
@@ -581,6 +593,7 @@
 //--MOBILE-MENU--
 @media screen and (max-device-width: 768px)
   .navBurger
+    z-index: 10
     display block !important
     position: fixed
     right: 20px
@@ -692,6 +705,7 @@
         position: relative
         opacity: 0
         width: 100%
+
         a
           font-size: 13px
           font-family: 'Roboto-Regular'
@@ -707,8 +721,23 @@
             -webkit-transform: translateX(-2px)
             transform: translateX(-2px)
             padding-left: 80px
-            outline: 1px solid rgba(255, 255, 255, 0.3)
+            // outline: 1px solid rgba(255, 255, 255, 0.3)
             background: rgba(255, 255, 255, 0.03)
+        .input-group
+          input
+            border 0
+            color $black
+            font-size 15px
+            font-family 'Roboto-Regular'
+            border-radius 30px
+          input[type="text"]
+            height 30px
+            background url(../img/loop.svg) $white no-repeat 94%/7%
+            padding-left 25px
+            margin-bottom 15px
+          input
+            &:focus::-webkit-input-placeholder
+              opacity 0
 
   .locked
     overflow: hidden

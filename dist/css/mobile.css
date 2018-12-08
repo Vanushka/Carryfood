@@ -141,7 +141,7 @@
     width: 100%;
   }
   .goods #goods-slider .good a .good-text {
-    width: 125.12px;
+    width: 95%;
     height: 61px;
     color: $darkgrey;
     margin: 0 auto;
@@ -233,7 +233,7 @@
     float: right;
     margin-top: -38px;
     margin-right: 20px;
-    margin-right: 0;
+    margin-right: 10px;
   }
   .new-goods-background-mobile .new-goods .all-list a {
     color: $darkgrey;
@@ -251,9 +251,9 @@
   .new-goods-background-mobile .new-goods #newgoods-mobile .good {
     background: $white;
     display: block;
-    width: 100%;
+    width: 80%;
     height: auto;
-    margin-right: 5px;
+    margin: 0 auto;
     border-radius: 10px;
     margin-bottom: 15px;
     border: 1px solid $white;
@@ -268,7 +268,7 @@
     width: 100%;
   }
   .new-goods-background-mobile .new-goods #newgoods-mobile .good a .good-text {
-    width: 160px;
+    width: 86%;
     height: 61px;
     color: $darkgrey;
     margin: 0 auto;
@@ -282,6 +282,7 @@
   .new-goods-background-mobile .new-goods #newgoods-mobile .good a .good-price-and-unit {
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 10px;
     -ms-flex-pack: justify;
         justify-content: space-between;
   }
@@ -349,7 +350,7 @@
     float: right;
     margin-top: -38px;
     margin-right: 20px;
-    margin-right: 0;
+    margin-right: 10px;
   }
   .goods-viewed-mobile .all-list a {
     color: $darkgrey;
@@ -368,9 +369,9 @@
   }
   .goods-viewed-mobile #viewedProductsMobile .good {
     display: block;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     height: auto;
-    margin-right: 6px;
     margin-bottom: 10px;
     border-radius: 10px;
     border: 1px solid $bordergrey;
@@ -384,7 +385,7 @@
     width: 100%;
   }
   .goods-viewed-mobile #viewedProductsMobile .good a .good-text {
-    width: 160px;
+    width: 87%;
     height: 61px;
     color: $darkgrey;
     margin: 0 auto;
@@ -399,6 +400,7 @@
   .goods-viewed-mobile #viewedProductsMobile .good a .good-price-and-unit {
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 10px;
     -ms-flex-pack: justify;
         justify-content: space-between;
   }
@@ -509,6 +511,9 @@
   .filter-block .bread-crumbs {
     margin-left: 20px;
   }
+  .filter-block .filter h1 {
+    font-size: 25px;
+  }
   .filter-block .filter .hashtags {
     white-space: nowrap;
     display: block;
@@ -563,9 +568,9 @@
   .filter-food-mobile h1 .food,
   .filter-food-mobile #filterProductsMobile .food {
     display: block;
-    width: 100%;
+    width: 80%;
     height: 280px;
-    margin-right: 6px;
+    margin: 0 auto;
     margin-bottom: 10px;
     border-radius: 10px;
     border: 1px solid $bordergrey;
@@ -582,7 +587,7 @@
   }
   .filter-food-mobile h1 .food a .food-text,
   .filter-food-mobile #filterProductsMobile .food a .food-text {
-    width: 160px;
+    width: 86%;
     height: 61px;
     color: $darkgrey;
     margin: 0 auto;
@@ -644,7 +649,8 @@
     margin-top: 10px;
   }
   #smart-list .smart.container .hashtags .smart-search {
-    height: 25px;
+    height: 20px;
+    margin-right: 8px;
   }
   .goods {
     margin-top: 0;
@@ -654,8 +660,10 @@
   #modal .product-details {
     top: 0;
     bottom: 0;
+    z-index: 30;
     width: 100%;
     max-width: none;
+    border-radius: 0;
   }
   #modal .product-details .close {
     top: 27px;
@@ -668,6 +676,9 @@
     height: 30px;
   }
   #modal .product-details .name {
+    margin-left: 35px;
+  }
+  #modal .product-details .unit {
     margin-left: 35px;
   }
   #modal .product-details .img {
@@ -686,6 +697,9 @@
     margin-left: 35px;
     display: block;
   }
+  #modal .product-details .blocks .block-info .text {
+    width: 90%;
+  }
   #modal .product-details .blocks .block-info-right {
     width: 100%;
     margin-top: 25px;
@@ -699,6 +713,7 @@
 }
 @media screen and (max-device-width: 768px) {
   .navBurger {
+    z-index: 10;
     display: block !important;
     position: fixed;
     right: 20px;
@@ -837,8 +852,23 @@
     -ms-transform: translateX(-2px);
         transform: translateX(-2px);
     padding-left: 80px;
-    outline: 1px solid rgba(255,255,255,0.3);
     background: rgba(255,255,255,0.03);
+  }
+  .overlayMenu ul li .input-group input {
+    border: 0;
+    color: $black;
+    font-size: 15px;
+    font-family: 'Roboto-Regular';
+    border-radius: 30px;
+  }
+  .overlayMenu ul li .input-group input[type="text"] {
+    height: 30px;
+    background: url("../img/loop.svg") $white no-repeat 94%/7%;
+    padding-left: 25px;
+    margin-bottom: 15px;
+  }
+  .overlayMenu ul li .input-group input:focus::-webkit-input-placeholder {
+    opacity: 0;
   }
   .locked {
     overflow: hidden;

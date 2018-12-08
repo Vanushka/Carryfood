@@ -36,7 +36,7 @@ $(document).ready(function(){
       speed: 800,
       autoplay: true,
       autoplaySpeed: 5000,
-      slidesToShow: 1,
+      slidesToShow: 2,
       slidesToScroll: 1,
       prevArrow: '<div class="prev-review-slider"><img src="./dist/img/prev-review-slider.svg"></div>',
       nextArrow: '<div class="next-review-slider"><img src="./dist/img/next-review-slider.svg"></div>',
@@ -94,7 +94,7 @@ $(document).ready(function(){
       speed: 800,
       autoplay: true,
       autoplaySpeed: 5000,
-      slidesToShow: 1,
+      slidesToShow: 2,
       slidesToScroll: 1,
       mobileFirst:true,
       prevArrow: '<div class="prev-review-slider"><img src="./dist/img/prev-review-slider.svg"></div>',
@@ -117,7 +117,7 @@ $(document).ready(function(){
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
         }
