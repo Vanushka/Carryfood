@@ -110,15 +110,15 @@ html
     .customer-reviews-background
       .customer-reviews.container
         h1 Отзывы покупателей
-        #reviews 
+        #reviews
           each val in reviews
-            .review 
+            .review
               .review-text
                 p= val.text
-              .review-data 
+              .review-data
                 .review-img
                   img(src=val.photo)
-                .name-and-url  
+                .name-and-url
                   .name
                     p= val.name  
                   .url

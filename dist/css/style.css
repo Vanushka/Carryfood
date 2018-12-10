@@ -1276,13 +1276,17 @@ footer .footer-right img {
   font-weight: 700;
   letter-spacing: 1.5px;
 }
-#modal .product-details .blocks .block-info .text {
+#modal .product-details .blocks .block-info .block-text .text {
+  display: none;
   width: 304px;
   height: auto;
   color: #4a4a4a;
   font-family: 'PT-Sans-Regular';
   font-size: 14px;
   font-weight: 400;
+}
+#modal .product-details .blocks .block-info .block-text .active {
+  display: block;
 }
 #modal .product-details .blocks .block-info-right {
   width: 331px;
@@ -2461,7 +2465,7 @@ footer .footer-right img {
     margin-left: 35px;
     display: block;
   }
-  #modal .product-details .blocks .block-info .text {
+  #modal .product-details .blocks .block-info .block-text .text {
     width: 90%;
   }
   #modal .product-details .blocks .block-info-right {

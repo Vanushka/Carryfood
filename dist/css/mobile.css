@@ -710,7 +710,7 @@
     margin-left: 35px;
     display: block;
   }
-  #modal .product-details .blocks .block-info .text {
+  #modal .product-details .blocks .block-info .block-text .text {
     width: 90%;
   }
   #modal .product-details .blocks .block-info-right {

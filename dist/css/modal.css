@@ -156,13 +156,17 @@
   font-weight: 700;
   letter-spacing: 1.5px;
 }
-#modal .product-details .blocks .block-info .text {
+#modal .product-details .blocks .block-info .block-text .text {
+  display: none;
   width: 304px;
   height: auto;
   color: $darkgrey;
   font-family: 'PT-Sans-Regular';
   font-size: 14px;
   font-weight: 400;
+}
+#modal .product-details .blocks .block-info .block-text .active {
+  display: block;
 }
 #modal .product-details .blocks .block-info-right {
   width: 331px;
