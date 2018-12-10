@@ -241,6 +241,7 @@ $(document).ready(function(){
         $(".text").hide().removeClass("active"); // Скрываем и удаляем активный класс у прошлого контейнера с содержимым
         $(this).addClass("active"); // Добавляем нажатому пункту меню активный класс
         $($(".block-text").children(".text")[i]).fadeIn(1000).addClass("active"); // Показываем и добавляем активный класс соответствующему контейнеру
+        return false;
       }
     });
   });
