@@ -241,6 +241,21 @@ $(document).ready(function(){
         $(".text").hide().removeClass("active"); // Скрываем и удаляем активный класс у прошлого контейнера с содержимым
         $(this).addClass("active"); // Добавляем нажатому пункту меню активный класс
         $($(".block-text").children(".text")[i]).fadeIn(1000).addClass("active"); // Показываем и добавляем активный класс соответствующему контейнеру
+        return false;
+      }
+    });
+  });
+
+
+  $(document).ready(function() {
+    $(".links-profile a").click(function() {
+      if (!$(this).hasClass("active")) {
+        var i = $(this).index();
+        $(".links-profile a.active").removeClass("active");
+        $(".profile-section").hide().removeClass("active");
+        $(this).addClass("active");
+        $($("#basket").children(".profile-section")[i]).fadeIn(1000).addClass("active"); 
+        return false;
       }
     });
   });

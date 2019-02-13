@@ -245,3 +245,17 @@ $(document).ready(function(){
       }
     });
   });
+
+
+  $(document).ready(function() {
+    $(".links-profile a").click(function() {
+      if (!$(this).hasClass("active")) {
+        var i = $(this).index();
+        $(".links-profile a.active").removeClass("active");
+        $(".profile-section").hide().removeClass("active");
+        $(this).addClass("active");
+        $($("#basket").children(".profile-section")[i]).fadeIn(1000).addClass("active"); 
+        return false;
+      }
+    });
+  });

@@ -30,6 +30,7 @@
   font-size: 35px;
   font-family: 'OpenSans-Bold';
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .filter-block .filter .hashtags {
   display: -ms-flexbox;

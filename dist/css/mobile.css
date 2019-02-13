@@ -898,3 +898,88 @@
     }
 }
 }
+@media screen and (max-device-width: 768px) {
+  .profile-block .bread-crumbs {
+    margin-left: 20px;
+  }
+  .profile-block #basket .profile-part h1 {
+    font-size: 25px;
+  }
+  .profile-block #basket .profile-part .links-profile {
+    display: block;
+  }
+  .profile-block #basket .profile-part .links-profile a {
+    margin: 15px auto;
+  }
+  .profile-block #basket .profile-section .basket-inside {
+    margin-bottom: 20px;
+  }
+  .profile-block #basket .profile-section .basket-inside .the-sum {
+    width: 90%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin: 0 auto;
+    margin-bottom: 11px;
+  }
+  .profile-block #basket .profile-section .basket-inside .the-sum p.price {
+    margin-top: 7%;
+    white-space: nowrap;
+  }
+  .profile-block #basket .profile-section .basket-inside .the-sum p.date {
+    margin-top: 8%;
+    margin-left: auto;
+  }
+  .profile-block #basket .profile-section .basket-inside .the-sum a.repeat {
+    margin-top: 8.5%;
+  }
+  .profile-block #basket .profile-section .basket-inside #products .product {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .profile-block #basket .profile-section .basket-inside #products .product .product-img {
+    width: 150px;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+  .profile-block #basket .profile-section .basket-inside #products .product .inline-block {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  .profile-block #basket .profile-section .basket-inside #products .product .product-count {
+    margin-top: -45px;
+  }
+  .profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-text p {
+    padding-right: 10px;
+  }
+  .profile-block #basket .profile-section .the-profile {
+    width: 95%;
+  }
+  .profile-block #basket .profile-section .the-profile .flex-profile {
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+  }
+  .profile-block #basket .profile-section .the-profile .flex-profile .main-fields {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .profile-block #basket .profile-section .the-profile .flex-profile .main-fields .login {
+    padding-top: 10px;
+  }
+  .profile-block #basket .profile-section .the-profile .flex-profile .main-fields .login input {
+    width: 85%;
+  }
+  .profile-block #basket .profile-section .the-profile .flex-profile .main-fields input {
+    width: 85%;
+  }
+  .profile-block #basket .profile-section .the-profile .flex-profile .other-fields {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .profile-block #basket .profile-section .the-profile .flex-profile .other-fields input {
+    width: 85%;
+  }
+}

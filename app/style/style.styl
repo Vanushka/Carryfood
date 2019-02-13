@@ -28,11 +28,15 @@ html
 html, body
   margin 0
   min-width 1295px
+  background $backgroundgrey
   a, button, input, select, option
     outline none
     text-decoration none
     cursor pointer
-
+input
+  &:focus::-webkit-input-placeholder
+    opacity 0
+    
 // -- HEADER --
 header
   width 100%
@@ -153,9 +157,6 @@ header
             background url(../img/loop.svg) $white no-repeat 97%
             padding-left 25px
             margin-bottom 15px
-          input
-            &:focus::-webkit-input-placeholder
-              opacity 0
           .search-menu
             a
               color $white
@@ -953,5 +954,6 @@ footer
 
 @import '/modal.styl'
 @import '/catalog.styl'
+@import '/personal_area.styl'
 @import '/fonts.styl'
 @import '/mobile.styl'
