@@ -2000,7 +2000,7 @@ footer .footer-right img {
   display: block !important;
 }
 .profile-block #basket .profile-section {
-  display: block;
+  display: none;
 }
 .profile-block #basket .profile-section .the-profile {
   width: 776px;

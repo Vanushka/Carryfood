@@ -228,6 +228,9 @@ $(document).ready(function(){
     if ($('#basket').css('display') == 'block') {
       $('body').css('background', '#f6f6f5');
     }
+    if ($('#order').css('display') == 'block') {
+      $('body').css('background', '#f6f6f5');
+    }
     function hideallDropdowns() {
       $(".dropped .choose-shop-menu-sub").hide();
       $(".dropped").removeClass('dropped');
