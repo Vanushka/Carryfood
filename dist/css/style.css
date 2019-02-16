@@ -2715,7 +2715,7 @@ footer .footer-right img {
   font-weight: 400;
   font-family: 'PT-Sans-Regular';
 }
-#order .order-cantainer .orders .address-block a.change:hover {
+#order .order-cantainer .orders .address-block a.changehover {
   text-decoration: underline;
 }
 #order .order-cantainer .orders .order-details {
@@ -2742,14 +2742,14 @@ footer .footer-right img {
   background-color: #f6f6f5 !important;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .login p,
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .password p {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order p {
   color: #4a4a4a;
   font-family: 'OpenSans-Bold';
   font-size: 17px;
   font-weight: 600;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .login input,
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .password input {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order input {
   width: 296px;
   height: 40px;
   border: none;
@@ -2758,12 +2758,49 @@ footer .footer-right img {
   border: 1px solid #dedede;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .login input[type="text"],
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .password input[type="text"] {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order input[type="text"] {
   color: #4a4a4a;
   font-family: 'PT-Sans-Regular';
   font-size: 15px;
   font-weight: 400;
   padding-left: 15px;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .login label,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order label {
+  cursor: pointer;
+  transition: all, 0.3s;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 296px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #e5edec;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .login label input.input,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order label input.input {
+  display: none;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .login label .action,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order label .action {
+  color: #4a4a4a;
+  font-family: 'PT-Sans-Regular';
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 15px;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .login label i.fa,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order label i.fa {
+  margin-right: 10px;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .login .active,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order .active {
+  background-color: #dedede;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .password {
   margin-top: 40px;
@@ -4302,7 +4339,12 @@ footer .footer-right img {
   }
   #order .order-cantainer .orders .order-details .flex-profile .main-fields {
     margin-left: 0;
+    padding-top: 5px;
     text-align: center;
+  }
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order label {
+    width: 90%;
+    margin: 0 auto;
   }
   #order .order-cantainer .orders .order-details .flex-profile .main-fields .login {
     padding-top: 5px;

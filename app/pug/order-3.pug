@@ -27,13 +27,20 @@ html
             .order-details
               .flex-profile
                 .main-fields
-                  .password
+                  .change-order
                     p В случае замены товара
-                    input(type="text" placeholder="Удалить позицию из заказа")
+                    label.active 
+                      input.input(type="radio" value="1")
+                      .action Удалить позицию из заказа
+                      i.fa.fa-check(aria-hidden="true")
                     br
-                    input(type="text" placeholder="Перезвонить мне")
+                    label 
+                      input.input(type="radio" value="2")
+                      .action Перезвонить мне
                     br
-                    input(type="text" placeholder="Найти замену самостоятельно")
+                    label 
+                      input.input(type="radio" value="3")
+                      .action Найти замену самостоятельно
                   .next
                     a Далее
             .order-other

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./dist/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./dist/css/slick.css">
-    <link rel="stylesheet" href="./dist/css/style.css">
+    <link rel="stylesheet" href="./dist/css/style.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
     <header>
@@ -120,11 +120,20 @@
             <div class="order-details">
               <div class="flex-profile">
                 <div class="main-fields">
-                  <div class="password">
+                  <div class="change-order">
                     <p>В случае замены товара</p>
-                    <input type="text" placeholder="Удалить позицию из заказа"><br>
-                    <input type="text" placeholder="Перезвонить мне"><br>
-                    <input type="text" placeholder="Найти замену самостоятельно">
+                    <label class="active"> 
+                      <input class="input" type="radio" value="1">
+                      <div class="action">Удалить позицию из заказа</div><i class="fa fa-check" aria-hidden="true"></i>
+                    </label><br>
+                    <label> 
+                      <input class="input" type="radio" value="2">
+                      <div class="action">Перезвонить мне</div>
+                    </label><br>
+                    <label> 
+                      <input class="input" type="radio" value="3">
+                      <div class="action">Найти замену самостоятельно</div>
+                    </label>
                   </div>
                   <div class="next"><a>Далее</a></div>
                 </div>

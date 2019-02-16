@@ -300,3 +300,16 @@ $(document).ready(function(){
       }
     });
   });
+
+  $(document).ready(function() {
+    $(".change-order label").click(function() {
+      if (!$(this).hasClass("active")) {
+        var i = $(this).index();
+        $("i.fa.fa-check").remove();
+        $(".change-order label.active").removeClass("active");
+        $(this).addClass("active");
+        $($(this).append('<i aria-hidden="true" class="fa fa-check" />'));
+        return false;
+      }
+    });
+  });
