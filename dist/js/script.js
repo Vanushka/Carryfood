@@ -207,8 +207,8 @@ $(document).ready(function(){
     $('body').css('overflow', 'scroll');
   }
 
-  $('#modal .background').click(function() {
-    $('#modal .background').css('display', 'none');
+  $('.background').click(function() {
+    $('.background').css('display', 'none');
     $('.product-details').css('display', 'none');
     $('.login').css('display', 'none');
     $('.registration').css('display', 'none');

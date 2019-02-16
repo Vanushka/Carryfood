@@ -1136,9 +1136,9 @@ footer .footer-right img {
   bottom: 10%;
   z-index: 4;
   width: 360px;
-  max-height: -webkit-max-content;
-  max-height: -moz-max-content;
-  max-height: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   display: none;
   overflow: auto;
   position: fixed;
@@ -1240,9 +1240,9 @@ footer .footer-right img {
   bottom: 10%;
   z-index: 4;
   width: 360px;
-  max-height: -webkit-max-content;
-  max-height: -moz-max-content;
-  max-height: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   display: none;
   overflow: auto;
   position: fixed;
