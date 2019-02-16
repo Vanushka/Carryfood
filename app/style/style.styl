@@ -28,15 +28,15 @@ html
 html, body
   margin 0
   min-width 1295px
-  background $backgroundgrey
+  // background $backgroundgrey
   a, button, input, select, option
     outline none
     text-decoration none
     cursor pointer
-input
+input, textarea
   &:focus::-webkit-input-placeholder
     opacity 0
-    
+
 // -- HEADER --
 header
   width 100%
@@ -952,8 +952,13 @@ footer
 .slick-list
   padding-bottom 0 !important
 
+@import '/login.styl'
+@import '/reg.styl'
 @import '/modal.styl'
 @import '/catalog.styl'
-@import '/personal_area.styl'
+@import '/profile.styl'
 @import '/fonts.styl'
+@import '/basket.styl'
+@import '/order.styl'
+@import '/product.styl'
 @import '/mobile.styl'

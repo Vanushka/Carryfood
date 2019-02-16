@@ -1,0 +1,84 @@
+doctype html
+html
+  include include/variables.pug
+  include include/header.pug
+  body
+    .profile-block
+      .bread-crumbs 
+        a(href="/") Главная
+        span 
+          img(src="./dist/img/strelka.svg")
+        a(href="/basket.html") Корзина
+        span 
+          img(src="./dist/img/strelka.svg")
+      #order
+        .order-part
+          h1 Оформление заказа
+        .order-cantainer
+          .orders
+            .address-block
+              p.choose-address Выбранный адресс
+              p.address Ленина проспект, 45
+              a.change Изменить
+            .address-block
+              p.choose-address Выбранный адресс
+              p.address Ленина проспект, 45
+              a.change Изменить
+            .order-details
+              .flex-profile
+                .main-fields
+                  .password
+                    p В случае замены товара
+                    input(type="text" placeholder="Удалить позицию из заказа")
+                    br
+                    input(type="text" placeholder="Перезвонить мне")
+                    br
+                    input(type="text" placeholder="Найти замену самостоятельно")
+                  .next
+                    a Далее
+            .order-other
+              p Оплата
+          .order-block
+            .inside-block
+              h1 Ваш заказ
+              .goods-shipping-discount
+                .good
+                  p.descrip Товары
+                  p.prise 12 860 руб.
+                .line
+                .good
+                  p.descrip Доставка
+                  p.prise 299 руб.
+                .line
+                .good
+                  p.descrip Скидка
+                  p.prise 150 руб.
+                .line
+              p.price 12 860 руб.
+              p.discont -150 руб.
+              .total-order
+                p Итого: <span>12 710 руб.</span>
+              .checkout-order
+                a Оформить заказ
+            
+    .foods-background
+      .foods.container
+        h1 Вы смотрели
+        #foodSlider
+          each val in food
+            .food
+              a(href="javascript:openProductDetail()")
+                .food-img 
+                  img(src=val.img)
+                .food-text
+                  p= val.text
+                .food-price-and-unit
+                  .food-price
+                    p= val.price
+                  .food-unit
+                    p= val.unit
+          
+  include include/modal.pug
+  include include/login.pug
+  include include/reg.pug
+  include include/footer.pug

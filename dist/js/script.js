@@ -173,6 +173,27 @@ $(document).ready(function(){
   });
 });
 
+  //--LOGIN--
+  function openLogin() {
+    $('.login').css('display', 'block');
+    $('#login .background').css('display', 'block');
+    $('body').css('overflow', 'hidden');
+    $('.registration').css('display', 'none');
+    $('#registration .background').css('display', 'none');
+    if($('.login').css('display') == 'block') {
+      $('#navToggle').toggleClass("active");
+      $(".overlay").toggleClass("open");
+      $("body").toggleClass("locked");
+    }
+  }
+  //--REGISTRATION--
+  function openReg() {
+    $('.registration').css('display', 'block');
+    $('#registration .background').css('display', 'block');
+    $('body').css('overflow', 'hidden');
+    $('.login').css('display', 'none');
+    $('#login .background').css('display', 'none');
+  }
   // --MODAL--
   function openProductDetail() {
     $('.product-details').css('display', 'block');
@@ -189,11 +210,12 @@ $(document).ready(function(){
   $('.background').click(function() {
     $('.background').css('display', 'none');
     $('.product-details').css('display', 'none');
+    $('.login').css('display', 'none');
+    $('.registration').css('display', 'none');
     $('body').css('overflow', 'scroll');
   })
 
   // переключатель состояния мобильного меню
-
   $("#navToggle").click(function() {
       $(this).toggleClass("active");
       $(".overlay").toggleClass("open");
@@ -203,6 +225,9 @@ $(document).ready(function(){
 
 
   $(document).ready(function () {
+    if ($('#basket').css('display') == 'block') {
+      $('body').css('background', '#f6f6f5');
+    }
     function hideallDropdowns() {
       $(".dropped .choose-shop-menu-sub").hide();
       $(".dropped").removeClass('dropped');
@@ -246,6 +271,19 @@ $(document).ready(function(){
     });
   });
 
+  $(document).ready(function() {
+    $(".block-info-product a").click(function() {
+      if (!$(this).hasClass("active")) {
+        var i = $(this).index();
+        $(".block-info-product a.active").removeClass("active");
+        $(".text-product").hide().removeClass("active");
+        $(this).addClass("active");
+        $($(".block-text-product").children(".text-product")[i]).fadeIn(1000).addClass("active");
+        return false;
+      }
+    });
+  });
+
 
   $(document).ready(function() {
     $(".links-profile a").click(function() {
@@ -254,7 +292,7 @@ $(document).ready(function(){
         $(".links-profile a.active").removeClass("active");
         $(".profile-section").hide().removeClass("active");
         $(this).addClass("active");
-        $($("#basket").children(".profile-section")[i]).fadeIn(1000).addClass("active"); 
+        $($("#basket").children(".profile-section")[i]).fadeIn(1000).addClass("active");
         return false;
       }
     });

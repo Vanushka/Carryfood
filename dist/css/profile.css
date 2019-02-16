@@ -1,0 +1,334 @@
+.profile-block {
+  margin: 0 auto;
+  max-width: 1222px;
+}
+.profile-block .bread-crumbs {
+  margin-top: 20px;
+  margin-left: 60px;
+}
+.profile-block .bread-crumbs a {
+  color: $darkgrey;
+  font-size: 13px;
+  font-family: 'Roboto-Medium';
+}
+.profile-block .bread-crumbs a:hover {
+  text-decoration: underline;
+}
+.profile-block .bread-crumbs span {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: $darkgrey;
+  font-size: 13px;
+  font-family: 'Roboto-Medium';
+}
+.profile-block #basket {
+  width: auto;
+  margin: 0 auto;
+}
+.profile-block #basket .profile-part {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.profile-block #basket .profile-part h1 {
+  color: $darkgrey;
+  font-size: 35px;
+  font-family: 'OpenSans-Bold';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+.profile-block #basket .profile-part .links-profile {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.profile-block #basket .profile-part .links-profile a {
+  padding: 0 20px;
+  text-transform: uppercase;
+  opacity: 0.44;
+  color: $darkgrey;
+  font-family: 'Roboto-Regular';
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+.profile-block #basket .profile-part .links-profile .active {
+  opacity: 1;
+}
+.profile-block #basket .active {
+  display: block !important;
+}
+.profile-block #basket .profile-section {
+  display: block;
+}
+.profile-block #basket .profile-section .the-profile {
+  width: 776px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0 auto;
+  margin-bottom: 175px;
+  box-shadow: 0 6px 6px rgba(0,0,0,0.04);
+  border-radius: 8px;
+  background-color: $white;
+}
+.profile-block #basket .profile-section .the-profile .flex-profile {
+  display: -ms-flexbox;
+  display: flex;
+}
+.profile-block #basket .profile-section .the-profile .flex-profile .main-fields {
+  margin-left: 30px;
+}
+.profile-block #basket .profile-section .the-profile .flex-profile .main-fields .login input {
+  width: 296px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: $backgroundgrey;
+}
+.profile-block #basket .profile-section .the-profile .flex-profile .main-fields .login p,
+.profile-block #basket .profile-section .the-profile .flex-profile .main-fields .password p,
+.profile-block #basket .profile-section .the-profile .flex-profile .main-fields .phone p {
+  color: $darkgrey;
+  font-family: 'OpenSans-Bold';
+  font-size: 17px;
+  font-weight: 600;
+}
+.profile-block #basket .profile-section .the-profile .flex-profile .main-fields .password {
+  margin-top: 40px;
+}
+.profile-block #basket .profile-section .the-profile .flex-profile .main-fields .password input {
+  margin-bottom: 10px;
+}
+.profile-block #basket .profile-section .the-profile .flex-profile .main-fields .phone {
+  margin-top: 40px;
+}
+.profile-block #basket .profile-section .the-profile .flex-profile .main-fields input {
+  width: 296px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: $white;
+  border: 1px solid $bordergrey;
+}
+.profile-block #basket .profile-section .the-profile .flex-profile .main-fields input[type="text"] {
+  color: $darkgrey;
+  font-family: 'PT-Sans-Regular';
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 15px;
+}
+.profile-block #basket .profile-section .the-profile .flex-profile .other-fields {
+  margin-left: 90px;
+}
+.profile-block #basket .profile-section .the-profile .flex-profile .other-fields p {
+  color: $darkgrey;
+  font-family: 'OpenSans-Bold';
+  font-size: 17px;
+  font-weight: 600;
+}
+.profile-block #basket .profile-section .the-profile .flex-profile .other-fields input {
+  width: 296px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: $white;
+  border: 1px solid $bordergrey;
+}
+.profile-block #basket .profile-section .the-profile .flex-profile .other-fields input[type="text"] {
+  color: $darkgrey;
+  font-family: 'PT-Sans-Regular';
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 15px;
+}
+.profile-block #basket .profile-section .the-profile .save-change {
+  margin-top: 90px;
+  margin: 35px auto;
+  text-align: center;
+}
+.profile-block #basket .profile-section .the-profile .save-change a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Roboto-Bold';
+  background: $red;
+  border-radius: 8px;
+  padding: 11px 25px;
+}
+.profile-block #basket .profile-section .basket-inside {
+  margin-bottom: 442px;
+}
+.profile-block #basket .profile-section .basket-inside .the-sum {
+  width: 612px;
+  height: 74px;
+  box-shadow: 0 6px 6px rgba(0,0,0,0.04);
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-bottom: 11px;
+  display: -ms-flexbox;
+  display: flex;
+}
+.profile-block #basket .profile-section .basket-inside .the-sum p.price {
+  margin-top: 4%;
+  margin-left: 30px;
+  color: $darkgrey;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'OpenSans-Bold';
+}
+.profile-block #basket .profile-section .basket-inside .the-sum p.date {
+  margin-top: 4.3%;
+  margin-left: 45px;
+  color: $darkgrey;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'PT-Sans-Regular';
+}
+.profile-block #basket .profile-section .basket-inside .the-sum a.repeat {
+  margin-left: auto;
+  margin-right: 32px;
+  margin-top: 5%;
+  color: $darkgrey;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'PT-Sans-Regular';
+}
+.profile-block #basket .profile-section .basket-inside .the-sum a.repeat:hover {
+  text-decoration: underline;
+}
+.profile-block #basket .profile-section .basket-inside #products .product {
+  width: 582px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  box-shadow: 0 6px 6px rgba(0,0,0,0.04);
+  border-radius: 8px;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+.profile-block #basket .profile-section .basket-inside #products .product .product-img {
+  width: 98px;
+  min-width: 98px;
+  height: 94px;
+  margin-top: 22px;
+  margin-left: 22px;
+  margin-right: 24px;
+  margin-bottom: 17px;
+}
+.profile-block #basket .profile-section .basket-inside #products .product .product-img img {
+  width: 100%;
+}
+.profile-block #basket .profile-section .basket-inside #products .product .inline-block {
+  display: inline-block;
+}
+.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-text p {
+  font-size: 17px;
+  font-weight: 700;
+  color: $darkgrey;
+  font-family: 'OpenSans-Bold';
+}
+.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-unit p {
+  font-size: 15px;
+  font-weight: 400;
+  color: $darkgrey;
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-family: 'PT-Sans-Regular';
+}
+.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-price p {
+  font-size: 17px;
+  font-weight: 700;
+  color: $darkgrey;
+  margin-top: 3px;
+  font-family: 'OpenSans-Bold';
+}
+.profile-block #basket .profile-section .basket-inside #products .product .product-count {
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-top: 80px;
+  margin-right: 27px;
+  margin-bottom: 17px;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+  -ms-flex-align: end;
+      align-items: flex-end;
+}
+.profile-block #basket .profile-section .basket-inside #products .product .product-count a.minus {
+  width: 27px;
+  height: 26px;
+  border-radius: 8px;
+  background-color: #c4c4c4;
+}
+.profile-block #basket .profile-section .basket-inside #products .product .product-count a.minus:hover {
+  background: $darkgrey;
+}
+.profile-block #basket .profile-section .basket-inside #products .product .product-count a.minus:before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  background: #fff;
+  height: 2px;
+  width: 14px;
+  margin-top: 12px;
+  margin-left: -49px;
+}
+.profile-block #basket .profile-section .basket-inside #products .product .product-count p {
+  margin: 3px 10px;
+  font-size: 17px;
+  font-weight: 400;
+  color: $darkgrey;
+  font-family: 'PT-Sans-Regular';
+}
+.profile-block #basket .profile-section .basket-inside #products .product .product-count a.plus {
+  width: 27px;
+  height: 26px;
+  border-radius: 8px;
+  background-color: #c4c4c4;
+}
+.profile-block #basket .profile-section .basket-inside #products .product .product-count a.plus:hover {
+  background: $darkgrey;
+}
+.profile-block #basket .profile-section .basket-inside #products .product .product-count a.plus:after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  background: #fff;
+  height: 2px;
+  width: 14px;
+  margin-top: 12px;
+  margin-left: 62.8px;
+}
+.profile-block #basket .profile-section .basket-inside #products .product .product-count a.plus:before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  background: #fff;
+  height: 2px;
+  width: 14px;
+  margin-top: 12px;
+  -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+  margin-left: 62.8px;
+}
+.profile-block #basket .profile-section .basket-inside .repeat-order {
+  margin: 50px auto;
+  text-align: center;
+}
+.profile-block #basket .profile-section .basket-inside .repeat-order a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Roboto-Bold';
+  background: $red;
+  border-radius: 8px;
+  padding: 11px 25px;
+}

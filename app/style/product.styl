@@ -1,28 +1,18 @@
-#modal
-  .background
-    top 0
-    z-index 3
-    width 100%
-    height 100%
-    opacity 0.94
-    position fixed
-    display none
-    background-color $backgroundcolor
-  .product-details
+#product
+  .product
     top 5%
     right 0
     left 0
     bottom 10%
     z-index 4
-    width 772px
-    max-height 777px
-    display none
+    width 90%
+    display block
     overflow auto
-    position fixed
+    position relative
     margin 0 auto
-    box-shadow 0 3px 6px rgba(0, 0, 0, 0.16)
-    border-radius 20px
-    background-color $white
+    // box-shadow 0 3px 6px rgba(0, 0, 0, 0.16)
+    // border-radius 20px
+    // background-color $white
     ::-webkit-scrollbar
       width 0px
       opacity 0
@@ -67,33 +57,41 @@
         width 2px
         background-color #333
     .name
-      width 304px
-      height 61px
+      width 500px
+      height max-content
       margin-top 60px
-      margin-left 55px
       margin-bottom -15px
       p
         color $darkgrey
         font-family 'PT-Sans-Regular'
-        font-size 20px
+        font-size 35px
         font-weight 700
+        margin-bottom 10px
     .unit
-      margin-left 55px
+      margin-top 0
+      position absolute
       p
         color $lightgrey
         font-size 20px
         font-weight 400
         font-family 'PT-Sans-Regular'
+    a.heart
+      width 30px
+      height 28px
+      position absolute
+      margin-top 60px
+      background url(../img/heart-silver.svg)
+      &:hover
+        background url(../img/heart-red.svg)
     .img
-      width 344px
-      height 258px
+      width 470px
+      height 350px
       float right
       margin-top -80px
       margin-right 50px
       img
         width 100%
     .price
-      margin-left 55px
       margin-top 186px
       p
         font-family 'OpenSans-Bold'
@@ -101,7 +99,6 @@
         font-weight 700
     .block-links
       display flex
-      margin-left 55px
       flex-flow row-reverse
       justify-content flex-end
       a.in-basket
@@ -122,8 +119,8 @@
           background #fff
           height 2px
           width 18px
-          margin-top 8px
-          margin-left -86.8px
+          margin-top -10px
+          margin-left -25.8px
         &:before
           content ""
           pointer-events none
@@ -134,13 +131,29 @@
           margin-top 8px
           transform rotate(90deg)
           margin-left -25.8px
+      a.out-basket
+        width 38px
+        height 38px
+        border-radius 8px
+        margin-right 10px
+        background-color #c4c4c4
+        &:hover
+          background $darkgrey
+        &:before
+          content ""
+          pointer-events:none
+          position absolute
+          background #fff
+          height 2px
+          width 18px
+          margin-top 18px
+          margin-left 10px
     .blocks
       display flex
       justify-content space-between
-      margin-left 55px
       margin-top 50px
       margin-bottom 50px
-      .block-info
+      .block-info-product
         .active
           opacity 1
         a
@@ -152,10 +165,10 @@
           font-size 15px
           font-weight 700
           letter-spacing 1.5px
-        .block-text
-          .text
+        .block-text-product
+          .text-product
             display none
-            width 304px
+            width 500px
             height auto
             color $darkgrey
             font-family 'PT-Sans-Regular'
@@ -165,7 +178,9 @@
             display block
       .block-info-right
         width 331px
-        margin-right 40px
+        padding 25px 30px 30px 30px
+        margin-right 90px
+        background-color $backgroundgrey
         .nutritional-value
           p
             color $darkgrey
@@ -185,7 +200,7 @@
             display flex
             justify-content space-between
             p
-              margin 5px 8px
+              margin 5px 0px
               display inline-block
               color $darkgrey
               font-size 14px
@@ -196,7 +211,6 @@
               letter-spacing 1.5px
             .span
               min-width 75px
-              display flex
               text-align left
               span
                 float right

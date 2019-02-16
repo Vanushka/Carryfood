@@ -703,7 +703,10 @@
     margin-left: 35px;
     margin-top: 30px;
   }
-  #modal .product-details a.in-basket {
+  #modal .product-details .block-links {
+    margin-left: 0;
+  }
+  #modal .product-details .block-links a.in-basket {
     margin-left: 35px;
   }
   #modal .product-details .blocks {
@@ -981,5 +984,205 @@
   }
   .profile-block #basket .profile-section .the-profile .flex-profile .other-fields input {
     width: 85%;
+  }
+}
+@media screen and (max-device-width: 768px) {
+  #basket .basket-part h1 {
+    font-size: 25px;
+  }
+  #basket .basket-part .links-profile {
+    display: block;
+  }
+  #basket .basket-part .links-profile a {
+    margin: 15px auto;
+  }
+  #basket .basket-section .basket-inside {
+    margin-bottom: 20px !important;
+  }
+  #basket .basket-section .basket-inside .the-sum {
+    width: 90%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin: 0 auto;
+    margin-bottom: 11px;
+  }
+  #basket .basket-section .basket-inside .the-sum p.price {
+    margin-top: 7%;
+    white-space: nowrap;
+  }
+  #basket .basket-section .basket-inside .the-sum p.date {
+    margin-top: 8%;
+    margin-left: auto;
+  }
+  #basket .basket-section .basket-inside .the-sum a.repeat {
+    margin-top: 8.5%;
+  }
+  #basket .basket-section .basket-inside #products .product {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: block;
+  }
+  #basket .basket-section .basket-inside #products .product .product-img {
+    width: 150px;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+  #basket .basket-section .basket-inside #products .product .inline-block {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  #basket .basket-section .basket-inside #products .product .product-count {
+    margin-top: -45px;
+  }
+  #basket .basket-section .basket-inside #products .product .inline-block .product-text p {
+    padding-right: 10px;
+  }
+  #basket .basket-section .the-profile {
+    width: 95%;
+  }
+  #basket .basket-section .the-profile .flex-profile {
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+  }
+  #basket .basket-section .the-profile .flex-profile .main-fields {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #basket .basket-section .the-profile .flex-profile .main-fields .login {
+    padding-top: 10px;
+  }
+  #basket .basket-section .the-profile .flex-profile .main-fields .login input {
+    width: 85%;
+  }
+  #basket .basket-section .the-profile .flex-profile .main-fields input {
+    width: 85%;
+  }
+  #basket .basket-section .the-profile .flex-profile .other-fields {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #basket .basket-section .the-profile .flex-profile .other-fields input {
+    width: 85%;
+  }
+}
+@media screen and (max-device-width: 768px) {
+  #order {
+    margin-bottom: 0;
+  }
+  #order .order-cantainer {
+    width: 100%;
+    display: block;
+  }
+  #order .order-cantainer .orders {
+    display: block;
+  }
+  #order .order-cantainer .orders .address-block {
+    width: 90%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding-bottom: 4%;
+    margin-bottom: 11px;
+  }
+  #order .order-cantainer .orders .address-block p.choose-address {
+    padding-top: 4%;
+    margin-left: 0;
+    white-space: nowrap;
+  }
+  #order .order-cantainer .orders .address-block p.address {
+    margin-left: auto;
+  }
+  #order .order-cantainer .orders .address-block a.change {
+    margin-top: 8.5%;
+    margin-right: 0;
+  }
+  #order .order-cantainer .orders .order-details {
+    margin: 0 auto;
+    min-width: unset;
+    width: 95%;
+  }
+  #order .order-cantainer .orders .order-details .flex-profile {
+    display: block;
+  }
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields {
+    margin-left: 0;
+    text-align: center;
+  }
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields .login {
+    padding-top: 5px;
+  }
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields .login input,
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields .login textarea {
+    width: 90%;
+  }
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields .login p,
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields .password p {
+    text-align: left;
+    margin-left: 4%;
+  }
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields .password p {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields input,
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields textarea {
+    width: 90% !important;
+  }
+  #order .order-cantainer .orders .order-other {
+    min-width: unset;
+    width: 95%;
+    margin: 0 auto;
+  }
+  #order .order-cantainer .orders .order-other p {
+    padding-top: 25px;
+  }
+  #order .order-cantainer .order-block {
+    min-width: unset;
+    width: 95%;
+    margin: 30px auto;
+  }
+  #order .order-cantainer .order-block .inside-block {
+    width: 85%;
+  }
+}
+@media screen and (max-device-width: 768px) {
+  #product .product .name {
+    width: auto;
+  }
+  #product .product .img {
+    width: 90%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    float: none;
+    margin-left: 35px;
+    margin: 95px auto 0;
+  }
+  #product .product .price {
+    margin-top: 0;
+  }
+}
+@media screen and (max-device-width: 768px) {
+  #login .login {
+    top: 10%;
+    width: 95%;
+  }
+  #login .login form input {
+    width: 80% !important;
+  }
+}
+@media screen and (max-device-width: 768px) {
+  #registration .registration {
+    top: 10%;
+    width: 95%;
+  }
+  #registration .registration form input {
+    width: 80% !important;
   }
 }

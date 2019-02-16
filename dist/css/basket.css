@@ -1,0 +1,325 @@
+#basket {
+  width: auto;
+  margin: 0 auto;
+}
+#basket .basket-part {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+#basket .basket-part h1 {
+  color: $darkgrey;
+  font-size: 35px;
+  font-family: 'OpenSans-Bold';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+#basket .basket-part .links-profile {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+#basket .basket-part .links-profile a {
+  padding: 0 20px;
+  text-transform: uppercase;
+  opacity: 0.44;
+  color: $darkgrey;
+  font-family: 'Roboto-Regular';
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+#basket .basket-part .links-profile .active {
+  opacity: 1;
+}
+#basket .active {
+  display: block !important;
+}
+#basket .basket-section {
+  display: none;
+}
+#basket .basket-section .the-profile {
+  width: 776px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0 auto;
+  margin-bottom: 175px;
+  box-shadow: 0 6px 6px rgba(0,0,0,0.04);
+  border-radius: 8px;
+  background-color: $white;
+}
+#basket .basket-section .the-profile .flex-profile {
+  display: -ms-flexbox;
+  display: flex;
+}
+#basket .basket-section .the-profile .flex-profile .main-fields {
+  margin-left: 30px;
+}
+#basket .basket-section .the-profile .flex-profile .main-fields .login input {
+  width: 296px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: $backgroundgrey;
+}
+#basket .basket-section .the-profile .flex-profile .main-fields .login p,
+#basket .basket-section .the-profile .flex-profile .main-fields .password p,
+#basket .basket-section .the-profile .flex-profile .main-fields .phone p {
+  color: $darkgrey;
+  font-family: 'OpenSans-Bold';
+  font-size: 17px;
+  font-weight: 600;
+}
+#basket .basket-section .the-profile .flex-profile .main-fields .password {
+  margin-top: 40px;
+}
+#basket .basket-section .the-profile .flex-profile .main-fields .password input {
+  margin-bottom: 10px;
+}
+#basket .basket-section .the-profile .flex-profile .main-fields .phone {
+  margin-top: 40px;
+}
+#basket .basket-section .the-profile .flex-profile .main-fields input {
+  width: 296px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: $white;
+  border: 1px solid $bordergrey;
+}
+#basket .basket-section .the-profile .flex-profile .main-fields input[type="text"] {
+  color: $darkgrey;
+  font-family: 'PT-Sans-Regular';
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 15px;
+}
+#basket .basket-section .the-profile .flex-profile .other-fields {
+  margin-left: 90px;
+}
+#basket .basket-section .the-profile .flex-profile .other-fields p {
+  color: $darkgrey;
+  font-family: 'OpenSans-Bold';
+  font-size: 17px;
+  font-weight: 600;
+}
+#basket .basket-section .the-profile .flex-profile .other-fields input {
+  width: 296px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: $white;
+  border: 1px solid $bordergrey;
+}
+#basket .basket-section .the-profile .flex-profile .other-fields input[type="text"] {
+  color: $darkgrey;
+  font-family: 'PT-Sans-Regular';
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 15px;
+}
+#basket .basket-section .basket-inside {
+  margin-bottom: 200px;
+}
+#basket .basket-section .basket-inside .the-sum {
+  width: 612px;
+  height: 74px;
+  box-shadow: 0 6px 6px rgba(0,0,0,0.04);
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-bottom: 11px;
+  display: -ms-flexbox;
+  display: flex;
+}
+#basket .basket-section .basket-inside .the-sum p.price {
+  margin-top: 4%;
+  margin-left: 30px;
+  color: $darkgrey;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'OpenSans-Bold';
+}
+#basket .basket-section .basket-inside .the-sum p.date {
+  margin-top: 4.3%;
+  margin-left: 45px;
+  color: $darkgrey;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'PT-Sans-Regular';
+}
+#basket .basket-section .basket-inside .the-sum a.repeat {
+  margin-left: auto;
+  margin-right: 32px;
+  margin-top: 5%;
+  color: $darkgrey;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'PT-Sans-Regular';
+}
+#basket .basket-section .basket-inside .the-sum a.repeat:hover {
+  text-decoration: underline;
+}
+#basket .basket-section #products .product {
+  width: 582px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  box-shadow: 0 6px 6px rgba(0,0,0,0.04);
+  border-radius: 8px;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+#basket .basket-section #products .product .product-img {
+  width: 98px;
+  min-width: 98px;
+  height: 94px;
+  margin-top: 22px;
+  margin-left: 22px;
+  margin-right: 24px;
+  margin-bottom: 17px;
+}
+#basket .basket-section #products .product .product-img img {
+  width: 100%;
+}
+#basket .basket-section #products .product .inline-block {
+  display: inline-block;
+}
+#basket .basket-section #products .product .inline-block .product-text p {
+  font-size: 17px;
+  font-weight: 700;
+  color: $darkgrey;
+  font-family: 'OpenSans-Bold';
+}
+#basket .basket-section #products .product .inline-block .product-price-and-unit .product-unit p {
+  font-size: 15px;
+  font-weight: 400;
+  color: $darkgrey;
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-family: 'PT-Sans-Regular';
+}
+#basket .basket-section #products .product .inline-block .product-price-and-unit .product-price p {
+  font-size: 17px;
+  font-weight: 700;
+  color: $darkgrey;
+  margin-top: 3px;
+  font-family: 'OpenSans-Bold';
+}
+#basket .basket-section #products .product .product-count {
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-top: 80px;
+  margin-right: 27px;
+  margin-bottom: 17px;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+  -ms-flex-align: end;
+      align-items: flex-end;
+}
+#basket .basket-section #products .product .product-count a.minus {
+  width: 27px;
+  height: 26px;
+  border-radius: 8px;
+  background-color: #c4c4c4;
+}
+#basket .basket-section #products .product .product-count a.minus:hover {
+  background: $darkgrey;
+}
+#basket .basket-section #products .product .product-count a.minus:before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  background: #fff;
+  height: 2px;
+  width: 14px;
+  margin-top: 12px;
+  margin-left: -49px;
+}
+#basket .basket-section #products .product .product-count p {
+  margin: 3px 10px;
+  font-size: 17px;
+  font-weight: 400;
+  color: $darkgrey;
+  font-family: 'PT-Sans-Regular';
+}
+#basket .basket-section #products .product .product-count a.plus {
+  width: 27px;
+  height: 26px;
+  border-radius: 8px;
+  background-color: #c4c4c4;
+}
+#basket .basket-section #products .product .product-count a.plus:hover {
+  background: $darkgrey;
+}
+#basket .basket-section #products .product .product-count a.plus:after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  background: #fff;
+  height: 2px;
+  width: 14px;
+  margin-top: 12px;
+  margin-left: 62.8px;
+}
+#basket .basket-section #products .product .product-count a.plus:before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  background: #fff;
+  height: 2px;
+  width: 14px;
+  margin-top: 12px;
+  -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+  margin-left: 62.8px;
+}
+#basket .basket-section .repeat-order {
+  margin: 50px auto;
+  text-align: center;
+}
+#basket .basket-section .repeat-order a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Roboto-Bold';
+  background: $red;
+  border-radius: 8px;
+  padding: 11px 25px;
+}
+.total-order {
+  text-align: center;
+  margin-top: 35px;
+}
+.total-order p {
+  color: $darkgrey;
+  font-family: 'OpenSans-Bold';
+  font-size: 17px;
+  font-weight: 700;
+}
+.total-order p span {
+  color: $darkgrey;
+  font-family: 'OpenSans-Bold';
+  font-size: 17px;
+  font-weight: 700;
+}
+.total-order .repeat-order,
+.total-order margin 50px auto,
+.total-order text-align center,
+.total-order a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Roboto-Bold';
+  background: $red;
+  border-radius: 8px;
+  padding: 11px 25px;
+}

@@ -40,7 +40,7 @@ body
               a(href="#") Помощь
               a(href="#") Доставка
               a(href="#") Скидки 
-              a(href="#") Войти
+              a(href="javascript:openLogin()") Войти
           //- .radius-link
           //-   a(href="#")
           .time-of-delivery
@@ -50,7 +50,7 @@ body
           .basket
             img(src="./dist/img/basket.svg")
             span 15
-            a(href="#") Корзина
+            a(href="/basket.html") Корзина
             .phone
               a(href="tel:+7 495 500-50-00") +7 495 500-50-00
           #navToggle.navBurger(role='navigation')
@@ -69,5 +69,5 @@ body
                 li
                   a(href='#', role='menuitem') Скидки
                 li
-                  a(href='#', role='menuitem') Войти
+                  a(href='javascript:openLogin()', role='menuitem') Войти
         

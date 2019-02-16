@@ -1,0 +1,100 @@
+doctype html
+html
+  include include/variables.pug
+  include include/header.pug
+  body
+    .profile-block
+      .bread-crumbs 
+        a(href="/") Главная
+        span 
+          img(src="./dist/img/strelka.svg")
+        a(href="/product.html") Молочные продукты
+        span 
+          img(src="./dist/img/strelka.svg")
+      #product
+        .product
+          .name
+            p Йогурт Landliebe с персиком и маракуйей 3,3% 150 г
+          .unit
+            p 200г
+          a.heart
+            //- img(src="./dist/img/heart-silver.svg", alt="")
+          .img
+            img(src="./dist/img/modal-food.svg")
+          .price
+            p 56,00 р.
+          .block-links
+            a.in-basket(href="") В корзину 
+          .blocks
+            .block-info-product
+              a.info.active.description(href="#") Описание
+              a.info.composition(href="#") Состав
+              a.info.information(href="#") Инфо
+              .block-text-product
+                .text-product.active
+                  p Каждый стаканчик Landliebe наполнен невероятно вкусным йогуртом с аппетитными 
+                    | кусочками спелых фруктов и ягод.В продукции Landliebe нет консервантов и искусственных 
+                    | красителей, что делает ее такой натурально вкусной.И, конечно же, он сделан с любовью. 
+                    | Йогурт Landliebe с персиком и маракуйей купить с доставкой в Москве. Вы найдете множество 
+                    | товаров бренда Landliebe в категории йогурты. Скидки до 50%! Доставка от 2-х часов.
+                .text-product
+                  p Каждый стаканчик Landliebe наполнен невероятно вкусным йогуртом с аппетитными 
+                    | кусочками спелых фруктов и ягод.В продукции Landliebe нет консервантов и искусственных 
+                    | красителей, что делает ее такой натурально вкусной.И, конечно же, он сделан с любовью. 
+                .text-product
+                  p Каждый стаканчик Landliebe наполнен невероятно вкусным йогуртом с аппетитными 
+                    | кусочками спелых фруктов и ягод.В продукции Landliebe нет консервантов и искусственных 
+            .block-info-right
+              .nutritional-value
+                p Пищевая ценность 
+                  span (100гр)
+              .table-haracter
+                .block-table
+                  p Белки 
+                  .span
+                    span 10гр
+                .line-horizontal
+                .block-table
+                  p Жиры
+                  .span
+                    span 20гр
+                .line-horizontal
+                .block-table
+                  p Углеводы
+                  .span
+                    span 3гр
+                .line-horizontal
+                .block-table
+                  p Калорийность 
+                  .span
+                    span 940 ккал
+    .foods-background
+      .foods.container
+        h1 Вы смотрели
+        #foodSlider
+          each val in food
+            .food
+              a(href="javascript:openProductDetail()")
+                .food-img 
+                  img(src=val.img)
+                .food-text
+                  p= val.text
+                .food-price-and-unit
+                  .food-price
+                    p= val.price
+                  .food-unit
+                    p= val.unit
+    .block-mobile-apps
+      .headline
+        h1 СКАЧАЙТЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ
+        p И узнавайте о скидках первыми!
+      .google-and-apple
+        a(href="https://play.google.com/store" target="_blank")
+          img(src="./dist/img/google-play-badge.svg")
+        a(href="https://www.apple.com/ru/ios/app-store/" target="_blank")
+          img(src="./dist/img/app-store-badge.svg")
+          
+  include include/modal.pug
+  include include/login.pug
+  include include/reg.pug
+  include include/footer.pug

@@ -47,7 +47,7 @@ html
                     .good-unit 
                       p= val.unit
     .new-goods-background-mobile
-      .new-goods.container
+      .new-goods.container 
         h1 Новые товары
           span 135 
         .all-list
@@ -119,7 +119,7 @@ html
                 .review-img
                   img(src=val.photo)
                 .name-and-url
-                  .name
+                  .name 
                     p= val.name
                   .url
                     a(target="_blank" href="https://vk.com")= val.url
@@ -137,5 +137,6 @@ html
   
 
   include include/modal.pug
-  
+  include include/login.pug
+  include include/reg.pug
   include include/footer.pug 
