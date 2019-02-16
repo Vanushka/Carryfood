@@ -197,18 +197,18 @@ $(document).ready(function(){
   // --MODAL--
   function openProductDetail() {
     $('.product-details').css('display', 'block');
-    $('.background').css('display', 'block');
+    $('#modal .background').css('display', 'block');
     $('body').css('overflow', 'hidden');
   }
 
   function closeProductDetail() {
     $('.product-details').css('display', 'none');
-    $('.background').css('display', 'none');
+    $('#modal .background').css('display', 'none');
     $('body').css('overflow', 'scroll');
   }
 
-  $('.background').click(function() {
-    $('.background').css('display', 'none');
+  $('#modal .background').click(function() {
+    $('#modal .background').css('display', 'none');
     $('.product-details').css('display', 'none');
     $('.login').css('display', 'none');
     $('.registration').css('display', 'none');
