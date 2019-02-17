@@ -1858,6 +1858,7 @@ footer .footer-right img {
   font-family: 'Roboto-Bold';
   text-transform: uppercase;
   margin-bottom: 18px;
+  letter-spacing: 2px;
 }
 .foods h1 span {
   color: #bcbcbc;
@@ -2014,6 +2015,7 @@ footer .footer-right img {
   background-color: #fff;
 }
 .profile-block #basket .profile-section .the-profile .flex-profile {
+  padding-top: 13px;
   display: -ms-flexbox;
   display: flex;
 }
@@ -2031,7 +2033,7 @@ footer .footer-right img {
 .profile-block #basket .profile-section .the-profile .flex-profile .main-fields .password p,
 .profile-block #basket .profile-section .the-profile .flex-profile .main-fields .phone p {
   color: #4a4a4a;
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans';
   font-size: 17px;
   font-weight: 600;
 }
@@ -2059,12 +2061,19 @@ footer .footer-right img {
   font-weight: 400;
   padding-left: 15px;
 }
+.profile-block #basket .profile-section .the-profile .flex-profile .main-fields input[type="password"] {
+  color: #4a4a4a;
+  font-family: 'PT-Sans-Regular';
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 15px;
+}
 .profile-block #basket .profile-section .the-profile .flex-profile .other-fields {
   margin-left: 90px;
 }
 .profile-block #basket .profile-section .the-profile .flex-profile .other-fields p {
   color: #4a4a4a;
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans';
   font-size: 17px;
   font-weight: 600;
 }
@@ -2085,8 +2094,8 @@ footer .footer-right img {
   padding-left: 15px;
 }
 .profile-block #basket .profile-section .the-profile .save-change {
-  margin-top: 90px;
-  margin: 35px auto;
+  margin-top: 110px;
+  margin-bottom: 40px;
   text-align: center;
 }
 .profile-block #basket .profile-section .the-profile .save-change a {
@@ -2111,33 +2120,30 @@ footer .footer-right img {
   margin-bottom: 11px;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+      align-items: center;
 }
 .profile-block #basket .profile-section .basket-inside .the-sum p.price {
-  margin-top: 4%;
   margin-left: 30px;
   color: #4a4a4a;
   font-size: 17px;
   font-weight: 600;
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans';
 }
 .profile-block #basket .profile-section .basket-inside .the-sum p.date {
-  margin-top: 4.3%;
   margin-left: 45px;
   color: #4a4a4a;
   font-size: 15px;
   font-weight: 400;
-  font-family: 'PT-Sans-Regular';
+  font-family: 'OpenSans';
 }
 .profile-block #basket .profile-section .basket-inside .the-sum a.repeat {
   margin-left: auto;
   margin-right: 32px;
-  margin-top: 5%;
   color: #4a4a4a;
   font-size: 13px;
   font-weight: 400;
-  font-family: 'PT-Sans-Regular';
-}
-.profile-block #basket .profile-section .basket-inside .the-sum a.repeat:hover {
+  font-family: 'OpenSans';
   text-decoration: underline;
 }
 .profile-block #basket .profile-section .basket-inside #products .product {
@@ -2320,6 +2326,12 @@ footer .footer-right img {
   font-style: normal;
 }
 @font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Futura-Bold';
   src: url("../fonts/Futura-Bold.ttf");
   font-weight: 700;
@@ -2450,7 +2462,7 @@ footer .footer-right img {
   padding-left: 15px;
 }
 #basket .basket-section .basket-inside {
-  margin-bottom: 200px;
+  margin-bottom: 120px;
 }
 #basket .basket-section .basket-inside .the-sum {
   width: 612px;
@@ -2517,6 +2529,7 @@ footer .footer-right img {
   width: 100%;
 }
 #basket .basket-section #products .product .inline-block {
+  width: 100%;
   display: inline-block;
 }
 #basket .basket-section #products .product .inline-block .product-text p {
@@ -2525,7 +2538,11 @@ footer .footer-right img {
   color: #4a4a4a;
   font-family: 'OpenSans-Bold';
 }
-#basket .basket-section #products .product .inline-block .product-price-and-unit .product-unit p {
+#basket .basket-section #products .product .inline-block .product-price-and-unit {
+  display: -ms-flexbox;
+  display: flex;
+}
+#basket .basket-section #products .product .inline-block .product-price-and-unit .price-and-unit .product-unit p {
   font-size: 15px;
   font-weight: 400;
   color: #4a4a4a;
@@ -2533,18 +2550,17 @@ footer .footer-right img {
   margin-bottom: 0;
   font-family: 'PT-Sans-Regular';
 }
-#basket .basket-section #products .product .inline-block .product-price-and-unit .product-price p {
+#basket .basket-section #products .product .inline-block .product-price-and-unit .price-and-unit .product-price p {
   font-size: 17px;
   font-weight: 700;
   color: #4a4a4a;
   margin-top: 3px;
   font-family: 'OpenSans-Bold';
 }
-#basket .basket-section #products .product .product-count {
+#basket .basket-section #products .product .inline-block .product-price-and-unit .product-count {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-  margin-top: 80px;
   margin-right: 27px;
   margin-bottom: 17px;
   -ms-flex-direction: row-reverse;
@@ -2552,16 +2568,16 @@ footer .footer-right img {
   -ms-flex-align: end;
       align-items: flex-end;
 }
-#basket .basket-section #products .product .product-count a.minus {
+#basket .basket-section #products .product .inline-block .product-price-and-unit .product-count a.minus {
   width: 27px;
   height: 26px;
   border-radius: 8px;
   background-color: #c4c4c4;
 }
-#basket .basket-section #products .product .product-count a.minus:hover {
+#basket .basket-section #products .product .inline-block .product-price-and-unit .product-count a.minus:hover {
   background: #4a4a4a;
 }
-#basket .basket-section #products .product .product-count a.minus:before {
+#basket .basket-section #products .product .inline-block .product-price-and-unit .product-count a.minus:before {
   content: "";
   pointer-events: none;
   position: absolute;
@@ -2569,25 +2585,25 @@ footer .footer-right img {
   height: 2px;
   width: 14px;
   margin-top: 12px;
-  margin-left: -49px;
+  margin-left: -50px;
 }
-#basket .basket-section #products .product .product-count p {
+#basket .basket-section #products .product .inline-block .product-price-and-unit .product-count p {
   margin: 3px 10px;
   font-size: 17px;
   font-weight: 400;
   color: #4a4a4a;
-  font-family: 'PT-Sans-Regular';
+  font-family: 'OpenSans';
 }
-#basket .basket-section #products .product .product-count a.plus {
+#basket .basket-section #products .product .inline-block .product-price-and-unit .product-count a.plus {
   width: 27px;
   height: 26px;
   border-radius: 8px;
   background-color: #c4c4c4;
 }
-#basket .basket-section #products .product .product-count a.plus:hover {
+#basket .basket-section #products .product .inline-block .product-price-and-unit .product-count a.plus:hover {
   background: #4a4a4a;
 }
-#basket .basket-section #products .product .product-count a.plus:after {
+#basket .basket-section #products .product .inline-block .product-price-and-unit .product-count a.plus:after {
   content: "";
   pointer-events: none;
   position: absolute;
@@ -2597,7 +2613,7 @@ footer .footer-right img {
   margin-top: 12px;
   margin-left: 62.8px;
 }
-#basket .basket-section #products .product .product-count a.plus:before {
+#basket .basket-section #products .product .inline-block .product-price-and-unit .product-count a.plus:before {
   content: "";
   pointer-events: none;
   position: absolute;
@@ -2689,17 +2705,17 @@ footer .footer-right img {
   margin-bottom: 30px;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+      align-items: center;
 }
 #order .order-cantainer .orders .address-block p.choose-address {
-  margin-top: 4%;
   margin-left: 30px;
   color: #4a4a4a;
   font-size: 17px;
   font-weight: 600;
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans';
 }
 #order .order-cantainer .orders .address-block p.address {
-  margin-top: 4.3%;
   margin-left: 45px;
   color: #4a4a4a;
   font-size: 15px;
@@ -2709,17 +2725,15 @@ footer .footer-right img {
 #order .order-cantainer .orders .address-block a.change {
   margin-left: auto;
   margin-right: 32px;
-  margin-top: 5%;
   color: #4a4a4a;
   font-size: 13px;
   font-weight: 400;
   font-family: 'PT-Sans-Regular';
-}
-#order .order-cantainer .orders .address-block a.changehover {
   text-decoration: underline;
 }
 #order .order-cantainer .orders .order-details {
   min-width: 612px;
+  margin-bottom: 25px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -2730,26 +2744,53 @@ footer .footer-right img {
 #order .order-cantainer .orders .order-details .flex-profile {
   display: -ms-flexbox;
   display: flex;
+  padding: 10px 0;
+}
+#order .order-cantainer .orders .order-details .flex-profile .active {
+  display: block;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields {
+  width: 100%;
   margin-left: 30px;
+  height: auto;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .login input {
-  width: 535px;
-  height: 40px;
-  border: none !important;
-  border-radius: 8px;
-  background-color: #f6f6f5 !important;
-}
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .login p,
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order p {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields p {
   color: #4a4a4a;
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans';
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .repeat {
+  display: block;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields a {
+  margin-left: auto;
+  margin-right: 32px;
+  margin-top: 21px;
+  display: none;
+  color: #4a4a4a;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'PT-Sans-Regular';
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields a:hover {
+  text-decoration: underline;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order {
+  display: none;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login p,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password p,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .change-order p {
+  color: #4a4a4a;
+  font-family: 'OpenSans';
   font-size: 17px;
   font-weight: 600;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .login input,
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order input {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login input,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password input,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .change-order input {
   width: 296px;
   height: 40px;
   border: none;
@@ -2757,16 +2798,18 @@ footer .footer-right img {
   background-color: #fff;
   border: 1px solid #dedede;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .login input[type="text"],
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order input[type="text"] {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login input[type="text"],
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password input[type="text"],
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .change-order input[type="text"] {
   color: #4a4a4a;
   font-family: 'PT-Sans-Regular';
   font-size: 15px;
   font-weight: 400;
   padding-left: 15px;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .login label,
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order label {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login label,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password label,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .change-order label {
   cursor: pointer;
   transition: all, 0.3s;
   display: -ms-flexbox;
@@ -2782,36 +2825,47 @@ footer .footer-right img {
   background-color: #fff;
   border: 1px solid #e5edec;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .login label input.input,
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order label input.input {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login label input.input,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password label input.input,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .change-order label input.input {
   display: none;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .login label .action,
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order label .action {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login label .action,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password label .action,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .change-order label .action {
   color: #4a4a4a;
   font-family: 'PT-Sans-Regular';
   font-size: 15px;
   font-weight: 400;
   padding-left: 15px;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .login label i.fa,
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order label i.fa {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login label i.fa,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password label i.fa,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .change-order label i.fa {
   margin-right: 10px;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .login .active,
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order .active {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login .active,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password .active,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .change-order .active {
   background-color: #dedede;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .password {
-  margin-top: 40px;
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login input {
+  width: 535px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f6f6f5;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .password input {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password {
+  margin-top: 25px;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password input {
   margin-bottom: 10px;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .comments {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .comments {
   margin-top: 40px;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields textarea {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order textarea {
   width: 535px;
   height: 85px;
   outline: none;
@@ -2821,7 +2875,7 @@ footer .footer-right img {
   border: 1px solid #dedede;
   resize: none;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields textarea[type="text"] {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order textarea[type="text"] {
   color: #4a4a4a;
   font-family: 'PT-Sans-Regular';
   font-size: 15px;
@@ -2829,11 +2883,12 @@ footer .footer-right img {
   padding-top: 10px;
   padding-left: 15px;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .next {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .next {
   margin-top: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .next a {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .next button {
+  border: none;
   color: #fff;
   font-size: 13px;
   font-weight: 700;
@@ -2842,9 +2897,16 @@ footer .footer-right img {
   border-radius: 8px;
   padding: 11px 25px;
 }
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .active {
+  display: block;
+}
 #order .order-cantainer .orders .order-other {
   min-width: 612px;
   height: 74px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   margin-top: 25px;
   box-shadow: 0 6px 6px rgba(0,0,0,0.04);
   border-radius: 8px;
@@ -2852,9 +2914,8 @@ footer .footer-right img {
 }
 #order .order-cantainer .orders .order-other p {
   margin-left: 30px;
-  padding-top: 4%;
   color: #4a4a4a;
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans';
   font-size: 17px;
   font-weight: 600;
 }
@@ -3037,10 +3098,10 @@ footer .footer-right img {
   position: absolute;
 }
 #product .product .unit p {
-  color: #afafaf;
+  color: #4a4a4a;
   font-size: 20px;
   font-weight: 400;
-  font-family: 'PT-Sans-Regular';
+  font-family: 'OpenSans';
 }
 #product .product a.heart {
   width: 30px;
@@ -3201,7 +3262,6 @@ footer .footer-right img {
   font-weight: 400;
   font-family: 'Roboto-Bold';
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 1.5px;
 }
 #product .product .blocks .block-info-right .table-haracter .block-table .span {
@@ -4146,6 +4206,8 @@ footer .footer-right img {
   }
   .profile-block #basket .profile-section .basket-inside .the-sum {
     width: 90%;
+    -ms-flex-align: center;
+        align-items: center;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
@@ -4153,15 +4215,10 @@ footer .footer-right img {
     margin-bottom: 11px;
   }
   .profile-block #basket .profile-section .basket-inside .the-sum p.price {
-    margin-top: 7%;
     white-space: nowrap;
   }
   .profile-block #basket .profile-section .basket-inside .the-sum p.date {
-    margin-top: 8%;
     margin-left: auto;
-  }
-  .profile-block #basket .profile-section .basket-inside .the-sum a.repeat {
-    margin-top: 8.5%;
   }
   .profile-block #basket .profile-section .basket-inside #products .product {
     width: 90%;
@@ -4178,8 +4235,8 @@ footer .footer-right img {
     margin-top: 50px;
     margin-left: 20px;
   }
-  .profile-block #basket .profile-section .basket-inside #products .product .product-count {
-    margin-top: -45px;
+  .profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count {
+    margin-right: 35px;
   }
   .profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-text p {
     padding-right: 10px;
@@ -4260,8 +4317,8 @@ footer .footer-right img {
     margin-top: 50px;
     margin-left: 20px;
   }
-  #basket .basket-section .basket-inside #products .product .product-count {
-    margin-top: -45px;
+  #basket .basket-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count {
+    margin-right: 35px;
   }
   #basket .basket-section .basket-inside #products .product .inline-block .product-text p {
     padding-right: 10px;
@@ -4314,11 +4371,11 @@ footer .footer-right img {
     margin: 0 auto;
     display: block;
     text-align: center;
+    padding-top: 1px;
     padding-bottom: 4%;
     margin-bottom: 11px;
   }
   #order .order-cantainer .orders .address-block p.choose-address {
-    padding-top: 4%;
     margin-left: 0;
     white-space: nowrap;
   }
@@ -4326,11 +4383,10 @@ footer .footer-right img {
     margin-left: auto;
   }
   #order .order-cantainer .orders .address-block a.change {
-    margin-top: 8.5%;
     margin-right: 0;
   }
   #order .order-cantainer .orders .order-details {
-    margin: 0 auto;
+    margin: 20px auto;
     min-width: unset;
     width: 95%;
   }
@@ -4343,7 +4399,7 @@ footer .footer-right img {
     text-align: center;
   }
   #order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order label {
-    width: 90%;
+    width: 90% !important;
     margin: 0 auto;
   }
   #order .order-cantainer .orders .order-details .flex-profile .main-fields .login {
@@ -4361,6 +4417,10 @@ footer .footer-right img {
   #order .order-cantainer .orders .order-details .flex-profile .main-fields .password p {
     margin-top: 20px;
     padding-top: 20px;
+    text-align: center;
+  }
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields .password input {
+    width: 90% !important;
   }
   #order .order-cantainer .orders .order-details .flex-profile .main-fields input,
   #order .order-cantainer .orders .order-details .flex-profile .main-fields textarea {
@@ -4369,10 +4429,7 @@ footer .footer-right img {
   #order .order-cantainer .orders .order-other {
     min-width: unset;
     width: 95%;
-    margin: 0 auto;
-  }
-  #order .order-cantainer .orders .order-other p {
-    padding-top: 25px;
+    margin: 25px auto;
   }
   #order .order-cantainer .order-block {
     min-width: unset;

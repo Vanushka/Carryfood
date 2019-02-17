@@ -224,7 +224,6 @@ $(document).ready(function(){
   });
 
 
-  $(document).ready(function () {
     if ($('#basket').css('display') == 'block') {
       $('body').css('background', '#f6f6f5');
     }
@@ -256,12 +255,11 @@ $(document).ready(function(){
     $(document).mouseup(function () {
       hideallDropdowns();
     });
-  });
+
 
 
   // Табуляция инфы в модальном окне товара
 
-  $(document).ready(function() { // Ждём загрузки страницы
     $(".block-info a").click(function() { // Событие нажатия на элемент меню вкладок
       if (!$(this).hasClass("active")) { // Проверка, не нажали ли мы на уже активный пункт
         var i = $(this).index(); // Получаем порядковый номер нажатого пункта, отстче идет от 0 (0,1,2)
@@ -272,9 +270,7 @@ $(document).ready(function(){
         return false;
       }
     });
-  });
 
-  $(document).ready(function() {
     $(".block-info-product a").click(function() {
       if (!$(this).hasClass("active")) {
         var i = $(this).index();
@@ -285,10 +281,8 @@ $(document).ready(function(){
         return false;
       }
     });
-  });
 
 
-  $(document).ready(function() {
     $(".links-profile a").click(function() {
       if (!$(this).hasClass("active")) {
         var i = $(this).index();
@@ -299,9 +293,7 @@ $(document).ready(function(){
         return false;
       }
     });
-  });
 
-  $(document).ready(function() {
     $(".change-order label").click(function() {
       if (!$(this).hasClass("active")) {
         var i = $(this).index();
@@ -312,4 +304,9 @@ $(document).ready(function(){
         return false;
       }
     });
-  });
+
+
+  // Отмена action button
+  $('.next button').click(function(e) {
+    e.preventDefault();
+  })

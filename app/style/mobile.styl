@@ -795,17 +795,14 @@
           margin-bottom 20px
           .the-sum
             width 90%
+            align-items center
             height max-content
             margin 0 auto
             margin-bottom 11px
             p.price
-              margin-top 7%
               white-space nowrap
             p.date
-              margin-top 8%
               margin-left auto
-            a.repeat
-              margin-top 8.5%
           #products
             .product
               width 90%
@@ -819,8 +816,9 @@
               .inline-block
                 margin-top 50px
                 margin-left 20px
-              .product-count
-                margin-top -45px
+                .product-price-and-unit
+                  .product-count
+                    margin-right 35px
               .inline-block
                 .product-text
                   p
@@ -885,8 +883,9 @@
             .inline-block
               margin-top 50px
               margin-left 20px
-            .product-count
-              margin-top -45px
+              .product-price-and-unit
+                .product-count
+                  margin-right 35px
             .inline-block
               .product-text
                 p
@@ -927,19 +926,18 @@
           margin 0 auto
           display block
           text-align center
+          padding-top 1px
           padding-bottom 4%
           margin-bottom 11px
           p.choose-address
-            padding-top 4%
             margin-left 0
             white-space nowrap
           p.address
             margin-left auto
           a.change
-            margin-top 8.5%
             margin-right 0
         .order-details
-          margin 0 auto
+          margin 20px auto
           min-width unset
           width 95%
           .flex-profile
@@ -950,7 +948,7 @@
               text-align center
               .change-order
                 label
-                  width 90%
+                  width 90% !important
                   margin 0 auto
               .login
                 padding-top 5px
@@ -964,14 +962,15 @@
                 p
                   margin-top 20px
                   padding-top 20px
+                  text-align center
+                input
+                  width 90% !important
               input, textarea
                 width 90% !important
         .order-other
           min-width unset
           width 95%
-          margin 0 auto
-          p
-            padding-top 25px
+          margin 25px auto
       .order-block
         min-width unset
         width 95%

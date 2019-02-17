@@ -103,7 +103,7 @@
   <body>
     <div class="profile-block">
       <div class="bread-crumbs"> <a href="/">Главная</a><span> <img src="./dist/img/strelka.svg"></span><a href="/basket.html">Корзина</a><span> <img src="./dist/img/strelka.svg"></span></div>
-      <div id="order">
+      <form id="order">
         <div class="order-part">
           <h1>Оформление заказа</h1>
         </div>
@@ -116,13 +116,15 @@
             <div class="order-details">
               <div class="flex-profile">
                 <div class="main-fields">
-                  <div class="password">
-                    <p>Контакты</p>
-                    <input type="text" placeholder="Имя"><br>
-                    <input type="text" placeholder="Фамилия"><br>
-                    <input type="text" placeholder="Телефон">
+                  <p>Контакты</p><a>Изменить</a>
+                  <div class="body-order active">
+                    <div class="password">
+                      <input type="text" placeholder="Имя"><br>
+                      <input type="text" placeholder="Фамилия"><br>
+                      <input type="text" placeholder="Телефон">
+                    </div>
+                    <div class="next"><a>Далее</a></div>
                   </div>
-                  <div class="next"><a>Далее</a></div>
                 </div>
               </div>
             </div>
@@ -162,7 +164,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </div>
     <div class="foods-background">
       <div class="foods container">

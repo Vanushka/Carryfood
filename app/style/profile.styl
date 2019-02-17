@@ -57,6 +57,7 @@
         border-radius 8px
         background-color $white
         .flex-profile
+          padding-top 13px
           display flex
           .main-fields
             margin-left 30px
@@ -70,7 +71,7 @@
             .login, .password, .phone
               p
                 color $darkgrey
-                font-family 'OpenSans-Bold'
+                font-family 'OpenSans'
                 font-size 17px
                 font-weight 600
             .password
@@ -92,11 +93,17 @@
               font-size 15px
               font-weight 400
               padding-left 15px
+            input[type="password"]
+              color $darkgrey
+              font-family 'PT-Sans-Regular'
+              font-size 15px
+              font-weight 400
+              padding-left 15px
           .other-fields
             margin-left 90px
             p
               color $darkgrey
-              font-family 'OpenSans-Bold'
+              font-family 'OpenSans'
               font-size 17px
               font-weight 600
             input
@@ -114,8 +121,8 @@
               font-weight 400
               padding-left 15px
         .save-change
-          margin-top 90px
-          margin 35px auto
+          margin-top 110px
+          margin-bottom 40px
           text-align center
           a
             color #ffffff
@@ -136,30 +143,27 @@
           margin 0 auto
           margin-bottom 11px
           display flex
+          align-items center
           p.price
-            margin-top 4%
             margin-left 30px
             color $darkgrey
             font-size: 17px
             font-weight: 600
-            font-family 'OpenSans-Bold'
+            font-family 'OpenSans'
           p.date
-            margin-top 4.3%
             margin-left 45px
             color $darkgrey
             font-size 15px
             font-weight 400
-            font-family 'PT-Sans-Regular'
+            font-family 'OpenSans'
           a.repeat
             margin-left auto
             margin-right 32px
-            margin-top 5%
             color $darkgrey
             font-size 13px
             font-weight 400
-            font-family 'PT-Sans-Regular'
-            &:hover
-              text-decoration underline
+            font-family 'OpenSans'
+            text-decoration underline
         #products
           .product
             width 582px

@@ -11,7 +11,7 @@ html
         a(href="/basket.html") Корзина
         span 
           img(src="./dist/img/strelka.svg")
-      #order
+      form#order
         .order-part
           h1 Оформление заказа
         .order-cantainer
@@ -19,28 +19,87 @@ html
             .order-details
               .flex-profile
                 .main-fields
-                  .login
-                    p Выбранный адрес
-                    input(type="text" placeholder="Ленина проспект, 45")
-                  .password
-                    p Детали
-                    input(type="text" placeholder="Номер квартиры или офиса")
-                    br
-                    input(type="text" placeholder="Подъезд")
-                    br
-                    input(type="text" placeholder="Этаж")
-                    br
-                    input(type="text" placeholder="Код домофона")
-                  .comments
-                    textarea(type="text" placeholder="Комментарий к заказу")
-                  .next
-                    a Далее
-            .order-other
-              p Контакты
-            .order-other
-              p Замены
-            .order-other
-              p Оплата
+                  p Выбранный адрес
+                  a Изменить
+                  .body-order.active
+                    .login
+                      input(type="text" placeholder="Ленина проспект, 45")
+                    .password
+                      p Детали
+                      input(type="text" placeholder="Номер квартиры или офиса")
+                      br
+                      input(type="text" placeholder="Подъезд")
+                      br
+                      input(type="text" placeholder="Этаж")
+                      br
+                      input(type="text" placeholder="Код домофона")
+                    .comments
+                      textarea(type="text" placeholder="Комментарий к заказу")
+                    .next
+                      button Далее
+            .order-details
+              .flex-profile
+                .main-fields
+                  p Контакты
+                  a Изменить
+                  .body-order
+                    .login
+                      input(type="text" placeholder="Ленина проспект, 45")
+                    .password
+                      p Детали
+                      input(type="text" placeholder="Номер квартиры или офиса")
+                      br
+                      input(type="text" placeholder="Подъезд")
+                      br
+                      input(type="text" placeholder="Этаж")
+                      br
+                      input(type="text" placeholder="Код домофона")
+                    .comments
+                      textarea(type="text" placeholder="Комментарий к заказу")
+                    .next
+                      button Далее
+            .order-details
+              .flex-profile
+                .main-fields
+                  p Замены
+                  a Изменить
+                  .body-order
+                    .login
+                      input(type="text" placeholder="Ленина проспект, 45")
+                    .password
+                      p Детали
+                      input(type="text" placeholder="Номер квартиры или офиса")
+                      br
+                      input(type="text" placeholder="Подъезд")
+                      br
+                      input(type="text" placeholder="Этаж")
+                      br
+                      input(type="text" placeholder="Код домофона")
+                    .comments
+                      textarea(type="text" placeholder="Комментарий к заказу")
+                    .next
+                      button Далее
+            .order-details
+              .flex-profile
+                .main-fields
+                  p Оплата
+                  a Изменить
+                  .body-order
+                    .login
+                      input(type="text" placeholder="Ленина проспект, 45")
+                    .password
+                      p Детали
+                      input(type="text" placeholder="Номер квартиры или офиса")
+                      br
+                      input(type="text" placeholder="Подъезд")
+                      br
+                      input(type="text" placeholder="Этаж")
+                      br
+                      input(type="text" placeholder="Код домофона")
+                    .comments
+                      textarea(type="text" placeholder="Комментарий к заказу")
+                    .next
+                      button Далее
           .order-block
             .inside-block
               h1 Ваш заказ

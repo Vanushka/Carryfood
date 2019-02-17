@@ -27,22 +27,24 @@ html
             .order-details
               .flex-profile
                 .main-fields
-                  .change-order
-                    p В случае замены товара
-                    label.active 
-                      input.input(type="radio" value="1")
-                      .action Удалить позицию из заказа
-                      i.fa.fa-check(aria-hidden="true")
-                    br
-                    label 
-                      input.input(type="radio" value="2")
-                      .action Перезвонить мне
-                    br
-                    label 
-                      input.input(type="radio" value="3")
-                      .action Найти замену самостоятельно
-                  .next
-                    a Далее
+                  p В случае замены товара
+                  a Изменить
+                  .body-order.active
+                    .change-order
+                      label.active 
+                        input.input(type="radio" value="1")
+                        .action Удалить позицию из заказа
+                        i.fa.fa-check(aria-hidden="true")
+                      br
+                      label 
+                        input.input(type="radio" value="2")
+                        .action Перезвонить мне
+                      br
+                      label 
+                        input.input(type="radio" value="3")
+                        .action Найти замену самостоятельно
+                    .next
+                      a Далее
             .order-other
               p Оплата
           .order-block

@@ -25,18 +25,19 @@ html
                     .product-text
                       p= val.text
                     .product-price-and-unit
-                      .product-unit
-                        p= val.unit
-                      .product-price
-                        p= val.price
-                  .product-count
-                    a.minus
-                    p= val.count
-                    a.plus
+                      .price-and-unit
+                        .product-unit
+                          p= val.unit
+                        .product-price
+                          p= val.price
+                      .product-count
+                        a.minus
+                        p= val.count
+                        a.plus
             .total-order
               p Итого: <span>12 860 руб.</span>
               .repeat-order
-                a Повторить заказ
+                a Сделать заказ
     .foods-background
       .foods.container
         h1 Вы смотрели

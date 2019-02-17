@@ -75,6 +75,7 @@
   background-color: $white;
 }
 .profile-block #basket .profile-section .the-profile .flex-profile {
+  padding-top: 13px;
   display: -ms-flexbox;
   display: flex;
 }
@@ -92,7 +93,7 @@
 .profile-block #basket .profile-section .the-profile .flex-profile .main-fields .password p,
 .profile-block #basket .profile-section .the-profile .flex-profile .main-fields .phone p {
   color: $darkgrey;
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans';
   font-size: 17px;
   font-weight: 600;
 }
@@ -120,12 +121,19 @@
   font-weight: 400;
   padding-left: 15px;
 }
+.profile-block #basket .profile-section .the-profile .flex-profile .main-fields input[type="password"] {
+  color: $darkgrey;
+  font-family: 'PT-Sans-Regular';
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 15px;
+}
 .profile-block #basket .profile-section .the-profile .flex-profile .other-fields {
   margin-left: 90px;
 }
 .profile-block #basket .profile-section .the-profile .flex-profile .other-fields p {
   color: $darkgrey;
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans';
   font-size: 17px;
   font-weight: 600;
 }
@@ -146,8 +154,8 @@
   padding-left: 15px;
 }
 .profile-block #basket .profile-section .the-profile .save-change {
-  margin-top: 90px;
-  margin: 35px auto;
+  margin-top: 110px;
+  margin-bottom: 40px;
   text-align: center;
 }
 .profile-block #basket .profile-section .the-profile .save-change a {
@@ -172,33 +180,30 @@
   margin-bottom: 11px;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+      align-items: center;
 }
 .profile-block #basket .profile-section .basket-inside .the-sum p.price {
-  margin-top: 4%;
   margin-left: 30px;
   color: $darkgrey;
   font-size: 17px;
   font-weight: 600;
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans';
 }
 .profile-block #basket .profile-section .basket-inside .the-sum p.date {
-  margin-top: 4.3%;
   margin-left: 45px;
   color: $darkgrey;
   font-size: 15px;
   font-weight: 400;
-  font-family: 'PT-Sans-Regular';
+  font-family: 'OpenSans';
 }
 .profile-block #basket .profile-section .basket-inside .the-sum a.repeat {
   margin-left: auto;
   margin-right: 32px;
-  margin-top: 5%;
   color: $darkgrey;
   font-size: 13px;
   font-weight: 400;
-  font-family: 'PT-Sans-Regular';
-}
-.profile-block #basket .profile-section .basket-inside .the-sum a.repeat:hover {
+  font-family: 'OpenSans';
   text-decoration: underline;
 }
 .profile-block #basket .profile-section .basket-inside #products .product {

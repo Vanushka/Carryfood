@@ -37,17 +37,17 @@
   margin-bottom: 30px;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+      align-items: center;
 }
 #order .order-cantainer .orders .address-block p.choose-address {
-  margin-top: 4%;
   margin-left: 30px;
   color: $darkgrey;
   font-size: 17px;
   font-weight: 600;
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans';
 }
 #order .order-cantainer .orders .address-block p.address {
-  margin-top: 4.3%;
   margin-left: 45px;
   color: $darkgrey;
   font-size: 15px;
@@ -57,17 +57,15 @@
 #order .order-cantainer .orders .address-block a.change {
   margin-left: auto;
   margin-right: 32px;
-  margin-top: 5%;
   color: $darkgrey;
   font-size: 13px;
   font-weight: 400;
   font-family: 'PT-Sans-Regular';
-}
-#order .order-cantainer .orders .address-block a.changehover {
   text-decoration: underline;
 }
 #order .order-cantainer .orders .order-details {
   min-width: 612px;
+  margin-bottom: 25px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -78,26 +76,53 @@
 #order .order-cantainer .orders .order-details .flex-profile {
   display: -ms-flexbox;
   display: flex;
+  padding: 10px 0;
+}
+#order .order-cantainer .orders .order-details .flex-profile .active {
+  display: block;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields {
+  width: 100%;
   margin-left: 30px;
+  height: auto;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .login input {
-  width: 535px;
-  height: 40px;
-  border: none !important;
-  border-radius: 8px;
-  background-color: $backgroundgrey !important;
-}
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .login p,
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order p {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields p {
   color: $darkgrey;
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans';
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .repeat {
+  display: block;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields a {
+  margin-left: auto;
+  margin-right: 32px;
+  margin-top: 21px;
+  display: none;
+  color: $darkgrey;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'PT-Sans-Regular';
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields a:hover {
+  text-decoration: underline;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order {
+  display: none;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login p,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password p,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .change-order p {
+  color: $darkgrey;
+  font-family: 'OpenSans';
   font-size: 17px;
   font-weight: 600;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .login input,
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order input {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login input,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password input,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .change-order input {
   width: 296px;
   height: 40px;
   border: none;
@@ -105,16 +130,18 @@
   background-color: $white;
   border: 1px solid $bordergrey;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .login input[type="text"],
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order input[type="text"] {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login input[type="text"],
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password input[type="text"],
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .change-order input[type="text"] {
   color: $darkgrey;
   font-family: 'PT-Sans-Regular';
   font-size: 15px;
   font-weight: 400;
   padding-left: 15px;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .login label,
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order label {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login label,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password label,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .change-order label {
   cursor: pointer;
   transition: all, 0.3s;
   display: -ms-flexbox;
@@ -130,36 +157,47 @@
   background-color: #fff;
   border: 1px solid #e5edec;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .login label input.input,
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order label input.input {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login label input.input,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password label input.input,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .change-order label input.input {
   display: none;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .login label .action,
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order label .action {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login label .action,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password label .action,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .change-order label .action {
   color: $darkgrey;
   font-family: 'PT-Sans-Regular';
   font-size: 15px;
   font-weight: 400;
   padding-left: 15px;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .login label i.fa,
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order label i.fa {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login label i.fa,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password label i.fa,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .change-order label i.fa {
   margin-right: 10px;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .login .active,
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order .active {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login .active,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password .active,
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .change-order .active {
   background-color: $bordergrey;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .password {
-  margin-top: 40px;
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login input {
+  width: 535px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: $backgroundgrey;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .password input {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password {
+  margin-top: 25px;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password input {
   margin-bottom: 10px;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .comments {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .comments {
   margin-top: 40px;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields textarea {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order textarea {
   width: 535px;
   height: 85px;
   outline: none;
@@ -169,7 +207,7 @@
   border: 1px solid $bordergrey;
   resize: none;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields textarea[type="text"] {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order textarea[type="text"] {
   color: $darkgrey;
   font-family: 'PT-Sans-Regular';
   font-size: 15px;
@@ -177,11 +215,12 @@
   padding-top: 10px;
   padding-left: 15px;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .next {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .next {
   margin-top: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .next a {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .next button {
+  border: none;
   color: #fff;
   font-size: 13px;
   font-weight: 700;
@@ -190,9 +229,16 @@
   border-radius: 8px;
   padding: 11px 25px;
 }
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .active {
+  display: block;
+}
 #order .order-cantainer .orders .order-other {
   min-width: 612px;
   height: 74px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   margin-top: 25px;
   box-shadow: 0 6px 6px rgba(0,0,0,0.04);
   border-radius: 8px;
@@ -200,9 +246,8 @@
 }
 #order .order-cantainer .orders .order-other p {
   margin-left: 30px;
-  padding-top: 4%;
   color: $darkgrey;
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans';
   font-size: 17px;
   font-weight: 600;
 }

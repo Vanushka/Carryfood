@@ -919,6 +919,8 @@
   }
   .profile-block #basket .profile-section .basket-inside .the-sum {
     width: 90%;
+    -ms-flex-align: center;
+        align-items: center;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
@@ -926,15 +928,10 @@
     margin-bottom: 11px;
   }
   .profile-block #basket .profile-section .basket-inside .the-sum p.price {
-    margin-top: 7%;
     white-space: nowrap;
   }
   .profile-block #basket .profile-section .basket-inside .the-sum p.date {
-    margin-top: 8%;
     margin-left: auto;
-  }
-  .profile-block #basket .profile-section .basket-inside .the-sum a.repeat {
-    margin-top: 8.5%;
   }
   .profile-block #basket .profile-section .basket-inside #products .product {
     width: 90%;
@@ -951,8 +948,8 @@
     margin-top: 50px;
     margin-left: 20px;
   }
-  .profile-block #basket .profile-section .basket-inside #products .product .product-count {
-    margin-top: -45px;
+  .profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count {
+    margin-right: 35px;
   }
   .profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-text p {
     padding-right: 10px;
@@ -1033,8 +1030,8 @@
     margin-top: 50px;
     margin-left: 20px;
   }
-  #basket .basket-section .basket-inside #products .product .product-count {
-    margin-top: -45px;
+  #basket .basket-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count {
+    margin-right: 35px;
   }
   #basket .basket-section .basket-inside #products .product .inline-block .product-text p {
     padding-right: 10px;
@@ -1087,11 +1084,11 @@
     margin: 0 auto;
     display: block;
     text-align: center;
+    padding-top: 1px;
     padding-bottom: 4%;
     margin-bottom: 11px;
   }
   #order .order-cantainer .orders .address-block p.choose-address {
-    padding-top: 4%;
     margin-left: 0;
     white-space: nowrap;
   }
@@ -1099,11 +1096,10 @@
     margin-left: auto;
   }
   #order .order-cantainer .orders .address-block a.change {
-    margin-top: 8.5%;
     margin-right: 0;
   }
   #order .order-cantainer .orders .order-details {
-    margin: 0 auto;
+    margin: 20px auto;
     min-width: unset;
     width: 95%;
   }
@@ -1116,7 +1112,7 @@
     text-align: center;
   }
   #order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order label {
-    width: 90%;
+    width: 90% !important;
     margin: 0 auto;
   }
   #order .order-cantainer .orders .order-details .flex-profile .main-fields .login {
@@ -1134,6 +1130,10 @@
   #order .order-cantainer .orders .order-details .flex-profile .main-fields .password p {
     margin-top: 20px;
     padding-top: 20px;
+    text-align: center;
+  }
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields .password input {
+    width: 90% !important;
   }
   #order .order-cantainer .orders .order-details .flex-profile .main-fields input,
   #order .order-cantainer .orders .order-details .flex-profile .main-fields textarea {
@@ -1142,10 +1142,7 @@
   #order .order-cantainer .orders .order-other {
     min-width: unset;
     width: 95%;
-    margin: 0 auto;
-  }
-  #order .order-cantainer .orders .order-other p {
-    padding-top: 25px;
+    margin: 25px auto;
   }
   #order .order-cantainer .order-block {
     min-width: unset;
