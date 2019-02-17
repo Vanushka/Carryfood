@@ -232,6 +232,7 @@
   width: 100%;
 }
 .profile-block #basket .profile-section .basket-inside #products .product .inline-block {
+  width: 100%;
   display: inline-block;
 }
 .profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-text p {
@@ -240,7 +241,11 @@
   color: $darkgrey;
   font-family: 'OpenSans-Bold';
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-unit p {
+.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit {
+  display: -ms-flexbox;
+  display: flex;
+}
+.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .price-and-unit .product-unit p {
   font-size: 15px;
   font-weight: 400;
   color: $darkgrey;
@@ -248,18 +253,17 @@
   margin-bottom: 0;
   font-family: 'PT-Sans-Regular';
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-price p {
+.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .price-and-unit .product-price p {
   font-size: 17px;
   font-weight: 700;
   color: $darkgrey;
   margin-top: 3px;
   font-family: 'OpenSans-Bold';
 }
-.profile-block #basket .profile-section .basket-inside #products .product .product-count {
+.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-  margin-top: 80px;
   margin-right: 27px;
   margin-bottom: 17px;
   -ms-flex-direction: row-reverse;
@@ -267,16 +271,16 @@
   -ms-flex-align: end;
       align-items: flex-end;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .product-count a.minus {
+.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.minus {
   width: 27px;
   height: 26px;
   border-radius: 8px;
   background-color: #c4c4c4;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .product-count a.minus:hover {
+.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.minus:hover {
   background: $darkgrey;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .product-count a.minus:before {
+.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.minus:before {
   content: "";
   pointer-events: none;
   position: absolute;
@@ -284,25 +288,25 @@
   height: 2px;
   width: 14px;
   margin-top: 12px;
-  margin-left: -49px;
+  margin-left: -50px;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .product-count p {
+.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count p {
   margin: 3px 10px;
   font-size: 17px;
   font-weight: 400;
   color: $darkgrey;
-  font-family: 'PT-Sans-Regular';
+  font-family: 'OpenSans';
 }
-.profile-block #basket .profile-section .basket-inside #products .product .product-count a.plus {
+.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.plus {
   width: 27px;
   height: 26px;
   border-radius: 8px;
   background-color: #c4c4c4;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .product-count a.plus:hover {
+.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.plus:hover {
   background: $darkgrey;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .product-count a.plus:after {
+.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.plus:after {
   content: "";
   pointer-events: none;
   position: absolute;
@@ -312,7 +316,7 @@
   margin-top: 12px;
   margin-left: 62.8px;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .product-count a.plus:before {
+.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.plus:before {
   content: "";
   pointer-events: none;
   position: absolute;

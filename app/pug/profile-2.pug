@@ -58,14 +58,15 @@ html
                     .product-text
                       p= val.text
                     .product-price-and-unit
-                      .product-unit
-                        p= val.unit
-                      .product-price
-                        p= val.price
-                  .product-count
-                    a.minus
-                    p= val.count
-                    a.plus
+                      .price-and-unit
+                        .product-unit
+                          p= val.unit
+                        .product-price
+                          p= val.price
+                      .product-count
+                        a.minus
+                        p= val.count
+                        a.plus
             .repeat-order
               a Повторить заказ
             .the-sum

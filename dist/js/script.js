@@ -306,6 +306,68 @@ $(document).ready(function(){
     });
 
 
+    // Переключение блоков изменении заказов при редактировании
+    // $(".main-fields a").click(function() {
+    //   if($(this).hasClass('repeat')) {
+    //     var i = $(this).index();
+    //     var parent = $(this).parent();
+    //     console.log(parent);
+    //     $(this).removeClass();
+    //     if ($(".body-order").hasClass('active')) {
+    //       $(".body-order").css('display', 'none');
+    //       $(".body-order").removeClass("active");
+    //     }
+    //     $($(parent).children(".body-order")[i - 1]).fadeIn(1000).addClass("active");
+    //     $($(parent)[i - 1]).css('display', 'block');
+    //   }
+    // });
+    // Переключение блоков оформления заказа
+    //  $(".next button").click(function() {
+    //   var ind = $(this).parent();
+    //   console.log(ind);
+    //   index = ++index % clickbutton.length;
+    //   if (index > 0 || $($(".body-order")[index - 1]).css('display') == 'none') {
+    //     if ($($(".main-fields").children("a")[index -1]).hasClass('repeat')) {
+    //       $($(".main-fields").children("a")[index -1]).removeClass();
+    //     }
+    //     $($(".body-order")[index -1]).removeClass("active");
+    //     $($(".body-order")[index -1]).css('display', 'none');
+    //     $(".main-fields").css('display', 'flex');
+    //     $($(".main-fields")[index]).css('display', 'block');
+    //     $($(".main-fields").children("a")[index -1]).addClass("repeat")
+    //     $($(".main-fields").children(".body-order")[index]).fadeIn(1000).addClass("active");
+    //     return false;
+    //   } else {
+    //     $(".body-order").removeClass("active");
+    //     $(".body-order").css('display', 'none');
+    //     $(".main-fields").css('display', 'flex');
+    //     $(".main-fields").children("a").addClass("repeat");
+    //     $(".checkout-order a").css('background', '#ff174c');
+    //     index = 0;
+    //     return index;
+    //   }
+    // });
+
+    // $(".next").click(function() {
+    //   var element = $(this).parent();
+    //   var parentElement = element.parent();
+    //   console.log(parentElement);
+    //   var index = element.index() - 1;
+    //   if (element.hasClass('active')) {
+    //     $(element).removeClass("active");
+    //     $(element).css('display', 'none');
+    //     $(parentElement).css('display', 'flex');
+    //     $($(parentElement).children("a")[index]).addClass("repeat");
+    //     $($('.main-fields').children('.body-order')[index]).fadeIn(1000).addClass("active");
+    //     console.log(index, 'index');
+    //     element = null;
+    //     parentElement = null;
+    //     index = null;
+    //     return false;
+    //   }
+    // });
+
+
   // Отмена action button
   $('.next button').click(function(e) {
     e.preventDefault();
