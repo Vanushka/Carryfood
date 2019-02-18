@@ -299,7 +299,7 @@ header #header .container .group-select .basket .phone a {
   height: 65px;
   opacity: 0.8;
   color: #fff;
-  font-family: 'Roboto-Regular';
+  font-family: 'Roboto-Light';
   font-size: 18px;
   font-weight: 100;
   margin: 0 auto;
@@ -1383,7 +1383,7 @@ footer .footer-right img {
   background-color: #e5e3e0;
 }
 #modal .product-details {
-  top: 5%;
+  top: 10%;
   right: 0;
   left: 0;
   bottom: 10%;
