@@ -288,7 +288,7 @@ header #header .container .group-select .basket .phone a {
 }
 #slider-present .slide-present .slider-content h1 {
   color: #fff;
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans';
   font-size: 35px;
   font-weight: 700;
   text-transform: uppercase;
@@ -301,7 +301,7 @@ header #header .container .group-select .basket .phone a {
   color: #fff;
   font-family: 'Roboto-Regular';
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 100;
   margin: 0 auto;
 }
 .prev-head-slider {
@@ -389,7 +389,8 @@ li {
 .goods #goods-slider .good {
   display: block;
   width: 158.12px;
-  height: 190.8px;
+  min-height: 190.8px;
+  max-height: 190.8px;
   margin-right: 6px;
   border-radius: 10px;
   border: 1px solid #dedede;
@@ -404,7 +405,8 @@ li {
 }
 .goods #goods-slider .good a .good-text {
   width: 125.12px;
-  height: 61px;
+  height: auto;
+  min-height: 61px;
   color: #4a4a4a;
   margin: 0 auto;
   font-size: 13px;
@@ -421,7 +423,8 @@ li {
       justify-content: space-between;
 }
 .goods #goods-slider .good a .good-price-and-unit .good-price {
-  width: 36px;
+  min-width: 36px;
+  white-space: nowrap;
   height: 19px;
   margin: 5px 17px;
 }
@@ -432,15 +435,18 @@ li {
   font-family: 'OpenSans-Bold';
 }
 .goods #goods-slider .good a .good-price-and-unit .good-unit {
-  width: 52px;
-  height: 23px;
-  margin: 8px 17px;
+  min-width: 52px;
+  white-space: nowrap;
+  height: auto;
+  min-height: 23px;
+  margin: 8px 6px;
 }
 .goods #goods-slider .good a .good-price-and-unit .good-unit p {
   margin: 0;
   color: #afafaf;
   text-align: right;
   font-size: 13px;
+  margin-right: 7px;
   font-family: 'PT-Sans-Regular';
 }
 .goods #goods-slider .good:hover {
@@ -475,7 +481,8 @@ li {
   color: #bcbcbc;
   margin-left: 15px;
   font-size: 16px;
-  font-family: 'Roboto-Medium';
+  font-family: 'Roboto-Regular';
+  font-weight: 100;
   letter-spacing: 0;
 }
 .new-goods-background .new-goods .all-list {
@@ -502,10 +509,12 @@ li {
   background: #fff;
   display: block;
   width: 190px;
-  height: 280px;
+  min-height: 280px;
+  max-height: 280px;
   margin-right: 5px;
   border-radius: 10px;
   border: 1px solid #fff;
+  box-shadow: 0 6px 6px rgba(0,0,0,0.04);
 }
 .new-goods-background .new-goods #newgoods .good a .good-img {
   width: 142px;
@@ -518,7 +527,8 @@ li {
 }
 .new-goods-background .new-goods #newgoods .good a .good-text {
   width: 160px;
-  height: 61px;
+  height: auto;
+  min-height: 61px;
   color: #4a4a4a;
   margin: 0 auto;
   font-size: 15px;
@@ -535,7 +545,8 @@ li {
       justify-content: space-between;
 }
 .new-goods-background .new-goods #newgoods .good a .good-price-and-unit .good-price {
-  width: 36px;
+  min-width: 36px;
+  white-space: nowrap;
   height: 19px;
   margin: 2px 17px;
 }
@@ -546,7 +557,8 @@ li {
   font-family: 'OpenSans-Bold';
 }
 .new-goods-background .new-goods #newgoods .good a .good-price-and-unit .good-unit {
-  width: 52px;
+  min-width: 52px;
+  white-space: nowrap;
   height: 23px;
   margin: 2px 17px;
 }
@@ -583,7 +595,8 @@ li {
   color: #bcbcbc;
   margin-left: 15px;
   font-size: 16px;
-  font-family: 'Roboto-Medium';
+  font-family: 'Roboto-Regular';
+  font-weight: 100;
   letter-spacing: 0;
 }
 .goods-viewed .all-list {
@@ -611,7 +624,8 @@ li {
 .goods-viewed #viewedProducts .good {
   display: block;
   width: 189.37px;
-  height: 280px;
+  height: auto;
+  min-height: 280px;
   margin-right: 6px;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -619,7 +633,7 @@ li {
 }
 .goods-viewed #viewedProducts .good a .good-img {
   width: 142px;
-  height: 136.5px;
+  height: auto;
   margin: 17px auto;
 }
 .goods-viewed #viewedProducts .good a .good-img img {
@@ -627,7 +641,8 @@ li {
 }
 .goods-viewed #viewedProducts .good a .good-text {
   width: 160px;
-  height: 61px;
+  height: auto;
+  min-height: 61px;
   color: #4a4a4a;
   margin: 0 auto;
   font-size: 15px;
@@ -645,7 +660,8 @@ li {
       justify-content: space-between;
 }
 .goods-viewed #viewedProducts .good a .good-price-and-unit .good-price {
-  width: 36px;
+  min-width: 36px;
+  white-space: nowrap;
   height: 19px;
   margin: 2px 17px;
 }
@@ -656,7 +672,8 @@ li {
   font-family: 'OpenSans-Bold';
 }
 .goods-viewed #viewedProducts .good a .good-price-and-unit .good-unit {
-  width: 52px;
+  min-width: 52px;
+  white-space: nowrap;
   height: 23px;
   margin-top: 2px;
   margin: 2px 17px;
@@ -701,12 +718,13 @@ li {
 }
 .customer-reviews-background .customer-reviews #reviews .review {
   max-width: 440px !important;
-  height: 210px;
+  height: auto;
+  min-height: 210px;
   background: #fff;
   border-radius: 5px;
   margin-right: 10px;
   margin-bottom: 70px;
-  box-shadow: 0px 2px 10px #bcbcbc;
+  box-shadow: 0 6px 6px rgba(0,0,0,0.04);
 }
 .customer-reviews-background .customer-reviews #reviews .review .review-text {
   max-width: 387px;
@@ -721,7 +739,8 @@ li {
 .customer-reviews-background .customer-reviews #reviews .review .review-data {
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
+  margin-bottom: 10px;
+  position: relative;
 }
 .customer-reviews-background .customer-reviews #reviews .review .review-data .review-img {
   width: 47px;
@@ -802,7 +821,8 @@ li {
   opacity: 0.6;
   color: #fff;
   font-size: 18px;
-  font-family: 'Roboto-Light';
+  font-family: 'Roboto-Regular';
+  font-weight: 100;
 }
 .block-mobile-apps .google-and-apple {
   display: -ms-flexbox;
@@ -891,6 +911,7 @@ footer .footer-right .group-links-questions p {
   font-size: 14px;
   font-family: 'Futura-Bold';
   text-transform: uppercase;
+  letter-spacing: 1.4px;
 }
 footer .footer-right .group-links-questions a {
   line-height: 1.8;
@@ -908,6 +929,7 @@ footer .footer-right .group-links-partners p {
   font-size: 14px;
   font-family: 'Futura-Bold';
   text-transform: uppercase;
+  letter-spacing: 1.4px;
 }
 footer .footer-right .group-links-partners a {
   line-height: 1.8;
@@ -954,37 +976,38 @@ footer .footer-right img {
 #smart-list .smart.container .hashtags .group-hashtags .hashtag {
   height: 20px;
   cursor: pointer;
-  padding: 6px 10px;
+  padding: 5px 10px;
   border-radius: 13px;
   margin-right: 10px;
   font-size: 15px;
   font-family: 'Roboto-Regular';
-  border: 1px solid #a5a5a5;
+  border: 1px solid #c4c4c4;
 }
 #smart-list .smart.container .hashtags .group-hashtags .hashtag a {
-  text-transform: uppercase;
-  padding-right: 25px;
+  padding-right: 4px;
   color: #a5a5a5;
 }
 #smart-list .smart.container .hashtags .group-hashtags .hashtag a .close {
   position: relative;
   float: right;
-  right: 20px;
+  right: -9px;
+  margin-right: 8px;
   top: 3px;
-  width: 2px;
-  height: 2px;
+  width: 15px;
+  height: 15px;
   opacity: 0.3;
 }
 #smart-list .smart.container .hashtags .group-hashtags .hashtag a .close:hover {
+  color: #fff;
   opacity: 1;
 }
 #smart-list .smart.container .hashtags .group-hashtags .hashtag a .close:before {
   position: absolute;
-  left: 15px;
+  left: 7px;
   content: ' ';
   height: 15px;
   width: 2px;
-  background-color: #333;
+  background-color: #b2b2b2;
   -ms-transform: rotate(45deg);
       transform: rotate(45deg);
 }
@@ -992,13 +1015,14 @@ footer .footer-right img {
   -ms-transform: rotate(-45deg);
       transform: rotate(-45deg);
   position: absolute;
-  left: 15px;
+  left: 7px;
   content: ' ';
   height: 15px;
   width: 2px;
-  background-color: #333;
+  background-color: #b2b2b2;
 }
 #smart-list .smart.container .hashtags .group-hashtags .hashtag:hover {
+  border: 1px solid #ff174c;
   background: #ff174c;
 }
 #smart-list .smart.container .hashtags .group-hashtags .hashtag:hover .close:after,
@@ -1037,7 +1061,8 @@ footer .footer-right img {
 #smart-list .smart.container #smartSlider .good {
   display: block;
   width: 158.12px;
-  height: 190.8px;
+  height: auto;
+  min-height: 190.8px;
   margin-right: 6px;
   border-radius: 10px;
   background: #fff;
@@ -1053,7 +1078,8 @@ footer .footer-right img {
 }
 #smart-list .smart.container #smartSlider .good a .good-text {
   width: 125.12px;
-  height: 61px;
+  height: auto;
+  min-height: 61px;
   color: #4a4a4a;
   margin: 0 auto;
   font-size: 13px;
@@ -1066,12 +1092,15 @@ footer .footer-right img {
 #smart-list .smart.container #smartSlider .good a .good-price-and-unit {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between;
 }
 #smart-list .smart.container #smartSlider .good a .good-price-and-unit .good-price {
-  width: 36px;
+  min-width: 36px;
   height: 19px;
+  white-space: nowrap;
   margin: 2px 17px;
 }
 #smart-list .smart.container #smartSlider .good a .good-price-and-unit .good-price p {
@@ -1081,14 +1110,16 @@ footer .footer-right img {
   font-family: 'OpenSans-Bold';
 }
 #smart-list .smart.container #smartSlider .good a .good-price-and-unit .good-unit {
-  width: 52px;
+  min-width: 52px;
+  white-space: nowrap;
   height: 23px;
-  margin: 2px 17px;
+  margin: 8px 6px;
 }
 #smart-list .smart.container #smartSlider .good a .good-price-and-unit .good-unit p {
   margin: 0;
   color: #afafaf;
   text-align: right;
+  margin-right: 7px;
   font-size: 13px;
   margin-top: 3px;
   font-family: 'PT-Sans-Regular';
@@ -1195,6 +1226,13 @@ footer .footer-right img {
   font-weight: 400;
   padding-left: 15px;
 }
+#login .login form input[type="password"] {
+  color: #4a4a4a;
+  font-family: 'PT-Sans-Regular';
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 15px;
+}
 #login .login form .login-button {
   margin-top: 25px;
   margin-bottom: 30px;
@@ -1293,6 +1331,13 @@ footer .footer-right img {
   border: 1px solid #dedede;
 }
 #registration .registration form input[type="text"] {
+  color: #4a4a4a;
+  font-family: 'PT-Sans-Regular';
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 15px;
+}
+#registration .registration form input[type="password"] {
   color: #4a4a4a;
   font-family: 'PT-Sans-Regular';
   font-size: 15px;
@@ -1408,7 +1453,8 @@ footer .footer-right img {
 }
 #modal .product-details .name {
   width: 304px;
-  height: 61px;
+  height: auto;
+  min-height: 61px;
   margin-top: 60px;
   margin-left: 55px;
   margin-bottom: -15px;
@@ -1574,7 +1620,7 @@ footer .footer-right img {
   opacity: 0.5;
   margin-top: 8px;
   color: #4a4a4a;
-  font-family: Roboto;
+  font-family: 'Roboto-Regular';
   text-transform: capitalize;
 }
 #modal .product-details .blocks .block-info-right .table-haracter .line-horizontal {
@@ -1633,19 +1679,19 @@ footer .footer-right img {
   margin-right: 10px;
   font-size: 15px;
   font-family: 'Roboto-Regular';
-  border: 1px solid #a5a5a5;
+  border: 1px solid #c4c4c4;
 }
 .filter-block .filter .hashtags .hashtag a {
-  padding-right: 15px;
+  padding-right: 4px;
   color: #a5a5a5;
 }
 .filter-block .filter .hashtags .hashtag a .close {
   position: relative;
   float: right;
-  right: 10px;
+  right: -9px;
   top: 3px;
-  width: 2px;
-  height: 2px;
+  width: 15px;
+  height: 15px;
   opacity: 0.3;
 }
 .filter-block .filter .hashtags .hashtag a .close:hover {
@@ -1653,11 +1699,11 @@ footer .footer-right img {
 }
 .filter-block .filter .hashtags .hashtag a .close:before {
   position: absolute;
-  left: 15px;
+  left: 7px;
   content: ' ';
   height: 15px;
   width: 2px;
-  background-color: #333;
+  background-color: #b2b2b2;
   -ms-transform: rotate(45deg);
       transform: rotate(45deg);
 }
@@ -1665,13 +1711,14 @@ footer .footer-right img {
   -ms-transform: rotate(-45deg);
       transform: rotate(-45deg);
   position: absolute;
-  left: 15px;
+  left: 7px;
   content: ' ';
   height: 15px;
   width: 2px;
-  background-color: #333;
+  background-color: #b2b2b2;
 }
 .filter-block .filter .hashtags .hashtag:hover {
+  border: 1px solid #ff174c;
   background: #ff174c;
 }
 .filter-block .filter .hashtags .hashtag:hover .close:after,
@@ -1768,7 +1815,9 @@ footer .footer-right img {
 .filter-food #filterProducts .food {
   display: block;
   width: 189.37px;
-  height: 280px;
+  height: auto;
+  min-height: 280px;
+  max-height: 280px;
   margin-right: 6px;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -1787,7 +1836,8 @@ footer .footer-right img {
 .filter-food h1 .food a .food-text,
 .filter-food #filterProducts .food a .food-text {
   width: 160px;
-  height: 61px;
+  height: auto;
+  min-height: 61px;
   color: #4a4a4a;
   margin: 0 auto;
   font-size: 15px;
@@ -1796,19 +1846,22 @@ footer .footer-right img {
 .filter-food h1 .food a .food-text p,
 .filter-food #filterProducts .food a .food-text p {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 25px;
   word-wrap: break-word;
 }
 .filter-food h1 .food a .food-price-and-unit,
 .filter-food #filterProducts .food a .food-price-and-unit {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between;
 }
 .filter-food h1 .food a .food-price-and-unit .food-price,
 .filter-food #filterProducts .food a .food-price-and-unit .food-price {
-  width: 36px;
+  min-width: 36px;
+  white-space: nowrap;
   height: 19px;
   margin: 2px 17px;
 }
@@ -1816,21 +1869,22 @@ footer .footer-right img {
 .filter-food #filterProducts .food a .food-price-and-unit .food-price p {
   margin: 0;
   color: #000;
-  font-size: 14px;
+  font-size: 17px;
   font-family: 'OpenSans-Bold';
 }
 .filter-food h1 .food a .food-price-and-unit .food-unit,
 .filter-food #filterProducts .food a .food-price-and-unit .food-unit {
-  width: 52px;
+  min-width: 52px;
+  white-space: nowrap;
   height: 23px;
-  margin: 2px 17px;
+  margin: 8px 17px;
 }
 .filter-food h1 .food a .food-price-and-unit .food-unit p,
 .filter-food #filterProducts .food a .food-price-and-unit .food-unit p {
   margin: 0;
   color: #afafaf;
   text-align: right;
-  font-size: 13px;
+  font-size: 15px;
   margin-top: 2px;
   font-family: 'PT-Sans-Regular';
 }
@@ -1875,12 +1929,14 @@ footer .footer-right img {
   background: #fff;
   display: block;
   width: 158.12px;
-  height: 190.8px;
+  height: auto;
+  min-height: 190.8px;
+  max-height: 190.8px;
   margin-right: 6px;
   border-radius: 10px;
   margin-bottom: 50px;
   border: 1px solid transparent;
-  box-shadow: 2px 2px 7px #bcbcbc;
+  box-shadow: 0 6px 6px rgba(0,0,0,0.04);
 }
 .foods #foodSlider .food a .food-img {
   width: 62.33px;
@@ -1892,7 +1948,8 @@ footer .footer-right img {
 }
 .foods #foodSlider .food a .food-text {
   width: 125.12px;
-  height: 61px;
+  height: auto;
+  min-height: 61px;
   color: #4a4a4a;
   margin: 0 auto;
   font-size: 13px;
@@ -1909,9 +1966,10 @@ footer .footer-right img {
       justify-content: space-between;
 }
 .foods #foodSlider .food a .food-price-and-unit .food-price {
-  width: 36px;
+  min-width: 36px;
+  white-space: nowrap;
   height: 19px;
-  margin: 5px 17px;
+  margin: 5px 10px;
 }
 .foods #foodSlider .food a .food-price-and-unit .food-price p {
   margin: 0;
@@ -1920,7 +1978,8 @@ footer .footer-right img {
   font-family: 'OpenSans-Bold';
 }
 .foods #foodSlider .food a .food-price-and-unit .food-unit {
-  width: 52px;
+  min-width: 52px;
+  white-space: nowrap;
   height: 23px;
   margin: 8px 17px;
 }
@@ -2202,7 +2261,7 @@ footer .footer-right img {
   font-size: 17px;
   font-weight: 700;
   color: #4a4a4a;
-  margin-top: 3px;
+  margin-top: 0;
   font-family: 'OpenSans-Bold';
 }
 .profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count {
@@ -2566,7 +2625,7 @@ footer .footer-right img {
   font-size: 17px;
   font-weight: 700;
   color: #4a4a4a;
-  margin-top: 3px;
+  margin-top: 0;
   font-family: 'OpenSans-Bold';
 }
 #basket .basket-section #products .product .inline-block .product-price-and-unit .product-count {
@@ -2638,7 +2697,7 @@ footer .footer-right img {
   margin-left: 62.8px;
 }
 #basket .basket-section .repeat-order {
-  margin: 50px auto;
+  margin: 33px auto;
   text-align: center;
 }
 #basket .basket-section .repeat-order a {
@@ -2697,7 +2756,7 @@ footer .footer-right img {
   margin-bottom: 35px;
 }
 #order .order-cantainer {
-  width: 822px;
+  max-width: 822px;
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
@@ -2756,7 +2815,7 @@ footer .footer-right img {
 #order .order-cantainer .orders .order-details .flex-profile {
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 0;
+  padding: 8.5px 0;
 }
 #order .order-cantainer .orders .order-details .flex-profile .active {
   display: block;
@@ -2804,6 +2863,7 @@ footer .footer-right img {
   font-family: 'OpenSans';
   font-size: 17px;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login input,
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password input,
@@ -2865,6 +2925,7 @@ footer .footer-right img {
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password .active,
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .change-order .active {
   background-color: #dedede;
+  border: 1px solid #dedede;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login input {
   width: 535px;
@@ -2880,7 +2941,7 @@ footer .footer-right img {
   margin-bottom: 10px;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .comments {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order textarea {
   width: 535px;
@@ -2901,7 +2962,7 @@ footer .footer-right img {
   padding-left: 15px;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .next {
-  margin-top: 25px;
+  margin-top: 15px;
   margin-bottom: 20px;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .next button {
@@ -2979,8 +3040,8 @@ footer .footer-right img {
 }
 #order .order-cantainer .order-block .inside-block .goods-shipping-discount .line {
   width: 100%;
-  border: 1px solid #707070;
-  opacity: 0.25;
+  border: 0.5px solid #707070;
+  opacity: 0.15;
   margin-top: -10px;
 }
 #order .order-cantainer .order-block p.price {
@@ -2998,7 +3059,7 @@ footer .footer-right img {
   font-size: 17px;
   font-weight: 700;
   text-align: right;
-  margin-top: 5px;
+  margin-top: 0;
 }
 #order .order-cantainer .order-block .total-order {
   margin-top: 25px;
@@ -3125,10 +3186,12 @@ footer .footer-right img {
   height: 28px;
   position: absolute;
   margin-top: 60px;
-  background: url("../img/heart-silver.svg");
 }
-#product .product a.heart:hover {
-  background: url("../img/heart-red.svg");
+#product .product a.heart.active path {
+  fill: #ff174c;
+}
+#product .product a.heart:hover path {
+  fill: #ff174c;
 }
 #product .product .img {
   width: 470px;
@@ -3145,7 +3208,7 @@ footer .footer-right img {
 }
 #product .product .price p {
   font-family: 'OpenSans-Bold';
-  font-size: 23px;
+  font-size: 30px;
   font-weight: 700;
 }
 #product .product .block-links {
@@ -3292,7 +3355,7 @@ footer .footer-right img {
   opacity: 0.5;
   margin-top: 8px;
   color: #4a4a4a;
-  font-family: Roboto;
+  font-family: 'Roboto-Regular';
   text-transform: capitalize;
 }
 #product .product .blocks .block-info-right .table-haracter .line-horizontal {
@@ -3455,7 +3518,6 @@ footer .footer-right img {
   }
   .goods #goods-slider .good a .good-text {
     width: 95%;
-    height: 61px;
     color: #4a4a4a;
     margin: 0 auto;
     font-size: 13px;
@@ -3582,7 +3644,6 @@ footer .footer-right img {
   }
   .new-goods-background-mobile .new-goods #newgoods-mobile .good a .good-text {
     width: 86%;
-    height: 61px;
     color: #4a4a4a;
     margin: 0 auto;
     font-size: 15px;
@@ -3699,7 +3760,6 @@ footer .footer-right img {
   }
   .goods-viewed-mobile #viewedProductsMobile .good a .good-text {
     width: 87%;
-    height: 61px;
     color: #4a4a4a;
     margin: 0 auto;
     font-size: 15px;
@@ -3904,7 +3964,6 @@ footer .footer-right img {
   .filter-food-mobile h1 .food a .food-text,
   .filter-food-mobile #filterProductsMobile .food a .food-text {
     width: 86%;
-    height: 61px;
     color: #4a4a4a;
     margin: 0 auto;
     font-size: 15px;
@@ -3992,6 +4051,7 @@ footer .footer-right img {
     height: 30px;
   }
   #modal .product-details .name {
+    width: 80%;
     margin-left: 35px;
   }
   #modal .product-details .unit {

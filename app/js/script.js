@@ -377,6 +377,10 @@ $(document).ready(function(){
         return false;
     });
 
+  // LIKES
+  $('a.heart').click(function() {
+    $('a.heart').toggleClass('active');
+  });
 
   // Отмена action button
   $('.next button').click(function(e) {

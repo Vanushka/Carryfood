@@ -79,7 +79,8 @@
 }
 #modal .product-details .name {
   width: 304px;
-  height: 61px;
+  height: auto;
+  min-height: 61px;
   margin-top: 60px;
   margin-left: 55px;
   margin-bottom: -15px;
@@ -245,7 +246,7 @@
   opacity: 0.5;
   margin-top: 8px;
   color: $darkgrey;
-  font-family: Roboto;
+  font-family: 'Roboto-Regular';
   text-transform: capitalize;
 }
 #modal .product-details .blocks .block-info-right .table-haracter .line-horizontal {

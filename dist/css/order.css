@@ -17,7 +17,7 @@
   margin-bottom: 35px;
 }
 #order .order-cantainer {
-  width: 822px;
+  max-width: 822px;
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +76,7 @@
 #order .order-cantainer .orders .order-details .flex-profile {
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 0;
+  padding: 8.5px 0;
 }
 #order .order-cantainer .orders .order-details .flex-profile .active {
   display: block;
@@ -124,6 +124,7 @@
   font-family: 'OpenSans';
   font-size: 17px;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login input,
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password input,
@@ -185,6 +186,7 @@
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password .active,
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .change-order .active {
   background-color: $bordergrey;
+  border: 1px solid $bordergrey;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .login input {
   width: 535px;
@@ -200,7 +202,7 @@
   margin-bottom: 10px;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .comments {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order textarea {
   width: 535px;
@@ -221,7 +223,7 @@
   padding-left: 15px;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .next {
-  margin-top: 25px;
+  margin-top: 15px;
   margin-bottom: 20px;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .next button {
@@ -299,8 +301,8 @@
 }
 #order .order-cantainer .order-block .inside-block .goods-shipping-discount .line {
   width: 100%;
-  border: 1px solid #707070;
-  opacity: 0.25;
+  border: 0.5px solid #707070;
+  opacity: 0.15;
   margin-top: -10px;
 }
 #order .order-cantainer .order-block p.price {
@@ -318,7 +320,7 @@
   font-size: 17px;
   font-weight: 700;
   text-align: right;
-  margin-top: 5px;
+  margin-top: 0;
 }
 #order .order-cantainer .order-block .total-order {
   margin-top: 25px;

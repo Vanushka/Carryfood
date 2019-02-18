@@ -37,37 +37,38 @@
         margin-right 10px
         font-size 15px
         font-family 'Roboto-Regular'
-        border 1px solid $hashtaggrey
+        border 1px solid #c4c4c4
         a
-          padding-right 15px
-          color $hashtaggrey
+          padding-right 4px
+          color #a5a5a5
           .close
             position relative
             float right
-            right 10px
+            right -9px
             top 3px
-            width 2px
-            height 2px
+            width 15px
+            height 15px
             opacity 0.3
             &:hover
               opacity 1
             &:before
               position absolute
-              left 15px
+              left 7px
               content ' '
               height 15px
               width 2px
-              background-color #333
+              background-color #b2b2b2
               transform rotate(45deg)
             &:after
               transform rotate(-45deg)
               position absolute
-              left 15px
+              left 7px
               content ' '
               height 15px
               width 2px
-              background-color #333
+              background-color #b2b2b2
         &:hover
+          border 1px solid $red
           background $red
           .close
             &:after, &:before
@@ -141,7 +142,9 @@
     .food
       display block
       width 189.37px
-      height 280px
+      height auto
+      min-height 280px
+      max-height 280px
       margin-right 6px
       margin-bottom 10px
       border-radius 10px
@@ -155,36 +158,40 @@
             width 100%
         .food-text
           width 160px
-          height 61px
+          height auto
+          min-height 61px
           color $darkgrey
           margin 0 auto
           font-size 15px
           font-family 'PT-Sans-Regular'
           p
             margin 0
-            margin-top 30px
+            margin-top 25px
             word-wrap break-word
         .food-price-and-unit
           display flex
+          align-items center
           justify-content space-between
           .food-price
-            width 36px
+            min-width 36px
+            white-space nowrap
             height 19px
             margin 2px 17px
             p
               margin 0
               color $black
-              font-size 14px
+              font-size 17px
               font-family 'OpenSans-Bold'
           .food-unit
-            width 52px
+            min-width 52px
+            white-space nowrap
             height 23px
-            margin 2px 17px
+            margin 8px 17px
             p
               margin 0
               color $lightgrey
               text-align right
-              font-size 13px
+              font-size 15px
               margin-top 2px
               font-family 'PT-Sans-Regular'
       &:hover
@@ -218,12 +225,14 @@
       background $white
       display block
       width 158.12px
-      height 190.8px
+      height auto
+      min-height 190.8px
+      max-height 190.8px
       margin-right 6px
       border-radius 10px
       margin-bottom 50px
       border 1px solid transparent
-      box-shadow 2px 2px 7px $grey
+      box-shadow 0 6px 6px rgba(0, 0, 0, 0.04)
       a
         .food-img
           width 62.33px
@@ -233,7 +242,8 @@
             width 100%
         .food-text
           width 125.12px
-          height 61px
+          height auto
+          min-height 61px
           color $darkgrey
           margin 0 auto
           font-size 13px
@@ -245,16 +255,18 @@
           display flex
           justify-content space-between
           .food-price
-            width 36px
+            min-width 36px
+            white-space nowrap
             height 19px
-            margin 5px 17px
+            margin 5px 10px
             p
               margin 0
               color $black
               font-size 14px
               font-family 'OpenSans-Bold'
           .food-unit
-            width 52px
+            min-width 52px
+            white-space nowrap
             height 23px
             margin 8px 17px
             p

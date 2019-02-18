@@ -93,10 +93,12 @@
   height: 28px;
   position: absolute;
   margin-top: 60px;
-  background: url("../img/heart-silver.svg");
 }
-#product .product a.heart:hover {
-  background: url("../img/heart-red.svg");
+#product .product a.heart.active path {
+  fill: #ff174c;
+}
+#product .product a.heart:hover path {
+  fill: #ff174c;
 }
 #product .product .img {
   width: 470px;
@@ -113,7 +115,7 @@
 }
 #product .product .price p {
   font-family: 'OpenSans-Bold';
-  font-size: 23px;
+  font-size: 30px;
   font-weight: 700;
 }
 #product .product .block-links {
@@ -260,7 +262,7 @@
   opacity: 0.5;
   margin-top: 8px;
   color: $darkgrey;
-  font-family: Roboto;
+  font-family: 'Roboto-Regular';
   text-transform: capitalize;
 }
 #product .product .blocks .block-info-right .table-haracter .line-horizontal {

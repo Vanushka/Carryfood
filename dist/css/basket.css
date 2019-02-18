@@ -215,7 +215,7 @@
   font-size: 17px;
   font-weight: 700;
   color: $darkgrey;
-  margin-top: 3px;
+  margin-top: 0;
   font-family: 'OpenSans-Bold';
 }
 #basket .basket-section #products .product .inline-block .product-price-and-unit .product-count {
@@ -287,7 +287,7 @@
   margin-left: 62.8px;
 }
 #basket .basket-section .repeat-order {
-  margin: 50px auto;
+  margin: 33px auto;
   text-align: center;
 }
 #basket .basket-section .repeat-order a {

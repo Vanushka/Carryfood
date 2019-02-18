@@ -151,7 +151,6 @@
   }
   .goods #goods-slider .good a .good-text {
     width: 95%;
-    height: 61px;
     color: $darkgrey;
     margin: 0 auto;
     font-size: 13px;
@@ -278,7 +277,6 @@
   }
   .new-goods-background-mobile .new-goods #newgoods-mobile .good a .good-text {
     width: 86%;
-    height: 61px;
     color: $darkgrey;
     margin: 0 auto;
     font-size: 15px;
@@ -395,7 +393,6 @@
   }
   .goods-viewed-mobile #viewedProductsMobile .good a .good-text {
     width: 87%;
-    height: 61px;
     color: $darkgrey;
     margin: 0 auto;
     font-size: 15px;
@@ -600,7 +597,6 @@
   .filter-food-mobile h1 .food a .food-text,
   .filter-food-mobile #filterProductsMobile .food a .food-text {
     width: 86%;
-    height: 61px;
     color: $darkgrey;
     margin: 0 auto;
     font-size: 15px;
@@ -688,6 +684,7 @@
     height: 30px;
   }
   #modal .product-details .name {
+    width: 80%;
     margin-left: 35px;
   }
   #modal .product-details .unit {

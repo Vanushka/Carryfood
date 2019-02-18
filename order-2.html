@@ -103,7 +103,7 @@
   <body>
     <div class="profile-block">
       <div class="bread-crumbs"> <a href="/">Главная</a><span> <img src="./dist/img/strelka.svg"></span><a href="/basket.html">Корзина</a><span> <img src="./dist/img/strelka.svg"></span></div>
-      <form id="order">
+      <div id="order">
         <div class="order-part">
           <h1>Оформление заказа</h1>
         </div>
@@ -185,31 +185,31 @@
                     </div>
                   </div>
                 </div>
-                <div class="order-details"> 
-                  <div class="flex-profile">
-                    <div class="main-fields">
-                      <div class="parts">
-                        <p>Оплата</p><a>Изменить</a>
-                      </div>
-                      <div class="body-order">
-                        <div class="change-order">
-                          <label class="active"> 
-                            <input class="input" type="radio" value="1">
-                            <div class="action">Удалить позицию из заказа</div><i class="fa fa-check" aria-hidden="true"></i>
-                          </label><br>
-                          <label> 
-                            <input class="input" type="radio" value="2">
-                            <div class="action">Перезвонить мне</div>
-                          </label><br>
-                          <label> 
-                            <input class="input" type="radio" value="3">
-                            <div class="action">Найти замену самостоятельно</div>
-                          </label>
-                        </div>
-                        <div class="next">
-                          <button>Далее</button>
-                        </div>
-                      </div>
+              </div>
+            </div>
+            <div class="order-details"> 
+              <div class="flex-profile">
+                <div class="main-fields">
+                  <div class="parts">
+                    <p>Оплата</p><a>Изменить</a>
+                  </div>
+                  <div class="body-order">
+                    <div class="change-order">
+                      <label class="active"> 
+                        <input class="input" type="radio" value="1">
+                        <div class="action">Удалить позицию из заказа</div><i class="fa fa-check" aria-hidden="true"></i>
+                      </label><br>
+                      <label> 
+                        <input class="input" type="radio" value="2">
+                        <div class="action">Перезвонить мне</div>
+                      </label><br>
+                      <label> 
+                        <input class="input" type="radio" value="3">
+                        <div class="action">Найти замену самостоятельно</div>
+                      </label>
+                    </div>
+                    <div class="next">
+                      <button>Далее</button>
                     </div>
                   </div>
                 </div>
@@ -245,7 +245,7 @@
             </div>
           </div>
         </div>
-      </form>
+      </div>
     </div>
     <div class="foods-background">
       <div class="foods container">
@@ -561,7 +561,7 @@
       <p>Вход на сайт</p>
       <form id="" method="" action="">
         <input type="text" placeholder="Логин">
-        <input type="text" placeholder="Пароль">
+        <input type="password" placeholder="Пароль">
         <div class="login-button">
           <button>Вход</button>
         </div><a class="reg" href="javascript:openReg()">Регистрация на сайте</a>
@@ -574,8 +574,8 @@
       <p>Регистрация</p>
       <form id="" method="" action="">
         <input type="text" placeholder="E-mail">
-        <input type="text" placeholder="Пароль">
-        <input type="text" placeholder="Повторите пароль">
+        <input type="password" placeholder="Пароль">
+        <input type="password" placeholder="Повторите пароль">
         <div class="login-button">
           <button>Регистрация</button>
         </div><a class="reg">Войти</a>
