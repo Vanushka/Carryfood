@@ -1964,6 +1964,7 @@ footer .footer-right img {
 .profile-block #basket {
   width: auto;
   margin: 0 auto;
+  margin-bottom: 442px;
 }
 .profile-block #basket .profile-part {
   margin-top: 50px;
@@ -2107,9 +2108,6 @@ footer .footer-right img {
   border-radius: 8px;
   padding: 11px 25px;
 }
-.profile-block #basket .profile-section .basket-inside {
-  margin-bottom: 442px;
-}
 .profile-block #basket .profile-section .basket-inside .the-sum {
   width: 612px;
   height: 74px;
@@ -2137,7 +2135,11 @@ footer .footer-right img {
   font-weight: 400;
   font-family: 'OpenSans';
 }
-.profile-block #basket .profile-section .basket-inside .the-sum a.repeat {
+.profile-block #basket .profile-section .basket-inside .the-sum a {
+  display: none;
+}
+.profile-block #basket .profile-section .basket-inside .the-sum .repeat {
+  display: block;
   margin-left: auto;
   margin-right: 32px;
   color: #4a4a4a;
@@ -2146,7 +2148,10 @@ footer .footer-right img {
   font-family: 'OpenSans';
   text-decoration: underline;
 }
-.profile-block #basket .profile-section .basket-inside #products .product {
+.profile-block #basket .profile-section .basket-inside .products {
+  display: none;
+}
+.profile-block #basket .profile-section .basket-inside .products .product {
   width: 582px;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -2159,7 +2164,7 @@ footer .footer-right img {
   margin-bottom: 5px;
   background-color: #fff;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .product-img {
+.profile-block #basket .profile-section .basket-inside .products .product .product-img {
   width: 98px;
   min-width: 98px;
   height: 94px;
@@ -2168,24 +2173,24 @@ footer .footer-right img {
   margin-right: 24px;
   margin-bottom: 17px;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .product-img img {
+.profile-block #basket .profile-section .basket-inside .products .product .product-img img {
   width: 100%;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block {
   width: 100%;
   display: inline-block;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-text p {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-text p {
   font-size: 17px;
   font-weight: 700;
   color: #4a4a4a;
   font-family: 'OpenSans-Bold';
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit {
   display: -ms-flexbox;
   display: flex;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .price-and-unit .product-unit p {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .price-and-unit .product-unit p {
   font-size: 15px;
   font-weight: 400;
   color: #4a4a4a;
@@ -2193,14 +2198,14 @@ footer .footer-right img {
   margin-bottom: 0;
   font-family: 'PT-Sans-Regular';
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .price-and-unit .product-price p {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .price-and-unit .product-price p {
   font-size: 17px;
   font-weight: 700;
   color: #4a4a4a;
   margin-top: 3px;
   font-family: 'OpenSans-Bold';
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
@@ -2211,16 +2216,16 @@ footer .footer-right img {
   -ms-flex-align: end;
       align-items: flex-end;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.minus {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count a.minus {
   width: 27px;
   height: 26px;
   border-radius: 8px;
   background-color: #c4c4c4;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.minus:hover {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count a.minus:hover {
   background: #4a4a4a;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.minus:before {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count a.minus:before {
   content: "";
   pointer-events: none;
   position: absolute;
@@ -2230,23 +2235,23 @@ footer .footer-right img {
   margin-top: 12px;
   margin-left: -50px;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count p {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count p {
   margin: 3px 10px;
   font-size: 17px;
   font-weight: 400;
   color: #4a4a4a;
   font-family: 'OpenSans';
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.plus {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count a.plus {
   width: 27px;
   height: 26px;
   border-radius: 8px;
   background-color: #c4c4c4;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.plus:hover {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count a.plus:hover {
   background: #4a4a4a;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.plus:after {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count a.plus:after {
   content: "";
   pointer-events: none;
   position: absolute;
@@ -2256,7 +2261,7 @@ footer .footer-right img {
   margin-top: 12px;
   margin-left: 62.8px;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.plus:before {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count a.plus:before {
   content: "";
   pointer-events: none;
   position: absolute;
@@ -2267,6 +2272,9 @@ footer .footer-right img {
   -ms-transform: rotate(90deg);
       transform: rotate(90deg);
   margin-left: 62.8px;
+}
+.profile-block #basket .profile-section .basket-inside .active-product {
+  display: block;
 }
 .profile-block #basket .profile-section .basket-inside .repeat-order {
   margin: 50px auto;
@@ -2758,17 +2766,24 @@ footer .footer-right img {
   margin-left: 30px;
   height: auto;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields p {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .parts {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .parts p {
   color: #4a4a4a;
   font-family: 'OpenSans';
   font-size: 17px;
   font-weight: 600;
-  margin-bottom: 25px;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .repeat {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .parts p.address {
+  margin-left: 25px;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .parts .repeat {
   display: block;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields a {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .parts a {
   margin-left: auto;
   margin-right: 32px;
   margin-top: 21px;
@@ -2776,9 +2791,7 @@ footer .footer-right img {
   color: #4a4a4a;
   font-size: 13px;
   font-weight: 400;
-  font-family: 'PT-Sans-Regular';
-}
-#order .order-cantainer .orders .order-details .flex-profile .main-fields a:hover {
+  font-family: 'OpenSans';
   text-decoration: underline;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order {
@@ -4210,40 +4223,45 @@ footer .footer-right img {
   }
   .profile-block #basket .profile-section .basket-inside .the-sum {
     width: 90%;
-    -ms-flex-align: center;
-        align-items: center;
+    text-align: center;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     margin: 0 auto;
-    margin-bottom: 11px;
+    display: block;
+    padding-top: 1px;
+    padding-bottom: 11px;
   }
   .profile-block #basket .profile-section .basket-inside .the-sum p.price {
+    margin-left: 0;
     white-space: nowrap;
   }
   .profile-block #basket .profile-section .basket-inside .the-sum p.date {
     margin-left: auto;
   }
-  .profile-block #basket .profile-section .basket-inside #products .product {
+  .profile-block #basket .profile-section .basket-inside .the-sum a.repeat {
+    margin-right: 0;
+  }
+  .profile-block #basket .profile-section .basket-inside .products .product {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 20px;
     display: block;
   }
-  .profile-block #basket .profile-section .basket-inside #products .product .product-img {
+  .profile-block #basket .profile-section .basket-inside .products .product .product-img {
     width: 150px;
     padding-top: 20px;
     margin: 0 auto;
   }
-  .profile-block #basket .profile-section .basket-inside #products .product .inline-block {
+  .profile-block #basket .profile-section .basket-inside .products .product .inline-block {
     margin-top: 50px;
     margin-left: 20px;
   }
-  .profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count {
+  .profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count {
     margin-right: 35px;
   }
-  .profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-text p {
-    padding-right: 10px;
+  .profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-text {
+    width: 90%;
   }
   .profile-block #basket .profile-section .the-profile {
     width: 95%;
@@ -4306,25 +4324,25 @@ footer .footer-right img {
   #basket .basket-section .basket-inside .the-sum a.repeat {
     margin-top: 8.5%;
   }
-  #basket .basket-section .basket-inside #products .product {
+  #basket .basket-section .basket-inside .products .product {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 20px;
     display: block;
   }
-  #basket .basket-section .basket-inside #products .product .product-img {
+  #basket .basket-section .basket-inside .products .product .product-img {
     width: 150px;
     padding-top: 20px;
     margin: 0 auto;
   }
-  #basket .basket-section .basket-inside #products .product .inline-block {
+  #basket .basket-section .basket-inside .products .product .inline-block {
     margin-top: 50px;
     margin-left: 20px;
   }
-  #basket .basket-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count {
+  #basket .basket-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count {
     margin-right: 35px;
   }
-  #basket .basket-section .basket-inside #products .product .inline-block .product-text p {
+  #basket .basket-section .basket-inside .products .product .inline-block .product-text p {
     padding-right: 10px;
   }
   #basket .basket-section .the-profile {
@@ -4401,6 +4419,18 @@ footer .footer-right img {
     margin-left: 0;
     padding-top: 5px;
     text-align: center;
+  }
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields .parts {
+    display: block;
+  }
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields .parts p,
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields .parts p.address {
+    text-align: center;
+    margin-left: 0;
+  }
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields .parts a {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
   #order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order label {
     width: 90% !important;

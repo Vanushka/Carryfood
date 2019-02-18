@@ -305,67 +305,77 @@ $(document).ready(function(){
       }
     });
 
+    // Переключение вкладок повторения заказа в корзине
+    $(".the-sum a").click(function() {
+      if ($(this).hasClass("repeat")) {
+        var parentThis = $(this).parents('.basket-inside');
+        console.log(parentThis);
+        var childThis = parentThis.children('.products');
+        console.log(childThis);
+        $(".the-sum a").addClass("repeat");
+        $(".basket-inside .products").hide().removeClass("active-product");
+        $(this).removeClass("repeat");
+        $(childThis).fadeIn(1000).addClass("active-product");
+        return false;
+      }
+    });
 
     // Переключение блоков изменении заказов при редактировании
-    // $(".main-fields a").click(function() {
-    //   if($(this).hasClass('repeat')) {
-    //     var i = $(this).index();
-    //     var parent = $(this).parent();
-    //     console.log(parent);
-    //     $(this).removeClass();
-    //     if ($(".body-order").hasClass('active')) {
-    //       $(".body-order").css('display', 'none');
-    //       $(".body-order").removeClass("active");
-    //     }
-    //     $($(parent).children(".body-order")[i - 1]).fadeIn(1000).addClass("active");
-    //     $($(parent)[i - 1]).css('display', 'block');
-    //   }
-    // });
+    $(".main-fields a").click(function() {
+      var parentGeneral = $(this).parents('.order-details');
+      var parent = parentGeneral;
+      var flex = parent.children()
+      var main = flex.children();
+      var order = main.children('.body-order');
+      if($(this).hasClass('repeat')) {
+        var i = $(this).index();
+        var body = $(this).parent();
+        if ($('.parts').children("a").hasClass("pred")) {
+          $($('.parts').children("a.pred")).addClass("repeat");
+        }
+        $(this).removeClass("repeat");
+        if ($(".body-order").hasClass('active')) {
+          $(".body-order").css('display', 'none');
+          $(".body-order").removeClass("active");
+        }
+        $(main).css('display', 'block');
+        $(order).fadeIn(1000).addClass("active");
+        $(order).css('display', 'block');
+      }
+    });
     // Переключение блоков оформления заказа
-    //  $(".next button").click(function() {
-    //   var ind = $(this).parent();
-    //   console.log(ind);
-    //   index = ++index % clickbutton.length;
-    //   if (index > 0 || $($(".body-order")[index - 1]).css('display') == 'none') {
-    //     if ($($(".main-fields").children("a")[index -1]).hasClass('repeat')) {
-    //       $($(".main-fields").children("a")[index -1]).removeClass();
-    //     }
-    //     $($(".body-order")[index -1]).removeClass("active");
-    //     $($(".body-order")[index -1]).css('display', 'none');
-    //     $(".main-fields").css('display', 'flex');
-    //     $($(".main-fields")[index]).css('display', 'block');
-    //     $($(".main-fields").children("a")[index -1]).addClass("repeat")
-    //     $($(".main-fields").children(".body-order")[index]).fadeIn(1000).addClass("active");
-    //     return false;
-    //   } else {
-    //     $(".body-order").removeClass("active");
-    //     $(".body-order").css('display', 'none');
-    //     $(".main-fields").css('display', 'flex');
-    //     $(".main-fields").children("a").addClass("repeat");
-    //     $(".checkout-order a").css('background', '#ff174c');
-    //     index = 0;
-    //     return index;
-    //   }
-    // });
-
-    // $(".next").click(function() {
-    //   var element = $(this).parent();
-    //   var parentElement = element.parent();
-    //   console.log(parentElement);
-    //   var index = element.index() - 1;
-    //   if (element.hasClass('active')) {
-    //     $(element).removeClass("active");
-    //     $(element).css('display', 'none');
-    //     $(parentElement).css('display', 'flex');
-    //     $($(parentElement).children("a")[index]).addClass("repeat");
-    //     $($('.main-fields').children('.body-order')[index]).fadeIn(1000).addClass("active");
-    //     console.log(index, 'index');
-    //     element = null;
-    //     parentElement = null;
-    //     index = null;
-    //     return false;
-    //   }
-    // });
+    $(".next").click(function() {
+      var parentGeneral = $(this).parents('.order-details');
+      var nextParent = parentGeneral.next();
+      var nextFlex = nextParent.children()
+      var nextMain = nextFlex.children();
+      var nextOrder = nextMain.children('.body-order');
+      var nextPart = nextMain.children('.parts');
+      var parent = parentGeneral.children('.flex-profile');
+      var child = parent.children('.main-fields');
+      var little = child.children('.body-order');
+      var parts = child.children('.parts');
+      if (little.hasClass('active')) {
+        $(little).css('display', 'none');
+        $(child).css('display', 'flex');
+        $(little).removeClass("active");
+        if (!$(nextPart).children("a").hasClass("repeat")) {
+          $($(parts).children("a")).addClass("repeat");
+          $($(parts).children("a")).addClass("pred");
+        } else if ($(nextPart).children("a").hasClass("repeat")) {
+          $(nextPart).children('a').removeClass('repeat');
+          $($(parts).children("a")).addClass("repeat");
+          $($(parts).children("a")).addClass("pred");
+        }
+        if (!$(child).css('display') == 'flex') {
+          $(nextOrder).fadeIn(1000).addClass("active");
+        } else {
+          $(child).css('display', 'block');
+          $(nextOrder).fadeIn(1000).addClass("active");
+        }
+      }
+        return false;
+    });
 
 
   // Отмена action button

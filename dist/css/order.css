@@ -86,17 +86,24 @@
   margin-left: 30px;
   height: auto;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields p {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .parts {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .parts p {
   color: $darkgrey;
   font-family: 'OpenSans';
   font-size: 17px;
   font-weight: 600;
-  margin-bottom: 25px;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields .repeat {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .parts p.address {
+  margin-left: 25px;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .parts .repeat {
   display: block;
 }
-#order .order-cantainer .orders .order-details .flex-profile .main-fields a {
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .parts a {
   margin-left: auto;
   margin-right: 32px;
   margin-top: 21px;
@@ -104,9 +111,7 @@
   color: $darkgrey;
   font-size: 13px;
   font-weight: 400;
-  font-family: 'PT-Sans-Regular';
-}
-#order .order-cantainer .orders .order-details .flex-profile .main-fields a:hover {
+  font-family: 'OpenSans';
   text-decoration: underline;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order {

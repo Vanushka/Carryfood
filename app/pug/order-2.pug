@@ -16,28 +16,89 @@ html
           h1 Оформление заказа
         .order-cantainer
           .orders
-            .address-block
-              p.choose-address Выбранный адресс
-              p.address Ленина проспект, 45
-              a.change Изменить
-            .order-details
-              .flex-profile
-                .main-fields
-                  p Контакты
-                  a Изменить
-                  .body-order.active
-                    .password
-                      input(type="text" placeholder="Имя")
-                      br
-                      input(type="text" placeholder="Фамилия")
-                      br
-                      input(type="text" placeholder="Телефон")
-                    .next
-                      a Далее
-            .order-other
-              p Замены
-            .order-other
-              p Оплата
+            .order-cantainer
+              .orders
+                .order-details
+                  .flex-profile
+                    .main-fields
+                      .parts
+                        p Выбранный адрес
+                        a Изменить
+                      .body-order.active
+                        .login
+                          input(type="text" placeholder="Ленина проспект, 45")
+                        .password
+                          p Детали
+                          input(type="text" placeholder="Номер квартиры или офиса")
+                          br
+                          input(type="text" placeholder="Подъезд")
+                          br
+                          input(type="text" placeholder="Этаж")
+                          br
+                          input(type="text" placeholder="Код домофона")
+                        .comments
+                          textarea(type="text" placeholder="Комментарий к заказу")
+                        .next
+                          button Далее
+                .order-details
+                  .flex-profile
+                    .main-fields
+                      .parts
+                        p Контакты
+                        a Изменить
+                      .body-order
+                        .password
+                          input(type="text" placeholder="Имя")
+                          br
+                          input(type="text" placeholder="Фамилия")
+                          br
+                          input(type="text" placeholder="Телефон")
+                        .next
+                          button Далее
+                .order-details  
+                  .flex-profile
+                    .main-fields
+                      .parts
+                        p Замены
+                        a Изменить
+                      .body-order
+                        .change-order
+                          label.active 
+                            input.input(type="radio" value="1")
+                            .action Удалить позицию из заказа
+                            i.fa.fa-check(aria-hidden="true")
+                          br
+                          label 
+                            input.input(type="radio" value="2")
+                            .action Перезвонить мне
+                          br
+                          label 
+                            input.input(type="radio" value="3")
+                            .action Найти замену самостоятельно
+                        .next
+                          button Далее
+                .order-details  
+                  .flex-profile
+                    .main-fields
+                      .parts
+                        p Оплата
+                        a Изменить
+                      .body-order
+                        .change-order
+                          label.active 
+                            input.input(type="radio" value="1")
+                            .action Удалить позицию из заказа
+                            i.fa.fa-check(aria-hidden="true")
+                          br
+                          label 
+                            input.input(type="radio" value="2")
+                            .action Перезвонить мне
+                          br
+                          label 
+                            input.input(type="radio" value="3")
+                            .action Найти замену самостоятельно
+                        .next
+                          button Далее
           .order-block
             .inside-block
               h1 Ваш заказ

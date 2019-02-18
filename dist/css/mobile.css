@@ -919,40 +919,45 @@
   }
   .profile-block #basket .profile-section .basket-inside .the-sum {
     width: 90%;
-    -ms-flex-align: center;
-        align-items: center;
+    text-align: center;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     margin: 0 auto;
-    margin-bottom: 11px;
+    display: block;
+    padding-top: 1px;
+    padding-bottom: 11px;
   }
   .profile-block #basket .profile-section .basket-inside .the-sum p.price {
+    margin-left: 0;
     white-space: nowrap;
   }
   .profile-block #basket .profile-section .basket-inside .the-sum p.date {
     margin-left: auto;
   }
-  .profile-block #basket .profile-section .basket-inside #products .product {
+  .profile-block #basket .profile-section .basket-inside .the-sum a.repeat {
+    margin-right: 0;
+  }
+  .profile-block #basket .profile-section .basket-inside .products .product {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 20px;
     display: block;
   }
-  .profile-block #basket .profile-section .basket-inside #products .product .product-img {
+  .profile-block #basket .profile-section .basket-inside .products .product .product-img {
     width: 150px;
     padding-top: 20px;
     margin: 0 auto;
   }
-  .profile-block #basket .profile-section .basket-inside #products .product .inline-block {
+  .profile-block #basket .profile-section .basket-inside .products .product .inline-block {
     margin-top: 50px;
     margin-left: 20px;
   }
-  .profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count {
+  .profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count {
     margin-right: 35px;
   }
-  .profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-text p {
-    padding-right: 10px;
+  .profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-text {
+    width: 90%;
   }
   .profile-block #basket .profile-section .the-profile {
     width: 95%;
@@ -1015,25 +1020,25 @@
   #basket .basket-section .basket-inside .the-sum a.repeat {
     margin-top: 8.5%;
   }
-  #basket .basket-section .basket-inside #products .product {
+  #basket .basket-section .basket-inside .products .product {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 20px;
     display: block;
   }
-  #basket .basket-section .basket-inside #products .product .product-img {
+  #basket .basket-section .basket-inside .products .product .product-img {
     width: 150px;
     padding-top: 20px;
     margin: 0 auto;
   }
-  #basket .basket-section .basket-inside #products .product .inline-block {
+  #basket .basket-section .basket-inside .products .product .inline-block {
     margin-top: 50px;
     margin-left: 20px;
   }
-  #basket .basket-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count {
+  #basket .basket-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count {
     margin-right: 35px;
   }
-  #basket .basket-section .basket-inside #products .product .inline-block .product-text p {
+  #basket .basket-section .basket-inside .products .product .inline-block .product-text p {
     padding-right: 10px;
   }
   #basket .basket-section .the-profile {
@@ -1110,6 +1115,18 @@
     margin-left: 0;
     padding-top: 5px;
     text-align: center;
+  }
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields .parts {
+    display: block;
+  }
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields .parts p,
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields .parts p.address {
+    text-align: center;
+    margin-left: 0;
+  }
+  #order .order-cantainer .orders .order-details .flex-profile .main-fields .parts a {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
   #order .order-cantainer .orders .order-details .flex-profile .main-fields .change-order label {
     width: 90% !important;

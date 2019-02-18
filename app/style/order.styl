@@ -66,24 +66,29 @@
             width 100%
             margin-left 30px
             height auto
-            p
-              color $darkgrey
-              font-family 'OpenSans'
-              font-size 17px
-              font-weight 600
-              margin-bottom 25px
-            .repeat
-              display block
-            a
-              margin-left auto
-              margin-right 32px
-              margin-top 21px
-              display none
-              color $darkgrey
-              font-size 13px
-              font-weight 400
-              font-family 'PT-Sans-Regular'
-              &:hover
+            .parts
+              width 100%
+              display flex
+              p
+                color $darkgrey
+                font-family 'OpenSans'
+                font-size 17px
+                font-weight 600
+              p.address
+                margin-left 25px
+              .repeat
+                display block
+                // float right
+                // margin-top -35px
+              a
+                margin-left auto
+                margin-right 32px
+                margin-top 21px
+                display none
+                color $darkgrey
+                font-size 13px
+                font-weight 400
+                font-family 'OpenSans'
                 text-decoration underline
             .body-order
               display none

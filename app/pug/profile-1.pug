@@ -46,13 +46,54 @@ html
         .profile-section
           .basket-inside
             .the-sum
-              p.price 1 680 руб.
-              p.date 29.04.18
+              p.price 12 780 руб.
+              p.date 23.05.18
               a.repeat Повторить
+            .products
+              each val in forbasket
+                .product 
+                  .product-img
+                    img(src=val.img)
+                  .inline-block
+                    .product-text
+                      p= val.text
+                    .product-price-and-unit
+                      .price-and-unit
+                        .product-unit
+                          p= val.unit
+                        .product-price
+                          p= val.price
+                      .product-count
+                        a.minus
+                        p= val.count
+                        a.plus
+              .repeat-order
+                a Повторить заказ
+          .basket-inside
             .the-sum
-              p.price 1 680 руб.
-              p.date 29.04.18
+              p.price 12 780 руб.
+              p.date 23.05.18
               a.repeat Повторить
+            .products
+              each val in forbasket
+                .product 
+                  .product-img
+                    img(src=val.img)
+                  .inline-block
+                    .product-text
+                      p= val.text
+                    .product-price-and-unit
+                      .price-and-unit
+                        .product-unit
+                          p= val.unit
+                        .product-price
+                          p= val.price
+                      .product-count
+                        a.minus
+                        p= val.count
+                        a.plus
+              .repeat-order
+                a Повторить заказ
           
   include include/modal.pug
   include include/login.pug

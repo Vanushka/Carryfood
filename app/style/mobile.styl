@@ -795,15 +795,20 @@
           margin-bottom 20px
           .the-sum
             width 90%
-            align-items center
+            text-align center
             height max-content
             margin 0 auto
-            margin-bottom 11px
+            display block
+            padding-top 1px
+            padding-bottom 11px
             p.price
+              margin-left 0
               white-space nowrap
             p.date
               margin-left auto
-          #products
+            a.repeat
+              margin-right 0
+          .products
             .product
               width 90%
               margin 0 auto
@@ -821,8 +826,8 @@
                     margin-right 35px
               .inline-block
                 .product-text
-                  p
-                    padding-right 10px
+                  width 90%
+
         .the-profile
           width 95%
           .flex-profile
@@ -870,7 +875,7 @@
             margin-left auto
           a.repeat
             margin-top 8.5%
-        #products
+        .products
           .product
             width 90%
             margin 0 auto
@@ -946,6 +951,14 @@
               margin-left 0
               padding-top 5px
               text-align center
+              .parts
+                display block
+                p, p.address
+                  text-align center
+                  margin-left 0
+                a
+                  margin-right 0
+                  margin-bottom 10px
               .change-order
                 label
                   width 90% !important

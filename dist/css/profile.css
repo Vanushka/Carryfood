@@ -24,6 +24,7 @@
 .profile-block #basket {
   width: auto;
   margin: 0 auto;
+  margin-bottom: 442px;
 }
 .profile-block #basket .profile-part {
   margin-top: 50px;
@@ -167,9 +168,6 @@
   border-radius: 8px;
   padding: 11px 25px;
 }
-.profile-block #basket .profile-section .basket-inside {
-  margin-bottom: 442px;
-}
 .profile-block #basket .profile-section .basket-inside .the-sum {
   width: 612px;
   height: 74px;
@@ -197,7 +195,11 @@
   font-weight: 400;
   font-family: 'OpenSans';
 }
-.profile-block #basket .profile-section .basket-inside .the-sum a.repeat {
+.profile-block #basket .profile-section .basket-inside .the-sum a {
+  display: none;
+}
+.profile-block #basket .profile-section .basket-inside .the-sum .repeat {
+  display: block;
   margin-left: auto;
   margin-right: 32px;
   color: $darkgrey;
@@ -206,7 +208,10 @@
   font-family: 'OpenSans';
   text-decoration: underline;
 }
-.profile-block #basket .profile-section .basket-inside #products .product {
+.profile-block #basket .profile-section .basket-inside .products {
+  display: none;
+}
+.profile-block #basket .profile-section .basket-inside .products .product {
   width: 582px;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -219,7 +224,7 @@
   margin-bottom: 5px;
   background-color: #fff;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .product-img {
+.profile-block #basket .profile-section .basket-inside .products .product .product-img {
   width: 98px;
   min-width: 98px;
   height: 94px;
@@ -228,24 +233,24 @@
   margin-right: 24px;
   margin-bottom: 17px;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .product-img img {
+.profile-block #basket .profile-section .basket-inside .products .product .product-img img {
   width: 100%;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block {
   width: 100%;
   display: inline-block;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-text p {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-text p {
   font-size: 17px;
   font-weight: 700;
   color: $darkgrey;
   font-family: 'OpenSans-Bold';
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit {
   display: -ms-flexbox;
   display: flex;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .price-and-unit .product-unit p {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .price-and-unit .product-unit p {
   font-size: 15px;
   font-weight: 400;
   color: $darkgrey;
@@ -253,14 +258,14 @@
   margin-bottom: 0;
   font-family: 'PT-Sans-Regular';
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .price-and-unit .product-price p {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .price-and-unit .product-price p {
   font-size: 17px;
   font-weight: 700;
   color: $darkgrey;
   margin-top: 3px;
   font-family: 'OpenSans-Bold';
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
@@ -271,16 +276,16 @@
   -ms-flex-align: end;
       align-items: flex-end;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.minus {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count a.minus {
   width: 27px;
   height: 26px;
   border-radius: 8px;
   background-color: #c4c4c4;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.minus:hover {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count a.minus:hover {
   background: $darkgrey;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.minus:before {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count a.minus:before {
   content: "";
   pointer-events: none;
   position: absolute;
@@ -290,23 +295,23 @@
   margin-top: 12px;
   margin-left: -50px;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count p {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count p {
   margin: 3px 10px;
   font-size: 17px;
   font-weight: 400;
   color: $darkgrey;
   font-family: 'OpenSans';
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.plus {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count a.plus {
   width: 27px;
   height: 26px;
   border-radius: 8px;
   background-color: #c4c4c4;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.plus:hover {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count a.plus:hover {
   background: $darkgrey;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.plus:after {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count a.plus:after {
   content: "";
   pointer-events: none;
   position: absolute;
@@ -316,7 +321,7 @@
   margin-top: 12px;
   margin-left: 62.8px;
 }
-.profile-block #basket .profile-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count a.plus:before {
+.profile-block #basket .profile-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count a.plus:before {
   content: "";
   pointer-events: none;
   position: absolute;
@@ -327,6 +332,9 @@
   -ms-transform: rotate(90deg);
       transform: rotate(90deg);
   margin-left: 62.8px;
+}
+.profile-block #basket .profile-section .basket-inside .active-product {
+  display: block;
 }
 .profile-block #basket .profile-section .basket-inside .repeat-order {
   margin: 50px auto;

@@ -26,16 +26,16 @@ html
                   input(type="text" placeholder="admin@nesuedu.ru")
                 .password
                   p Пароль
-                  input(type="text" placeholder="Старый пароль")
+                  input(type="password" placeholder="Старый пароль")
                   br
-                  input(type="text" placeholder="Новый пароль")
+                  input(type="password" placeholder="Новый пароль")
                   br
-                  input(type="text" placeholder="Новый пароль (повторите)")
+                  input(type="password" placeholder="Новый пароль (повторите)")
                 .phone
                   p Телефон
                   input(type="text" placeholder="+7 926 333-05-33")
               .other-fields
-                p Другие поля
+                p Дополнительные поля
                 input(type="text" placeholder="???")
                 br
                 input(type="text" placeholder="???")
@@ -48,8 +48,8 @@ html
             .the-sum
               p.price 12 780 руб.
               p.date 23.05.18
-              a.repeat Повторить
-            #products
+              a Повторить
+            .products.active-product
               each val in forbasket
                 .product 
                   .product-img
@@ -67,16 +67,58 @@ html
                         a.minus
                         p= val.count
                         a.plus
-            .repeat-order
-              a Повторить заказ
+              .repeat-order
+                a Повторить заказ
+          .basket-inside
             .the-sum
               p.price 1 680 руб.
               p.date 29.04.18
               a.repeat Повторить
+            .products
+              each val in forbasket
+                .product 
+                  .product-img
+                    img(src=val.img)
+                  .inline-block
+                    .product-text
+                      p= val.text
+                    .product-price-and-unit
+                      .price-and-unit
+                        .product-unit
+                          p= val.unit
+                        .product-price
+                          p= val.price
+                      .product-count
+                        a.minus
+                        p= val.count
+                        a.plus
+              .repeat-order
+                a Повторить заказ
+          .basket-inside
             .the-sum
               p.price 1 680 руб.
               p.date 29.04.18
               a.repeat Повторить
+            .products
+              each val in forbasket
+                .product 
+                  .product-img
+                    img(src=val.img)
+                  .inline-block
+                    .product-text
+                      p= val.text
+                    .product-price-and-unit
+                      .price-and-unit
+                        .product-unit
+                          p= val.unit
+                        .product-price
+                          p= val.price
+                      .product-count
+                        a.minus
+                        p= val.count
+                        a.plus
+              .repeat-order
+                a Повторить заказ
           
   include include/modal.pug
   include include/login.pug
