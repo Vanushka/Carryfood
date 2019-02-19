@@ -3929,6 +3929,9 @@ footer .footer-right img {
     background: #fff;
     margin-bottom: 30px;
   }
+  .foods #foodSlider .food .food-price-and-unit {
+    padding: 0 7px;
+  }
   .filter-food {
     display: none;
   }
@@ -3952,7 +3955,7 @@ footer .footer-right img {
   .filter-food-mobile #filterProductsMobile .food {
     display: block;
     width: 80%;
-    height: 280px;
+    height: auto;
     margin: 0 auto;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -3986,6 +3989,7 @@ footer .footer-right img {
   .filter-food-mobile #filterProductsMobile .food a .food-price-and-unit {
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 10px;
     -ms-flex-pack: justify;
         justify-content: space-between;
   }
@@ -3999,7 +4003,7 @@ footer .footer-right img {
   .filter-food-mobile #filterProductsMobile .food a .food-price-and-unit .food-price p {
     margin: 0;
     color: #000;
-    font-size: 14px;
+    font-size: 17px;
     font-family: 'OpenSans-Bold';
   }
   .filter-food-mobile h1 .food a .food-price-and-unit .food-unit,
@@ -4013,7 +4017,7 @@ footer .footer-right img {
     margin: 0;
     color: #afafaf;
     text-align: right;
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 2px;
     font-family: 'PT-Sans-Regular';
   }
@@ -4286,7 +4290,7 @@ footer .footer-right img {
     margin: 15px auto;
   }
   .profile-block #basket .profile-section .basket-inside {
-    margin-bottom: 20px;
+    margin-bottom: 11px;
   }
   .profile-block #basket .profile-section .basket-inside .the-sum {
     width: 90%;
@@ -4312,6 +4316,7 @@ footer .footer-right img {
   .profile-block #basket .profile-section .basket-inside .products .product {
     width: 90%;
     margin: 0 auto;
+    margin-top: 11px;
     margin-bottom: 20px;
     display: block;
   }
@@ -4391,26 +4396,26 @@ footer .footer-right img {
   #basket .basket-section .basket-inside .the-sum a.repeat {
     margin-top: 8.5%;
   }
-  #basket .basket-section .basket-inside .products .product {
+  #basket .basket-section .basket-inside #products .product {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 20px;
     display: block;
   }
-  #basket .basket-section .basket-inside .products .product .product-img {
+  #basket .basket-section .basket-inside #products .product .product-img {
     width: 150px;
     padding-top: 20px;
     margin: 0 auto;
   }
-  #basket .basket-section .basket-inside .products .product .inline-block {
+  #basket .basket-section .basket-inside #products .product .inline-block {
     margin-top: 50px;
     margin-left: 20px;
   }
-  #basket .basket-section .basket-inside .products .product .inline-block .product-price-and-unit .product-count {
+  #basket .basket-section .basket-inside #products .product .inline-block .product-price-and-unit .product-count {
     margin-right: 35px;
   }
-  #basket .basket-section .basket-inside .products .product .inline-block .product-text p {
-    padding-right: 10px;
+  #basket .basket-section .basket-inside #products .product .inline-block .product-text p {
+    width: 90%;
   }
   #basket .basket-section .the-profile {
     width: 95%;
@@ -4545,6 +4550,9 @@ footer .footer-right img {
   #product .product .name {
     width: auto;
   }
+  #product .product .name p {
+    font-size: 27px;
+  }
   #product .product .img {
     width: 90%;
     height: -webkit-max-content;
@@ -4556,6 +4564,20 @@ footer .footer-right img {
   }
   #product .product .price {
     margin-top: 0;
+  }
+  #product .product .blocks {
+    display: block;
+  }
+  #product .product .blocks .block-info-product .block-text-product .text-product {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #product .product .blocks .block-info-product .text-product {
+    width: 100%;
+  }
+  #product .product .blocks .block-info-right {
+    width: 87%;
+    padding: 10px 20px 10px 20px;
   }
 }
 @media screen and (max-device-width: 768px) {
