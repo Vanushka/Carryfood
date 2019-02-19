@@ -98,6 +98,7 @@
 }
 .filter-block .filter .hashtags .active {
   background: $red;
+  border: 1px solid $red;
 }
 .filter-block .filter .hashtags .active a {
   color: $white;

@@ -1730,6 +1730,7 @@ footer .footer-right img {
 }
 .filter-block .filter .hashtags .active {
   background: #ff174c;
+  border: 1px solid #ff174c;
 }
 .filter-block .filter .hashtags .active a {
   color: #fff;
@@ -2939,6 +2940,9 @@ footer .footer-right img {
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password input {
   margin-bottom: 10px;
+}
+#order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .password p {
+  margin-bottom: 20px;
 }
 #order .order-cantainer .orders .order-details .flex-profile .main-fields .body-order .comments {
   margin-top: 30px;
