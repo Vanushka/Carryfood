@@ -315,9 +315,10 @@
   font-size: 17px;
   font-weight: 700;
 }
-.total-order .repeat-order,
-.total-order margin 50px auto,
-.total-order text-align center,
+.total-order .repeat-order {
+  margin: 50px auto;
+  text-align: center;
+}
 .total-order a {
   color: #fff;
   font-size: 13px;
