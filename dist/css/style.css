@@ -221,7 +221,7 @@ header #header .container .group-select .time-of-delivery select {
   -webkit-appearance: none;
   background: url("../img/strelka-down.svg") 92%/5% no-repeat;
 }
-header #header .container .group-select .basket {
+header #header .container .group-select .column-block a.basket {
   height: 37px;
   cursor: pointer;
   display: inline-block;
@@ -231,12 +231,12 @@ header #header .container .group-select .basket {
   border-radius: 5px;
   border: 1px solid rgba(255,255,255,0.31);
 }
-header #header .container .group-select .basket img {
+header #header .container .group-select .column-block a.basket img {
   margin-top: -3px;
   margin-left: 10px;
   position: absolute;
 }
-header #header .container .group-select .basket span {
+header #header .container .group-select .column-block a.basket span {
   color: #fff;
   width: 18px;
   position: absolute;
@@ -248,18 +248,20 @@ header #header .container .group-select .basket span {
   background: #ff174c;
   border-radius: 10px;
 }
-header #header .container .group-select .basket a {
+header #header .container .group-select .column-block a.basket p {
+  margin: 0;
+  padding-right: 15px;
   padding-left: 55px;
   color: #fff;
   font-size: 16px;
   font-family: 'Roboto-Regular';
 }
-header #header .container .group-select .basket .phone {
+header #header .container .group-select .column-block .phone {
   display: block;
-  margin-top: 29px;
-  margin-left: -5px;
+  margin-top: 12px;
+  margin-left: 6px;
 }
-header #header .container .group-select .basket .phone a {
+header #header .container .group-select .column-block .phone a {
   border: 0;
   padding: 0;
   color: #fff;
@@ -653,12 +655,13 @@ li {
 }
 .goods-viewed #viewedProducts .good a .good-text p {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 20px;
   word-wrap: break-word;
 }
 .goods-viewed #viewedProducts .good a .good-price-and-unit {
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 5px;
   -ms-flex-pack: justify;
       justify-content: space-between;
 }
@@ -1377,7 +1380,7 @@ footer .footer-right img {
 }
 #modal .background {
   top: 0;
-  z-index: 3;
+  z-index: 10;
   width: 100%;
   height: 100%;
   opacity: 0.94;
@@ -1390,7 +1393,7 @@ footer .footer-right img {
   right: 0;
   left: 0;
   bottom: 10%;
-  z-index: 4;
+  z-index: 10;
   width: 772px;
   max-height: 777px;
   display: none;
@@ -1486,6 +1489,7 @@ footer .footer-right img {
 }
 #modal .product-details .img img {
   width: 100%;
+  height: 100%;
 }
 #modal .product-details .price {
   margin-left: 55px;
@@ -1526,7 +1530,7 @@ footer .footer-right img {
   height: 2px;
   width: 18px;
   margin-top: 8px;
-  margin-left: -86.8px;
+  left: 64px;
 }
 #modal .product-details .block-links a.in-basket:before {
   content: "";
@@ -2595,6 +2599,7 @@ footer .footer-right img {
   width: 98px;
   min-width: 98px;
   height: 94px;
+  max-height: 94px;
   margin-top: 22px;
   margin-left: 22px;
   margin-right: 24px;
@@ -2660,7 +2665,7 @@ footer .footer-right img {
   height: 2px;
   width: 14px;
   margin-top: 12px;
-  margin-left: -50px;
+  margin-left: 6px;
 }
 #basket .basket-section #products .product .inline-block .product-price-and-unit .product-count p {
   margin: 3px 10px;
@@ -2686,7 +2691,7 @@ footer .footer-right img {
   height: 2px;
   width: 14px;
   margin-top: 12px;
-  margin-left: 62.8px;
+  margin-left: 6px;
 }
 #basket .basket-section #products .product .inline-block .product-price-and-unit .product-count a.plus:before {
   content: "";
@@ -2698,7 +2703,7 @@ footer .footer-right img {
   margin-top: 12px;
   -ms-transform: rotate(90deg);
       transform: rotate(90deg);
-  margin-left: 62.8px;
+  margin-left: 6px;
 }
 #basket .basket-section .repeat-order {
   margin: 33px auto;
@@ -3210,6 +3215,7 @@ footer .footer-right img {
 }
 #product .product .img img {
   width: 100%;
+  height: 100%;
 }
 #product .product .price {
   margin-top: 186px;
@@ -3228,39 +3234,42 @@ footer .footer-right img {
       justify-content: flex-end;
 }
 #product .product .block-links a.in-basket {
+  width: 63px;
+  height: 38px;
   color: #fff;
-  padding: 10px;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 13px;
   font-weight: 700;
-  padding-left: 35px;
-  font-family: 'Roboto-Regular';
+  padding-left: 43px;
+  -ms-flex-align: center;
+      align-items: center;
   border-radius: 8px;
   background-color: #ff174c;
+  font-family: 'Roboto-Regular';
 }
 #product .product .block-links a.in-basket:hover {
   background: #4a4a4a;
 }
 #product .product .block-links a.in-basket:after {
   content: "";
-  pointer-events: none;
-  position: absolute;
   background: #fff;
   height: 2px;
   width: 18px;
-  margin-top: -10px;
-  margin-left: -25.8px;
+  left: 9px;
+  position: absolute;
+  pointer-events: none;
 }
 #product .product .block-links a.in-basket:before {
   content: "";
   pointer-events: none;
-  position: absolute;
   background: #fff;
   height: 2px;
   width: 18px;
-  margin-top: 8px;
+  margin-right: 8px;
   -ms-transform: rotate(90deg);
       transform: rotate(90deg);
-  margin-left: -25.8px;
+  margin-left: -33.8px;
 }
 #product .product .block-links a.out-basket {
   width: 38px;
@@ -3435,23 +3444,23 @@ footer .footer-right img {
     width: 100%;
     height: 30px;
   }
-  header #header .container .group-select .basket {
+  header #header .container .group-select .column-block a.basket {
     text-align: center;
     margin-top: 4px;
     height: 25px;
     width: 95%;
     padding-top: 2px;
   }
-  header #header .container .group-select .basket a {
+  header #header .container .group-select .column-block a.basket p {
     padding-left: 0;
   }
-  header #header .container .group-select .basket img {
+  header #header .container .group-select .column-block a.basket img {
     display: -ms-flexbox;
     display: flex;
     width: 22px;
     margin-top: 2px;
   }
-  header #header .container .group-select .basket span {
+  header #header .container .group-select .column-block a.basket span {
     width: 11px;
     font-size: 8px;
     padding-left: 2px;
@@ -3461,14 +3470,12 @@ footer .footer-right img {
     display: flex;
     position: absolute;
   }
-  header #header .container .group-select .basket .phone {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
+  header #header .container .group-select .column-block .phone {
+    margin-top: 0;
     margin-left: 0;
+    text-align: center;
   }
-  header #header .container .group-select .basket .phone a {
+  header #header .container .group-select .column-block .phone a {
     margin-top: -23px;
   }
   .search-menu {

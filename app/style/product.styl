@@ -1,231 +1,233 @@
 #product
-  .product
-    top 5%
-    right 0
-    left 0
-    bottom 10%
-    z-index 4
-    width 90%
-    display block
-    overflow auto
-    position relative
-    margin 0 auto
-    // box-shadow 0 3px 6px rgba(0, 0, 0, 0.16)
-    // border-radius 20px
-    // background-color $white
-    ::-webkit-scrollbar
-      width 0px
-      opacity 0
-      background rgba(255, 255, 255, 0.0)
-    ::-moz-scrollbar
-      opacity 0
-      width 0px
-      background rgba(255, 255, 255, 0.0)
-    ::-ms-scrollbar
-      opacity 0
-      width 0px
-      background rgba(255, 255, 255, 0.0)
-    ::-o-scrollbar
-      opacity 0
-      width 0px
-      background rgba(255, 255, 255, 0.0)
-    .close
-      position relative
-      float right
-      right 22px
-      top 20px
-      width 24px
-      height 18px
-      opacity 0.3
-      &:hover
-        cursor pointer
-        opacity 1
-      &:before
-        position absolute
-        left 15px
-        content ' '
-        height 20px
-        width 2px
-        background-color #333
-        transform rotate(45deg)
-      &:after
-        transform rotate(-45deg)
-        position absolute
-        left 15px
-        content ' '
-        height 20px
-        width 2px
-        background-color #333
-    .name
-      width 500px
-      height max-content
-      margin-top 60px
-      margin-bottom -15px
-      p
-        color $darkgrey
-        font-family 'PT-Sans-Regular'
-        font-size 35px
-        font-weight 700
-        margin-bottom 10px
-    .unit
-      margin-top 0
-      position absolute
-      p
-        color $darkgrey
-        font-size 20px
-        font-weight 400
-        font-family 'OpenSans'
-    a.heart
-      width 30px
-      height 28px
-      position absolute
-      margin-top 60px
-      &.active
-        path
-          fill #ff174c
-      &:hover
-        path
-          fill #ff174c
-    .img
-      width 470px
-      height 350px
-      float right
-      margin-top -80px
-      margin-right 50px
-      img
-        width 100%
-    .price
-      margin-top 186px
-      p
-        font-family 'OpenSans-Bold'
-        font-size 30px
-        font-weight 700
-    .block-links
-      display flex
-      flex-flow row-reverse
-      justify-content flex-end
-      a.in-basket
-        color $white
-        padding 10px
-        font-size 13px
-        font-weight 700
-        padding-left 35px
-        font-family 'Roboto-Regular'
-        border-radius 8px
-        background-color $red
-        &:hover
-          background $darkgrey
-        &:after
-          content ""
-          pointer-events none
-          position absolute
-          background #fff
-          height 2px
-          width 18px
-          margin-top -10px
-          margin-left -25.8px
-        &:before
-          content ""
-          pointer-events none
-          position absolute
-          background #fff
-          height 2px
-          width 18px
-          margin-top 8px
-          transform rotate(90deg)
-          margin-left -25.8px
-      a.out-basket
-        width 38px
-        height 38px
-        border-radius 8px
-        margin-right 10px
-        background-color #c4c4c4
-        &:hover
-          background $darkgrey
-        &:before
-          content ""
-          pointer-events:none
-          position absolute
-          background #fff
-          height 2px
-          width 18px
-          margin-top 18px
-          margin-left 10px
-    .blocks
-      display flex
-      justify-content space-between
-      margin-top 50px
-      margin-bottom 50px
-      .block-info-product
-        .active
-          opacity 1
-        a
-          margin-right 20px
-          text-transform uppercase
-          opacity 0.44
-          color $darkgrey
-          font-family 'Roboto-Regular'
-          font-size 15px
-          font-weight 700
-          letter-spacing 1.5px
-        .block-text-product
-          .text-product
-            display none
-            width 500px
-            height auto
-            color $darkgrey
-            font-family 'PT-Sans-Regular'
-            font-size 14px
-            font-weight 400
-          .active
-            display block
-      .block-info-right
-        width 331px
-        padding 25px 30px 30px 30px
-        margin-right 90px
-        background-color $backgroundgrey
-        .nutritional-value
-          p
-            color $darkgrey
-            font-size 15px
-            font-weight 400
-            font-family 'Roboto-Bold'
-            font-weight 700
-            text-transform uppercase
-            letter-spacing 1.5px
-            span
-              font-size 15px
-              font-weight 100
-              font-family 'Roboto-Regular'
-              text-transform capitalize
-        .table-haracter
-          .block-table
-            display flex
-            justify-content space-between
-            p
-              margin 5px 0px
-              display inline-block
-              color $darkgrey
-              font-size 14px
-              font-weight 400
-              font-family 'Roboto-Bold'
-              font-weight 700
-              letter-spacing 1.5px
-            .span
-              min-width 75px
-              text-align left
-              span
-                float right
-                font-size 14px
-                font-weight 400
-                opacity 0.5
-                margin-top 8px
-                color $darkgrey
-                font-family 'Roboto-Regular'
-                text-transform capitalize
-          .line-horizontal
-            width 100%
-            height 1px
-            opacity 0.25
-            cursor pointer
-            background $lightgrey
+	.product
+		top 5%
+		right 0
+		left 0
+		bottom 10%
+		z-index 4
+		width 90%
+		display block
+		overflow auto
+		position relative
+		margin 0 auto
+		// box-shadow 0 3px 6px rgba(0, 0, 0, 0.16)
+		// border-radius 20px
+		// background-color $white
+		::-webkit-scrollbar
+			width 0px
+			opacity 0
+			background rgba(255, 255, 255, 0.0)
+		::-moz-scrollbar
+			opacity 0
+			width 0px
+			background rgba(255, 255, 255, 0.0)
+		::-ms-scrollbar
+			opacity 0
+			width 0px
+			background rgba(255, 255, 255, 0.0)
+		::-o-scrollbar
+			opacity 0
+			width 0px
+			background rgba(255, 255, 255, 0.0)
+		.close
+			position relative
+			float right
+			right 22px
+			top 20px
+			width 24px
+			height 18px
+			opacity 0.3
+			&:hover
+				cursor pointer
+				opacity 1
+			&:before
+				position absolute
+				left 15px
+				content ' '
+				height 20px
+				width 2px
+				background-color #333
+				transform rotate(45deg)
+			&:after
+				transform rotate(-45deg)
+				position absolute
+				left 15px
+				content ' '
+				height 20px
+				width 2px
+				background-color #333
+		.name
+			width 500px
+			height max-content
+			margin-top 60px
+			margin-bottom -15px
+			p
+				color $darkgrey
+				font-family 'PT-Sans-Regular'
+				font-size 35px
+				font-weight 700
+				margin-bottom 10px
+		.unit
+			margin-top 0
+			position absolute
+			p
+				color $darkgrey
+				font-size 20px
+				font-weight 400
+				font-family 'OpenSans'
+		a.heart
+			width 30px
+			height 28px
+			position absolute
+			margin-top 60px
+			&.active
+				path
+					fill #ff174c
+			&:hover
+				path
+					fill #ff174c
+		.img
+			width 470px
+			height 350px
+			float right
+			margin-top -80px
+			margin-right 50px
+			img
+				width 100%
+				height: 100%
+		.price
+			margin-top 186px
+			p
+				font-family 'OpenSans-Bold'
+				font-size 30px
+				font-weight 700
+		.block-links
+			display flex
+			flex-flow row-reverse
+			justify-content flex-end
+			a.in-basket
+				width: 63px
+				height: 38px
+				color $white
+				display: flex
+				font-size 13px
+				font-weight 700
+				padding-left 43px
+				align-items: center
+				border-radius 8px
+				background-color $red
+				font-family 'Roboto-Regular'
+				&:hover
+					background $darkgrey
+				&:after
+					content ""
+					background #fff
+					height 2px
+					width 18px
+					left: 9px
+					position: absolute
+					pointer-events none
+				&:before
+					content ""
+					pointer-events none
+					background #fff
+					height 2px
+					width 18px
+					margin-right: 8px
+					transform rotate(90deg)
+					margin-left -33.8px
+			a.out-basket
+				width 38px
+				height 38px
+				border-radius 8px
+				margin-right 10px
+				background-color #c4c4c4
+				&:hover
+					background $darkgrey
+				&:before
+					content ""
+					pointer-events:none
+					position absolute
+					background #fff
+					height 2px
+					width 18px
+					margin-top 18px
+					margin-left 10px
+		.blocks
+			display flex
+			justify-content space-between
+			margin-top 50px
+			margin-bottom 50px
+			.block-info-product
+				.active
+					opacity 1
+				a
+					margin-right 20px
+					text-transform uppercase
+					opacity 0.44
+					color $darkgrey
+					font-family 'Roboto-Regular'
+					font-size 15px
+					font-weight 700
+					letter-spacing 1.5px
+				.block-text-product
+					.text-product
+						display none
+						width 500px
+						height auto
+						color $darkgrey
+						font-family 'PT-Sans-Regular'
+						font-size 14px
+						font-weight 400
+					.active
+						display block
+			.block-info-right
+				width 331px
+				padding 25px 30px 30px 30px
+				margin-right 90px
+				background-color $backgroundgrey
+				.nutritional-value
+					p
+						color $darkgrey
+						font-size 15px
+						font-weight 400
+						font-family 'Roboto-Bold'
+						font-weight 700
+						text-transform uppercase
+						letter-spacing 1.5px
+						span
+							font-size 15px
+							font-weight 100
+							font-family 'Roboto-Regular'
+							text-transform capitalize
+				.table-haracter
+					.block-table
+						display flex
+						justify-content space-between
+						p
+							margin 5px 0px
+							display inline-block
+							color $darkgrey
+							font-size 14px
+							font-weight 400
+							font-family 'Roboto-Bold'
+							font-weight 700
+							letter-spacing 1.5px
+						.span
+							min-width 75px
+							text-align left
+							span
+								float right
+								font-size 14px
+								font-weight 400
+								opacity 0.5
+								margin-top 8px
+								color $darkgrey
+								font-family 'Roboto-Regular'
+								text-transform capitalize
+					.line-horizontal
+						width 100%
+						height 1px
+						opacity 0.25
+						cursor pointer
+						background $lightgrey

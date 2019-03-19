@@ -1,142 +1,142 @@
 doctype html
 html
-  include include/variables.pug
-  include include/header.pug
-  body
-    #slider-present
-      each slide in slidercontent
-        .slide-present
-          img(src=slide.img)
-          .slider-content
-            h1= slide.h1
-            p= slide.p
-    .goods.container
-      h1 Товары со скидкой
-      #goods-slider
-        each val in food
-          .good
-            a(href="javascript:openProductDetail()")
-              .good-img
-                img(src=val.img)
-              .good-text
-                p= val.text
-              .good-price-and-unit
-                .good-price
-                  p= val.price
-                .good-unit
-                  p= val.unit
-    .new-goods-background
-      .new-goods.container
-        h1 Новые товары
-          span 135
-        .all-list
-          a(href="catalog.html") Весь список
-            span
-              img(src="./dist/img/strelka.svg")
-        #newgoods
-            each val in newfoods
-              .good
-                a(href="javascript:openProductDetail()")
-                  .good-img 
-                    img(src=val.img)
-                  .good-text
-                    p= val.text
-                  .good-price-and-unit
-                    .good-price
-                      p= val.price
-                    .good-unit 
-                      p= val.unit
-    .new-goods-background-mobile
-      .new-goods.container 
-        h1 Новые товары
-          span 135 
-        .all-list
-          a(href="catalog.html") Весь список
-            span
-              img(src="./dist/img/strelka.svg")
-        #newgoods-mobile
-            each val in newfoodsmobile
-              .good
-                a(href="javascript:openProductDetail()")
-                  .good-img
-                    img(src=val.img)
-                  .good-text
-                    p= val.text
-                  .good-price-and-unit
-                    .good-price
-                      p= val.price
-                    .good-unit
-                      p= val.unit
-    .goods-viewed.container
-      h1 Вы смотрели
-        span 75
-      .all-list
-        a(href="catalog.html") Весь список
-          span
-            img(src="./dist/img/strelka.svg")
-      #viewedProducts
-        each val in viewedfoods
-          .good  
-            a(href="javascript:openProductDetail()")
-              .good-img 
-                img(src=val.img)
-              .good-text
-                p= val.text
-              .good-price-and-unit
-                .good-price
-                  p= val.price
-                .good-unit
-                  p= val.unit
-    .goods-viewed-mobile
-      h1 Вы смотрели 
-        span 75
-      .all-list  
-        a(href="catalog.html") Весь список
-          span
-            img(src="./dist/img/strelka.svg")
-      #viewedProductsMobile
-        each val in viewedfoodsmobile
-          .good  
-            a(href="javascript:openProductDetail()")
-              .good-img 
-                img(src=val.img)
-              .good-text
-                p= val.text
-              .good-price-and-unit
-                .good-price
-                  p= val.price
-                .good-unit
-                  p= val.unit
-    .customer-reviews-background
-      .customer-reviews.container
-        h1 Отзывы покупателей
-        #reviews
-          each val in reviews
-            .review
-              .review-text
-                p= val.text
-              .review-data
-                .review-img
-                  img(src=val.photo)
-                .name-and-url
-                  .name 
-                    p= val.name
-                  .url
-                    a(target="_blank" href="https://vk.com")= val.url
-        .reviews-gradient
-    .block-mobile-apps
-      .headline
-        h1 СКАЧАЙТЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ
-        p И узнавайте о скидках первыми!
-      .google-and-apple
-        a(href="https://play.google.com/store" target="_blank")
-          img(src="./dist/img/google-play-badge.svg")
-        a(href="https://www.apple.com/ru/ios/app-store/" target="_blank")
-          img(src="./dist/img/app-store-badge.svg")
+	include include/variables.pug
+	include include/header.pug
+	body
+		#slider-present
+			each slide in slidercontent
+				.slide-present
+					img(src=slide.img)
+					.slider-content
+						h1= slide.h1
+						p= slide.p
+		.goods.container
+			h1 Товары со скидкой
+			#goods-slider
+				each val in food     
+					.good
+						a(href="javascript:openProductDetail()")
+							.good-img 
+								img(src=val.img)
+							.good-text
+								p= val.text
+							.good-price-and-unit
+								.good-price
+									p= val.price
+								.good-unit
+									p= val.unit
+		.new-goods-background
+			.new-goods.container
+				h1 Новые товары
+					span 135
+				.all-list
+					a(href="catalog.html") Весь список
+						span
+							img(src="./dist/img/strelka.svg")
+				#newgoods
+						each val in newfoods
+							.good
+								a(href="javascript:openProductDetail()")
+									.good-img 
+										img(src=val.img)
+									.good-text
+										p= val.text
+									.good-price-and-unit
+										.good-price
+											p= val.price
+										.good-unit 
+											p= val.unit
+		.new-goods-background-mobile
+			.new-goods.container 
+				h1 Новые товары
+					span 135 
+				.all-list
+					a(href="catalog.html") Весь список
+						span
+							img(src="./dist/img/strelka.svg")
+				#newgoods-mobile
+						each val in newfoodsmobile
+							.good
+								a(href="javascript:openProductDetail()")
+									.good-img
+										img(src=val.img)
+									.good-text
+										p= val.text
+									.good-price-and-unit
+										.good-price
+											p= val.price
+										.good-unit
+											p= val.unit
+		.goods-viewed.container
+			h1 Вы смотрели
+				span 75
+			.all-list
+				a(href="catalog.html") Весь список
+					span
+						img(src="./dist/img/strelka.svg")
+			#viewedProducts
+				each val in viewedfoods
+					.good  
+						a(href="javascript:openProductDetail()")
+							.good-img 
+								img(src=val.img)
+							.good-text
+								p= val.text
+							.good-price-and-unit
+								.good-price
+									p= val.price
+								.good-unit
+									p= val.unit
+		.goods-viewed-mobile
+			h1 Вы смотрели 
+				span 75
+			.all-list  
+				a(href="catalog.html") Весь список
+					span
+						img(src="./dist/img/strelka.svg")
+			#viewedProductsMobile
+				each val in viewedfoodsmobile
+					.good  
+						a(href="javascript:openProductDetail()")
+							.good-img 
+								img(src=val.img)
+							.good-text
+								p= val.text
+							.good-price-and-unit
+								.good-price
+									p= val.price
+								.good-unit
+									p= val.unit
+		.customer-reviews-background
+			.customer-reviews.container
+				h1 Отзывы покупателей
+				#reviews
+					each val in reviews
+						.review
+							.review-text
+								p= val.text
+							.review-data
+								.review-img
+									img(src=val.photo)
+								.name-and-url
+									.name 
+										p= val.name
+									.url
+										a(target="_blank" href="https://vk.com")= val.url
+				.reviews-gradient
+		.block-mobile-apps
+			.headline
+				h1 СКАЧАЙТЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ
+				p И узнавайте о скидках первыми!
+			.google-and-apple
+				a(href="https://play.google.com/store" target="_blank")
+					img(src="./dist/img/google-play-badge.svg")
+				a(href="https://www.apple.com/ru/ios/app-store/" target="_blank")
+					img(src="./dist/img/app-store-badge.svg")
 
-  
+	
 
-  include include/modal.pug
-  include include/login.pug
-  include include/reg.pug
-  include include/footer.pug 
+	include include/modal.pug
+	include include/login.pug
+	include include/reg.pug
+	include include/footer.pug 

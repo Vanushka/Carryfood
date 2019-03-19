@@ -1,74 +1,75 @@
 head
-  title  Несу Еду
-  meta(charset="utf-8")
-  meta(name="keywords" content="")
-  meta(name="description" content="")
-  meta(name="viewport" content="width=device-width, initial-scale=1")
-  link(rel="icon" href="./dist/img/favicon.ico" type="image/x-icon")
-  link(rel="stylesheet", href="./dist/css/slick.css")
-  link(rel="stylesheet", href="./dist/css/style.css")
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	title  Несу Еду
+	meta(charset="utf-8")
+	meta(name="keywords" content="")
+	meta(name="description" content="")
+	meta(name="viewport" content="width=device-width, initial-scale=1")
+	link(rel="icon" href="./dist/img/favicon.ico" type="image/x-icon")
+	link(rel="stylesheet", href="./dist/css/slick.css")
+	link(rel="stylesheet", href="./dist/css/style.css")
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 body
-  header
-    #header
-      .container
-        .logo
-          a(href="index.html")
-            img(src="./dist/img/logo.svg")
-        .logo-mobile
-          a(href="index.html")
-            img(src="./dist/img/logo-mobile.svg")
-        span.is из
-        .group-select
-          .choose-shop
-            //- select#shop 
-            //-   option <span value="metro">METRO</span>
-            ul.choose-shop-menu
-              li
-                span.choose-shop-down
-                  img(src="./dist/img/metro-1.svg") 
-                span.arrow
-                .choose-shop-menu-sub
-                  span.title
-                  a(href='#posts-new') 
-                    img(src="./dist/img/metro-1.svg")
-                    a(href='#posts-new') 
-                      img(src="./dist/img/metro-2.svg")
-          .search-line
-            input(type="text" placeholder="Поиск...")
-            .search-menu
-              a(href="catalog.html") Каталог
-              a(href="#") Помощь
-              a(href="#") Доставка
-              a(href="#") Скидки 
-              a(href="javascript:openLogin()") Войти
-          //- .radius-link
-          //-   a(href="#")
-          .time-of-delivery
-            select
-              each dates in deliverydates
-                option= dates.date
-          .basket
-            img(src="./dist/img/basket.svg")
-            span 15
-            a(href="basket.html") Корзина
-            .phone
-              a(href="tel:+7 495 500-50-00") +7 495 500-50-00
-          #navToggle.navBurger(role='navigation')
-          .overlay
-            nav.overlayMenu
-              ul(role='menu')
-                li
-                  .input-group
-                    input(type="text" placeholder="Поиск...")
-                li
-                  a(href='catalog.html', role='menuitem') Каталог
-                li
-                  a(href='#', role='menuitem') Помощь
-                li
-                  a(href='#', role='menuitem') Доставка
-                li
-                  a(href='#', role='menuitem') Скидки
-                li
-                  a(href='javascript:openLogin()', role='menuitem') Войти
-        
+	header
+		#header
+			.container
+				.logo
+					a(href="index.html")
+						img(src="./dist/img/logo.svg")
+				.logo-mobile
+					a(href="index.html")
+						img(src="./dist/img/logo-mobile.svg")
+				span.is из
+				.group-select
+					.choose-shop
+						//- select#shop 
+						//-   option <span value="metro">METRO</span>
+						ul.choose-shop-menu
+							li
+								span.choose-shop-down
+									img(src="./dist/img/metro-1.svg") 
+								span.arrow
+								.choose-shop-menu-sub
+									span.title
+									a(href='#posts-new') 
+										img(src="./dist/img/metro-1.svg")
+										a(href='#posts-new') 
+											img(src="./dist/img/metro-2.svg")
+					.search-line
+						input(type="text" placeholder="Поиск...")
+						.search-menu
+							a(href="catalog.html") Каталог
+							a(href="#") Помощь
+							a(href="#") Доставка
+							a(href="#") Скидки 
+							a(href="javascript:openLogin()") Войти
+					//- .radius-link
+					//-   a(href="#")
+					.time-of-delivery
+						select
+							each dates in deliverydates
+								option= dates.date
+					.column-block
+						a.basket(href="basket.html")
+							img(src="./dist/img/basket.svg")
+							span 15
+							p Корзина
+						.phone
+							a(href="tel:+7 495 500-50-00") +7 495 500-50-00
+					#navToggle.navBurger(role='navigation')
+					.overlay
+						nav.overlayMenu
+							ul(role='menu')
+								li
+									.input-group
+										input(type="text" placeholder="Поиск...")
+								li
+									a(href='catalog.html', role='menuitem') Каталог
+								li
+									a(href='#', role='menuitem') Помощь
+								li
+									a(href='#', role='menuitem') Доставка
+								li
+									a(href='#', role='menuitem') Скидки
+								li
+									a(href='javascript:openLogin()', role='menuitem') Войти
+				

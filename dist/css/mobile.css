@@ -60,23 +60,23 @@
     width: 100%;
     height: 30px;
   }
-  header #header .container .group-select .basket {
+  header #header .container .group-select .column-block a.basket {
     text-align: center;
     margin-top: 4px;
     height: 25px;
     width: 95%;
     padding-top: 2px;
   }
-  header #header .container .group-select .basket a {
+  header #header .container .group-select .column-block a.basket p {
     padding-left: 0;
   }
-  header #header .container .group-select .basket img {
+  header #header .container .group-select .column-block a.basket img {
     display: -ms-flexbox;
     display: flex;
     width: 22px;
     margin-top: 2px;
   }
-  header #header .container .group-select .basket span {
+  header #header .container .group-select .column-block a.basket span {
     width: 11px;
     font-size: 8px;
     padding-left: 2px;
@@ -86,14 +86,12 @@
     display: flex;
     position: absolute;
   }
-  header #header .container .group-select .basket .phone {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
+  header #header .container .group-select .column-block .phone {
+    margin-top: 0;
     margin-left: 0;
+    text-align: center;
   }
-  header #header .container .group-select .basket .phone a {
+  header #header .container .group-select .column-block .phone a {
     margin-top: -23px;
   }
   .search-menu {

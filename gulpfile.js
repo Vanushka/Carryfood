@@ -42,7 +42,7 @@ var path = {
 gulp.task('connect', function() {
 	connect.server ({
 		root: '',
-		port: 3006
+		port: 3007
 	});
 });
 
@@ -53,7 +53,7 @@ gulp.task('browser-sync', function() {
 			baseDir: './',
 			notify: false
 		},
-		port: 3006,
+		port: 3007,
 		open: true,
 	});
 });

@@ -23,966 +23,970 @@ hsla(0, 0%, 100%, 0.31)
 
 // --MAIN-STYLE--
 html
-  margin 0
+	margin 0
 
 html, body
-  margin 0
-  min-width 1295px
-  // background $backgroundgrey
-  a, button, input, select, option
-    outline none
-    text-decoration none
-    cursor pointer
+	margin 0
+	min-width 1295px
+	// background $backgroundgrey
+	a, button, input, select, option
+		outline none
+		text-decoration none
+		cursor pointer
 input, textarea
-  &:focus::-webkit-input-placeholder
-    opacity 0
+	&:focus::-webkit-input-placeholder
+		opacity 0
 
 body option
-  color $black
+	color $black
 // -- HEADER --
 header
-  width 100%
-  height 130px
-  background $green
-  #header
-    display flex
-    justify-content center
-    .container
-      padding-top 20px
-      display flex
-      justify-content center
-      max-width 1280px
-      .logo
-        color $white
-        font-size 12px
-      .logo-mobile
-        display none
-      .navBurger, .overlay
-        display none
-      span.is
-        color $white
-        margin 18px 15px
-        font-family 'PT-Sans-Italic'
-      .group-select
-        display flex
-        .choose-shop
-          cursor pointer
-          margin-right 10px
-          // background url("../img/metro.svg") no-repeat left
-          .choose-shop-menu
-            height 45px
-            width 130px
-            color $white
-            display block
-            padding-top 11px
-            font-size 25px
-            border-radius 8px
-            background none
-            border 1px solid hsla(0, 0%, 100%, 0.31)
-            appearance none
-            -moz-appearance none
-            -webkit-appearance none
-            .choose-shop-down
-              float right
-              margin-top -7px
-              img
-                margin-right 30px
-          span
-            background url("../img/strelka-down.svg") 92%/7% no-repeat
-          .permalink
-            display: block
-            color: #4F6B72
-            text-decoration: none
-            margin: 10px 0
-            &:hover
-              text-decoration: underline
-          ul, li
-            margin: 0
-            padding: 0
-          .choose-shop-menu a, .choose-shop-down, .choose-shop-menu-sub .title
-            text-decoration: none
-            color: #555555
-            padding: 10px
-          .drop-menu-main
-            padding: 4px
-            height: 20px
-            position: relative
-            li
-              float: left
-              margin-right: 40px
-          .choose-shop-menu-sub
-            display: none
-            position: absolute
-            background: $green
-            border-radius: 6px
-            border: 1px solid rgba(255,255,255,0.31)
-            z-index: 100
-            width: 130px
-            padding: 5px 0 5px
-            margin: 50px 0 0 0px
-            a
-              color: #555555
-              display: block
-              font-size: 11px
-              padding: 6px 15px
-              margin-top 10px
-              cursor: pointer
-              text-decoration: none
-              &:hover
-                background: #155FB0
-                color: #FFFFFF
-                text-decoration: none
-            .title
-              display: block
-              padding: 6px 15px
-              cursor: pointer
-              border-bottom: 1px solid rgba(255,255,255,0.31)
-          li
-            list-style: none
-            display: block
-          .drop-down
-            cursor: pointer
-          span.arrow
-            font-size: 8px
+	width 100%
+	height 130px
+	background $green
+	#header
+		display flex
+		justify-content center
+		.container
+			padding-top 20px
+			display flex
+			justify-content center
+			max-width 1280px
+			.logo
+				color $white
+				font-size 12px
+			.logo-mobile
+				display none
+			.navBurger, .overlay
+				display none
+			span.is
+				color $white
+				margin 18px 15px
+				font-family 'PT-Sans-Italic'
+			.group-select
+				display flex
+				.choose-shop
+					cursor pointer
+					margin-right 10px
+					// background url("../img/metro.svg") no-repeat left
+					.choose-shop-menu
+						height 45px
+						width 130px
+						color $white
+						display block
+						padding-top 11px
+						font-size 25px
+						border-radius 8px
+						background none
+						border 1px solid hsla(0, 0%, 100%, 0.31)
+						appearance none
+						-moz-appearance none
+						-webkit-appearance none
+						.choose-shop-down
+							float right
+							margin-top -7px
+							img
+								margin-right 30px
+					span
+						background url("../img/strelka-down.svg") 92%/7% no-repeat
+					.permalink
+						display: block
+						color: #4F6B72
+						text-decoration: none
+						margin: 10px 0
+						&:hover
+							text-decoration: underline
+					ul, li
+						margin: 0
+						padding: 0
+					.choose-shop-menu a, .choose-shop-down, .choose-shop-menu-sub .title
+						text-decoration: none
+						color: #555555
+						padding: 10px
+					.drop-menu-main
+						padding: 4px
+						height: 20px
+						position: relative
+						li
+							float: left
+							margin-right: 40px
+					.choose-shop-menu-sub
+						display: none
+						position: absolute
+						background: $green
+						border-radius: 6px
+						border: 1px solid rgba(255,255,255,0.31)
+						z-index: 100
+						width: 130px
+						padding: 5px 0 5px
+						margin: 50px 0 0 0px
+						a
+							color: #555555
+							display: block
+							font-size: 11px
+							padding: 6px 15px
+							margin-top 10px
+							cursor: pointer
+							text-decoration: none
+							&:hover
+								background: #155FB0
+								color: #FFFFFF
+								text-decoration: none
+						.title
+							display: block
+							padding: 6px 15px
+							cursor: pointer
+							border-bottom: 1px solid rgba(255,255,255,0.31)
+					li
+						list-style: none
+						display: block
+					.drop-down
+						cursor: pointer
+					span.arrow
+						font-size: 8px
 
-        .search-line
-          display inline-block
-          input
-            border 0
-            color $black
-            width 505px
-            height 56px
-            font-size 15px
-            font-family 'Roboto-Regular'
-            border-radius 30px
-          input[type="text"]
-            background url(../img/loop.svg) $white no-repeat 97%
-            padding-left 25px
-            margin-bottom 15px
-          .search-menu
-            a
-              color $white
-              margin-right 33px
-              font-size 13px
-              font-family 'Roboto-Regular'
-              &:hover
-                text-decoration underline
-        .radius-link
-          width 30px
-          height 30px
-          margin-top 13px
-          cursor pointer
-          margin-left 10px
-          border-radius 30px
-          background-color $white
-        .time-of-delivery
-          cursor pointer
-          margin-left 10px
-          select
-            height 58px
-            width 180px
-            color $white
-            font-size 25px
-            border-radius 8px
-            padding-left 10px
-            font-size 16px
-            background none
-            white-space normal
-            border 1px solid hsla(0, 0%, 100%, 0.31)
-            appearance none
-            -moz-appearance none
-            -webkit-appearance none
-            background url("../img/strelka-down.svg") 92%/5% no-repeat
-        .basket
-          height 37px
-          cursor pointer
-          display inline-block
-          padding-top 18px
-          margin-left 10px
-          margin-top 0
-          border-radius 5px
-          border 1px solid hsla(0, 0%, 100%, 0.31)
-          img
-            margin-top -3px
-            margin-left 10px
-            position absolute
-          span
-            color $white
-            width 18px
-            position absolute
-            padding-left 3px
-            margin-top -3px
-            margin-left 21px
-            font-size 12px
-            font-family 'PT-Sans-Regular'
-            background $red
-            border-radius 10px
-          a
-            padding-left 55px
-            color $white
-            font-size 16px
-            font-family 'Roboto-Regular'
-          .phone
-            display block
-            margin-top 29px
-            margin-left -5px
-            a
-              border 0
-              padding 0
-              color $white
-              font-size 17px
-              font-family 'Roboto-Bold'
+				.search-line
+					display inline-block
+					input
+						border 0
+						color $black
+						width 505px
+						height 56px
+						font-size 15px
+						font-family 'Roboto-Regular'
+						border-radius 30px
+					input[type="text"]
+						background url(../img/loop.svg) $white no-repeat 97%
+						padding-left 25px
+						margin-bottom 15px
+					.search-menu
+						a
+							color $white
+							margin-right 33px
+							font-size 13px
+							font-family 'Roboto-Regular'
+							&:hover
+								text-decoration underline
+				.radius-link
+					width 30px
+					height 30px
+					margin-top 13px
+					cursor pointer
+					margin-left 10px
+					border-radius 30px
+					background-color $white
+				.time-of-delivery
+					cursor pointer
+					margin-left 10px
+					select
+						height 58px
+						width 180px
+						color $white
+						font-size 25px
+						border-radius 8px
+						padding-left 10px
+						font-size 16px
+						background none
+						white-space normal
+						border 1px solid hsla(0, 0%, 100%, 0.31)
+						appearance none
+						-moz-appearance none
+						-webkit-appearance none
+						background url("../img/strelka-down.svg") 92%/5% no-repeat
+				.column-block
+					a.basket
+						height 37px
+						cursor pointer
+						display inline-block
+						padding-top 18px
+						margin-left 10px
+						margin-top 0
+						border-radius 5px
+						border 1px solid hsla(0, 0%, 100%, 0.31)
+						img
+							margin-top -3px
+							margin-left 10px
+							position absolute
+						span
+							color $white
+							width 18px
+							position absolute
+							padding-left 3px
+							margin-top -3px
+							margin-left 21px
+							font-size 12px
+							font-family 'PT-Sans-Regular'
+							background $red
+							border-radius 10px
+						p
+							margin: 0
+							padding-right: 15px
+							padding-left 55px
+							color $white
+							font-size 16px
+							font-family 'Roboto-Regular'
+					.phone
+						display block
+						margin-top: 12px
+						margin-left: 6px
+						a
+							border 0
+							padding 0
+							color $white
+							font-size 17px
+							font-family 'Roboto-Bold'
 
 // -- BODY--
 // -- SLIDER-PRESENT--
 
 #slider-present
-  .slide-present
-    height 240px
-    margin 0 auto
-    background url("../img/slide-present-background.svg")
-    display flex
-    justify-content center
-    img
-      width 100%
-      opacity 0.08
-      max-height 240px
-      -webkit-filter blur(5px)
-      -moz-filter blur(5px)
-      -o-filter blur(5px)
-      -ms-filter blur(5px)
-      filter blur(5px)
-    .slider-content
-      margin-top 30px
-      position absolute
-      text-align center
-      h1
-        color $white
-        font-family 'OpenSans'
-        font-size 35px
-        font-weight 700
-        text-transform uppercase
-        letter-spacing 3.5px
-      p
-        width 278px
-        height 65px
-        opacity 0.8
-        color $white
-        font-family 'Roboto-Light'
-        font-size 18px
-        font-weight 100
-        margin 0 auto
+	.slide-present
+		height 240px
+		margin 0 auto
+		background url("../img/slide-present-background.svg")
+		display flex
+		justify-content center
+		img
+			width 100%
+			opacity 0.08
+			max-height 240px
+			-webkit-filter blur(5px)
+			-moz-filter blur(5px)
+			-o-filter blur(5px)
+			-ms-filter blur(5px)
+			filter blur(5px)
+		.slider-content
+			margin-top 30px
+			position absolute
+			text-align center
+			h1
+				color $white
+				font-family 'OpenSans'
+				font-size 35px
+				font-weight 700
+				text-transform uppercase
+				letter-spacing 3.5px
+			p
+				width 278px
+				height 65px
+				opacity 0.8
+				color $white
+				font-family 'Roboto-Light'
+				font-size 18px
+				font-weight 100
+				margin 0 auto
 // --FOR-SLIDER--
 .prev-head-slider
-  cursor pointer
-  img
-    top 50%
-    z-index 2
-    width 22px
-    height 29px
-    margin-left 60px
-    display block
-    position absolute
+	cursor pointer
+	img
+		top 50%
+		z-index 2
+		width 22px
+		height 29px
+		margin-left 60px
+		display block
+		position absolute
 
 .next-head-slider
-  cursor pointer
-  img
-    top 50%
-    z-index 2
-    right 0
-    width 22px
-    height 29px
-    margin-right 60px
-    display block
-    position absolute
+	cursor pointer
+	img
+		top 50%
+		z-index 2
+		right 0
+		width 22px
+		height 29px
+		margin-right 60px
+		display block
+		position absolute
 
 .slick-dots
-  display flex
-  margin-top -35px
-  justify-content center
+	display flex
+	margin-top -35px
+	justify-content center
 
 .pager
-  width 10px
-  height 10px
-  opacity 0.19
-  position absolute
-  border-radius 15px
-  background-color $white
+	width 10px
+	height 10px
+	opacity 0.19
+	position absolute
+	border-radius 15px
+	background-color $white
 
 .slick-active
-  .pager
-    opacity 1
-    border-radius 15px
-    background-color $white
+	.pager
+		opacity 1
+		border-radius 15px
+		background-color $white
 
 ul,li
-  list-style-type none
-  display inline
-  margin-right 20px
+	list-style-type none
+	display inline
+	margin-right 20px
 
 // --GOODS-SLIDER--
 .container
-  margin 0 auto
-  max-width 1280px
-  padding-top 25px
+	margin 0 auto
+	max-width 1280px
+	padding-top 25px
 .goods
-  margin-top 30px
-  margin-bottom 40px
-  padding-left 60px
-  h1
-    color $darkgrey
-    font-size 20px
-    font-family 'Roboto-Bold'
-    text-transform uppercase
-    margin-top 20px
-    margin-bottom 18px
-    letter-spacing 2px
-    span
-      color $grey
-      margin-left 15px
-      font-size 16px
-      font-family 'Roboto-Medium'
-      letter-spacing 0
-  #goods-slider
-    width 100%
-    display flex
-    .good
-      display block
-      width 158.12px
-      min-height 190.8px
-      max-height 190.8px
-      margin-right 6px
-      border-radius 10px
-      border 1px solid $bordergrey
-      a
-        .good-img
-          width 62.33px
-          height 60.18px
-          margin 17px auto
-          img
-            width 100%
-        .good-text
-          width 125.12px
-          height auto
-          min-height 61px
-          color $darkgrey
-          margin 0 auto
-          font-size 13px
-          font-family 'PT-Sans-Regular'
-          p
-            margin 0 8px
-            word-wrap break-word
-        .good-price-and-unit
-          display flex
-          justify-content space-between
-          .good-price
-            min-width 36px
-            white-space nowrap
-            height 19px
-            margin 5px 17px
-            p
-              margin 0
-              color $black
-              font-size 14px
-              font-family 'OpenSans-Bold'
-          .good-unit
-            min-width 52px
-            white-space nowrap
-            height auto
-            min-height 23px
-            margin 8px 6px
-            p
-              margin 0
-              color $lightgrey
-              text-align right
-              font-size 13px
-              margin-right 7px
-              font-family 'PT-Sans-Regular'
-      &:hover
-        border 1px solid $red
+	margin-top 30px
+	margin-bottom 40px
+	padding-left 60px
+	h1
+		color $darkgrey
+		font-size 20px
+		font-family 'Roboto-Bold'
+		text-transform uppercase
+		margin-top 20px
+		margin-bottom 18px
+		letter-spacing 2px
+		span
+			color $grey
+			margin-left 15px
+			font-size 16px
+			font-family 'Roboto-Medium'
+			letter-spacing 0
+	#goods-slider
+		width 100%
+		display flex
+		.good
+			display block
+			width 158.12px
+			min-height 190.8px
+			max-height 190.8px
+			margin-right 6px
+			border-radius 10px
+			border 1px solid $bordergrey
+			a
+				.good-img
+					width 62.33px
+					height 60.18px
+					margin 17px auto
+					img
+						width 100%
+				.good-text
+					width 125.12px
+					height auto
+					min-height 61px
+					color $darkgrey
+					margin 0 auto
+					font-size 13px
+					font-family 'PT-Sans-Regular'
+					p
+						margin 0 8px
+						word-wrap break-word
+				.good-price-and-unit
+					display flex
+					justify-content space-between
+					.good-price
+						min-width 36px
+						white-space nowrap
+						height 19px
+						margin 5px 17px
+						p
+							margin 0
+							color $black
+							font-size 14px
+							font-family 'OpenSans-Bold'
+					.good-unit
+						min-width 52px
+						white-space nowrap
+						height auto
+						min-height 23px
+						margin 8px 6px
+						p
+							margin 0
+							color $lightgrey
+							text-align right
+							font-size 13px
+							margin-right 7px
+							font-family 'PT-Sans-Regular'
+			&:hover
+				border 1px solid $red
 .new-goods-background
-  width 100%
-  background $backgroundgrey
-  .container
-    margin 0 auto
-    max-width 1280px
-  .new-goods
-    margin-top 30px
-    margin-bottom 40px
-    padding-top 30px
-    padding-left 60px
-    padding-bottom 40px
-    background $backgroundgrey
-    h1
-      margin 0
-      color $darkgrey
-      font-size 20px
-      font-family 'Roboto-Bold'
-      text-transform uppercase
-      margin-bottom 18px
-      letter-spacing 2px
-      span
-        color $grey
-        margin-left 15px
-        font-size 16px
-        font-family 'Roboto-Regular'
-        font-weight 100
-        letter-spacing 0
-    .all-list
-      float right
-      margin-top -38px
-      margin-right 20px
-      margin-right 9%
-      a
-        color $darkgrey
-        font-size 13px
-        font-family 'Roboto-Bold'
-        span
-          color $darkgrey
-          margin-left 7px
-    #newgoods
-      width 100%
-      display flex
-      .good
-        background $white
-        display block
-        width 190px
-        min-height 280px
-        max-height 280px
-        margin-right 5px
-        border-radius 10px
-        border 1px solid $white
-        box-shadow 0 6px 6px rgba(0, 0, 0, 0.04)
-        a
-          .good-img
-            width 142px
-            height 136.5px
-            margin 17px auto
-            margin-bottom 30px
-            img
-              width 100%
-          .good-text
-            width 160px
-            height auto
-            min-height 61px
-            color $darkgrey
-            margin 0 auto
-            font-size 15px
-            font-family 'PT-Sans-Regular'
-            p
-              margin 0
-              word-wrap break-word
-          .good-price-and-unit
-            display flex
-            justify-content space-between
-            .good-price
-              min-width 36px
-              white-space nowrap
-              height 19px
-              margin 2px 17px
-              p
-                margin 0
-                color $black
-                font-size 17px
-                font-family 'OpenSans-Bold'
-            .good-unit
-              min-width 52px
-              white-space nowrap
-              height 23px
-              margin 2px 17px
-              p
-                margin 0
-                color $lightgrey
-                text-align right
-                font-size 15px
-                margin-top 2px
-                font-family 'PT-Sans-Regular'
-        &:hover
-          border 1px solid $red
+	width 100%
+	background $backgroundgrey
+	.container
+		margin 0 auto
+		max-width 1280px
+	.new-goods
+		margin-top 30px
+		margin-bottom 40px
+		padding-top 30px
+		padding-left 60px
+		padding-bottom 40px
+		background $backgroundgrey
+		h1
+			margin 0
+			color $darkgrey
+			font-size 20px
+			font-family 'Roboto-Bold'
+			text-transform uppercase
+			margin-bottom 18px
+			letter-spacing 2px
+			span
+				color $grey
+				margin-left 15px
+				font-size 16px
+				font-family 'Roboto-Regular'
+				font-weight 100
+				letter-spacing 0
+		.all-list
+			float right
+			margin-top -38px
+			margin-right 20px
+			margin-right 9%
+			a
+				color $darkgrey
+				font-size 13px
+				font-family 'Roboto-Bold'
+				span
+					color $darkgrey
+					margin-left 7px
+		#newgoods
+			width 100%
+			display flex
+			.good
+				background $white
+				display block
+				width 190px
+				min-height 280px
+				max-height 280px
+				margin-right 5px
+				border-radius 10px
+				border 1px solid $white
+				box-shadow 0 6px 6px rgba(0, 0, 0, 0.04)
+				a
+					.good-img
+						width 142px
+						height 136.5px
+						margin 17px auto
+						margin-bottom 30px
+						img
+							width 100%
+					.good-text
+						width 160px
+						height auto
+						min-height 61px
+						color $darkgrey
+						margin 0 auto
+						font-size 15px
+						font-family 'PT-Sans-Regular'
+						p
+							margin 0
+							word-wrap break-word
+					.good-price-and-unit
+						display flex
+						justify-content space-between
+						.good-price
+							min-width 36px
+							white-space nowrap
+							height 19px
+							margin 2px 17px
+							p
+								margin 0
+								color $black
+								font-size 17px
+								font-family 'OpenSans-Bold'
+						.good-unit
+							min-width 52px
+							white-space nowrap
+							height 23px
+							margin 2px 17px
+							p
+								margin 0
+								color $lightgrey
+								text-align right
+								font-size 15px
+								margin-top 2px
+								font-family 'PT-Sans-Regular'
+				&:hover
+					border 1px solid $red
 .new-goods-background-mobile
-  display none
+	display none
 
 .goods-viewed
-  margin-top -50px !important
-  max-width 1280px
-  margin-top 30px
-  padding-bottom 0 !important
-  padding-left 60px
-  h1
-    color $darkgrey
-    font-size 20px
-    font-family 'Roboto-Bold'
-    text-transform uppercase
-    margin-bottom 18px
-    letter-spacing 2px
-    span
-      color $grey
-      margin-left 15px
-      font-size 16px
-      font-family 'Roboto-Regular'
-      font-weight 100
-      letter-spacing 0
-  .all-list
-    float right
-    margin-top -38px
-    margin-right 20px
-    margin-right 9%
-    a
-      color $darkgrey
-      font-size 13px
-      font-family 'Roboto-Bold'
-      span
-        color $darkgrey
-        margin-left 7px
-  #viewedProducts
-    width 100%
-    display flex
-    flex-wrap wrap
-    .good
-      display block
-      width 189.37px
-      height auto
-      min-height 280px
-      margin-right 6px
-      margin-bottom 10px
-      border-radius 10px
-      border 1px solid $bordergrey
-      a
-        .good-img
-          width 142px
-          height auto
-          margin 17px auto
-          img
-            width 100%
-        .good-text
-          width 160px
-          height auto
-          min-height 61px
-          color $darkgrey
-          margin 0 auto
-          font-size 15px
-          font-family 'PT-Sans-Regular'
-          p
-            margin 0
-            margin-top 30px
-            word-wrap break-word
-        .good-price-and-unit
-          display flex
-          justify-content space-between
-          .good-price
-            min-width 36px
-            white-space nowrap
-            height 19px
-            margin 2px 17px
-            p
-              margin 0
-              color $black
-              font-size 17px
-              font-family 'OpenSans-Bold'
-          .good-unit
-            min-width 52px
-            white-space nowrap
-            height 23px
-            margin-top 2px
-            margin 2px 17px
-            p
-              margin 0
-              color $lightgrey
-              text-align right
-              font-size 15px
-              font-family 'PT-Sans-Regular'
-      &:hover
-        border 1px solid $red
+	margin-top -50px !important
+	max-width 1280px
+	margin-top 30px
+	padding-bottom 0 !important
+	padding-left 60px
+	h1
+		color $darkgrey
+		font-size 20px
+		font-family 'Roboto-Bold'
+		text-transform uppercase
+		margin-bottom 18px
+		letter-spacing 2px
+		span
+			color $grey
+			margin-left 15px
+			font-size 16px
+			font-family 'Roboto-Regular'
+			font-weight 100
+			letter-spacing 0
+	.all-list
+		float right
+		margin-top -38px
+		margin-right 20px
+		margin-right 9%
+		a
+			color $darkgrey
+			font-size 13px
+			font-family 'Roboto-Bold'
+			span
+				color $darkgrey
+				margin-left 7px
+	#viewedProducts
+		width 100%
+		display flex
+		flex-wrap wrap
+		.good
+			display block
+			width 189.37px
+			height auto
+			min-height 280px
+			margin-right 6px
+			margin-bottom 10px
+			border-radius 10px
+			border 1px solid $bordergrey
+			a
+				.good-img
+					width 142px
+					height auto
+					margin 17px auto
+					img
+						width 100%
+				.good-text
+					width 160px
+					height auto
+					min-height 61px
+					color $darkgrey
+					margin 0 auto
+					font-size 15px
+					font-family 'PT-Sans-Regular'
+					p
+						margin 0
+						margin-top 20px
+						word-wrap break-word
+				.good-price-and-unit
+					display flex
+					padding-bottom: 5px
+					justify-content space-between
+					.good-price
+						min-width 36px
+						white-space nowrap
+						height 19px
+						margin 2px 17px
+						p
+							margin 0
+							color $black
+							font-size 17px
+							font-family 'OpenSans-Bold'
+					.good-unit
+						min-width 52px
+						white-space nowrap
+						height 23px
+						margin-top 2px
+						margin 2px 17px
+						p
+							margin 0
+							color $lightgrey
+							text-align right
+							font-size 15px
+							font-family 'PT-Sans-Regular'
+			&:hover
+				border 1px solid $red
 .goods-viewed-mobile
-  display none
+	display none
 // --CUSTOMERS-REVIEWS--
 .customer-reviews-background
-  width 100%
-  background $customergray
-  .customer-reviews
-    height auto
-    margin-top 30px
-    padding-top 30px
-    padding-left 60px
-    h1
-      margin 0
-      color $darkgrey
-      font-size 20px
-      font-family 'Roboto-Bold'
-      text-transform uppercase
-      margin-bottom 24px
-      letter-spacing 2px
-    #reviews
-      width 100%
-      display flex
-      position relative
-      .review
-        max-width 440px !important
-        height auto
-        min-height 210px
-        background $white
-        border-radius 5px
-        margin-right 10px
-        margin-bottom 70px
-        box-shadow 0 6px 6px rgba(0, 0, 0, 0.04)
-        .review-text
-          max-width 387px
-          margin 25px 25px 20px 25px
-          p
-            word-wrap break-word
-            color $darkgrey
-            font-size 15px
-            font-family 'PT-Sans-Regular'
-        .review-data
-          display flex
-          margin-bottom 10px
-          position relative
-          .review-img
-            width 47px
-            height 47px
-            display inline-flex
-            margin-left 25px
-            img
-              width 100%
-              border-radius 50px
-          .name-and-url
-            padding-top 5px
-            margin-left 10px
-            .name
-              p
-                margin 0
-                color $black
-                font-size 14px
-                white-space nowrap
-                font-family 'OpenSans-Bold'
-            .url
-              a
-                color $lightgreen
-                font-size 12px
-                text-decoration underline
-                font-family 'Open-Sans-Semibold'
+	width 100%
+	background $customergray
+	.customer-reviews
+		height auto
+		margin-top 30px
+		padding-top 30px
+		padding-left 60px
+		h1
+			margin 0
+			color $darkgrey
+			font-size 20px
+			font-family 'Roboto-Bold'
+			text-transform uppercase
+			margin-bottom 24px
+			letter-spacing 2px
+		#reviews
+			width 100%
+			display flex
+			position relative
+			.review
+				max-width 440px !important
+				height auto
+				min-height 210px
+				background $white
+				border-radius 5px
+				margin-right 10px
+				margin-bottom 70px
+				box-shadow 0 6px 6px rgba(0, 0, 0, 0.04)
+				.review-text
+					max-width 387px
+					margin 25px 25px 20px 25px
+					p
+						word-wrap break-word
+						color $darkgrey
+						font-size 15px
+						font-family 'PT-Sans-Regular'
+				.review-data
+					display flex
+					margin-bottom 10px
+					position relative
+					.review-img
+						width 47px
+						height 47px
+						display inline-flex
+						margin-left 25px
+						img
+							width 100%
+							border-radius 50px
+					.name-and-url
+						padding-top 5px
+						margin-left 10px
+						.name
+							p
+								margin 0
+								color $black
+								font-size 14px
+								white-space nowrap
+								font-family 'OpenSans-Bold'
+						.url
+							a
+								color $lightgreen
+								font-size 12px
+								text-decoration underline
+								font-family 'Open-Sans-Semibold'
 .reviews-gradient
-  width 343px
-  height 346px
-  position relative
-  float right
-  right -2px
-  margin-top -347px
-  background-image linear-gradient(to right, rgba(246,246,245,0) 0%, rgba(246,246,245,0.4) 29%, #efefed 100%)
+	width 343px
+	height 346px
+	position relative
+	float right
+	right -2px
+	margin-top -347px
+	background-image linear-gradient(to right, rgba(246,246,245,0) 0%, rgba(246,246,245,0.4) 29%, #efefed 100%)
 
 
 //--REVIEWS-SLIDER--
 .prev-review-slider
-  cursor pointer
-  width 6px
-  height 12px
-  margin-top -28px
-  z-index 2
-  img
-    position absolute
-    right 80px
+	cursor pointer
+	width 6px
+	height 12px
+	margin-top -28px
+	z-index 2
+	img
+		position absolute
+		right 80px
 .next-review-slider
-  cursor pointer
-  width 6px
-  height 12px
-  z-index 2
-  position absolute
-  right 0
-  margin-top -29px
-  padding-right 60px
+	cursor pointer
+	width 6px
+	height 12px
+	z-index 2
+	position absolute
+	right 0
+	margin-top -29px
+	padding-right 60px
 //--BLOCK MOBILE APPS--
 .block-mobile-apps
-  width 100%
-  height 220px
-  background $green
-  .headline
-    padding-top 15px
-    text-align center
-    h1
-      color $white
-      font-size 25px
-      font-family 'OpenSans-Bold'
-      text-transform uppercase
-      letter-spacing 2px
-    p
-      margin-top -8px
-      opacity 0.6
-      color $white
-      font-size 18px
-      font-family 'Roboto-Regular'
-      font-weight 100
-  .google-and-apple
-    display flex
-    justify-content center
-    margin 30px
-    margin-bottom 42px
-    a
-      margin-right 2px
-      width 164.21px
-      height 43.3px
-      img
-        width 100%
+	width 100%
+	height 220px
+	background $green
+	.headline
+		padding-top 15px
+		text-align center
+		h1
+			color $white
+			font-size 25px
+			font-family 'OpenSans-Bold'
+			text-transform uppercase
+			letter-spacing 2px
+		p
+			margin-top -8px
+			opacity 0.6
+			color $white
+			font-size 18px
+			font-family 'Roboto-Regular'
+			font-weight 100
+	.google-and-apple
+		display flex
+		justify-content center
+		margin 30px
+		margin-bottom 42px
+		a
+			margin-right 2px
+			width 164.21px
+			height 43.3px
+			img
+				width 100%
 
 
 //--FOOTER--
 footer
-  width 100%
-  height 327px
-  padding-bottom 25px
-  background $darkgrey
-  .block-footer
-    padding-top 42px
-    margin-left 58px
-  .container
-    margin 0 auto
-    max-width 1280px
-  .footer-left
-    margin-left 30px
-    width 488px
-    float left
-    a.tel
-      color $white
-      line-height 2
-      font-size 31px
-      font-family 'Futura-Bold'
-    a.mail
-      color $white
-      font-size 14px
-      font-family 'Roboto-Regular'
-      text-decoration underline
-    .footer-left-line
-      width 100%
-      height 2px
-      margin-top 115px
-      background $linegrey
-    .footer-logo-and-address
-      display flex
-      .footer-logo
-        display block
-        img
-          margin-top 15px
-      .address
-        margin-left 35px
-        p
-          color $addressgrey
-          font-size 13px
-          font-family 'Roboto-Regular'
-  .footer-right
-    margin-right 30px
-    float right
-    display flex
-    .group-links-questions
-      margin-right 67px
-      p
-        margin 0
-        margin-bottom 15px
-        color $white
-        font-size 14px
-        font-family 'Futura-Bold'
-        text-transform uppercase
-        letter-spacing 1.4px
-      a
-        line-height 1.8
-        cursor pointer
-        color $linkgrey
-        font-size 14px
-        font-family 'Roboto-Regular'
-        &:hover
-          color $white
-    .group-links-partners
-      p
-        margin 0
-        color $white
-        font-size 14px
-        font-family 'Futura-Bold'
-        text-transform uppercase
-        letter-spacing 1.4px
-      a
-        line-height 1.8
-        cursor pointer
-        color $linkgrey
-        font-size 14px
-        font-family 'Roboto-Regular'
-        &:hover
-          color $white
-    .payment-systems
-      // background url(../img/payment-systems.svg)
-      white-space nowrap
-      position absolute
-      margin-top 230px
-      width 151px
-      height 25px
-    img
-      position absolute
-      margin-top 230px
-      width 151px
-      height 25px
+	width 100%
+	height 327px
+	padding-bottom 25px
+	background $darkgrey
+	.block-footer
+		padding-top 42px
+		margin-left 58px
+	.container
+		margin 0 auto
+		max-width 1280px
+	.footer-left
+		margin-left 30px
+		width 488px
+		float left
+		a.tel
+			color $white
+			line-height 2
+			font-size 31px
+			font-family 'Futura-Bold'
+		a.mail
+			color $white
+			font-size 14px
+			font-family 'Roboto-Regular'
+			text-decoration underline
+		.footer-left-line
+			width 100%
+			height 2px
+			margin-top 115px
+			background $linegrey
+		.footer-logo-and-address
+			display flex
+			.footer-logo
+				display block
+				img
+					margin-top 15px
+			.address
+				margin-left 35px
+				p
+					color $addressgrey
+					font-size 13px
+					font-family 'Roboto-Regular'
+	.footer-right
+		margin-right 30px
+		float right
+		display flex
+		.group-links-questions
+			margin-right 67px
+			p
+				margin 0
+				margin-bottom 15px
+				color $white
+				font-size 14px
+				font-family 'Futura-Bold'
+				text-transform uppercase
+				letter-spacing 1.4px
+			a
+				line-height 1.8
+				cursor pointer
+				color $linkgrey
+				font-size 14px
+				font-family 'Roboto-Regular'
+				&:hover
+					color $white
+		.group-links-partners
+			p
+				margin 0
+				color $white
+				font-size 14px
+				font-family 'Futura-Bold'
+				text-transform uppercase
+				letter-spacing 1.4px
+			a
+				line-height 1.8
+				cursor pointer
+				color $linkgrey
+				font-size 14px
+				font-family 'Roboto-Regular'
+				&:hover
+					color $white
+		.payment-systems
+			// background url(../img/payment-systems.svg)
+			white-space nowrap
+			position absolute
+			margin-top 230px
+			width 151px
+			height 25px
+		img
+			position absolute
+			margin-top 230px
+			width 151px
+			height 25px
 
-  // @media screen and (max-device-width:1300px)
-  //   .footer-right
-  //     margin-right 60px
-  //   .footer-left
-  //     margin-left 60px
+	// @media screen and (max-device-width:1300px)
+	//   .footer-right
+	//     margin-right 60px
+	//   .footer-left
+	//     margin-left 60px
 
 //--INDEX2--
 
 #smart-list
-  background $backgroundgrey
-  .smart.container
-    margin 0 auto
-    max-width 1280px
-    padding-bottom 10px
-    .hashtags
-      display flex
-      margin-bottom 15px
-      justify-content space-between
-      .group-hashtags
-        display flex
-        .hashtag
-          height 20px
-          cursor pointer
-          padding 5px 10px
-          border-radius 13px
-          margin-right 10px
-          font-size 15px
-          font-family 'Roboto-Regular'
-          border 1px solid #c4c4c4
-          a
-            padding-right 4px
-            color #a5a5a5
-            .close
-              position relative
-              float right
-              right -9px
-              margin-right 8px
-              top 3px
-              width 15px
-              height 15px
-              opacity 0.3
-              &:hover
-                color $white
-                opacity 1
-              &:before
-                position absolute
-                left 7px
-                content ' '
-                height 15px
-                width 2px
-                background-color #b2b2b2
-                transform rotate(45deg)
-              &:after
-                transform rotate(-45deg)
-                position absolute
-                left 7px
-                content ' '
-                height 15px
-                width 2px
-                background-color #b2b2b2
-          &:hover
-            border 1px solid $red
-            background $red
-            .close
-              &:after, &:before
-                background $white
-            a
-              color $white
-        .active
-          background $red
-          a
-            color $white
-            .close
-              &:after, &:before
-                background $white
-      .smart-search
-        color $white
-        padding 10px
-        border-radius 8px
-        background-color $red
-        font-size 15px
-        text-transform uppercase
-        font-family 'PT-Sans-Regular'
-        letter-spacing 1.1px
+	background $backgroundgrey
+	.smart.container
+		margin 0 auto
+		max-width 1280px
+		padding-bottom 10px
+		.hashtags
+			display flex
+			margin-bottom 15px
+			justify-content space-between
+			.group-hashtags
+				display flex
+				.hashtag
+					height 20px
+					cursor pointer
+					padding 5px 10px
+					border-radius 13px
+					margin-right 10px
+					font-size 15px
+					font-family 'Roboto-Regular'
+					border 1px solid #c4c4c4
+					a
+						padding-right 4px
+						color #a5a5a5
+						.close
+							position relative
+							float right
+							right -9px
+							margin-right 8px
+							top 3px
+							width 15px
+							height 15px
+							opacity 0.3
+							&:hover
+								color $white
+								opacity 1
+							&:before
+								position absolute
+								left 7px
+								content ' '
+								height 15px
+								width 2px
+								background-color #b2b2b2
+								transform rotate(45deg)
+							&:after
+								transform rotate(-45deg)
+								position absolute
+								left 7px
+								content ' '
+								height 15px
+								width 2px
+								background-color #b2b2b2
+					&:hover
+						border 1px solid $red
+						background $red
+						.close
+							&:after, &:before
+								background $white
+						a
+							color $white
+				.active
+					background $red
+					a
+						color $white
+						.close
+							&:after, &:before
+								background $white
+			.smart-search
+				color $white
+				padding 10px
+				border-radius 8px
+				background-color $red
+				font-size 15px
+				text-transform uppercase
+				font-family 'PT-Sans-Regular'
+				letter-spacing 1.1px
 
-    #smartSlider
-      width 100%
-      display flex
-      position relative
-      .good
-        display block
-        width 158.12px
-        height auto
-        min-height 190.8px
-        margin-right 6px
-        border-radius 10px
-        background $white
-        border 1px solid $white
-        a
-          .good-img
-            width 62.33px
-            height 60.18px
-            margin 17px auto
-            img
-              width 100%
-          .good-text
-            width 125.12px
-            height auto
-            min-height 61px
-            color $darkgrey
-            margin 0 auto
-            font-size 13px
-            font-family 'PT-Sans-Regular'
-            p
-              margin 0 8px
-              word-wrap break-word
-          .good-price-and-unit
-            display flex
-            align-items center
-            justify-content space-between
-            .good-price
-              min-width 36px
-              height 19px
-              white-space nowrap
-              margin 2px 17px
-              p
-                margin 0
-                color $black
-                font-size 14px
-                font-family 'OpenSans-Bold'
-            .good-unit
-              min-width 52px
-              white-space nowrap
-              height 23px
-              margin 8px 6px
-              p
-                margin 0
-                color $lightgrey
-                text-align right
-                margin-right 7px
-                font-size 13px
-                margin-top 3px
-                font-family 'PT-Sans-Regular'
-        &:hover
-          border 1px solid $red
+		#smartSlider
+			width 100%
+			display flex
+			position relative
+			.good
+				display block
+				width 158.12px
+				height auto
+				min-height 190.8px
+				margin-right 6px
+				border-radius 10px
+				background $white
+				border 1px solid $white
+				a
+					.good-img
+						width 62.33px
+						height 60.18px
+						margin 17px auto
+						img
+							width 100%
+					.good-text
+						width 125.12px
+						height auto
+						min-height 61px
+						color $darkgrey
+						margin 0 auto
+						font-size 13px
+						font-family 'PT-Sans-Regular'
+						p
+							margin 0 8px
+							word-wrap break-word
+					.good-price-and-unit
+						display flex
+						align-items center
+						justify-content space-between
+						.good-price
+							min-width 36px
+							height 19px
+							white-space nowrap
+							margin 2px 17px
+							p
+								margin 0
+								color $black
+								font-size 14px
+								font-family 'OpenSans-Bold'
+						.good-unit
+							min-width 52px
+							white-space nowrap
+							height 23px
+							margin 8px 6px
+							p
+								margin 0
+								color $lightgrey
+								text-align right
+								margin-right 7px
+								font-size 13px
+								margin-top 3px
+								font-family 'PT-Sans-Regular'
+				&:hover
+					border 1px solid $red
 
-    .button-hide
-      z-index 2
-      display flex
-      margin-top 10px
-      position relative
-      a
-        margin 0 auto
-        color $darkgrey
-        font-size 13px
-        font-family 'Roboto-Bold'
-  .line-gradient
-    width 100%
-    height 176px
-    margin-top -176px
-    position absolute
-    background linear-gradient(180deg, rgba(246, 246, 245, 0) 0%, rgba(246, 246, 245, 0.4) 29%, #efefed 100%)
+		.button-hide
+			z-index 2
+			display flex
+			margin-top 10px
+			position relative
+			a
+				margin 0 auto
+				color $darkgrey
+				font-size 13px
+				font-family 'Roboto-Bold'
+	.line-gradient
+		width 100%
+		height 176px
+		margin-top -176px
+		position absolute
+		background linear-gradient(180deg, rgba(246, 246, 245, 0) 0%, rgba(246, 246, 245, 0.4) 29%, #efefed 100%)
 
 .slick-list
-  padding-bottom 0 !important
+	padding-bottom 0 !important
 
 @import '/login.styl'
 @import '/reg.styl'
