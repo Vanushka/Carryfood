@@ -4093,6 +4093,9 @@ footer .footer-right img {
   #modal .product-details .block-links a.in-basket {
     margin-left: 35px;
   }
+  #modal .product-details .block-links a.in-basket:after {
+    left: 44px;
+  }
   #modal .product-details .blocks {
     margin-left: 35px;
     display: block;
