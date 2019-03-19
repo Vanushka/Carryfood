@@ -193,12 +193,12 @@ $(document).ready(function(){
 
 	//--LOGIN--
 	function openLogin() {
-		$('.login').css('display', 'block');
+		$('.login').css('display', 'table');
 		$('#login .background').css('display', 'block');
 		$('body').css('overflow', 'hidden');
 		$('.registration').css('display', 'none');
 		$('#registration .background').css('display', 'none');
-		if($('.login').css('display') == 'block') {
+		if($('.login').css('display') == 'table') {
 			$('#navToggle').toggleClass("active");
 			$(".overlay").toggleClass("open");
 			$("body").toggleClass("locked");
@@ -206,7 +206,7 @@ $(document).ready(function(){
 	}
 	//--REGISTRATION--
 	function openReg() {
-		$('.registration').css('display', 'block');
+		$('.registration').css('display', 'table');
 		$('#registration .background').css('display', 'block');
 		$('body').css('overflow', 'hidden');
 		$('.login').css('display', 'none');

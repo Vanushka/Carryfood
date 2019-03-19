@@ -3452,6 +3452,7 @@ footer .footer-right img {
     padding-top: 2px;
   }
   header #header .container .group-select .column-block a.basket p {
+    padding-right: 0;
     padding-left: 0;
   }
   header #header .container .group-select .column-block a.basket img {
