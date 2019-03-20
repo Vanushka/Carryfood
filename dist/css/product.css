@@ -104,11 +104,15 @@
   width: 470px;
   height: 350px;
   float: right;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: -80px;
   margin-right: 50px;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 #product .product .img img {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 #product .product .price {
