@@ -4582,6 +4582,9 @@ footer .footer-right img {
     margin-left: 35px;
     margin: 95px auto 0;
   }
+  #product .product .img img {
+    width: 100%;
+  }
   #product .product .price {
     margin-top: 0;
   }
