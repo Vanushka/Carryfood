@@ -1,0 +1,28 @@
+doctype html
+html
+  include include/header-map.pug
+  .delivery-address
+    .block-search-address
+      p.headline Введите адрес доставки
+      p.text Чтобы увидеть весь список доступных магазинов и их каталоги, с ценами как в магазине:
+      form(id="", method="", action="").search-block
+        .search 
+          input(type="text" placeholder="Ленина улица, 5")
+          .loop
+        button(type="submit") Выбрать магазин
+      a(href="/catalog.html") Посмотреть каталог без ввода адреса
+  #map
+  .block-mobile-apps
+    .headline
+      h1 СКАЧАЙТЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ
+      p И узнавайте о скидках первыми!
+    .google-and-apple
+      a(href="https://play.google.com/store" target="_blank")
+        img(src="./dist/img/google-play-badge.svg")
+      a(href="https://www.apple.com/ru/ios/app-store/" target="_blank")
+        img(src="./dist/img/app-store-badge.svg")
+  script(src="https://api-maps.yandex.ru/2.1/?apikey=1fd05f0d-ab2e-4ac3-b2bd-09a27e84a59d&lang=ru_RU" type="text/javascript")
+  include include/modal.pug 
+  include include/login.pug
+  include include/reg.pug 
+  include include/footer.pug 

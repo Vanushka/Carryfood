@@ -1,0 +1,74 @@
+#header-map {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+#header-map .container {
+  width: 90%;
+  padding-top: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  max-width: 1280px;
+}
+#header-map .container .left-block {
+  max-width: 500px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+#header-map .container .left-block .logo {
+  color: $white;
+  font-size: 12px;
+}
+#header-map .container .left-block .logo-mobile {
+  display: none;
+}
+#header-map .container .left-block .links-block {
+  margin-left: 53px;
+}
+#header-map .container .left-block .links-block a {
+  color: $white;
+  margin-right: 33px;
+  font-size: 15px;
+  font-family: 'Roboto-Regular';
+}
+#header-map .container .left-block .links-block a:hover {
+  text-decoration: underline;
+}
+#header-map .container .right-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+#header-map .container .right-block .sign-up {
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+#header-map .container .right-block .sign-up p {
+  color: $white;
+  font-size: 15px;
+  margin-left: 10px;
+  font-family: 'Roboto-Bold';
+}
+#header-map .container .right-block .phone {
+  margin-left: 35px;
+}
+#header-map .container .right-block .phone a {
+  border: 0;
+  padding: 0;
+  color: $white;
+  font-size: 17px;
+  font-family: 'Roboto-Bold';
+}
+#header-map .container .navBurger,
+#header-map .container .overlay {
+  display: none;
+}

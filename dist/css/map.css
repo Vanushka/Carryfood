@@ -1,0 +1,163 @@
+#header-map {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+#header-map .container {
+  width: 90%;
+  padding-top: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  max-width: 1280px;
+}
+#header-map .container .left-block {
+  max-width: 500px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+#header-map .container .left-block .logo {
+  color: $white;
+  font-size: 12px;
+}
+#header-map .container .left-block .logo-mobile {
+  display: none;
+}
+#header-map .container .left-block .links-block {
+  margin-left: 53px;
+}
+#header-map .container .left-block .links-block a {
+  color: $white;
+  margin-right: 33px;
+  font-size: 15px;
+  font-family: 'Roboto-Regular';
+}
+#header-map .container .left-block .links-block a:hover {
+  text-decoration: underline;
+}
+#header-map .container .right-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+#header-map .container .right-block .sign-up {
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+#header-map .container .right-block .sign-up p {
+  color: $white;
+  font-size: 15px;
+  margin-left: 10px;
+  font-family: 'Roboto-Bold';
+}
+#header-map .container .right-block .phone {
+  margin-left: 35px;
+}
+#header-map .container .right-block .phone a {
+  border: 0;
+  padding: 0;
+  color: $white;
+  font-size: 17px;
+  font-family: 'Roboto-Bold';
+}
+#header-map .container .navBurger,
+#header-map .container .overlay {
+  display: none;
+}
+.delivery-address {
+  margin-bottom: 85px;
+}
+.delivery-address .block-search-address {
+  width: 930px;
+  margin: 0 auto;
+  margin-top: 96px;
+}
+.delivery-address .block-search-address p.headline {
+  color: $black;
+  font-size: 45px;
+  font-family: 'Roboto-Bold';
+}
+.delivery-address .block-search-address p.text {
+  color: $black;
+  max-width: 450px;
+  font-size: 18px;
+  font-family: 'PT-Sans-Regular';
+}
+.delivery-address .block-search-address .search-block {
+  display: -ms-flexbox;
+  display: flex;
+}
+.delivery-address .block-search-address .search-block .search {
+  width: 530px;
+  height: 56px;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 30px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: $input-gray;
+}
+.delivery-address .block-search-address .search-block .search input {
+  border: 0;
+  color: $black;
+  width: 85%;
+  font-size: 15px;
+  margin-left: 23px;
+  border-radius: 30px;
+  background: $input-gray;
+  font-family: 'PT-Sans-Regular';
+}
+.delivery-address .block-search-address .search-block .search ::-webkit-input-placeholder {
+  color: $black;
+  opacity: 1;
+}
+.delivery-address .block-search-address .search-block .search :-ms-input-placeholder {
+  color: $black;
+  opacity: 1;
+}
+.delivery-address .block-search-address .search-block .search ::placeholder {
+  color: $black;
+  opacity: 1;
+}
+.delivery-address .block-search-address .search-block .search .loop {
+  background: url("../img/loop-black.svg") $input-gray no-repeat 97%;
+  padding-left: 25px;
+}
+.delivery-address .block-search-address .search-block button {
+  height: 52px;
+  color: $white;
+  border: 0;
+  font-size: 13px;
+  font-weight: 700;
+  margin-left: 15px;
+  white-space: nowrap;
+  font-family: 'Roboto-Bold';
+  background: $red;
+  border-radius: 8px;
+  padding: 11px 25px;
+}
+.delivery-address .block-search-address a {
+  cursor: pointer;
+  color: #379af1;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  margin-top: 15px;
+  font-family: 'PT-Sans-Regular';
+}
+.delivery-address .block-search-address a:hover {
+  text-decoration: underline;
+}
+#map {
+  width: 100%;
+  max-width: 100%;
+  min-height: 565px;
+}

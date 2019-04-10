@@ -1,0 +1,114 @@
+#header-map
+  display flex
+  justify-content center
+  .container
+    width: 90%
+    padding-top 20px
+    display flex
+    justify-content space-between
+    max-width 1280px
+    .left-block
+      max-width: 500px
+      display: flex
+      align-items: center
+      .logo
+        color $white
+        font-size 12px
+      .logo-mobile
+        display: none
+      .links-block
+        margin-left: 53px
+        a
+          color: $white
+          margin-right: 33px
+          font-size: 15px
+          font-family: 'Roboto-Regular'
+          &:hover
+            text-decoration: underline
+    .right-block
+      display: flex
+      align-items: center
+      .sign-up
+        cursor: pointer
+        display: flex
+        align-items: center
+        p
+          color $white
+          font-size 15px
+          margin-left: 10px
+          font-family 'Roboto-Bold'
+      .phone
+        margin-left: 35px
+        a
+          border 0
+          padding 0
+          color $white
+          font-size 17px
+          font-family 'Roboto-Bold'
+    .navBurger, .overlay
+      display: none
+.delivery-address
+  margin-bottom: 85px
+  .block-search-address
+    width: 930px
+    margin: 0 auto
+    margin-top: 96px
+    p.headline
+      color: $black
+      font-size: 45px
+      font-family 'Roboto-Bold'
+    p.text
+      color: $black
+      max-width: 450px
+      font-size: 18px
+      font-family: 'PT-Sans-Regular'
+    .search-block
+      display: flex
+      .search
+        width 530px
+        height 56px
+        display flex
+        border-radius 30px
+        align-content: center
+        background: $input-gray
+        input
+          border 0
+          color $black
+          width 85%
+          font-size 15px
+          margin-left: 23px
+          border-radius 30px
+          background: $input-gray
+          font-family 'PT-Sans-Regular'
+        ::placeholder
+          color: $black
+          opacity: 1
+        .loop
+          background url(../img/loop-black.svg) $input-gray no-repeat 97%
+          padding-left 25px
+      button
+        height: 52px
+        color $white
+        border: 0
+        font-size 13px
+        font-weight 700
+        margin-left: 15px
+        white-space: nowrap
+        font-family 'Roboto-Bold'
+        background $red
+        border-radius 8px
+        padding 11px 25px
+    a
+      cursor: pointer
+      color #379af1
+      font-size 14px
+      font-weight 400
+      display block
+      margin-top 15px
+      font-family 'PT-Sans-Regular'
+      &:hover
+        text-decoration underline
+#map
+  width: 100%
+  max-width: 100%
+  min-height: 565px
