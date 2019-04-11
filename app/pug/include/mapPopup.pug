@@ -1,0 +1,14 @@
+.background-map
+#popup-map
+  .close
+  .delivery-address-popup
+    .block-search-address
+      p.headline Введите адрес доставки
+      p.text Чтобы увидеть весь список доступных магазинов и их каталоги, с ценами как в магазине:
+      form(id="", method="", action="").search-block
+        .search 
+          input(type="text" placeholder="Ленина улица, 5")
+          .loop
+        button(type="submit") Выбрать магазин
+      a(href="/catalog.html") Посмотреть каталог без ввода адреса
+  #mapPopup

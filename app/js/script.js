@@ -414,3 +414,38 @@ function init () {
     };
 
 }
+
+var myMapPopup;
+
+// Дождёмся загрузки API и готовности DOM.
+ymaps.ready(initPopupmap);
+
+function initPopupmap () {
+    // Создание экземпляра карты и его привязка к контейнеру с
+    // заданным id ("map").
+    myMapPopup = new ymaps.Map('mapPopup', {
+        // При инициализации карты обязательно нужно указать
+        // её центр и коэффициент масштабирования.
+        center: [55.76, 37.64], // Москва
+        zoom: 10
+    }, {
+        searchControlProvider: 'yandex#search'
+    });
+    myMapPopup.behaviors.disable('scrollZoom');
+    document.getElementById('destroyButton').onclick = function () {
+        // Для уничтожения используется метод destroy.
+        myMapPopup.destroy();
+    };
+}
+
+$('.address a').click(function() {
+  $('body').addClass('locked');
+  $('.background-map').css('display', 'block');
+  $('#popup-map').css('display', 'block');
+});
+
+$('#popup-map .close').click(function() {
+  $('body').removeClass('locked');
+  $('.background-map').css('display', 'none');
+  $('#popup-map').css('display', 'none');
+});

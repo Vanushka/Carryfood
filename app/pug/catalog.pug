@@ -1,91 +1,91 @@
 doctype html
 html
-	include include/variables.pug
-	include include/header.pug
-	body 
-		.filter-block
-			.bread-crumbs 
-				a(href="catalog.html") Каталог
-				span 
-					img(src="./dist/img/strelka.svg")
-				a(href="#") Продукты питания
-				span 
-					img(src="./dist/img/strelka.svg")
-			.filter
-				h1 БЕЗАЛКОГОЛЬНЫЕ НАПИТКИ И СОКИ
-				.hashtags
-					.hashtag
-						a(href="#") Кефир
-							.close
-					.hashtag
-						a(href="#") Молоко
-							.close
-					.hashtag.active
-						a(href="#") Вода
-							.close
-					.hashtag
-						a(href="#") Кефир
-							.close
-					.hashtag
-						a(href="#") Молоко
-							.close
-					.hashtag
-						a(href="#") Вода
-							.close
-			.filter-line         
-				a.filter-button(href="#") <span><img src="./dist/img/filter.svg"></span> Фильтр
-				.sorts-block
-					p Сортировать:
-					a(href="#") Дешевле
-					a(href="#") Дороже
-					a.active(href="#") Популярное
-		.new-goods-background
-		.filter-food.container
-			#filterProducts
-				each val in catalogfoods 
-					.food  
-						a(href="javascript:openProductDetail()")
-							.food-img 
-								img(src=val.img)
-							.food-text
-								p= val.text
-							.food-price-and-unit
-								.food-price
-									p= val.price
-								.food-unit
-									p= val.unit
-		.filter-food-mobile
-			#filterProductsMobile
-				each val in catalogfoodsmobile
-					.food  
-						a(href="javascript:openProductDetail()")
-							.food-img 
-								img(src=val.img)
-							.food-text
-								p= val.text
-							.food-price-and-unit
-								.food-price
-									p= val.price
-								.food-unit
-									p= val.unit
-		.foods-background
-			.foods.container
-				h1 Вы смотрели
-				#foodSlider
-					each val in food
-						.food
-							a(href="javascript:openProductDetail()")
-								.food-img 
-									img(src=val.img)
-								.food-text
-									p= val.text
-								.food-price-and-unit
-									.food-price
-										p= val.price
-									.food-unit
-										p= val.unit
-	
-	include include/modal.pug
-	include include/login.pug
-	include include/reg.pug
-	include include/footer.pug
+  include include/variables.pug
+  include include/header.pug
+  body 
+    .filter-block
+      .bread-crumbs 
+        a(href="catalog.html") Каталог
+        span 
+          img(src="./dist/img/strelka.svg")
+        a(href="#") Продукты питания
+        span 
+          img(src="./dist/img/strelka.svg")
+      .filter
+        h1 БЕЗАЛКОГОЛЬНЫЕ НАПИТКИ И СОКИ
+        .hashtags
+          .hashtag
+            a(href="#") Кефир
+              .close
+          .hashtag
+            a(href="#") Молоко
+              .close
+          .hashtag.active
+            a(href="#") Вода
+              .close
+          .hashtag
+            a(href="#") Кефир
+              .close
+          .hashtag
+            a(href="#") Молоко
+              .close
+          .hashtag
+            a(href="#") Вода
+              .close
+      .filter-line         
+        a.filter-button(href="#") <span><img src="./dist/img/filter.svg"></span> Фильтр
+        .sorts-block
+          p Сортировать:
+          a(href="#") Дешевле
+          a(href="#") Дороже
+          a.active(href="#") Популярное
+    .new-goods-background
+    .filter-food.container
+      #filterProducts
+        each val in catalogfoods 
+          .food  
+            a(href="javascript:openProductDetail()")
+              .food-img 
+                img(src=val.img)
+              .food-text
+                p= val.text
+              .food-price-and-unit
+                .food-price
+                  p= val.price
+                .food-unit
+                  p= val.unit
+    .filter-food-mobile
+      #filterProductsMobile
+        each val in catalogfoodsmobile
+          .food  
+            a(href="javascript:openProductDetail()")
+              .food-img 
+                img(src=val.img)
+              .food-text
+                p= val.text
+              .food-price-and-unit
+                .food-price
+                  p= val.price
+                .food-unit
+                  p= val.unit
+    .foods-background
+      .foods.container
+        h1 Вы смотрели
+        #foodSlider
+          each val in food
+            .food
+              a(href="javascript:openProductDetail()")
+                .food-img 
+                  img(src=val.img)
+                .food-text
+                  p= val.text
+                .food-price-and-unit
+                  .food-price
+                    p= val.price
+                  .food-unit
+                    p= val.unit
+  include include/mapPopup.pug
+  include include/modal.pug
+  include include/login.pug
+  include include/reg.pug
+  include include/footer.pug

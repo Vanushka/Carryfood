@@ -498,6 +498,24 @@
       </div>
     </div>
   </body>
+  <div class="background-map"></div>
+  <div id="popup-map">
+    <div class="close"></div>
+    <div class="delivery-address-popup">
+      <div class="block-search-address">
+        <p class="headline">Введите адрес доставки</p>
+        <p class="text">Чтобы увидеть весь список доступных магазинов и их каталоги, с ценами как в магазине:</p>
+        <form class="search-block" id="" method="" action="">
+          <div class="search"> 
+            <input type="text" placeholder="Ленина улица, 5">
+            <div class="loop"></div>
+          </div>
+          <button type="submit">Выбрать магазин</button>
+        </form><a href="/catalog.html">Посмотреть каталог без ввода адреса</a>
+      </div>
+    </div>
+    <div id="mapPopup"></div>
+  </div>
   <div id="modal">
     <div class="background"></div>
     <div class="product-details"><a class="close" href="javascript:closeProductDetail()"></a>
@@ -615,6 +633,7 @@
   </footer>
   <script src="./dist/js/jquery.js"></script>
   <script src="./dist/js/slick.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=1fd05f0d-ab2e-4ac3-b2bd-09a27e84a59d&amp;lang=ru_RU" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./dist/js/script.js"></script>
 </html>
