@@ -71,6 +71,7 @@ header #header .container .group-select {
 header #header .container .group-select .choose-shop {
   cursor: pointer;
   margin-right: 10px;
+  margin-left: 56px;
 }
 header #header .container .group-select .choose-shop .choose-shop-menu {
   height: 45px;
@@ -168,24 +169,35 @@ header #header .container .group-select .choose-shop span.arrow {
   font-size: 8px;
 }
 header #header .container .group-select .search-line {
-  display: inline-block;
+  width: 505px;
+  height: 56px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  background: #fff;
+  border-radius: 30px;
 }
 header #header .container .group-select .search-line input {
   border: 0;
   color: #000;
-  width: 505px;
-  height: 56px;
+  width: 90%;
+  height: 50px;
   font-size: 15px;
-  font-family: 'Roboto-Regular';
-  border-radius: 30px;
+  margin-left: 23px;
+  font-family: 'Open-Sans-Semibold';
 }
-header #header .container .group-select .search-line input[type="text"] {
+header #header .container .group-select .search-line .loop {
+  width: 10px;
+  height: 100%;
+  cursor: pointer;
   background: url("../img/loop.svg") #fff no-repeat 97%;
   padding-left: 25px;
-  margin-bottom: 15px;
+  border-radius: 30px;
+  margin-right: 18px;
 }
 header #header .container .group-select .search-line .search-menu {
-  left: 273px;
+  margin-left: -143px;
   bottom: 15px;
   display: -ms-flexbox;
   display: flex;
@@ -197,7 +209,7 @@ header #header .container .group-select .search-line .search-menu a {
   color: #fff;
   margin-right: 33px;
   font-size: 15px;
-  font-family: 'Roboto-Regular';
+  font-family: 'Open-Sans-Semibold';
 }
 header #header .container .group-select .search-line .search-menu a:hover {
   text-decoration: underline;
@@ -206,7 +218,7 @@ header #header .container .group-select .search-line .search-menu .vertial-line 
   height: 20px;
   width: 1px;
   background: #fff;
-  opacity: 0.5;
+  opacity: 0.2;
   margin-right: 33px;
 }
 header #header .container .group-select .search-line .search-menu .address {
@@ -217,7 +229,7 @@ header #header .container .group-select .search-line .search-menu .address p {
   margin: 0;
   color: #fff;
   font-size: 15px;
-  font-family: 'Roboto-Regular';
+  font-family: 'PT-Sans-Regular';
 }
 header #header .container .group-select .search-line .search-menu .address a {
   opacity: 1;
@@ -225,9 +237,7 @@ header #header .container .group-select .search-line .search-menu .address a {
   cursor: pointer;
   font-size: 15px;
   margin-left: 10px;
-  font-family: 'Roboto-Regular';
-}
-header #header .container .group-select .search-line .search-menu .address a:hover {
+  font-family: 'PT-Sans-Regular';
   text-decoration: underline;
 }
 header #header .container .group-select .radius-link {
@@ -253,6 +263,7 @@ header #header .container .group-select .time-of-delivery select {
   font-size: 16px;
   background: none;
   white-space: normal;
+  font-family: 'PT-Sans-Regular';
   border: 1px solid rgba(255,255,255,0.31);
   appearance: none;
   -moz-appearance: none;
@@ -282,7 +293,7 @@ header #header .container .group-select .column-block a.basket span {
   margin-top: -3px;
   margin-left: 21px;
   font-size: 12px;
-  font-family: 'PT-Sans-Regular';
+  font-family: 'OpenSans-Bold';
   background: #ff174c;
   border-radius: 10px;
 }
@@ -291,8 +302,8 @@ header #header .container .group-select .column-block a.basket p {
   padding-right: 15px;
   padding-left: 55px;
   color: #fff;
-  font-size: 16px;
-  font-family: 'Roboto-Regular';
+  font-size: 15px;
+  font-family: 'PT-Sans-Regular';
 }
 header #header .container .group-select .column-block .phone {
   display: block;
@@ -331,7 +342,7 @@ header #header .container .group-select .column-block .phone a {
 }
 #slider-present .slide-present .slider-content h1 {
   color: #fff;
-  font-family: 'OpenSans';
+  font-family: 'OpenSans-Bold';
   font-size: 35px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3464,7 +3475,7 @@ footer .footer-right img {
   color: #fff;
   margin-right: 33px;
   font-size: 15px;
-  font-family: 'Roboto-Regular';
+  font-family: 'Open-Sans-Semibold';
 }
 #header-map .container .left-block .links-block a:hover {
   text-decoration: underline;
@@ -3486,7 +3497,7 @@ footer .footer-right img {
   color: #fff;
   font-size: 15px;
   margin-left: 10px;
-  font-family: 'Roboto-Bold';
+  font-family: 'Open-Sans-Semibold';
 }
 #header-map .container .right-block .phone {
   margin-left: 35px;
@@ -3496,7 +3507,7 @@ footer .footer-right img {
   padding: 0;
   color: #fff;
   font-size: 17px;
-  font-family: 'Roboto-Bold';
+  font-family: 'OpenSans-Bold';
 }
 #header-map .container .navBurger,
 #header-map .container .overlay {
@@ -3511,14 +3522,16 @@ footer .footer-right img {
   margin-top: 96px;
 }
 .delivery-address .block-search-address p.headline {
+  margin: 0;
   color: #000;
   font-size: 45px;
-  font-family: 'Roboto-Bold';
+  font-family: 'OpenSans-Bold';
 }
 .delivery-address .block-search-address p.text {
   color: #000;
   max-width: 450px;
   font-size: 18px;
+  margin-bottom: 30px;
   font-family: 'PT-Sans-Regular';
 }
 .delivery-address .block-search-address .search-block {
@@ -3543,7 +3556,10 @@ footer .footer-right img {
   margin-left: 23px;
   border-radius: 30px;
   background: #e5e5e5;
-  font-family: 'PT-Sans-Regular';
+  font-family: 'Open-Sans-Semibold';
+}
+.delivery-address .block-search-address .search-block .search input:focus::-webkit-input-placeholder {
+  opacity: 0;
 }
 .delivery-address .block-search-address .search-block .search ::-webkit-input-placeholder {
   color: #000;
@@ -3559,7 +3575,8 @@ footer .footer-right img {
 }
 .delivery-address .block-search-address .search-block .search .loop {
   background: url("../img/loop-black.svg") #e5e5e5 no-repeat 97%;
-  padding-left: 25px;
+  padding-left: 37px;
+  border-radius: 30px;
 }
 .delivery-address .block-search-address .search-block button {
   height: 52px;
@@ -3569,12 +3586,15 @@ footer .footer-right img {
   font-weight: 700;
   margin-left: 15px;
   white-space: nowrap;
-  font-family: 'Roboto-Bold';
+  font-family: 'OpenSans-Bold';
   background: #ff174c;
   border-radius: 8px;
-  padding: 11px 25px;
+  padding: 11px 35px;
 }
 .delivery-address .block-search-address a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   cursor: pointer;
   color: #379af1;
   font-size: 14px;
@@ -3582,14 +3602,52 @@ footer .footer-right img {
   display: block;
   margin-top: 15px;
   font-family: 'PT-Sans-Regular';
-}
-.delivery-address .block-search-address a:hover {
   text-decoration: underline;
 }
 #map {
   width: 100%;
   max-width: 100%;
   min-height: 565px;
+}
+.block-mobile-apps {
+  width: 100%;
+  height: 200px;
+  background: #1ccc8f;
+}
+.block-mobile-apps .headline {
+  padding-top: 15px;
+  text-align: center;
+}
+.block-mobile-apps .headline h1 {
+  color: #fff;
+  font-size: 25px;
+  font-family: 'OpenSans-Bold';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.block-mobile-apps .headline p {
+  margin-top: -8px;
+  opacity: 0.6;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Roboto-Regular';
+  font-weight: 100;
+}
+.block-mobile-apps .google-and-apple {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 15px;
+  margin-bottom: 42px;
+}
+.block-mobile-apps .google-and-apple a {
+  margin-right: 2px;
+  width: 164.21px;
+  height: 43.3px;
+}
+.block-mobile-apps .google-and-apple a img {
+  width: 100%;
 }
 @media screen and (max-device-width: 768px) {
   html,
@@ -3630,6 +3688,9 @@ footer .footer-right img {
   }
   header #header .container .group-select .search-line {
     display: none;
+  }
+  header #header .container .group-select .choose-shop {
+    margin-left: 0;
   }
   header #header .container .group-select .choose-shop .choose-shop-menu-sub {
     margin: 18px 0 0 0px;

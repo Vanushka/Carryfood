@@ -34,7 +34,7 @@
   color: $white;
   margin-right: 33px;
   font-size: 15px;
-  font-family: 'Roboto-Regular';
+  font-family: 'Open-Sans-Semibold';
 }
 #header-map .container .left-block .links-block a:hover {
   text-decoration: underline;
@@ -56,7 +56,7 @@
   color: $white;
   font-size: 15px;
   margin-left: 10px;
-  font-family: 'Roboto-Bold';
+  font-family: 'Open-Sans-Semibold';
 }
 #header-map .container .right-block .phone {
   margin-left: 35px;
@@ -66,7 +66,7 @@
   padding: 0;
   color: $white;
   font-size: 17px;
-  font-family: 'Roboto-Bold';
+  font-family: 'OpenSans-Bold';
 }
 #header-map .container .navBurger,
 #header-map .container .overlay {
@@ -81,14 +81,16 @@
   margin-top: 96px;
 }
 .delivery-address .block-search-address p.headline {
+  margin: 0;
   color: $black;
   font-size: 45px;
-  font-family: 'Roboto-Bold';
+  font-family: 'OpenSans-Bold';
 }
 .delivery-address .block-search-address p.text {
   color: $black;
   max-width: 450px;
   font-size: 18px;
+  margin-bottom: 30px;
   font-family: 'PT-Sans-Regular';
 }
 .delivery-address .block-search-address .search-block {
@@ -113,7 +115,10 @@
   margin-left: 23px;
   border-radius: 30px;
   background: $input-gray;
-  font-family: 'PT-Sans-Regular';
+  font-family: 'Open-Sans-Semibold';
+}
+.delivery-address .block-search-address .search-block .search input:focus::-webkit-input-placeholder {
+  opacity: 0;
 }
 .delivery-address .block-search-address .search-block .search ::-webkit-input-placeholder {
   color: $black;
@@ -129,7 +134,8 @@
 }
 .delivery-address .block-search-address .search-block .search .loop {
   background: url("../img/loop-black.svg") $input-gray no-repeat 97%;
-  padding-left: 25px;
+  padding-left: 37px;
+  border-radius: 30px;
 }
 .delivery-address .block-search-address .search-block button {
   height: 52px;
@@ -139,12 +145,15 @@
   font-weight: 700;
   margin-left: 15px;
   white-space: nowrap;
-  font-family: 'Roboto-Bold';
+  font-family: 'OpenSans-Bold';
   background: $red;
   border-radius: 8px;
-  padding: 11px 25px;
+  padding: 11px 35px;
 }
 .delivery-address .block-search-address a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   cursor: pointer;
   color: #379af1;
   font-size: 14px;
@@ -152,12 +161,50 @@
   display: block;
   margin-top: 15px;
   font-family: 'PT-Sans-Regular';
-}
-.delivery-address .block-search-address a:hover {
   text-decoration: underline;
 }
 #map {
   width: 100%;
   max-width: 100%;
   min-height: 565px;
+}
+.block-mobile-apps {
+  width: 100%;
+  height: 200px;
+  background: $green;
+}
+.block-mobile-apps .headline {
+  padding-top: 15px;
+  text-align: center;
+}
+.block-mobile-apps .headline h1 {
+  color: $white;
+  font-size: 25px;
+  font-family: 'OpenSans-Bold';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.block-mobile-apps .headline p {
+  margin-top: -8px;
+  opacity: 0.6;
+  color: $white;
+  font-size: 18px;
+  font-family: 'Roboto-Regular';
+  font-weight: 100;
+}
+.block-mobile-apps .google-and-apple {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 15px;
+  margin-bottom: 42px;
+}
+.block-mobile-apps .google-and-apple a {
+  margin-right: 2px;
+  width: 164.21px;
+  height: 43.3px;
+}
+.block-mobile-apps .google-and-apple a img {
+  width: 100%;
 }

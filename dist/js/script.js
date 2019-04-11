@@ -407,7 +407,7 @@ function init () {
     }, {
         searchControlProvider: 'yandex#search'
     });
-
+    myMap.behaviors.disable('scrollZoom');
     document.getElementById('destroyButton').onclick = function () {
         // Для уничтожения используется метод destroy.
         myMap.destroy();

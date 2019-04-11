@@ -38,6 +38,9 @@
   header #header .container .group-select .search-line {
     display: none;
   }
+  header #header .container .group-select .choose-shop {
+    margin-left: 0;
+  }
   header #header .container .group-select .choose-shop .choose-shop-menu-sub {
     margin: 18px 0 0 0px;
   }
