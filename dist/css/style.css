@@ -229,7 +229,7 @@ header #header .container .group-select .search-line .search-menu .address p {
   margin: 0;
   color: #fff;
   font-size: 15px;
-  font-family: 'PT-Sans-Regular';
+  font-family: 'OpenSans';
 }
 header #header .container .group-select .search-line .search-menu .address a {
   opacity: 1;
@@ -237,7 +237,7 @@ header #header .container .group-select .search-line .search-menu .address a {
   cursor: pointer;
   font-size: 15px;
   margin-left: 10px;
-  font-family: 'PT-Sans-Regular';
+  font-family: 'OpenSans';
   text-decoration: underline;
 }
 header #header .container .group-select .radius-link {
@@ -3532,7 +3532,7 @@ footer .footer-right img {
   max-width: 450px;
   font-size: 18px;
   margin-bottom: 30px;
-  font-family: 'PT-Sans-Regular';
+  font-family: 'OpenSans';
 }
 .delivery-address .block-search-address .search-block {
   display: -ms-flexbox;
@@ -3601,7 +3601,7 @@ footer .footer-right img {
   font-weight: 400;
   display: block;
   margin-top: 15px;
-  font-family: 'PT-Sans-Regular';
+  font-family: 'OpenSans';
   text-decoration: underline;
 }
 #map {
