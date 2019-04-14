@@ -1261,3 +1261,136 @@
         button
           margin-left: 0
           margin-top: 15px
+
+//--NEW-BASKET--
+@media screen and (max-device-width: 768px)
+  .basket-block
+    .bread-crumbs
+      margin-left 20px
+    .filter
+      h1
+        font-size 25px
+    .filter-line
+      .sorts-block
+        display grid
+        margin-right 5px
+      a.criterias-button
+        margin-left 10px
+        margin-top 65px
+  .new-basket-food
+    padding-left: 0
+    h1
+      margin-left: 60px
+    .basket-products
+      width 100%
+      display flex
+      flex-wrap wrap
+      .food
+        display block
+        width 80%
+        height auto
+        margin 0 auto
+        margin-bottom 10px
+        border-radius 10px
+        border 1px solid $bordergrey
+        a
+          .food-img
+            width 142px
+            height 136.5px
+            margin 17px auto
+            img
+              width 100%
+          .food-text
+            width 86%
+            color $darkgrey
+            margin 0 auto
+            font-size 15px
+            font-family 'PT-Sans-Regular'
+            p
+              margin 0
+              margin-top 30px
+              word-wrap break-word
+          .food-price-and-unit
+            display flex
+            margin-bottom 10px
+            justify-content space-between
+            .food-price
+              width 36px
+              height 19px
+              margin 2px 17px
+              p
+                margin 0
+                color $black
+                font-size 17px
+                font-family 'OpenSans-Bold'
+            .food-unit
+              width 52px
+              height 23px
+              margin 2px 17px
+              p
+                margin 0
+                color $lightgrey
+                text-align right
+                font-size 15px
+                margin-top 2px
+                font-family 'PT-Sans-Regular'
+        .product-count
+          display flex
+          margin-left auto
+          margin-right 11px
+          margin-top: 20px
+          margin-bottom: 15px
+          flex-direction row-reverse
+          align-items flex-end
+          .minus
+            width 27px
+            height 26px
+            cursor: pointer
+            border-radius 8px
+            background-color #c4c4c4
+            &:hover
+              background $darkgrey
+            &:before
+              content ""
+              pointer-events:none
+              position absolute
+              background #fff
+              height 2px
+              width 14px
+              margin-top 12px
+              margin-left 6px
+          p
+            margin 3px 10px
+            font-size 17px
+            font-weight 400
+            color $darkgrey
+            font-family 'OpenSans'
+          .plus
+            width 27px
+            height 26px
+            cursor: pointer
+            border-radius 8px
+            background-color #c4c4c4
+            &:hover
+              background $darkgrey
+            &:after
+              content ""
+              pointer-events:none
+              position absolute
+              background #fff
+              height 2px
+              width 14px
+              margin-top 12px
+              margin-left 6px
+            &:before
+              content ""
+              pointer-events:none
+              position absolute
+              background #fff
+              height 2px
+              width 14px
+              margin-top 12px
+              transform rotate(90deg)
+              margin-left 6px
+        &:hover
+          border 1px solid $red

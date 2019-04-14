@@ -1476,3 +1476,167 @@
     margin-top: 15px;
   }
 }
+@media screen and (max-device-width: 768px) {
+  .basket-block .bread-crumbs {
+    margin-left: 20px;
+  }
+  .basket-block .filter h1 {
+    font-size: 25px;
+  }
+  .basket-block .filter-line .sorts-block {
+    display: -ms-grid;
+    display: grid;
+    margin-right: 5px;
+  }
+  .basket-block .filter-line a.criterias-button {
+    margin-left: 10px;
+    margin-top: 65px;
+  }
+  .new-basket-food {
+    padding-left: 0;
+  }
+  .new-basket-food h1 {
+    margin-left: 60px;
+  }
+  .new-basket-food .basket-products {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .new-basket-food .basket-products .food {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid $bordergrey;
+  }
+  .new-basket-food .basket-products .food a .food-img {
+    width: 142px;
+    height: 136.5px;
+    margin: 17px auto;
+  }
+  .new-basket-food .basket-products .food a .food-img img {
+    width: 100%;
+  }
+  .new-basket-food .basket-products .food a .food-text {
+    width: 86%;
+    color: $darkgrey;
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: 'PT-Sans-Regular';
+  }
+  .new-basket-food .basket-products .food a .food-text p {
+    margin: 0;
+    margin-top: 30px;
+    word-wrap: break-word;
+  }
+  .new-basket-food .basket-products .food a .food-price-and-unit {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
+  .new-basket-food .basket-products .food a .food-price-and-unit .food-price {
+    width: 36px;
+    height: 19px;
+    margin: 2px 17px;
+  }
+  .new-basket-food .basket-products .food a .food-price-and-unit .food-price p {
+    margin: 0;
+    color: $black;
+    font-size: 17px;
+    font-family: 'OpenSans-Bold';
+  }
+  .new-basket-food .basket-products .food a .food-price-and-unit .food-unit {
+    width: 52px;
+    height: 23px;
+    margin: 2px 17px;
+  }
+  .new-basket-food .basket-products .food a .food-price-and-unit .food-unit p {
+    margin: 0;
+    color: $lightgrey;
+    text-align: right;
+    font-size: 15px;
+    margin-top: 2px;
+    font-family: 'PT-Sans-Regular';
+  }
+  .new-basket-food .basket-products .food .product-count {
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: 11px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    -ms-flex-align: end;
+        align-items: flex-end;
+  }
+  .new-basket-food .basket-products .food .product-count .minus {
+    width: 27px;
+    height: 26px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #c4c4c4;
+  }
+  .new-basket-food .basket-products .food .product-count .minus:hover {
+    background: $darkgrey;
+  }
+  .new-basket-food .basket-products .food .product-count .minus:before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    background: #fff;
+    height: 2px;
+    width: 14px;
+    margin-top: 12px;
+    margin-left: 6px;
+  }
+  .new-basket-food .basket-products .food .product-count p {
+    margin: 3px 10px;
+    font-size: 17px;
+    font-weight: 400;
+    color: $darkgrey;
+    font-family: 'OpenSans';
+  }
+  .new-basket-food .basket-products .food .product-count .plus {
+    width: 27px;
+    height: 26px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #c4c4c4;
+  }
+  .new-basket-food .basket-products .food .product-count .plus:hover {
+    background: $darkgrey;
+  }
+  .new-basket-food .basket-products .food .product-count .plus:after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    background: #fff;
+    height: 2px;
+    width: 14px;
+    margin-top: 12px;
+    margin-left: 6px;
+  }
+  .new-basket-food .basket-products .food .product-count .plus:before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    background: #fff;
+    height: 2px;
+    width: 14px;
+    margin-top: 12px;
+    -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    margin-left: 6px;
+  }
+  .new-basket-food .basket-products .food:hover {
+    border: 1px solid $red;
+  }
+}

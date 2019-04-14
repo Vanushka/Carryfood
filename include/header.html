@@ -4,6 +4,8 @@
   <meta charset="utf-8"/>
   <meta name="keywords" content=""/>
   <meta name="description" content=""/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="icon" href="./dist/img/favicon.ico" type="image/x-icon"/>
   <link rel="stylesheet" href="./dist/css/slick.css"/>
   <link rel="stylesheet" href="./dist/css/style.css"/>
 </head>
@@ -11,23 +13,53 @@
   <header>
     <div id="header">
       <div class="container">
-        <div class="logo"><a href="/"><img src="./dist/img/logo.svg"/></a></div><span>из</span>
-        <div class="choose-shop">
-          <select>
-            <option>METRO</option>
-          </select>
-        </div>
-        <div class="search-line">
-          <input type="text" placeholder="Поиск..."/>
-          <div class="search-menu"><a href="catalog.html">Каталог</a><a href="#">Помощь</a><a href="#">Доставка</a><a href="#">Скидки </a><a href="#">Войти</a></div>
-        </div>
-        <div class="time-of-delivery">
-          <select>
-            <option></option>
-          </select>
-        </div>
-        <div class="basket"><img src="./dist/img/basket.svg"/><span>15</span><a href="#">Корзина</a>
-          <div class="phone"><a href="tel:+7 495 500-50-00">+7 495 500-50-00</a></div>
+        <div class="logo"><a href="index.html"><img src="./dist/img/logo.png"/></a></div>
+        <div class="logo-mobile"><a href="index.html"><img src="./dist/img/logo-mobile.png"/></a></div>
+        <div class="group-select">
+          <div class="choose-shop">
+            <ul class="choose-shop-menu">
+              <li><span class="choose-shop-down"><img src="./dist/img/metro-1.svg"/></span><span class="arrow"></span>
+                <div class="choose-shop-menu-sub"><span class="title"></span><a href="#posts-new"> <img src="./dist/img/metro-1.svg"/><a href="#posts-new"> <img src="./dist/img/metro-2.svg"/></a></a></div>
+              </li>
+            </ul>
+          </div>
+          <div class="search-line">
+            <input type="text" placeholder="Поиск..."/>
+            <div class="loop"></div>
+            <div class="search-menu"><a href="catalog.html">Каталог</a><a href="#">Помощь</a><a href="#">Доставка</a><a href="#">Скидки </a><a href="javascript:openLogin()">Войти</a>
+              <div class="vertial-line"></div>
+              <div class="address">
+                <p>Ваш адрес:</p><a>Тверская-Ямская,16</a>
+              </div>
+            </div>
+          </div>
+          <div class="time-of-delivery">
+            <select>
+              <option>Доставим сегодня 08:00-15:00</option>
+              <option>Доставим сегодня 16:00-18:00</option>
+            </select>
+          </div>
+          <div class="column-block"><a class="basket" href="basket.html"><img src="./dist/img/basket.svg"/><span>15</span>
+              <p>Корзина</p></a>
+            <div class="phone"><a href="tel:+7 495 500-50-00">+7 495 500-50-00</a></div>
+          </div>
+          <div class="navBurger" id="navToggle" role="navigation"></div>
+          <div class="overlay">
+            <nav class="overlayMenu">
+              <ul role="menu">
+                <li>
+                  <div class="input-group">
+                    <input type="text" placeholder="Поиск..."/>
+                  </div>
+                </li>
+                <li><a href="catalog.html" role="menuitem">Каталог</a></li>
+                <li><a href="#" role="menuitem">Помощь</a></li>
+                <li><a href="#" role="menuitem">Доставка</a></li>
+                <li><a href="#" role="menuitem">Скидки</a></li>
+                <li><a href="javascript:openLogin()" role="menuitem">Войти</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
