@@ -40,6 +40,11 @@ html
                   p= val.price
                 .food-unit
                   p= val.unit
+              .food-price-and-unit
+                .food-price
+                  p= val.price_2
+                .food-unit
+                  p= val.unit_2
             .product-count
               .plus
               p 1
@@ -48,22 +53,22 @@ html
       p Итого: <span>12 860 руб.</span>
       .repeat-order
         a Сделать заказ
-    .foods-background
-      .foods.container
-        h1 Вы смотрели
-        #foodSlider
-          each val in food
-            .food
-              a(href="javascript:openProductDetail()")
-                .food-img 
-                  img(src=val.img)
-                .food-text
-                  p= val.text
-                .food-price-and-unit
-                  .food-price
-                    p= val.price
-                  .food-unit
-                    p= val.unit
+  .foods-background
+    .foods.container
+      h1 Вы смотрели
+      #foodSlider
+        each val in food
+          .food
+            a(href="javascript:openProductDetail()")
+              .food-img 
+                img(src=val.img)
+              .food-text
+                p= val.text
+              .food-price-and-unit
+                .food-price
+                  p= val.price
+                .food-unit
+                  p= val.unit
   include include/mapPopup.pug
   include include/modal.pug
   include include/login.pug
