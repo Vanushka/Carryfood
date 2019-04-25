@@ -325,7 +325,7 @@
   font-family: 'PT-Sans-Regular';
 }
 .foods #foodSlider .food a .food-text p {
-  margin: 0 8px;
+  margin: 0;
   word-wrap: break-word;
 }
 .foods #foodSlider .food a .food-price-and-unit {
@@ -344,6 +344,7 @@
   margin: 0;
   color: $black;
   font-size: 14px;
+  margin-left: 6px;
   font-family: 'OpenSans-Bold';
 }
 .foods #foodSlider .food a .food-price-and-unit .food-unit {

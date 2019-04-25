@@ -172,7 +172,7 @@ header #header .container .group-select .choose-shop span.arrow {
   font-size: 8px;
 }
 header #header .container .group-select .search-line {
-  width: 505px;
+  width: 568px;
   height: 56px;
   display: -ms-flexbox;
   display: flex;
@@ -311,7 +311,6 @@ header #header .container .group-select .column-block a.basket p {
 header #header .container .group-select .column-block .phone {
   display: block;
   margin-top: 12px;
-  margin-left: 6px;
 }
 header #header .container .group-select .column-block .phone a {
   border: 0;
@@ -470,7 +469,7 @@ li {
   font-family: 'PT-Sans-Regular';
 }
 .goods #goods-slider .good a .good-text p {
-  margin: 0 8px;
+  margin: 0;
   word-wrap: break-word;
 }
 .goods #goods-slider .good a .good-price-and-unit {
@@ -2020,7 +2019,7 @@ footer .footer-right img {
   font-family: 'PT-Sans-Regular';
 }
 .foods #foodSlider .food a .food-text p {
-  margin: 0 8px;
+  margin: 0;
   word-wrap: break-word;
 }
 .foods #foodSlider .food a .food-price-and-unit {
@@ -2039,6 +2038,7 @@ footer .footer-right img {
   margin: 0;
   color: #000;
   font-size: 14px;
+  margin-left: 6px;
   font-family: 'OpenSans-Bold';
 }
 .foods #foodSlider .food a .food-price-and-unit .food-unit {
@@ -2805,11 +2805,10 @@ footer .footer-right img {
 }
 .basket-block {
   margin: 0 auto;
-  max-width: 1222px;
+  max-width: 1165px;
 }
 .basket-block .bread-crumbs {
   margin-top: 20px;
-  margin-left: 60px;
 }
 .basket-block .bread-crumbs a {
   color: #4a4a4a;
@@ -2872,6 +2871,9 @@ footer .footer-right img {
   margin-bottom: 20px;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1168px;
   -ms-flex-pack: justify;
       justify-content: space-between;
 }
@@ -2903,7 +2905,6 @@ footer .footer-right img {
   display: -ms-flexbox;
   display: flex;
   margin-top: 8px;
-  margin-right: 30px;
 }
 .basket-block .filter-line .sorts-block p {
   margin: 0;
@@ -2923,7 +2924,7 @@ footer .footer-right img {
   text-decoration: none;
 }
 .basket-block .filter-line .sorts-block a:last-child {
-  margin-right: 14px;
+  margin-right: 5px;
 }
 .basket-block .filter-line .sorts-block a.active {
   cursor: text;
@@ -2933,7 +2934,7 @@ footer .footer-right img {
   font-family: 'Roboto-Medium';
 }
 .new-basket-food {
-  max-width: 1280px;
+  max-width: 1227px;
   margin-top: 30px;
   margin-bottom: 40px;
   padding-left: 60px;
@@ -2958,7 +2959,7 @@ footer .footer-right img {
 }
 .new-basket-food .basket-products .food {
   display: block;
-  width: 189.37px;
+  width: 187.37px;
   height: auto;
   min-height: 344px;
   max-height: 280px;
@@ -5636,7 +5637,8 @@ footer .footer-right img {
     padding-left: 0;
   }
   .new-basket-food h1 {
-    margin-left: 60px;
+    text-align: center;
+    margin-left: 0;
   }
   .new-basket-food .basket-products {
     width: 100%;
