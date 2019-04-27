@@ -1,6 +1,6 @@
 .basket-block {
   margin: 0 auto;
-  max-width: 1165px;
+  max-width: 1222px;
 }
 .basket-block .bread-crumbs {
   margin-top: 20px;
@@ -66,9 +66,6 @@
   margin-bottom: 20px;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1168px;
   -ms-flex-pack: justify;
       justify-content: space-between;
 }
@@ -100,6 +97,7 @@
   display: -ms-flexbox;
   display: flex;
   margin-top: 8px;
+  margin-right: 30px;
 }
 .basket-block .filter-line .sorts-block p {
   margin: 0;
@@ -119,7 +117,7 @@
   text-decoration: none;
 }
 .basket-block .filter-line .sorts-block a:last-child {
-  margin-right: 5px;
+  margin-right: 14px;
 }
 .basket-block .filter-line .sorts-block a.active {
   cursor: text;
@@ -129,7 +127,7 @@
   font-family: 'Roboto-Medium';
 }
 .new-basket-food {
-  max-width: 1227px;
+  max-width: 1280px;
   margin-top: 30px;
   margin-bottom: 40px;
   padding-left: 60px;
@@ -154,7 +152,7 @@
 }
 .new-basket-food .basket-products .food {
   display: block;
-  width: 187.37px;
+  width: 189.37px;
   height: auto;
   min-height: 344px;
   max-height: 280px;
