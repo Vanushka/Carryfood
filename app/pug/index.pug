@@ -4,12 +4,36 @@ html
   include include/header.pug
   body
     #slider-present
-      each slide in slidercontent
-        .slide-present
-          img(src=slide.img)
-          .slider-content
-            h1= slide.h1
-            p= slide.p
+      .slide-present
+        .banner-left
+          img(src="./dist/img/may-left.png")
+        .slider-content
+          h1 Доставка 39 рублей
+          p любых заказов в мае
+          span Минимальная сумма заказа 99 руб.<br> Действует в Зеленограде и Балашихе
+          a Перейти в каталог
+        .banner-right
+          img(src="./dist/img/may-right.png")
+      .slide-present
+        .banner-left
+          img(src="./dist/img/may-left.png")
+        .slider-content
+          h1 Доставка 39 рублей
+          p любых заказов в мае
+          span Минимальная сумма заказа 99 руб.<br> Действует в Зеленограде и Балашихе
+          a Перейти в каталог
+        .banner-right
+          img(src="./dist/img/may-right.png")
+      .slide-present
+        .banner-left
+          img(src="./dist/img/may-left.png")
+        .slider-content
+          h1 Доставка 39 рублей
+          p любых заказов в мае
+          span Минимальная сумма заказа 99 руб.<br> Действует в Зеленограде и Балашихе
+          a Перейти в каталог
+        .banner-right
+          img(src="./dist/img/may-right.png")
     .goods.container
       h1 Товары со скидкой
       #goods-slider 

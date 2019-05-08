@@ -322,45 +322,80 @@ header #header .container .group-select .column-block .phone a {
   font-family: 'Roboto-Bold';
 }
 #slider-present .slide-present {
-  height: 240px;
+  height: 470px;
   margin: 0 auto;
-  background: url("../img/slide-present-background.svg");
+  overflow: hidden;
+  background: #e9e4d8;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
 }
-#slider-present .slide-present img {
-  width: 100%;
-  opacity: 0.08;
-  max-height: 240px;
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
+#slider-present .slide-present .banner-right {
+  right: 0;
+  margin-top: -35px;
+  margin-left: auto;
+}
+#slider-present .slide-present .banner-right img {
+  width: 345px;
+}
+#slider-present .slide-present .banner-left {
+  left: 0;
+  margin-top: -35px;
+  margin-right: auto;
+}
+#slider-present .slide-present .banner-left img {
+  width: 375px;
 }
 #slider-present .slide-present .slider-content {
   margin-top: 30px;
+  margin-left: 7px;
   position: absolute;
   text-align: center;
 }
 #slider-present .slide-present .slider-content h1 {
-  color: #fff;
-  font-family: 'OpenSans-Bold';
-  font-size: 35px;
+  color: #000;
+  font-family: 'Circle-ExtraBold';
+  font-size: 60px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3.5px;
+  margin-bottom: 0;
 }
 #slider-present .slide-present .slider-content p {
-  width: 278px;
   height: 65px;
   opacity: 0.8;
-  color: #fff;
-  font-family: 'Roboto-Light';
-  font-size: 18px;
+  color: #000;
+  font-family: 'Circle-Regular';
+  font-size: 50px;
   font-weight: 100;
   margin: 0 auto;
+  margin-bottom: 50px;
+}
+#slider-present .slide-present .slider-content span {
+  color: #78746a;
+  font-size: 20px;
+  font-family: 'Circle-Regular';
+}
+#slider-present .slide-present .slider-content a {
+  cursor: pointer;
+  width: 220px;
+  height: 60px;
+  color: #fff;
+  font-size: 17px;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px auto;
+  border-radius: 12px;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background: #ff0f4e;
+  font-family: 'Circle-Regular';
+}
+#slider-present .slide-present .slider-content a:hover {
+  background: #e72e59;
 }
 .prev-head-slider {
   cursor: pointer;
@@ -397,21 +432,21 @@ header #header .container .group-select .column-block .phone a {
 .pager {
   width: 10px;
   height: 10px;
-  opacity: 0.19;
+  opacity: 0.5;
   position: absolute;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: #4a4a4a;
 }
 .slick-active .pager {
   opacity: 1;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: #000;
 }
 ul,
 li {
   list-style-type: none;
   display: inline;
-  margin-right: 20px;
+  margin-right: 17px;
 }
 .container {
   margin: 0 auto;
@@ -2472,6 +2507,24 @@ footer .footer-right img {
   font-family: 'Futura-Bold';
   src: url("../fonts/Futura-Bold.ttf");
   font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circle-Regular';
+  src: url("../fonts/Circle-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circle-Bold';
+  src: url("../fonts/Circle-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circle-ExtraBold';
+  src: url("../fonts/Circle-ExtraBold.otf");
+  font-weight: 800;
   font-style: normal;
 }
 #basket {
